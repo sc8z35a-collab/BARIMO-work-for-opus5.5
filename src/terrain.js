@@ -4,6 +4,8 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { mulberry } from './globe.js';
 
 const SIZE = 100; // world units across the tile window
+// ?qa=1 → lightweight mode for headless software-GL screenshots only (real devices get full quality)
+export const QA = new URLSearchParams(location.search).has('qa');
 
 // Time-of-day presets — all bright & airy (no dark/gloomy palettes)
 export const TIMES = {
@@ -56,7 +58,7 @@ export class Terrain {
     this.sun = new THREE.DirectionalLight('#fff', 3);
     this.sun.castShadow = true;
     const sc = this.sun.shadow;
-    sc.mapSize.set(4096, 4096);
+    sc.mapSize.set(QA ? 1024 : 4096, QA ? 1024 : 4096);
     Object.assign(sc.camera, { left: -62, right: 62, top: 62, bottom: -62, near: 1, far: 400 });
     sc.bias = -0.0004; sc.normalBias = 0.35; sc.radius = 3;
     s.add(this.sun, this.sun.target);
@@ -100,11 +102,15 @@ export class Terrain {
     this.heights = data; this.hw = w;
 
     // Geometry: full-res grid (w×w vertices)
-    const seg = w - 1;
+    const step = QA ? 4 : 1;
+    const seg = (w - 1) / step;
     const geo = new THREE.PlaneGeometry(SIZE, SIZE, seg, seg);
     geo.rotateX(-Math.PI / 2);
     const pos = geo.attributes.position;
-    for (let i = 0; i < pos.count; i++) pos.setY(i, data[i] * this.hScale);
+    for (let i = 0; i < pos.count; i++) {
+      const gx = (i % (seg + 1)) * step, gz = Math.floor(i / (seg + 1)) * step;
+      pos.setY(i, data[gz * w + gx] * this.hScale);
+    }
     geo.computeVertexNormals();
     geo.computeBoundingSphere();
 

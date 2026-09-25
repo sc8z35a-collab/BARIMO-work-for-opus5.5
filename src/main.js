@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { Globe } from './globe.js';
-import { Terrain } from './terrain.js';
+import { Terrain, QA } from './terrain.js';
 import { ratingsHTML, climateSVG, RATING_DEFS } from './ui.js';
 
 const $ = (s, el = document) => el.querySelector(s);
@@ -12,7 +12,7 @@ const MONTHS = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
 // ---------- renderer (no compromise: high DPR, shadows, ACES) ----------
 const canvas = $('#gl');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance', alpha: false });
-renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 3));
+renderer.setPixelRatio(QA ? 1 : Math.min(window.devicePixelRatio || 1, 3));
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.0;
