@@ -21,7 +21,7 @@ async def main():
         await pg.screenshot(timeout=120000, path=f'{OUT}/2_globe.png')
         await pg.click('.preview .go')
         await pg.wait_for_selector('.region-ui', state='attached', timeout=240000)
-        await pg.wait_for_timeout(12000)
+        await pg.wait_for_timeout(15000)
         await pg.screenshot(timeout=120000, path=f'{OUT}/3_region.png')
         await pg.click('[data-tab=rt]'); await pg.wait_for_timeout(800)
         await pg.screenshot(timeout=120000, path=f'{OUT}/4_ratings.png')

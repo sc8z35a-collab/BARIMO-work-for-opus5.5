@@ -269,9 +269,11 @@ function openViewer(r, i) {
 const escapeHTML = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
 // ---------- loop ----------
-const clock = new THREE.Clock();
-function loop() {
-  const dt = Math.min(clock.getDelta(), 0.05), t = clock.elapsedTime;
+let last = performance.now(), t = 0;
+function loop(now = performance.now()) {
+  // QA (headless software GL) → throttle to ~2fps so screenshots can be captured; real devices run uncapped
+  if (QA && now - last < 450) { requestAnimationFrame(loop); return; }
+  const dt = Math.min((now - last) / 1000, QA ? 0.5 : 0.05); last = now; t += dt;
   if (mode === 'globe') { globe.update(dt, t); globe.render(); }
   else {
     terrain.update(dt, t); terrain.render();
