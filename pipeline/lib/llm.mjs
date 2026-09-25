@@ -4,7 +4,7 @@ import OpenAI from 'openai';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import yaml from 'js-yaml';
+import * as yaml from 'js-yaml';
 
 let cfg = {};
 try { cfg = yaml.load(fs.readFileSync(path.join(os.homedir(), '.genspark_llm.yaml'), 'utf8')) || {}; } catch {}
