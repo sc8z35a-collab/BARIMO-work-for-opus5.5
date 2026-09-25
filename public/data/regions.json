@@ -1,0 +1,3405 @@
+[
+  {
+    "id": "tusheti",
+    "name": "トゥシェティ",
+    "nameLocal": "თუშეთი · Tusheti",
+    "country": "ジョージア",
+    "flag": "🇬🇪",
+    "center": [
+      42.405,
+      45.6
+    ],
+    "demZoom": 12,
+    "exaggeration": 1.15,
+    "accent": "#e0a458",
+    "tagline": "雲の上の塔の村へ、夏だけ開く峠を越えて",
+    "overview": "大コーカサス山脈の北斜面、標高2,000m前後に石積みの塔の集落が点在する山岳地帯。道路が通じるのは雪が解ける6月下旬〜10月初旬のわずかな期間だけ。見渡す限りの緑の尾根、羊の群れ、夕陽に染まる石の塔――時間が止まったような高原の村で、ゲストハウスに泊まりながら尾根歩きを楽しめます。",
+    "highlights": [
+      "朝霧の中に浮かぶオマロの石塔群",
+      "標高2,850mのアバノ峠越えの絶景ドライブ",
+      "花の咲く草原を歩く村から村へのトレッキング",
+      "満天の星と山羊の鈴の音だけの夜"
+    ],
+    "bestMonths": [
+      7,
+      8,
+      9
+    ],
+    "access": "トビリシから車で約3時間でクヴェモ・アルヴァニへ、そこから4WDでアバノ峠を越えて約3〜4時間。峠は6月下旬〜10月初旬のみ通行可。",
+    "stay": "オマロやダルトロの家族経営ゲストハウス（2食付きが一般的）",
+    "tips": "峠道は未舗装の断崖路。必ず経験豊富な地元ドライバーの4WD乗り合いを利用。現金（ラリ）を多めに。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 5,
+      "crime": 1,
+      "danger": 3,
+      "access": 5,
+      "physical": 3,
+      "infra": 2,
+      "cost": 2
+    },
+    "ratingNotes": {
+      "crime": "ジョージアの山岳部は治安良好。軽犯罪もほぼ報告なし",
+      "danger": "峠道の落石・崖、急な天候変化。徒歩トレッキングは中程度",
+      "access": "道が開くのは年に約3〜4か月。世界屈指の険しい山道",
+      "physical": "村間の移動は徒歩中心だと中級者向け"
+    },
+    "pois": [
+      {
+        "name": "オマロ",
+        "desc": "トゥシェティの中心村。丘の上にケセロ要塞の塔が立つ",
+        "ll": [
+          42.3709206,
+          45.6330787
+        ],
+        "uv": [
+          0.5508,
+          0.7024
+        ]
+      },
+      {
+        "name": "ダルトロ",
+        "desc": "石積み家屋が保存された絵本のような村",
+        "ll": [
+          42.4383555,
+          45.5823903
+        ],
+        "uv": [
+          0.4066,
+          0.4426
+        ]
+      },
+      {
+        "name": "シェナコ",
+        "desc": "木のバルコニーと小さな教会が残る尾根上の集落",
+        "ll": [
+          42.3720739,
+          45.6632274
+        ],
+        "uv": [
+          0.6365,
+          0.6979
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Tusheti",
+      "Omalo",
+      "Dartlo"
+    ],
+    "gem": 100,
+    "ease": 50,
+    "terrain": {
+      "minElev": 1425,
+      "maxElev": 4252,
+      "widthM": 28889,
+      "bbox": {
+        "west": 45.439453125,
+        "north": 42.55308028895581,
+        "east": 45.791015625,
+        "south": 42.293564192170074
+      }
+    },
+    "climate": {
+      "elevation": 2331,
+      "months": [
+        {
+          "tmax": -4.6,
+          "tmin": -15.8,
+          "rain": 45,
+          "sun": 7.1
+        },
+        {
+          "tmax": -4.1,
+          "tmin": -13.8,
+          "rain": 44,
+          "sun": 7.5
+        },
+        {
+          "tmax": -2.4,
+          "tmin": -10.4,
+          "rain": 101,
+          "sun": 7.7
+        },
+        {
+          "tmax": 5.7,
+          "tmin": -3.3,
+          "rain": 83,
+          "sun": 10.5
+        },
+        {
+          "tmax": 7.8,
+          "tmin": -1.3,
+          "rain": 102,
+          "sun": 10.4
+        },
+        {
+          "tmax": 15,
+          "tmin": 4.9,
+          "rain": 93,
+          "sun": 11.7
+        },
+        {
+          "tmax": 17,
+          "tmin": 7.1,
+          "rain": 90,
+          "sun": 12.2
+        },
+        {
+          "tmax": 18.5,
+          "tmin": 7.4,
+          "rain": 48,
+          "sun": 12.7
+        },
+        {
+          "tmax": 12.9,
+          "tmin": 3.8,
+          "rain": 76,
+          "sun": 9.9
+        },
+        {
+          "tmax": 6.8,
+          "tmin": -2.5,
+          "rain": 51,
+          "sun": 8
+        },
+        {
+          "tmax": 3.2,
+          "tmin": -6.4,
+          "rain": 36,
+          "sun": 7.6
+        },
+        {
+          "tmax": -1.7,
+          "tmin": -14.2,
+          "rain": 37,
+          "sun": 6.7
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Вид на село Омало",
+        "author": "Дагиров Умар",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D1%81%D0%B5%D0%BB%D0%BE_%D0%9E%D0%BC%D0%B0%D0%BB%D0%BE.jpg",
+        "score": 113
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "2019 - Tusheti National Park - Morning in the Upper Omalo",
+        "author": "Moahim",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:2019_-_Tusheti_National_Park_-_Morning_in_the_Upper_Omalo.jpg",
+        "score": 113
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Dartlo thombs",
+        "author": "Surprizi",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dartlo_thombs.jpg",
+        "score": 112
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Dartlo, 2024 (38)",
+        "author": "Draceane",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dartlo,_2024_(38).jpg",
+        "score": 111
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Tusheti - Dartlo (9458252439)",
+        "author": "Andrzej Wójtowicz from Poznań, Poland",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tusheti_-_Dartlo_(9458252439).jpg",
+        "score": 110
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Dartlo, 2024 (11)",
+        "author": "Draceane",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dartlo,_2024_(11).jpg",
+        "score": 110
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "P1100619c Upper Omalo & Makratela Range 2016",
+        "author": "Karel61",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:P1100619c_Upper_Omalo_%26_Makratela_Range_2016.jpg",
+        "score": 109
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Dartlo, 2024 (42)",
+        "author": "Draceane",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dartlo,_2024_(42).jpg",
+        "score": 109
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "Holy Monastery of Saint George in Omalo - Garden",
+        "author": "GMJM1234",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Holy_Monastery_of_Saint_George_in_Omalo_-_Garden.jpg",
+        "score": 107
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "Dartlo, 2024 (07)",
+        "author": "Draceane",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dartlo,_2024_(07).jpg",
+        "score": 105
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Dartlo, 2024 (12)",
+        "author": "Draceane",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dartlo,_2024_(12).jpg",
+        "score": 105
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Ramna 022",
+        "author": "w:bg:Подпоручик",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ramna_022.jpg",
+        "score": 104
+      }
+    ],
+    "assets": {
+      "height": "regions/tusheti/height.png",
+      "sat": "regions/tusheti/sat.jpg",
+      "sat1k": "regions/tusheti/sat_1k.jpg"
+    }
+  },
+  {
+    "id": "kolsuu",
+    "name": "ケルスー湖",
+    "nameLocal": "Көл-Суу · Kel-Suu",
+    "country": "キルギス",
+    "flag": "🇰🇬",
+    "center": [
+      40.635,
+      76.405
+    ],
+    "demZoom": 13,
+    "exaggeration": 1.1,
+    "accent": "#4fa3b8",
+    "tagline": "断崖に抱かれた、国境地帯のターコイズ",
+    "overview": "中国国境近く、標高約3,500mの天山山脈の奥深くに横たわる細長い氷河湖。垂直にそびえる岩壁の間を、青緑の湖面が十数キロにわたって蛇行します。一帯は国境管理区域のため訪れる人はごくわずか。遊牧民のユルトに泊まり、ボートで峡谷の奥へ進む体験はまさに秘境そのもの。",
+    "highlights": [
+      "岩壁の間を縫う鏡のような湖面",
+      "ゴムボートで行く峡谷の奥の奥",
+      "遊牧民のユルトでの夜と馬乳酒",
+      "道中に広がる果てしない草原と馬の群れ"
+    ],
+    "bestMonths": [
+      7,
+      8,
+      9
+    ],
+    "access": "ナリンから4WDで約5〜6時間、最後は徒歩または馬で約1時間。国境地帯許可証（取得に1〜2週間）が必須。",
+    "stay": "湖手前のユルトキャンプ（夏季のみ）",
+    "tips": "許可証は事前申請必須で検問あり。高山病と夜の冷え込みに備えて防寒着を。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 5,
+      "crime": 1,
+      "danger": 3,
+      "access": 5,
+      "physical": 3,
+      "infra": 1,
+      "cost": 3
+    },
+    "ratingNotes": {
+      "crime": "犯罪リスクはきわめて低い。検問所があり管理された区域",
+      "danger": "標高3,500mの高山病、急な天候悪化、ボート乗船時の寒さ",
+      "access": "国境許可証＋長距離悪路。個人手配は難易度が高い",
+      "physical": "湖まで徒歩・乗馬約1時間。標高で息が上がりやすい"
+    },
+    "pois": [
+      {
+        "name": "ケルスー湖",
+        "desc": "峡谷を埋める青緑の湖。奥へ進むほど壁が迫る",
+        "ll": [
+          40.7021689,
+          76.389985
+        ],
+        "uv": [
+          0.3241,
+          0.0885
+        ]
+      },
+      {
+        "name": "湖の入口",
+        "desc": "ユルトキャンプから歩いて到達する湖の南端",
+        "ll": [
+          40.605,
+          76.395
+        ],
+        "uv": [
+          0.3527,
+          0.8171
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Kel-Suu",
+      "Kol-Suu lake",
+      "Köl-Suu"
+    ],
+    "gem": 100,
+    "ease": 50,
+    "terrain": {
+      "minElev": 3380,
+      "maxElev": 4719,
+      "widthM": 14847,
+      "bbox": {
+        "west": 76.3330078125,
+        "north": 40.713955826286046,
+        "east": 76.5087890625,
+        "south": 40.58058466412763
+      }
+    },
+    "climate": {
+      "elevation": 3560,
+      "months": [
+        {
+          "tmax": -9.8,
+          "tmin": -19.9,
+          "rain": 7,
+          "sun": 8.7
+        },
+        {
+          "tmax": -8.6,
+          "tmin": -18.8,
+          "rain": 15,
+          "sun": 9.2
+        },
+        {
+          "tmax": -4.5,
+          "tmin": -14.3,
+          "rain": 28,
+          "sun": 10.1
+        },
+        {
+          "tmax": -0.9,
+          "tmin": -9.8,
+          "rain": 33,
+          "sun": 10.5
+        },
+        {
+          "tmax": 4.3,
+          "tmin": -4.5,
+          "rain": 85,
+          "sun": 11.8
+        },
+        {
+          "tmax": 8.7,
+          "tmin": -0.4,
+          "rain": 75,
+          "sun": 12
+        },
+        {
+          "tmax": 13,
+          "tmin": 3.5,
+          "rain": 90,
+          "sun": 12.6
+        },
+        {
+          "tmax": 11.2,
+          "tmin": 2,
+          "rain": 98,
+          "sun": 11.7
+        },
+        {
+          "tmax": 8.2,
+          "tmin": -1.7,
+          "rain": 45,
+          "sun": 11.2
+        },
+        {
+          "tmax": 0,
+          "tmin": -9.8,
+          "rain": 26,
+          "sun": 9.6
+        },
+        {
+          "tmax": -5.1,
+          "tmin": -16,
+          "rain": 12,
+          "sun": 8.9
+        },
+        {
+          "tmax": -8.6,
+          "tmin": -19.5,
+          "rain": 5,
+          "sun": 8.6
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Kol-Suu",
+        "author": "Eventyrlys",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Kol-Suu.jpg",
+        "score": 97
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "ISS028-E-30402 - View of Earth",
+        "author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:ISS028-E-30402_-_View_of_Earth.jpg",
+        "score": 93
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Кель-Суу - panoramio (3)",
+        "author": "Калачев Сергей",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio_(3).jpg",
+        "score": 82
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Кель-Суу - panoramio (2)",
+        "author": "Калачев Сергей",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio_(2).jpg",
+        "score": 80
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Кель-Суу - panoramio (4)",
+        "author": "Калачев Сергей",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio_(4).jpg",
+        "score": 79
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Кель-Суу - panoramio (1)",
+        "author": "Калачев Сергей",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio_(1).jpg",
+        "score": 73
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Кель-Суу - panoramio",
+        "author": "Калачев Сергей",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio.jpg",
+        "score": 72
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Кель-Суу - panoramio (5)",
+        "author": "Калачев Сергей",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio_(5).jpg",
+        "score": 72
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "ISS022-E-34074 - View of Earth",
+        "author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:ISS022-E-34074_-_View_of_Earth.jpg",
+        "score": 70
+      }
+    ],
+    "assets": {
+      "height": "regions/kolsuu/height.png",
+      "sat": "regions/kolsuu/sat.jpg",
+      "sat1k": "regions/kolsuu/sat_1k.jpg"
+    }
+  },
+  {
+    "id": "haftkul",
+    "name": "ハフト・クル（七つの湖）",
+    "nameLocal": "Ҳафткӯл · Haft Kul",
+    "country": "タジキスタン",
+    "flag": "🇹🇯",
+    "center": [
+      39.155,
+      67.85
+    ],
+    "demZoom": 13,
+    "exaggeration": 1.05,
+    "accent": "#3fae9b",
+    "tagline": "谷を下るごとに色を変える、七つの宝石",
+    "overview": "ファン山脈の谷に階段状に連なる7つの湖。翡翠、エメラルド、ターコイズ、群青――光と深さで湖ごとに色が変わり、段々畑とアプリコットの木が彩る山村が湖畔に寄り添います。サマルカンドから近いのに観光客は少なく、村人のもてなしが温かい場所です。",
+    "highlights": [
+      "一湖ごとに違う、七色の湖面",
+      "第6湖マルグゾールの鏡のような水面",
+      "第7湖ハザルチャシュマへの高原ハイク",
+      "湖畔の民家で過ごすのどかな時間"
+    ],
+    "bestMonths": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "access": "ペンジケントから車で約1.5〜2時間。第6湖までは一般車も可、第7湖は徒歩（往復約3時間）。",
+    "stay": "湖畔の村のホームステイ、マルグゾールのゲストハウス",
+    "tips": "未舗装路あり。村では現金（ソモニ）のみ。湖での遊泳は冷たいので短時間で。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 4,
+      "crime": 1,
+      "danger": 2,
+      "access": 3,
+      "physical": 2,
+      "infra": 2,
+      "cost": 1
+    },
+    "ratingNotes": {
+      "crime": "地方部の治安は良好で、住民は非常に親切",
+      "danger": "山道での落石、夏の強い日差し",
+      "access": "ウズベキスタンから陸路で入れ、比較的アクセスしやすい",
+      "physical": "車で湖を巡れる。ハイキングは任意"
+    },
+    "pois": [
+      {
+        "name": "第1湖 ミジゴン",
+        "desc": "旅の始まり、深緑の最初の湖",
+        "ll": [
+          39.1966,
+          67.825
+        ],
+        "uv": [
+          0.3489,
+          0.2618
+        ]
+      },
+      {
+        "name": "第6湖 マルグゾール",
+        "desc": "最大の湖。静かな湖面が山を映す",
+        "ll": [
+          39.1516673,
+          67.8477874
+        ],
+        "uv": [
+          0.4785,
+          0.5915
+        ]
+      },
+      {
+        "name": "第7湖 ハザルチャシュマ",
+        "desc": "千の泉を意味する最奥の湖",
+        "ll": [
+          39.124,
+          67.874
+        ],
+        "uv": [
+          0.6276,
+          0.7944
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Haft Kul",
+      "Marguzor lake",
+      "Seven Lakes Tajikistan"
+    ],
+    "gem": 90,
+    "ease": 75,
+    "terrain": {
+      "minElev": 1532,
+      "maxElev": 4491,
+      "widthM": 15172,
+      "bbox": {
+        "west": 67.763671875,
+        "north": 39.23225314171489,
+        "east": 67.939453125,
+        "south": 39.09596293630549
+      }
+    },
+    "climate": {
+      "elevation": 2253,
+      "months": [
+        {
+          "tmax": -2.9,
+          "tmin": -10.1,
+          "rain": 66,
+          "sun": 7.9
+        },
+        {
+          "tmax": -1.3,
+          "tmin": -7.5,
+          "rain": 82,
+          "sun": 8
+        },
+        {
+          "tmax": 3.4,
+          "tmin": -3.9,
+          "rain": 144,
+          "sun": 8.7
+        },
+        {
+          "tmax": 8.3,
+          "tmin": -0.8,
+          "rain": 52,
+          "sun": 11.1
+        },
+        {
+          "tmax": 14,
+          "tmin": 3.8,
+          "rain": 92,
+          "sun": 12
+        },
+        {
+          "tmax": 19.3,
+          "tmin": 10.2,
+          "rain": 72,
+          "sun": 14.2
+        },
+        {
+          "tmax": 22.5,
+          "tmin": 13.6,
+          "rain": 49,
+          "sun": 14
+        },
+        {
+          "tmax": 20.8,
+          "tmin": 12,
+          "rain": 50,
+          "sun": 12.9
+        },
+        {
+          "tmax": 18.3,
+          "tmin": 9,
+          "rain": 28,
+          "sun": 11.9
+        },
+        {
+          "tmax": 10.5,
+          "tmin": 1.3,
+          "rain": 71,
+          "sun": 9.4
+        },
+        {
+          "tmax": 4.4,
+          "tmin": -5.8,
+          "rain": 77,
+          "sun": 8.2
+        },
+        {
+          "tmax": -0.5,
+          "tmin": -10.4,
+          "rain": 29,
+          "sun": 7.8
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Seven Lakes of San Pablo",
+        "author": "Ervin Malicdem",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Seven_Lakes_of_San_Pablo.jpg",
+        "score": 124
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "A Path Beyond Premonition (Unsplash)",
+        "author": "Peter Lloyd plloyd",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:A_Path_Beyond_Premonition_(Unsplash).jpg",
+        "score": 118
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "\"The Seven Lakes\"",
+        "author": "Liana-oksana",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%22The_Seven_Lakes%22.jpg",
+        "score": 110
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Seven lakes basin",
+        "author": "Jtmorgan",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Seven_lakes_basin.JPG",
+        "score": 109
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Seven Lakes Basin",
+        "author": "Jason Pratt (FishSpeaker) from Pittsburgh, PA",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Seven_Lakes_Basin.jpg",
+        "score": 108
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Seven Lakes Basin - panoramio",
+        "author": "FishSpeaker",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Seven_Lakes_Basin_-_panoramio.jpg",
+        "score": 108
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Lakes of Tajikistan 31",
+        "author": "Шухрат Саъдиев",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Lakes_of_Tajikistan_31.JPG",
+        "score": 108
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Valley of the seven lakes in Julian Alps",
+        "author": "Dreamy Pixel",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Valley_of_the_seven_lakes_in_Julian_Alps.jpg",
+        "score": 106
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "\"The Seven Lakes\" 1",
+        "author": "Liana-oksana",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%22The_Seven_Lakes%22_1.jpg",
+        "score": 103
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "\"The Seven Lakes\" 6",
+        "author": "Liana-oksana",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%22The_Seven_Lakes%22_6.jpg",
+        "score": 100
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Tajikistan Fan-Mauntains (2)",
+        "author": "Шухрат Саъдиев",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tajikistan_Fan-Mauntains_(2).JPG",
+        "score": 94
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Seven Lakes Drive along Lake Askoti (3)",
+        "author": "Juliancolton",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Seven_Lakes_Drive_along_Lake_Askoti_(3).jpg",
+        "score": 94
+      }
+    ],
+    "assets": {
+      "height": "regions/haftkul/height.png",
+      "sat": "regions/haftkul/sat.jpg",
+      "sat1k": "regions/haftkul/sat_1k.jpg"
+    }
+  },
+  {
+    "id": "semonkong",
+    "name": "セモンコン",
+    "nameLocal": "Semonkong · Maletsunyane",
+    "country": "レソト",
+    "flag": "🇱🇸",
+    "center": [
+      -29.86,
+      28.05
+    ],
+    "demZoom": 13,
+    "exaggeration": 1.25,
+    "accent": "#c98b5a",
+    "tagline": "天空の王国、192mを一息に落ちる滝",
+    "overview": "国土全体が標高1,400m以上という「天空の王国」レソトの高地。セモンコン（煙の場所）の名の通り、マレツニャネの滝が192mの一枚落ちで玄武岩の峡谷に吸い込まれ、水煙が舞い上がります。毛布をまとったバソト族の騎手がポニーで草原を行き交う、ほかにはない風景が広がります。",
+    "highlights": [
+      "南半球屈指、192m一枚落ちの大瀑布",
+      "バソト・ポニーで行く高原トレッキング",
+      "滝壺へ降りる世界最長級の懸垂下降",
+      "毛布をまとった騎手が行き交う草原"
+    ],
+    "bestMonths": [
+      3,
+      4,
+      5,
+      9,
+      10,
+      11
+    ],
+    "access": "首都マセルから舗装路で約2.5〜3時間。",
+    "stay": "セモンコン・ロッジ（滝近くの老舗山荘）",
+    "tips": "冬（6〜8月）は氷点下で雪も。大雨後は川の増水に注意。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 4,
+      "crime": 2,
+      "danger": 2,
+      "access": 2,
+      "physical": 2,
+      "infra": 2,
+      "cost": 2
+    },
+    "ratingNotes": {
+      "crime": "山間部は落ち着いているが、首都マセル周辺では軽犯罪に注意",
+      "danger": "滝周辺の断崖、冬の寒さ、雨季の増水",
+      "access": "首都から舗装路で行ける。公共交通は本数が少ない",
+      "physical": "展望地までは徒歩やポニーで気軽に行ける"
+    },
+    "pois": [
+      {
+        "name": "マレツニャネの滝",
+        "desc": "192mの一枚落ち。峡谷に虹がかかる",
+        "ll": [
+          -29.86824,
+          28.0512713
+        ],
+        "uv": [
+          0.5806,
+          0.431
+        ]
+      },
+      {
+        "name": "セモンコンの村",
+        "desc": "ポニーと騎手が集う高原の小さな町",
+        "ll": [
+          -29.8400122,
+          28.0511031
+        ],
+        "uv": [
+          0.5796,
+          0.2459
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Maletsunyane Falls",
+      "Semonkong"
+    ],
+    "gem": 90,
+    "ease": 75,
+    "terrain": {
+      "minElev": 1641,
+      "maxElev": 2830,
+      "widthM": 16967,
+      "bbox": {
+        "west": 27.94921875,
+        "north": -29.802517905764457,
+        "east": 28.125,
+        "south": -29.954934549656144
+      }
+    },
+    "climate": {
+      "elevation": 2207,
+      "months": [
+        {
+          "tmax": 21,
+          "tmin": 10.6,
+          "rain": 163,
+          "sun": 11.9
+        },
+        {
+          "tmax": 21.3,
+          "tmin": 10.4,
+          "rain": 110,
+          "sun": 11.4
+        },
+        {
+          "tmax": 20.1,
+          "tmin": 8.9,
+          "rain": 75,
+          "sun": 10.9
+        },
+        {
+          "tmax": 16.8,
+          "tmin": 5.6,
+          "rain": 52,
+          "sun": 10.2
+        },
+        {
+          "tmax": 14.6,
+          "tmin": 2.8,
+          "rain": 21,
+          "sun": 9.7
+        },
+        {
+          "tmax": 11,
+          "tmin": -0.4,
+          "rain": 17,
+          "sun": 9.2
+        },
+        {
+          "tmax": 10.9,
+          "tmin": -1.5,
+          "rain": 9,
+          "sun": 9.8
+        },
+        {
+          "tmax": 14.2,
+          "tmin": 0.6,
+          "rain": 13,
+          "sun": 10.5
+        },
+        {
+          "tmax": 18.1,
+          "tmin": 4.9,
+          "rain": 31,
+          "sun": 10.9
+        },
+        {
+          "tmax": 19.7,
+          "tmin": 6.8,
+          "rain": 77,
+          "sun": 11.2
+        },
+        {
+          "tmax": 20.9,
+          "tmin": 8.5,
+          "rain": 76,
+          "sun": 12.1
+        },
+        {
+          "tmax": 21.5,
+          "tmin": 10.2,
+          "rain": 151,
+          "sun": 12
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Dendrelaphis caudolineatus, striped bronzeback",
+        "author": "Rushenb",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dendrelaphis_caudolineatus,_striped_bronzeback.jpg",
+        "score": 137
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "Hazelnuts",
+        "author": "Fir0002 at English Wikipedia",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Hazelnuts.jpg",
+        "score": 132
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Türlersee panosphere 20200730",
+        "author": "Daniel Kraft",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:T%C3%BCrlersee_panosphere_20200730.jpg",
+        "score": 117
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "On the way to Semonkong - panoramio",
+        "author": "Graham Maclachlan",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:On_the_way_to_Semonkong_-_panoramio.jpg",
+        "score": 110
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Semonkong, here we come... - panoramio",
+        "author": "Graham Maclachlan",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Semonkong,_here_we_come..._-_panoramio.jpg",
+        "score": 109
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "A5 Aarebruecke",
+        "author": "Ikiwaner",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:A5_Aarebruecke.jpg",
+        "score": 105
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Sok Kwu Wan 02",
+        "author": "Underwaterbuffalo",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Sok_Kwu_Wan_02.jpg",
+        "score": 103
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Unnamed Road, Lesotho - panoramio - Graham Maclachlan (51)",
+        "author": "Graham Maclachlan",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Unnamed_Road,_Lesotho_-_panoramio_-_Graham_Maclachlan_(51).jpg",
+        "score": 100
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "Unnamed Road, Lesotho - panoramio - Graham Maclachlan (55)",
+        "author": "Graham Maclachlan",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Unnamed_Road,_Lesotho_-_panoramio_-_Graham_Maclachlan_(55).jpg",
+        "score": 99
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "Top of Baboons to Semonkong - panoramio",
+        "author": "Graham Maclachlan",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Top_of_Baboons_to_Semonkong_-_panoramio.jpg",
+        "score": 97
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "SOK Hq",
+        "author": "Ypsilon from Finland",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:SOK_Hq.jpg",
+        "score": 95
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "LWR2013 - panoramio (78)",
+        "author": "Graham Maclachlan",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:LWR2013_-_panoramio_(78).jpg",
+        "score": 95
+      }
+    ],
+    "assets": {
+      "height": "regions/semonkong/height.png",
+      "sat": "regions/semonkong/sat.jpg",
+      "sat1k": "regions/semonkong/sat_1k.jpg"
+    }
+  },
+  {
+    "id": "dzukou",
+    "name": "ズコウ渓谷",
+    "nameLocal": "Dzükou Valley",
+    "country": "インド（ナガランド／マニプール）",
+    "flag": "🇮🇳",
+    "center": [
+      25.555,
+      94.065
+    ],
+    "demZoom": 13,
+    "exaggeration": 1.2,
+    "accent": "#7fae6a",
+    "tagline": "まるで緑のビロード。ここにしか咲かない百合の谷",
+    "overview": "インド北東端、ミャンマー国境近くの標高2,400m付近に広がる起伏の谷。低い竹笹に覆われた丘がどこまでも波打ち、まるで緑のビロードのよう。初夏にはこの谷だけに自生する「ズコウ・リリー」が咲き誇ります。辿り着くには森を登るトレッキングが必要で、その分だけ静けさが守られています。",
+    "highlights": [
+      "竹笹に覆われた丘が波打つ緑の大地",
+      "谷の固有種、ズコウ・リリーの開花",
+      "雲海の上から迎える朝日",
+      "谷の中を蛇行する小川と冬の霜景色"
+    ],
+    "bestMonths": [
+      6,
+      7,
+      10,
+      11,
+      12
+    ],
+    "access": "コヒマから車で登山口（ヴィスウェマ／ジャカマ）へ約30分、そこから徒歩3〜5時間。ナガランド州の入域許可（ILP）が必要。",
+    "stay": "谷の中の簡素なレストハウス、またはテント泊",
+    "tips": "寝袋・食料持参が基本。雨季は滑りやすくヒルも出る。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 5,
+      "crime": 1,
+      "danger": 2,
+      "access": 4,
+      "physical": 4,
+      "infra": 1,
+      "cost": 1
+    },
+    "ratingNotes": {
+      "crime": "谷とコヒマ周辺は穏やか。州境の情勢は事前確認を",
+      "danger": "雨季のぬかるみ・急坂、夜間の冷え込み",
+      "access": "入域許可が必要。州都コヒマまでも遠い",
+      "physical": "急登を含む片道3〜5時間のトレッキング"
+    },
+    "pois": [
+      {
+        "name": "ズコウ渓谷",
+        "desc": "緑の丘が波打つ谷の中心部",
+        "ll": [
+          25.5646944,
+          94.0940762
+        ],
+        "uv": [
+          0.5407,
+          0.4847
+        ]
+      },
+      {
+        "name": "レストハウス",
+        "desc": "谷を見下ろす尾根の上の山小屋",
+        "ll": [
+          25.561,
+          94.078
+        ],
+        "uv": [
+          0.4493,
+          0.508
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Dzukou Valley",
+      "Dzüko Valley"
+    ],
+    "gem": 100,
+    "ease": 56,
+    "terrain": {
+      "minElev": 914,
+      "maxElev": 3015,
+      "widthM": 17653,
+      "bbox": {
+        "west": 93.9990234375,
+        "north": 25.641526373065755,
+        "east": 94.1748046875,
+        "south": 25.482951175355314
+      }
+    },
+    "climate": {
+      "elevation": 2452,
+      "months": [
+        {
+          "tmax": 10,
+          "tmin": -1,
+          "rain": 22,
+          "sun": 9.8
+        },
+        {
+          "tmax": 10.9,
+          "tmin": 0.1,
+          "rain": 46,
+          "sun": 9.9
+        },
+        {
+          "tmax": 14.6,
+          "tmin": 4.1,
+          "rain": 73,
+          "sun": 10.7
+        },
+        {
+          "tmax": 16.5,
+          "tmin": 7.6,
+          "rain": 136,
+          "sun": 11.1
+        },
+        {
+          "tmax": 17,
+          "tmin": 9.3,
+          "rain": 271,
+          "sun": 10.1
+        },
+        {
+          "tmax": 18,
+          "tmin": 11.6,
+          "rain": 341,
+          "sun": 7.6
+        },
+        {
+          "tmax": 18.9,
+          "tmin": 12.4,
+          "rain": 306,
+          "sun": 8
+        },
+        {
+          "tmax": 18.3,
+          "tmin": 12.2,
+          "rain": 322,
+          "sun": 7.1
+        },
+        {
+          "tmax": 18.4,
+          "tmin": 11.4,
+          "rain": 201,
+          "sun": 9
+        },
+        {
+          "tmax": 16.3,
+          "tmin": 8.6,
+          "rain": 196,
+          "sun": 9.5
+        },
+        {
+          "tmax": 14,
+          "tmin": 4.2,
+          "rain": 38,
+          "sun": 10.4
+        },
+        {
+          "tmax": 11.3,
+          "tmin": 1.3,
+          "rain": 45,
+          "sun": 9.7
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Butterfly DSC 0283",
+        "author": "Atudu",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Butterfly_DSC_0283.jpg",
+        "score": 122
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "Butterfly DSC 0066",
+        "author": "Atudu",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Butterfly_DSC_0066.jpg",
+        "score": 118
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Open wing basking position of Caltoris tulsi (de Nicéville, 1884) - Purple Swift Butterfly DSC 0284",
+        "author": "Atudu",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Open_wing_basking_position_of_Caltoris_tulsi_(de_Nic%C3%A9ville,_1884)_-_Purple_Swift_Butterfly_DSC_0284.jpg",
+        "score": 116
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Sato 20231216 123501 stitch",
+        "author": "Shyamal",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Sato_20231216_123501_stitch.jpg",
+        "score": 104
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Dzuko Valley",
+        "author": "GuruBidya",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dzuko_Valley.jpg",
+        "score": 102
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Dzüko Valley 01",
+        "author": "Ganesh Mohan T",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dz%C3%BCko_Valley_01.jpg",
+        "score": 100
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Dzüko Valley 02",
+        "author": "Ganesh Mohan T",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dz%C3%BCko_Valley_02.jpg",
+        "score": 100
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Dzukou Lily 01",
+        "author": "Ganesh Mohan T",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dzukou_Lily_01.jpg",
+        "score": 99
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "Breathtaking beauty of Dzukou Valley in Manipur-Nagaland border (edit)",
+        "author": "Original: Samudra Bikash Hazarika Derivative work: UnpetitproleX",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_(edit).jpg",
+        "score": 99
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "Butterfly DSC 0394",
+        "author": "Atudu",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Butterfly_DSC_0394.jpg",
+        "score": 99
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Butterfly DSC 0216",
+        "author": "Atudu",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Butterfly_DSC_0216.jpg",
+        "score": 97
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Butterfly DSC 0217",
+        "author": "Atudu",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Butterfly_DSC_0217.jpg",
+        "score": 97
+      }
+    ],
+    "assets": {
+      "height": "regions/dzukou/height.png",
+      "sat": "regions/dzukou/sat.jpg",
+      "sat1k": "regions/dzukou/sat_1k.jpg"
+    }
+  },
+  {
+    "id": "puluong",
+    "name": "プールオン",
+    "nameLocal": "Pù Luông",
+    "country": "ベトナム",
+    "flag": "🇻🇳",
+    "center": [
+      20.46,
+      105.145
+    ],
+    "demZoom": 13,
+    "exaggeration": 1.15,
+    "accent": "#9bb34d",
+    "tagline": "石灰岩の山と棚田が織りなす、翠の箱庭",
+    "overview": "ハノイから南西へ約4時間、石灰岩の峰々に囲まれた自然保護区。山の斜面を埋め尽くす棚田、竹でできた水車、高床式の家が並ぶターイ族の村――。初夏は瑞々しい緑、秋は黄金色に輝く棚田の中を、自転車や徒歩でのんびり巡れます。",
+    "highlights": [
+      "谷を埋め尽くす段々の棚田",
+      "くるくる回る竹の水車",
+      "ターイ族の高床式ホームステイ",
+      "霧に浮かぶ石灰岩の峰"
+    ],
+    "bestMonths": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "access": "ハノイから車で約4時間。保護区内はバイクタクシーやトレッキングで移動。",
+    "stay": "バン・ドン村などの高床式ホームステイ、エコロッジ",
+    "tips": "7〜8月は雨が多い。山道は滑りやすいので靴はしっかりしたものを。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 3,
+      "crime": 1,
+      "danger": 1,
+      "access": 2,
+      "physical": 2,
+      "infra": 3,
+      "cost": 1
+    },
+    "ratingNotes": {
+      "crime": "農村部で治安は非常に良好",
+      "danger": "雨季の土砂崩れ・滑りやすい道程度",
+      "access": "ハノイから陸路で1本。ツアーも手配可能",
+      "physical": "散策から本格トレッキングまで選べる"
+    },
+    "pois": [
+      {
+        "name": "バン・ドン村",
+        "desc": "水車と棚田に囲まれた高床式の村",
+        "ll": [
+          20.4450881,
+          105.1524614
+        ],
+        "uv": [
+          0.4507,
+          0.6403
+        ]
+      },
+      {
+        "name": "コー・ムオン",
+        "desc": "洞窟と棚田が隠れた山奥の集落",
+        "ll": [
+          20.4814018,
+          105.1319252
+        ],
+        "uv": [
+          0.3338,
+          0.4198
+        ]
+      },
+      {
+        "name": "プールオン村",
+        "desc": "谷を見晴らす棚田の展望地",
+        "ll": [
+          20.4206523,
+          105.1713758
+        ],
+        "uv": [
+          0.5583,
+          0.7886
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Pu Luong",
+      "Pù Luông"
+    ],
+    "gem": 80,
+    "ease": 88,
+    "terrain": {
+      "minElev": 44,
+      "maxElev": 1668,
+      "widthM": 18332,
+      "bbox": {
+        "west": 105.0732421875,
+        "north": 20.550508894195637,
+        "east": 105.2490234375,
+        "south": 20.385825381874266
+      }
+    },
+    "climate": {
+      "elevation": 264,
+      "months": [
+        {
+          "tmax": 19.9,
+          "tmin": 13.3,
+          "rain": 47,
+          "sun": 5.2
+        },
+        {
+          "tmax": 21.7,
+          "tmin": 15.1,
+          "rain": 58,
+          "sun": 5.2
+        },
+        {
+          "tmax": 25.5,
+          "tmin": 18.7,
+          "rain": 59,
+          "sun": 5
+        },
+        {
+          "tmax": 29.2,
+          "tmin": 21.8,
+          "rain": 117,
+          "sun": 6.8
+        },
+        {
+          "tmax": 30.8,
+          "tmin": 23.5,
+          "rain": 278,
+          "sun": 8.4
+        },
+        {
+          "tmax": 32,
+          "tmin": 24.9,
+          "rain": 263,
+          "sun": 8.5
+        },
+        {
+          "tmax": 31.6,
+          "tmin": 24.7,
+          "rain": 279,
+          "sun": 9.2
+        },
+        {
+          "tmax": 30.9,
+          "tmin": 24.5,
+          "rain": 363,
+          "sun": 8.2
+        },
+        {
+          "tmax": 29.1,
+          "tmin": 23.3,
+          "rain": 372,
+          "sun": 7.4
+        },
+        {
+          "tmax": 26.7,
+          "tmin": 20.2,
+          "rain": 147,
+          "sun": 7.8
+        },
+        {
+          "tmax": 25.4,
+          "tmin": 18.3,
+          "rain": 42,
+          "sun": 7.4
+        },
+        {
+          "tmax": 20.4,
+          "tmin": 13.6,
+          "rain": 20,
+          "sun": 5.9
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Water density metric conversion",
+        "author": "Ldecola",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Water_density_metric_conversion.png",
+        "score": 144
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "Pù Luông - 02",
+        "author": "Benjamin Smith",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:P%C3%B9_Lu%C3%B4ng_-_02.jpg",
+        "score": 119
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "W.219 14% Pù Luông",
+        "author": "Marc Mongenet",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:W.219_14%25_P%C3%B9_Lu%C3%B4ng.jpg",
+        "score": 111
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Pù Luông - 01",
+        "author": "Benjamin Smith",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:P%C3%B9_Lu%C3%B4ng_-_01.jpg",
+        "score": 109
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "W.220 10% Pù Luông",
+        "author": "Marc Mongenet",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:W.220_10%25_P%C3%B9_Lu%C3%B4ng.jpg",
+        "score": 108
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Pù Luông - 06",
+        "author": "Benjamin Smith",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:P%C3%B9_Lu%C3%B4ng_-_06.jpg",
+        "score": 102
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Wedding near Pù Luông",
+        "author": "Benjamin Smith",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Wedding_near_P%C3%B9_Lu%C3%B4ng.jpg",
+        "score": 101
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Ruộng bậc thang Pù Luông 1 - NKS",
+        "author": "NKSTTSSHNVN",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ru%E1%BB%99ng_b%E1%BA%ADc_thang_P%C3%B9_Lu%C3%B4ng_1_-_NKS.jpg",
+        "score": 100
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "W.220 25% Pù Luông 01",
+        "author": "Marc Mongenet",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:W.220_25%25_P%C3%B9_Lu%C3%B4ng_01.jpg",
+        "score": 98
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "W.208 Pù Luông",
+        "author": "Marc Mongenet",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:W.208_P%C3%B9_Lu%C3%B4ng.jpg",
+        "score": 98
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Pu Luong 01",
+        "author": "Gió Đông (thảo luận)",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Pu_Luong_01.JPG",
+        "score": 96
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Pù Luông - 05",
+        "author": "Benjamin Smith",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:P%C3%B9_Lu%C3%B4ng_-_05.jpg",
+        "score": 96
+      }
+    ],
+    "assets": {
+      "height": "regions/puluong/height.png",
+      "sat": "regions/puluong/sat.jpg",
+      "sat1k": "regions/puluong/sat_1k.jpg"
+    }
+  },
+  {
+    "id": "itbayat",
+    "name": "イトバヤット島",
+    "nameLocal": "Itbayat · Batanes",
+    "country": "フィリピン",
+    "flag": "🇵🇭",
+    "center": [
+      20.78,
+      121.845
+    ],
+    "demZoom": 12,
+    "exaggeration": 1.6,
+    "accent": "#4b9fd6",
+    "tagline": "フィリピン最北、緑の絨毯が断崖で海に落ちる島",
+    "overview": "台湾とルソン島の間、バタネス諸島で最大かつ最も辺境の島。港も砂浜もほとんどなく、隆起した珊瑚石灰岩の台地が断崖となって群青の海に落ち込みます。草原には牛がのんびり草を食み、石造りの家が並ぶ村が静かに佇む――地の果ての穏やかさを味わえます。",
+    "highlights": [
+      "海へ落ち込む断崖と群青の海",
+      "丘一面に広がる緑の牧草地",
+      "サンゴ石灰岩の石造りの家並み",
+      "風と波の音だけの岬の夕暮れ"
+    ],
+    "bestMonths": [
+      3,
+      4,
+      5
+    ],
+    "access": "マニラからバスコへ空路、そこから小型機（約12分）か伝統船ファルワ（2.5〜4時間）。",
+    "stay": "マヤン村の民宿（ホームステイ）",
+    "tips": "海況で船が欠航しやすく、日程に余裕を。台風シーズン（7〜10月）は避けて。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 5,
+      "crime": 1,
+      "danger": 2,
+      "access": 4,
+      "physical": 2,
+      "infra": 1,
+      "cost": 3
+    },
+    "ratingNotes": {
+      "crime": "バタネスはフィリピンでも最も治安が良い地域のひとつ",
+      "danger": "荒れやすい海峡の船旅、台風",
+      "access": "乗り継ぎ多数＋天候次第の船・小型機",
+      "physical": "島内の散策は軽め。断崖の縁は注意"
+    },
+    "pois": [
+      {
+        "name": "マヤン",
+        "desc": "島の中心集落。石の家と教会",
+        "ll": [
+          20.786719,
+          121.8413609
+        ],
+        "uv": [
+          0.571,
+          0.5319
+        ]
+      },
+      {
+        "name": "パラヒト港",
+        "desc": "断崖に張りつく小さな船着き場",
+        "ll": [
+          20.744,
+          121.813
+        ],
+        "uv": [
+          0.4903,
+          0.6618
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Itbayat",
+      "Itbayat Batanes"
+    ],
+    "gem": 100,
+    "ease": 69,
+    "terrain": {
+      "minElev": -819,
+      "maxElev": 639,
+      "widthM": 36586,
+      "bbox": {
+        "west": 121.640625,
+        "north": 20.961439614096836,
+        "east": 121.9921875,
+        "south": 20.632784250388017
+      }
+    },
+    "climate": {
+      "elevation": 97,
+      "months": [
+        {
+          "tmax": 23.5,
+          "tmin": 21.1,
+          "rain": 94,
+          "sun": 7.9
+        },
+        {
+          "tmax": 24.5,
+          "tmin": 21.8,
+          "rain": 56,
+          "sun": 8.9
+        },
+        {
+          "tmax": 25.9,
+          "tmin": 22.8,
+          "rain": 50,
+          "sun": 10.2
+        },
+        {
+          "tmax": 27.9,
+          "tmin": 24.6,
+          "rain": 39,
+          "sun": 11.3
+        },
+        {
+          "tmax": 29.5,
+          "tmin": 26.2,
+          "rain": 160,
+          "sun": 10.8
+        },
+        {
+          "tmax": 30.3,
+          "tmin": 27.3,
+          "rain": 141,
+          "sun": 11.1
+        },
+        {
+          "tmax": 30.5,
+          "tmin": 27.5,
+          "rain": 197,
+          "sun": 10.5
+        },
+        {
+          "tmax": 30,
+          "tmin": 27,
+          "rain": 194,
+          "sun": 10.3
+        },
+        {
+          "tmax": 29.6,
+          "tmin": 26.7,
+          "rain": 372,
+          "sun": 9.8
+        },
+        {
+          "tmax": 28.6,
+          "tmin": 26,
+          "rain": 353,
+          "sun": 8.3
+        },
+        {
+          "tmax": 27.3,
+          "tmin": 24.8,
+          "rain": 234,
+          "sun": 9
+        },
+        {
+          "tmax": 24.8,
+          "tmin": 22.5,
+          "rain": 106,
+          "sun": 7.1
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Port Tachimos, Itbayat",
+        "author": "CharMel Creations",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Port_Tachimos,_Itbayat.jpg",
+        "score": 162
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "Street in Port Tachimos",
+        "author": "CharMel Creations",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Street_in_Port_Tachimos.jpg",
+        "score": 146
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Rock Formation in Rapang Cliffs",
+        "author": "CharMel Creations",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rock_Formation_in_Rapang_Cliffs.jpg",
+        "score": 113
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Raele Lighthouse",
+        "author": "CharMel Creations",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Raele_Lighthouse.jpg",
+        "score": 113
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Sta Lucia - panoramio",
+        "author": "Tereso Hernández",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Sta_Lucia_-_panoramio.jpg",
+        "score": 106
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Balikatan 2026- 317th AW airlifts U S , Philippine military from Itbayat, Philippines (9643670)",
+        "author": "U.S. Air Force photo by Senior Airman Jade Caldwell",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Balikatan_2026-_317th_AW_airlifts_U_S_,_Philippine_military_from_Itbayat,_Philippines_(9643670).jpg",
+        "score": 104
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Philippine Island - Batan Islands - NARA - 68156370",
+        "author": "Unknown authorUnknown author or not provided",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Philippine_Island_-_Batan_Islands_-_NARA_-_68156370.jpg",
+        "score": 100
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Rapang Cliffs",
+        "author": "CharMel Creations",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rapang_Cliffs.jpg",
+        "score": 99
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "Batanes Island",
+        "author": "Ranieljosecastaneda",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Batanes_Island.jpg",
+        "score": 97
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "Facade of Itbayat Church",
+        "author": "National Historical Commission of the Philippines",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Facade_of_Itbayat_Church.jpg",
+        "score": 97
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Balikatan 25- Task Force Gimlets resupplies at Itbayat Airport (9001026)",
+        "author": "U.S. Army photo by Pfc. Peter Bannister",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Balikatan_25-_Task_Force_Gimlets_resupplies_at_Itbayat_Airport_(9001026).jpg",
+        "score": 96
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Philippine Island - Batan Islands - NARA - 68156356",
+        "author": "Unknown authorUnknown author or not provided",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Philippine_Island_-_Batan_Islands_-_NARA_-_68156356.jpg",
+        "score": 95
+      }
+    ],
+    "assets": {
+      "height": "regions/itbayat/height.png",
+      "sat": "regions/itbayat/sat.jpg",
+      "sat1k": "regions/itbayat/sat_1k.jpg"
+    }
+  },
+  {
+    "id": "ouvea",
+    "name": "ウベア島",
+    "nameLocal": "Ouvéa · Îles Loyauté",
+    "country": "ニューカレドニア（フランス領）",
+    "flag": "🇳🇨",
+    "center": [
+      -20.6,
+      166.5
+    ],
+    "demZoom": 11,
+    "exaggeration": 4,
+    "accent": "#3fb6c9",
+    "tagline": "25kmの白砂と、世界遺産のラグーン",
+    "overview": "ニューカレドニア本島の北東に浮かぶ細長い環礁の島。片側には25kmにわたって真っ白な砂浜が続き、世界遺産のラグーンは透明度の高い水色のグラデーションを描きます。ムリ橋の下を泳ぐウミガメやマンタ、断崖の奥の入り江――人の少ない楽園がそのまま残っています。",
+    "highlights": [
+      "果てしなく続く25kmの白砂ビーチ",
+      "ムリ橋から見下ろすウミガメとマンタ",
+      "レキニーの断崖に囲まれた入り江",
+      "水色のグラデーションが続くラグーン"
+    ],
+    "bestMonths": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "access": "ヌメアから国内線で約40分。島内はレンタカーか自転車。",
+    "stay": "ビーチ沿いの小さなホテル、部族の家でのホームステイ",
+    "tips": "部族の土地が多く、立ち入りには敬意と許可を。最新の渡航情報を確認。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 4,
+      "crime": 2,
+      "danger": 1,
+      "access": 3,
+      "physical": 1,
+      "infra": 2,
+      "cost": 4
+    },
+    "ratingNotes": {
+      "crime": "島は穏やかだが、ニューカレドニアは政治的緊張の影響に注意（渡航レベル2）",
+      "danger": "日差しと海流程度",
+      "access": "国内線で行ける。便数は限られる",
+      "physical": "ビーチと海が中心でほぼ体力不要"
+    },
+    "pois": [
+      {
+        "name": "ムリ橋",
+        "desc": "ラグーンの色が最も美しいと言われる橋と浜",
+        "ll": [
+          -20.7202852,
+          166.4279788
+        ],
+        "uv": [
+          0.4476,
+          0.633
+        ]
+      },
+      {
+        "name": "ファヤウエ",
+        "desc": "島の中心と長大な白砂ビーチ",
+        "ll": [
+          -20.6506726,
+          166.5357712
+        ],
+        "uv": [
+          0.6009,
+          0.5272
+        ]
+      },
+      {
+        "name": "レキニーの断崖",
+        "desc": "干潮時に歩いて近づける石灰岩の断崖",
+        "ll": [
+          -20.7027937,
+          166.493075
+        ],
+        "uv": [
+          0.5402,
+          0.6064
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Ouvéa",
+      "Mouli Ouvéa",
+      "Ouvea lagoon"
+    ],
+    "gem": 90,
+    "ease": 81,
+    "terrain": {
+      "minElev": -5,
+      "maxElev": 52,
+      "widthM": 73251,
+      "bbox": {
+        "west": 166.11328125,
+        "north": -20.3034175184893,
+        "east": 166.81640625,
+        "south": -20.961439614096836
+      }
+    },
+    "climate": {
+      "elevation": 0,
+      "months": [
+        {
+          "tmax": 27.8,
+          "tmin": 25.9,
+          "rain": 302,
+          "sun": 10
+        },
+        {
+          "tmax": 28.1,
+          "tmin": 26.2,
+          "rain": 328,
+          "sun": 10
+        },
+        {
+          "tmax": 27.6,
+          "tmin": 26,
+          "rain": 208,
+          "sun": 9.8
+        },
+        {
+          "tmax": 27,
+          "tmin": 25.3,
+          "rain": 227,
+          "sun": 9.4
+        },
+        {
+          "tmax": 25.4,
+          "tmin": 23.9,
+          "rain": 67,
+          "sun": 9.1
+        },
+        {
+          "tmax": 24.5,
+          "tmin": 23,
+          "rain": 54,
+          "sun": 9.1
+        },
+        {
+          "tmax": 23.9,
+          "tmin": 22.3,
+          "rain": 88,
+          "sun": 8.6
+        },
+        {
+          "tmax": 23.3,
+          "tmin": 21.7,
+          "rain": 89,
+          "sun": 9.6
+        },
+        {
+          "tmax": 23.8,
+          "tmin": 22.3,
+          "rain": 65,
+          "sun": 10.3
+        },
+        {
+          "tmax": 24.5,
+          "tmin": 22.8,
+          "rain": 156,
+          "sun": 10.2
+        },
+        {
+          "tmax": 25.8,
+          "tmin": 24,
+          "rain": 74,
+          "sun": 11.8
+        },
+        {
+          "tmax": 27.4,
+          "tmin": 25.3,
+          "rain": 226,
+          "sun": 10.8
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Raie Manta au fond de l'eau, Ouvéa",
+        "author": "Sorelia87",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Raie_Manta_au_fond_de_l%27eau,_Ouv%C3%A9a.jpg",
+        "score": 163
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "Raie Manta qui nage, Ouvéa",
+        "author": "Sorelia87",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Raie_Manta_qui_nage,_Ouv%C3%A9a.jpg",
+        "score": 163
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Raie Manta, Ouvéa",
+        "author": "Sorelia87",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Raie_Manta,_Ouv%C3%A9a.jpg",
+        "score": 163
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Raies - Pont de Mouly, Ouvéa, NC",
+        "author": "Gui0123",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Raies_-_Pont_de_Mouly,_Ouv%C3%A9a,_NC.jpg",
+        "score": 144
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Pléiades du Sud, Ouvéa, NC",
+        "author": "Gui0123",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Pl%C3%A9iades_du_Sud,_Ouv%C3%A9a,_NC.jpg",
+        "score": 135
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Îlot dans le lagon d'Ouvéa",
+        "author": "Pacificbluefilm",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%C3%8Elot_dans_le_lagon_d%27Ouv%C3%A9a.jpg",
+        "score": 135
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Requins - Pléiade du Sud, Ouvéa, NC",
+        "author": "Gui0123",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Requins_-_Pl%C3%A9iade_du_Sud,_Ouv%C3%A9a,_NC.jpg",
+        "score": 134
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Plage de Mouli, Ouvéa",
+        "author": "Sorelia87",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Plage_de_Mouli,_Ouv%C3%A9a.jpg",
+        "score": 131
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "Le pont de mouli",
+        "author": "Marietrip 27",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Le_pont_de_mouli.jpg",
+        "score": 125
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "Pont de Mouli 2023",
+        "author": "Aloncq",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Pont_de_Mouli_2023.jpg",
+        "score": 124
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Fullsizeoutput 4c0c",
+        "author": "Pacificbluefilm",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Fullsizeoutput_4c0c.jpg",
+        "score": 120
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Ouvea Pont de Mouli",
+        "author": "Piard Clément",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ouvea_Pont_de_Mouli.jpg",
+        "score": 115
+      }
+    ],
+    "assets": {
+      "height": "regions/ouvea/height.png",
+      "sat": "regions/ouvea/sat.jpg",
+      "sat1k": "regions/ouvea/sat_1k.jpg"
+    }
+  },
+  {
+    "id": "pomez",
+    "name": "カンポ・デ・ピエドラ・ポメス",
+    "nameLocal": "Campo de Piedra Pómez",
+    "country": "アルゼンチン",
+    "flag": "🇦🇷",
+    "center": [
+      -26.72,
+      -67.69
+    ],
+    "demZoom": 12,
+    "exaggeration": 1.3,
+    "accent": "#d59a6f",
+    "tagline": "標高3,000mの、白い軽石が波打つ別惑星",
+    "overview": "アンデス高原プーナの只中、風に削られた白い軽石の塔が25kmにわたって林立する奇景。朝夕の光で白からピンク、黄金色へと染まり、背後にはカラフルな火山と黒い溶岩流が広がります。電波も人影もない静寂の中、地球ではないどこかに立っているような感覚を味わえます。",
+    "highlights": [
+      "見渡す限り波打つ白い軽石の造形",
+      "夕陽で淡いピンクに染まる岩の海",
+      "巨大砂丘と色とりどりの火山群",
+      "人工の光が一切ない圧倒的な星空"
+    ],
+    "bestMonths": [
+      3,
+      4,
+      5,
+      9,
+      10,
+      11
+    ],
+    "access": "フィアンバラやエル・ペニョンから4WDツアーで。最寄り集落から未舗装路で30〜60km。",
+    "stay": "エル・ペニョンやアントファガスタ・デ・ラ・シエラの小さな宿",
+    "tips": "標高3,000m超で高山病に注意。燃料・水・食料は必ず満タンで。ガイド付き4WDを推奨。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 5,
+      "crime": 1,
+      "danger": 3,
+      "access": 4,
+      "physical": 2,
+      "infra": 1,
+      "cost": 3
+    },
+    "ratingNotes": {
+      "crime": "人がほとんどいない地域で犯罪リスクは極小",
+      "danger": "高山病、強烈な紫外線、無補給区間、急な天候変化",
+      "access": "舗装路の終点からさらに未舗装路。4WD必須",
+      "physical": "歩行は短距離中心だが標高で疲れやすい"
+    },
+    "pois": [
+      {
+        "name": "ポメスの岩原",
+        "desc": "白い軽石の塔が林立する中心部",
+        "ll": [
+          -26.7023342,
+          -67.67405
+        ],
+        "uv": [
+          0.5049,
+          0.3622
+        ]
+      },
+      {
+        "name": "セロ・ブランコ",
+        "desc": "軽石を生んだ巨大カルデラと白い砂丘",
+        "ll": [
+          -26.7594827,
+          -67.7398969
+        ],
+        "uv": [
+          0.3176,
+          0.5442
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Campo de Piedra Pómez",
+      "Piedra Pomez Catamarca"
+    ],
+    "gem": 100,
+    "ease": 63,
+    "terrain": {
+      "minElev": 3154,
+      "maxElev": 5116,
+      "widthM": 34949,
+      "bbox": {
+        "west": -67.8515625,
+        "north": -26.588527147308625,
+        "east": -67.5,
+        "south": -26.902476886279814
+      }
+    },
+    "climate": {
+      "elevation": 3895,
+      "months": [
+        {
+          "tmax": 16.5,
+          "tmin": 2.9,
+          "rain": 29,
+          "sun": 12.8
+        },
+        {
+          "tmax": 15.8,
+          "tmin": 2.2,
+          "rain": 27,
+          "sun": 12.4
+        },
+        {
+          "tmax": 16.5,
+          "tmin": 2.1,
+          "rain": 10,
+          "sun": 11.9
+        },
+        {
+          "tmax": 13.6,
+          "tmin": -0.6,
+          "rain": 1,
+          "sun": 11.1
+        },
+        {
+          "tmax": 8.8,
+          "tmin": -3.3,
+          "rain": 6,
+          "sun": 10.6
+        },
+        {
+          "tmax": 6.8,
+          "tmin": -5.7,
+          "rain": 7,
+          "sun": 10.2
+        },
+        {
+          "tmax": 6.5,
+          "tmin": -7.4,
+          "rain": 8,
+          "sun": 10.4
+        },
+        {
+          "tmax": 8.5,
+          "tmin": -5.3,
+          "rain": 1,
+          "sun": 10.9
+        },
+        {
+          "tmax": 11.8,
+          "tmin": -3,
+          "rain": 0,
+          "sun": 11.7
+        },
+        {
+          "tmax": 14.6,
+          "tmin": -1,
+          "rain": 1,
+          "sun": 12.5
+        },
+        {
+          "tmax": 17.3,
+          "tmin": 1.5,
+          "rain": 5,
+          "sun": 13.1
+        },
+        {
+          "tmax": 17.1,
+          "tmin": 2.7,
+          "rain": 25,
+          "sun": 13
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Volcán Nevado del Ruiz Vía Murillo",
+        "author": "Montoya Conde",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Volc%C3%A1n_Nevado_del_Ruiz_V%C3%ADa_Murillo.JPG",
+        "score": 147
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "CATAMARCA 318 (2)",
+        "author": "Camino a Campo de Piedra Pomez en Catamarca",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:CATAMARCA_318_(2).jpg",
+        "score": 136
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Campo de piedra pómez en Catamarca - Argentina",
+        "author": "Rodolfo Pace",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Campo_de_piedra_p%C3%B3mez_en_Catamarca_-_Argentina.jpg",
+        "score": 117
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Campo de piedra pomez en Antofagasta de la Sierra Catamarca",
+        "author": "CarlosA.Barrio",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Campo_de_piedra_pomez_en_Antofagasta_de_la_Sierra_Catamarca.jpg",
+        "score": 117
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Diorama Cerro Blanco, Recoleta, Santiago 20240505",
+        "author": "Carlos Figueroa Rojas",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Diorama_Cerro_Blanco,_Recoleta,_Santiago_20240505.jpg",
+        "score": 114
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Y una sombra pronto serás, Campo de Piedra Pómez, Catamarca, Argentina",
+        "author": "rodoluca77",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Y_una_sombra_pronto_ser%C3%A1s,_Campo_de_Piedra_P%C3%B3mez,_Catamarca,_Argentina.jpg",
+        "score": 112
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Campo de piedra pomez en catamarca",
+        "author": "Marioperetti",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Campo_de_piedra_pomez_en_catamarca.jpg",
+        "score": 111
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Volcán Nevado del Ruiz cara oriental",
+        "author": "EFGA1995",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Volc%C3%A1n_Nevado_del_Ruiz_cara_oriental.jpg",
+        "score": 111
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "Olas de piedra, Campo de Piedra Pómez, Catamarca, Argentina",
+        "author": "rodoluca88",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Olas_de_piedra,_Campo_de_Piedra_P%C3%B3mez,_Catamarca,_Argentina.jpg",
+        "score": 109
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "Mares de piedra pómez, Campo de Piedra Pómez, Catamarca, Argentina",
+        "author": "rodoluca77",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Mares_de_piedra_p%C3%B3mez,_Campo_de_Piedra_P%C3%B3mez,_Catamarca,_Argentina.jpg",
+        "score": 105
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Olitas hacia el S, Campo de Piedra Pómez, Catamarca, Argentina",
+        "author": "rodoluca77",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Olitas_hacia_el_S,_Campo_de_Piedra_P%C3%B3mez,_Catamarca,_Argentina.jpg",
+        "score": 101
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Cerro blanco esquina",
+        "author": "Tania Henríquez",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cerro_blanco_esquina.JPG",
+        "score": 101
+      }
+    ],
+    "assets": {
+      "height": "regions/pomez/height.png",
+      "sat": "regions/pomez/sat.jpg",
+      "sat1k": "regions/pomez/sat_1k.jpg"
+    }
+  },
+  {
+    "id": "flores",
+    "name": "フローレス島",
+    "nameLocal": "Ilha das Flores · Açores",
+    "country": "ポルトガル（アゾレス諸島）",
+    "flag": "🇵🇹",
+    "center": [
+      39.44,
+      -31.2
+    ],
+    "demZoom": 12,
+    "exaggeration": 1.4,
+    "accent": "#5aa47c",
+    "tagline": "ヨーロッパ最西端、無数の滝が流れ落ちる緑の島",
+    "overview": "大西洋のまん中、ヨーロッパの最西端に浮かぶ花の島。苔むした断崖から何十本もの滝が流れ落ち、火口湖が点々と空を映します。アジサイの垣根が続く牧草地、断崖の下の小さな村――世界の果てのような静けさの中で、緑と水の音に包まれます。",
+    "highlights": [
+      "断崖を伝う数十本の滝、リベイラ・ド・フェレイロ",
+      "空を映す火口湖ラゴア・フンダ",
+      "夏に島を彩るアジサイの垣根",
+      "海に突き出た奇岩と天然プール"
+    ],
+    "bestMonths": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "access": "リスボン→ポンタ・デルガダ（サンミゲル島）→フローレス島へ国内線。",
+    "stay": "ファジャ・グランデ周辺の小さな宿やコテージ",
+    "tips": "天候が変わりやすく霧で欠航も。雨具必携。レンタカーは早めの予約を。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 4,
+      "crime": 1,
+      "danger": 1,
+      "access": 3,
+      "physical": 2,
+      "infra": 3,
+      "cost": 3
+    },
+    "ratingNotes": {
+      "crime": "ヨーロッパでも最も安全な地域のひとつ",
+      "danger": "濡れた岩場の滑り、急な霧",
+      "access": "乗り継ぎが必要で天候による欠航あり",
+      "physical": "主要スポットは短い散策路で行ける"
+    },
+    "pois": [
+      {
+        "name": "リベイラ・ド・フェレイロ",
+        "desc": "緑の壁から無数の滝が落ちる池",
+        "ll": [
+          39.4369021,
+          -31.2386115
+        ],
+        "uv": [
+          0.3935,
+          0.4974
+        ]
+      },
+      {
+        "name": "ファジャ・グランデ",
+        "desc": "ヨーロッパ最西端の村",
+        "ll": [
+          39.4540492,
+          -31.262323
+        ],
+        "uv": [
+          0.3261,
+          0.4342
+        ]
+      },
+      {
+        "name": "ラゴア・フンダ",
+        "desc": "深い火口湖と周囲の緑の稜線",
+        "ll": [
+          39.4057162,
+          -31.2182847
+        ],
+        "uv": [
+          0.4513,
+          0.6122
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Flores Azores",
+      "Fajã Grande Flores",
+      "Lajes das Flores"
+    ],
+    "gem": 90,
+    "ease": 81,
+    "terrain": {
+      "minElev": -40,
+      "maxElev": 900,
+      "widthM": 30226,
+      "bbox": {
+        "west": -31.376953125,
+        "north": 39.57182223734373,
+        "east": -31.025390625,
+        "south": 39.3002991861503
+      }
+    },
+    "climate": {
+      "elevation": 601,
+      "months": [
+        {
+          "tmax": 12.5,
+          "tmin": 9.9,
+          "rain": 189,
+          "sun": 6.4
+        },
+        {
+          "tmax": 12.3,
+          "tmin": 9.3,
+          "rain": 131,
+          "sun": 7.5
+        },
+        {
+          "tmax": 12.6,
+          "tmin": 9.4,
+          "rain": 173,
+          "sun": 8.2
+        },
+        {
+          "tmax": 13.2,
+          "tmin": 10.1,
+          "rain": 174,
+          "sun": 9.9
+        },
+        {
+          "tmax": 14.6,
+          "tmin": 11.6,
+          "rain": 150,
+          "sun": 10.8
+        },
+        {
+          "tmax": 17,
+          "tmin": 14,
+          "rain": 107,
+          "sun": 12.3
+        },
+        {
+          "tmax": 19.9,
+          "tmin": 16.6,
+          "rain": 126,
+          "sun": 12.9
+        },
+        {
+          "tmax": 21.6,
+          "tmin": 18.1,
+          "rain": 72,
+          "sun": 12.3
+        },
+        {
+          "tmax": 20.1,
+          "tmin": 16.9,
+          "rain": 94,
+          "sun": 10.5
+        },
+        {
+          "tmax": 17.5,
+          "tmin": 14.5,
+          "rain": 194,
+          "sun": 7.9
+        },
+        {
+          "tmax": 15.6,
+          "tmin": 12.5,
+          "rain": 229,
+          "sun": 6.7
+        },
+        {
+          "tmax": 13.4,
+          "tmin": 10.5,
+          "rain": 207,
+          "sun": 5.8
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "A caminho da Fajã Grande, falésias, ilha das Flores, Açores, Arquivo de Villa Maria, ilha Terceira, Açores",
+        "author": "José Luís Ávila Silveira/Pedro Noronha e Costa (Arquivo de Villa Maria)]]",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:A_caminho_da_Faj%C3%A3_Grande,_fal%C3%A9sias,_ilha_das_Flores,_A%C3%A7ores,_Arquivo_de_Villa_Maria,_ilha_Terceira,_A%C3%A7ores.JPG",
+        "score": 115
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "The Flores island collection CCXII (49223667493)",
+        "author": "Pedro from Maia (Porto), Portugal",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:The_Flores_island_collection_CCXII_(49223667493).jpg",
+        "score": 114
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Vista parcial da Fajã Grande 1 ilha das Flores, Açores, Arquivo de Villa Maria, ilha Terceira, Açores",
+        "author": "José Luís Ávila Silveira/Pedro Noronha e Costa (Arquivo de Villa Maria)]]",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Vista_parcial_da_Faj%C3%A3_Grande_1_ilha_das_Flores,_A%C3%A7ores,_Arquivo_de_Villa_Maria,_ilha_Terceira,_A%C3%A7ores.JPG",
+        "score": 113
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "The Flores island collection CCIX (49223669783)",
+        "author": "Pedro from Maia (Porto), Portugal",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:The_Flores_island_collection_CCIX_(49223669783).jpg",
+        "score": 111
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Azores flores ribeira grande",
+        "author": "Vdugrain",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Azores_flores_ribeira_grande.jpg",
+        "score": 110
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Porto e zona balnear da Fajã Grande 1, ilha das Flores, Açores, Arquivo de Villa Maria, ilha Terceira, Açores",
+        "author": "José Luís Ávila Silveira/Pedro Noronha e Costa (Arquivo de Villa Maria)]]",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Porto_e_zona_balnear_da_Faj%C3%A3_Grande_1,_ilha_das_Flores,_A%C3%A7ores,_Arquivo_de_Villa_Maria,_ilha_Terceira,_A%C3%A7ores.JPG",
+        "score": 109
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "The Flores island collection CCIII (49219873016)",
+        "author": "Pedro from Maia (Porto), Portugal",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:The_Flores_island_collection_CCIII_(49219873016).jpg",
+        "score": 109
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Império do Espirito Santo da Ponta da Fajã, Fajã Grande, ilha das Flores, Açores, Arquivo de Villa Maria, ilha Terceira, Açores",
+        "author": "José Luís Ávila Silveira/Pedro Noronha e Costa (Arquivo de Villa Maria)]]",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Imp%C3%A9rio_do_Espirito_Santo_da_Ponta_da_Faj%C3%A3,_Faj%C3%A3_Grande,_ilha_das_Flores,_A%C3%A7ores,_Arquivo_de_Villa_Maria,_ilha_Terceira,_A%C3%A7ores.JPG",
+        "score": 109
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "Vigia da Baleia, Fajã Grande, ilha das Flores, 4, Arquivo de Villa Maria, ilha Terceira, Açores",
+        "author": "José Luís Ávila Silveira/Pedro Noronha e Costa (Arquivo de Villa Maria)]]",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Vigia_da_Baleia,_Faj%C3%A3_Grande,_ilha_das_Flores,_4,_Arquivo_de_Villa_Maria,_ilha_Terceira,_A%C3%A7ores.JPG",
+        "score": 108
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "The Flores island collection CXCVII (49219390883)",
+        "author": "Pedro from Maia (Porto), Portugal",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:The_Flores_island_collection_CXCVII_(49219390883).jpg",
+        "score": 107
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Vista Parcial da Fajã Grande 2, ilha das Flores, Açores, Arquivo de Villa Maria, ilha Terceira, Açores",
+        "author": "José Luís Ávila Silveira/Pedro Noronha e Costa (Arquivo de Villa Maria)]]",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Vista_Parcial_da_Faj%C3%A3_Grande_2,_ilha_das_Flores,_A%C3%A7ores,_Arquivo_de_Villa_Maria,_ilha_Terceira,_A%C3%A7ores.JPG",
+        "score": 107
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Império do Espirito Santo da Fajã Grande, ilha das Flores, Arquivo de Villa Maria, ilha Terceira, Açores",
+        "author": "José Luís Ávila Silveira/Pedro Noronha e Costa (Arquivo de Villa Maria)]]",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Imp%C3%A9rio_do_Espirito_Santo_da_Faj%C3%A3_Grande,_ilha_das_Flores,_Arquivo_de_Villa_Maria,_ilha_Terceira,_A%C3%A7ores.JPG",
+        "score": 107
+      }
+    ],
+    "assets": {
+      "height": "regions/flores/height.png",
+      "sat": "regions/flores/sat.jpg",
+      "sat1k": "regions/flores/sat_1k.jpg"
+    }
+  },
+  {
+    "id": "trnovacko",
+    "name": "トルノヴァチュコ湖",
+    "nameLocal": "Trnovačko jezero",
+    "country": "モンテネグロ／ボスニア・ヘルツェゴビナ国境",
+    "flag": "🇲🇪",
+    "center": [
+      43.252,
+      18.722
+    ],
+    "demZoom": 14,
+    "exaggeration": 1.1,
+    "accent": "#5b8fc9",
+    "tagline": "巨峰の足もとに眠る、ハートの形の湖",
+    "overview": "ボスニア・ヘルツェゴビナ最高峰マグリッチ（2,386m）の足もと、国境の山中に抱かれたハート形の氷河湖。石灰岩の岩壁に三方を囲まれ、湖面は季節と光で青から緑へと表情を変えます。車道はなく、歩いてしか辿り着けないからこその静けさ。湖畔でのキャンプは格別です。",
+    "highlights": [
+      "空から見るとハートの形をした湖",
+      "三方を囲む巨大な石灰岩の岩壁",
+      "湖畔の草原でのキャンプと星空",
+      "国境の稜線マグリッチからの大展望"
+    ],
+    "bestMonths": [
+      7,
+      8,
+      9
+    ],
+    "access": "ボスニア側のプリイェヴォル峠から徒歩約1.5〜2時間、またはモンテネグロ側から長いトレイル。",
+    "stay": "湖畔キャンプ（夏季の簡易設備）",
+    "tips": "登山口までの林道は荒れている。水と地図を持参。国境をまたぐ際はパスポート携帯。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 5,
+      "crime": 1,
+      "danger": 2,
+      "access": 4,
+      "physical": 3,
+      "infra": 1,
+      "cost": 1
+    },
+    "ratingNotes": {
+      "crime": "山岳部で犯罪リスクは非常に低い",
+      "danger": "急な岩場、雷雨、稜線での強風",
+      "access": "車道なし。登山口までも荒れた林道",
+      "physical": "湖まで片道約2時間、マグリッチ登頂は健脚向け"
+    },
+    "pois": [
+      {
+        "name": "トルノヴァチュコ湖",
+        "desc": "ハート形の氷河湖",
+        "ll": [
+          43.2519376,
+          18.7250496
+        ],
+        "uv": [
+          0.5495,
+          0.3948
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Trnovačko jezero",
+      "Trnovacko lake"
+    ],
+    "gem": 100,
+    "ease": 63,
+    "terrain": {
+      "minElev": 1286,
+      "maxElev": 2361,
+      "widthM": 7127,
+      "bbox": {
+        "west": 18.6767578125,
+        "north": 43.27720532212023,
+        "east": 18.7646484375,
+        "south": 43.21318330073887
+      }
+    },
+    "climate": {
+      "elevation": 1521,
+      "months": [
+        {
+          "tmax": -1,
+          "tmin": -7.4,
+          "rain": 202,
+          "sun": 4.3
+        },
+        {
+          "tmax": 1.9,
+          "tmin": -5.5,
+          "rain": 153,
+          "sun": 6.2
+        },
+        {
+          "tmax": 3.3,
+          "tmin": -5,
+          "rain": 94,
+          "sun": 7.7
+        },
+        {
+          "tmax": 7.4,
+          "tmin": -2.1,
+          "rain": 122,
+          "sun": 8.8
+        },
+        {
+          "tmax": 13.6,
+          "tmin": 4.2,
+          "rain": 111,
+          "sun": 10.5
+        },
+        {
+          "tmax": 18.8,
+          "tmin": 8.9,
+          "rain": 83,
+          "sun": 12.6
+        },
+        {
+          "tmax": 21.9,
+          "tmin": 11,
+          "rain": 50,
+          "sun": 13.3
+        },
+        {
+          "tmax": 21.1,
+          "tmin": 10.6,
+          "rain": 59,
+          "sun": 12.1
+        },
+        {
+          "tmax": 15.7,
+          "tmin": 6.3,
+          "rain": 86,
+          "sun": 9.4
+        },
+        {
+          "tmax": 12.3,
+          "tmin": 2.9,
+          "rain": 62,
+          "sun": 8.1
+        },
+        {
+          "tmax": 5.7,
+          "tmin": -1.8,
+          "rain": 233,
+          "sun": 4.5
+        },
+        {
+          "tmax": 1.7,
+          "tmin": -4.3,
+          "rain": 175,
+          "sun": 3.5
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Sutjeska, horské údolí",
+        "author": "I would appreciate being notified if you use my work outside Wikimedia. More of ",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Sutjeska,_horsk%C3%A9_%C3%BAdol%C3%AD.jpg",
+        "score": 103
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "Trnovačko jezero, Maglić",
+        "author": "Dingoa",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Trnova%C4%8Dko_jezero,_Magli%C4%87.jpg",
+        "score": 100
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Trnovačko jezero, masiv Magliće",
+        "author": "I would appreciate being notified if you use my work outside Wikimedia. More of ",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Trnova%C4%8Dko_jezero,_masiv_Magli%C4%87e.jpg",
+        "score": 100
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Np sutjeska trnovacko jezero 1",
+        "author": "Darko Gavric",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Np_sutjeska_trnovacko_jezero_1.JPG",
+        "score": 95
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Sutjeska, Tjentište, Bosnia and Herzegovina (Unsplash)",
+        "author": "Lili Popper lili_popper",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Sutjeska,_Tjenti%C5%A1te,_Bosnia_and_Herzegovina_(Unsplash).jpg",
+        "score": 94
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Trnovačko jezero, masiv Magliće večer",
+        "author": "I would appreciate being notified if you use my work outside Wikimedia. More of ",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Trnova%C4%8Dko_jezero,_masiv_Magli%C4%87e_ve%C4%8Der.jpg",
+        "score": 93
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Perućica primeval forest (7901927430)",
+        "author": "Erwan Martin from Plouzané, France",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Peru%C4%87ica_primeval_forest_(7901927430).jpg",
+        "score": 93
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Trnovacko lake",
+        "author": "Schleewoon",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Trnovacko_lake.jpg",
+        "score": 92
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "Walking in the Zelengora (3887446570)",
+        "author": "NH53",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Walking_in_the_Zelengora_(3887446570).jpg",
+        "score": 90
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "Porbóllett contributions 2014",
+        "author": "Jure Ferletič, Slovenia; Ilyass T. from Metz, France; Smihael, Slovenia; Alvesga",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Porb%C3%B3llett_contributions_2014.jpg",
+        "score": 87
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Trnovačko jezero, turistická značení",
+        "author": "I would appreciate being notified if you use my work outside Wikimedia. More of ",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Trnova%C4%8Dko_jezero,_turistick%C3%A1_zna%C4%8Den%C3%AD.jpg",
+        "score": 86
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Маглић 2 NP001",
+        "author": "Svjetlopis, Vladimir Tadic",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D0%B3%D0%BB%D0%B8%D1%9B_2_NP001.jpg",
+        "score": 86
+      }
+    ],
+    "assets": {
+      "height": "regions/trnovacko/height.png",
+      "sat": "regions/trnovacko/sat.jpg",
+      "sat1k": "regions/trnovacko/sat_1k.jpg"
+    }
+  },
+  {
+    "id": "rugova",
+    "name": "ルゴヴァ渓谷",
+    "nameLocal": "Grykat e Rugovës · Rugova",
+    "country": "コソボ",
+    "flag": "🇽🇰",
+    "center": [
+      42.68,
+      20.17
+    ],
+    "demZoom": 13,
+    "exaggeration": 1.1,
+    "accent": "#6aa58f",
+    "tagline": "呪われた山と呼ばれた、青い川の峡谷",
+    "overview": "「呪われた山脈」の異名を持つ険しいアルプス山地を、澄んだ青緑の川が削り出した峡谷。町からほんの数分で、そそり立つ岩壁と深い森の世界に入り込めます。奥に進めば高原の羊飼い小屋、氷河湖、花の咲く草原。ヨーロッパの中で最も知られていない山岳地帯のひとつです。",
+    "highlights": [
+      "岩壁の間を流れる青緑のペーチ・ビストリツァ川",
+      "峡谷の崖を歩くヴィア・フェラータ",
+      "高原の氷河湖と羊飼いの集落",
+      "秋に燃えるように色づくブナの森"
+    ],
+    "bestMonths": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "access": "ペーヤの町から車ですぐ（約10分で峡谷入口）。首都プリシュティナから約1.5時間。",
+    "stay": "ペーヤの町のホテル、渓谷奥のゲストハウス",
+    "tips": "通貨はユーロ。山歩きはガイド付きがおすすめ。山間部の国境付近には立ち入らないこと。",
+    "ratings": {
+      "scenery": 4,
+      "remoteness": 3,
+      "crime": 1,
+      "danger": 2,
+      "access": 2,
+      "physical": 2,
+      "infra": 3,
+      "cost": 1
+    },
+    "ratingNotes": {
+      "crime": "旅行者への治安は良好。人々はとても友好的",
+      "danger": "峡谷道路の落石、山の天候",
+      "access": "町から近く、ヨーロッパの秘境としては行きやすい",
+      "physical": "ドライブから本格登山まで幅広い"
+    },
+    "pois": [
+      {
+        "name": "ルゴヴァ峡谷",
+        "desc": "高さ数百mの岩壁が迫る峡谷の核心部",
+        "ll": [
+          42.6922,
+          20.1686
+        ],
+        "uv": [
+          0.4869,
+          0.4244
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Rugova Canyon",
+      "Rugova Valley",
+      "Rugova mountains"
+    ],
+    "gem": 70,
+    "ease": 81,
+    "terrain": {
+      "minElev": 548,
+      "maxElev": 2496,
+      "widthM": 14385,
+      "bbox": {
+        "west": 20.0830078125,
+        "north": 42.74701217318066,
+        "east": 20.2587890625,
+        "south": 42.61779143282346
+      }
+    },
+    "climate": {
+      "elevation": 1394,
+      "months": [
+        {
+          "tmax": 0.9,
+          "tmin": -5.3,
+          "rain": 204,
+          "sun": 5.3
+        },
+        {
+          "tmax": 3.5,
+          "tmin": -3.6,
+          "rain": 80,
+          "sun": 7.5
+        },
+        {
+          "tmax": 4.4,
+          "tmin": -3.2,
+          "rain": 89,
+          "sun": 8.5
+        },
+        {
+          "tmax": 8.4,
+          "tmin": 0.3,
+          "rain": 101,
+          "sun": 9.6
+        },
+        {
+          "tmax": 14.5,
+          "tmin": 6.3,
+          "rain": 103,
+          "sun": 11.7
+        },
+        {
+          "tmax": 19.7,
+          "tmin": 11.4,
+          "rain": 96,
+          "sun": 12.9
+        },
+        {
+          "tmax": 22.8,
+          "tmin": 14.2,
+          "rain": 73,
+          "sun": 13.8
+        },
+        {
+          "tmax": 21.9,
+          "tmin": 13.4,
+          "rain": 71,
+          "sun": 12.6
+        },
+        {
+          "tmax": 16.9,
+          "tmin": 9.3,
+          "rain": 85,
+          "sun": 10
+        },
+        {
+          "tmax": 13.3,
+          "tmin": 6.2,
+          "rain": 69,
+          "sun": 8.7
+        },
+        {
+          "tmax": 7.4,
+          "tmin": 0.8,
+          "rain": 181,
+          "sun": 5.8
+        },
+        {
+          "tmax": 3.4,
+          "tmin": -3.3,
+          "rain": 130,
+          "sun": 5
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Rugova Jetake",
+        "author": "Jetake",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rugova_Jetake.jpg",
+        "score": 127
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "Rugova in the Winter, Peja",
+        "author": "Agim Mala",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rugova_in_the_Winter,_Peja.JPG",
+        "score": 127
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Rugova Mountains",
+        "author": "Nentori",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rugova_Mountains.jpg",
+        "score": 122
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Rugova Canyon Bridge, Peja",
+        "author": "Agim Mala",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rugova_Canyon_Bridge,_Peja.jpg",
+        "score": 117
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Rugova Mountains in Peja",
+        "author": "Agim Mala",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rugova_Mountains_in_Peja.JPG",
+        "score": 116
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Dromodol hill in Rugova - Paradise Lost",
+        "author": "Ben Njeri",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dromodol_hill_in_Rugova_-_Paradise_Lost.jpg",
+        "score": 112
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Rugova Canyon Kosovo",
+        "author": "Tom Turbo",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rugova_Canyon_Kosovo.jpg",
+        "score": 111
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Winter in Rugova Canyon (WPWTR17)",
+        "author": "Albinfo",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Winter_in_Rugova_Canyon_(WPWTR17).jpg",
+        "score": 110
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "RugovaJetake",
+        "author": "Jetake",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:RugovaJetake.jpg",
+        "score": 107
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "Rugova Mountains in Boge during winter season in Kosovo",
+        "author": "SUHEJLO",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rugova_Mountains_in_Boge_during_winter_season_in_Kosovo.jpg",
+        "score": 107
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Rugova Valley in Spring",
+        "author": "Agim Mala",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rugova_Valley_in_Spring.JPG",
+        "score": 106
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Amazing Rugova mountain",
+        "author": "Burim",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Amazing_Rugova_mountain.JPG",
+        "score": 103
+      }
+    ],
+    "assets": {
+      "height": "regions/rugova/height.png",
+      "sat": "regions/rugova/sat.jpg",
+      "sat1k": "regions/rugova/sat_1k.jpg"
+    }
+  }
+]

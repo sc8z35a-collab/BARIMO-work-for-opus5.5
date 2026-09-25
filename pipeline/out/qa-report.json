@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-09-25T09:35:57.505Z",
+  "regions": 12,
+  "qa": [
+    {
+      "id": "tusheti",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "id": "kolsuu",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "id": "haftkul",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "id": "semonkong",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "id": "dzukou",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "id": "puluong",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "id": "itbayat",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "id": "ouvea",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "id": "pomez",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "id": "flores",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "id": "trnovacko",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "id": "rugova",
+      "ok": true,
+      "issues": []
+    }
+  ]
+}
