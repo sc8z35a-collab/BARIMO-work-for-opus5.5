@@ -5,7 +5,7 @@ import { fetchBuf, pool, log, PUB, ensure } from '../lib/common.mjs';
 const Z = 4, N = 2 ** Z, T = 256, M = N * T;
 const jobs = []; for (let y = 0; y < N; y++) for (let x = 0; x < N; x++) jobs.push({ x, y });
 const comps = await pool(jobs, 12, async ({ x, y }) => ({ input: await fetchBuf(`https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/${Z}/${y}/${x}`), left: x * T, top: y * T }));
-const merc = await sharp({ create: { width: M, height: M, channels: 3, background: '#1d4f7a' }, limitInputPixels: false }).composite(comps).raw().toBuffer();
+const merc = await sharp({ create: { width: M, height: M, channels: 3, background: '#1d4f7a' }, limitInputPixels: false }).composite(comps).removeAlpha().raw().toBuffer();
 const W = 4096, H = 2048, out = Buffer.alloc(W * H * 3);
 for (let j = 0; j < H; j++) {
   const lat = 90 - ((j + 0.5) / H) * 180;
