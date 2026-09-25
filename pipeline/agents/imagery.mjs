@@ -1,4 +1,5 @@
 // AGENT 3 — IMAGERY: stitches Esri World Imagery tiles (demZoom+2) into a 4096² satellite texture
+sharp.cache(false); sharp.concurrency(1);
 import sharp from 'sharp';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -14,7 +15,7 @@ async function build(r) {
   const jobs = [];
   for (let j = 0; j < N; j++) for (let i = 0; i < N; i++) jobs.push({ i, j });
   let fails = 0;
-  const comps = (await pool(jobs, 12, async ({ i, j }) => {
+  const comps = (await pool(jobs, 8, async ({ i, j }) => {
     try {
       const b = await fetchBuf(`https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/${z}/${y0 + j}/${x0 + i}`);
       return { input: b, left: i * 256, top: j * 256 };
@@ -33,5 +34,5 @@ async function build(r) {
 }
 
 const list = regions().filter((r) => !process.argv[2] || r.id === process.argv[2]);
-await pool(list, 3, (r) => build(r).catch((e) => log(A, `${r.id} FAILED ${e.message}`)));
+await pool(list, 1, (r) => build(r).catch((e) => log(A, `${r.id} FAILED ${e.message}`)));
 log(A, 'done');

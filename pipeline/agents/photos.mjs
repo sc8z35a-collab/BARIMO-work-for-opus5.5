@@ -1,7 +1,9 @@
 // AGENT 4 — PHOTOS: harvests CC/PD photographs from Wikimedia Commons (text + geo search),
+sharp.cache(false); sharp.concurrency(1);
 // filters out maps/diagrams/dark images, scores by brightness/colorfulness, stores webp + credits.
 import sharp from 'sharp';
 import path from 'node:path';
+import fs from 'node:fs';
 import { regions, fetchJSON, fetchBuf, pool, log, regionDir, writeJSON, ensure, sleep } from '../lib/common.mjs';
 const A = 'photos';
 const API = 'https://commons.wikimedia.org/w/api.php?';
@@ -30,6 +32,7 @@ async function candidates(r) {
 const strip = (s = '') => s.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 
 async function build(r) {
+  if (fs.existsSync(path.join(regionDir(r.id), 'photos.json')) && !process.env.FORCE) return log(A, `${r.id}: cached`);
   const dir = ensure(path.join(regionDir(r.id), 'photos'));
   const cands = (await candidates(r)).filter((p) => {
     const ii = p.imageinfo?.[0]; if (!ii) return false;
@@ -39,7 +42,7 @@ async function build(r) {
       && !BAD.test(p.title) && !BAD.test(strip(m.ImageDescription?.value || '').slice(0, 200)) && OK_LIC.test(lic);
   });
   log(A, `${r.id}: ${cands.length} candidates`);
-  const scored = (await pool(cands.slice(0, 60), 6, async (p) => {
+  const scored = (await pool(cands.slice(0, 50), 4, async (p) => {
     const ii = p.imageinfo[0];
     try {
       const buf = await fetchBuf(ii.thumburl || ii.url);
@@ -79,5 +82,5 @@ async function build(r) {
 }
 
 const list = regions().filter((r) => !process.argv[2] || r.id === process.argv[2]);
-await pool(list, 3, (r) => build(r).catch((e) => log(A, `${r.id} FAILED ${e.message}`)));
+await pool(list, 1, (r) => build(r).catch((e) => log(A, `${r.id} FAILED ${e.message}`)));
 log(A, 'done');
