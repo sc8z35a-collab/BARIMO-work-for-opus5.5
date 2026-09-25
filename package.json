@@ -1,10 +1,13 @@
 {
-  "name": "webapp",
+  "name": "barimo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite --host 0.0.0.0 --port 5173",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "pipeline": "node pipeline/orchestrator.mjs"
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,12 @@
   "homepage": "https://github.com/sc8z35a-collab/BARIMO-work-for-opus5.5#readme",
   "dependencies": {
     "js-yaml": "^5.4.2",
-    "openai": "^7.23.0"
-  }
+    "openai": "^7.23.0",
+    "sharp": "^0.35.4",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "vite": "^8.3.1"
+  },
+  "type": "module"
 }
