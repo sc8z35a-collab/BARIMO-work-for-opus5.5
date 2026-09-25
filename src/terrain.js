@@ -11,7 +11,7 @@ export const QA = new URLSearchParams(location.search).has('qa');
 export const TIMES = {
   morning: { label: '朝', sunEl: 14, sunAz: 110, sun: '#ffe9d6', sunI: 2.6, hemiSky: '#f3e9f2', hemiGnd: '#d9d2c4', hemiI: 1.25, top: '#9cc7e6', hor: '#f4e3dc', glow: '#ffd9c0', exp: 1.08 },
   noon:    { label: '昼', sunEl: 52, sunAz: 150, sun: '#fff8ec', sunI: 3.0, hemiSky: '#e4f1fb', hemiGnd: '#d8d4c6', hemiI: 1.2, top: '#6fa9d8', hor: '#dcecf4', glow: '#fff4dc', exp: 1.0 },
-  golden:  { label: '夕', sunEl: 9, sunAz: 245, sun: '#ffcf9a', sunI: 2.8, hemiSky: '#f7e2cf', hemiGnd: '#dccbb4', hemiI: 1.3, top: '#8fb8dc', hor: '#f8d9b8', glow: '#ffc58a', exp: 1.1 },
+  golden:  { label: '夕', sunEl: 9, sunAz: 245, sun: '#ffcf9a', sunI: 2.8, hemiSky: '#f7e2cf', hemiGnd: '#dccbb4', hemiI: 1.3, top: '#8fb8dc', hor: '#f5e6d6', glow: '#ffc58a', exp: 1.08 },
 };
 
 export class Terrain {
@@ -51,7 +51,7 @@ export class Terrain {
     }));
     sky.renderOrder = -1;
     s.add(sky);
-    s.fog = new THREE.FogExp2('#dcecf4', 0.0045);
+    s.fog = new THREE.FogExp2('#dcecf4', 0.0032);
 
     this.hemi = new THREE.HemisphereLight('#fff', '#ddd', 1.2);
     s.add(this.hemi);
