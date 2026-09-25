@@ -19,6 +19,11 @@
   "homepage": "https://github.com/sc8z35a-collab/BARIMO-work-for-opus5.5#readme",
   "dependencies": {
     "js-yaml": "^5.4.2",
-    "openai": "^7.23.0"
+    "openai": "^7.23.0",
+    "sharp": "^0.35.4",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "vite": "^8.3.1"
   }
 }
