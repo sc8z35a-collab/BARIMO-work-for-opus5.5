@@ -1,0 +1,24 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sc8z35a-collab/BARIMO-work-for-opus5.5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sc8z35a-collab/BARIMO-work-for-opus5.5/issues"
+  },
+  "homepage": "https://github.com/sc8z35a-collab/BARIMO-work-for-opus5.5#readme",
+  "dependencies": {
+    "js-yaml": "^5.4.2",
+    "openai": "^7.23.0"
+  }
+}
