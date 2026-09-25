@@ -103,7 +103,7 @@ export class Terrain {
 
     // Geometry: full-res grid (w×w vertices)
     const step = QA ? 4 : 1;
-    const seg = (w - 1) / step;
+    const seg = Math.floor((w - 1) / step);
     const geo = new THREE.PlaneGeometry(SIZE, SIZE, seg, seg);
     geo.rotateX(-Math.PI / 2);
     const pos = geo.attributes.position;
