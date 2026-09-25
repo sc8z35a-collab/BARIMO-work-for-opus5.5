@@ -52,7 +52,7 @@ async function build(r) {
       const contrast = st.channels.reduce((a, c) => a + c.stdev, 0) / 3;
       const blueSky = B > R ? 6 : 0;
       // bright, colorful, contrasty images win; murky/dark ones are penalized hard
-      const score = (lum < 85 ? -80 : 0) + lum * 0.35 + sat * 90 + contrast * 0.4 + blueSky + (p.src === 'geo' ? 0 : 8);
+      const score = (lum < 85 ? -80 : 0) + (lum > 200 && contrast < 45 ? -40 : 0) + lum * 0.35 + sat * 90 + contrast * 0.4 + blueSky + (p.src === 'geo' ? 0 : 8);
       return { p, buf, score, lum, sat };
     } catch { return null; }
   })).filter(Boolean).filter((s) => s.lum >= 80).sort((a, b) => b.score - a.score);
