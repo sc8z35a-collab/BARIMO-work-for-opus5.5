@@ -112,10 +112,17 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .card .nm { font-family: var(--serif); font-weight: 700; font-size: clamp(12px, 3.6dvh, 15px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .card .ct { font-size: clamp(9px, 2.5dvh, 11px); color: var(--ink-3); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .card .gem { position: absolute; top: 8px; right: 8px; font-size: 10px; padding: 3px 8px; border-radius: 999px; background: rgba(255,253,248,.9); color: var(--ink-2); font-weight: 700; }
+.strip { transition: transform .6s cubic-bezier(.2,.8,.2,1), opacity .5s; }
+.strip.away { transform: translateY(120%); opacity: 0; pointer-events: none; }
+.pin.nolabel .lb { opacity: 0; transform: translateY(4px); }
+.pin .lb { transition: opacity .3s, transform .3s; }
+.pv-nav { display: flex; align-items: center; gap: 6px; margin-bottom: .4dvh; }
+.pv-nav span { font-family: var(--latin); font-size: clamp(11px, 3dvh, 13px); color: var(--ink-3); margin-right: auto; order: -1; }
+.pv-nav button { width: 8dvh; height: 8dvh; min-width: 30px; min-height: 30px; border-radius: 50%; background: rgba(38,52,60,.06); font-size: clamp(14px, 4.6dvh, 20px); line-height: 1; color: var(--ink-2); }
 .card.active { transform: translateY(-8px); box-shadow: 0 18px 40px rgba(60,90,110,.3); outline: 2px solid var(--accent); }
 
 .preview {
-  position: fixed; right: calc(3vw + var(--safe-r)); top: 14dvh; width: clamp(240px, 38vw, 380px); padding: 3dvh 3.4dvh; display: flex; flex-direction: column; gap: 1.4dvh;
+  position: fixed; right: calc(3vw + var(--safe-r)); top: 14dvh; max-height: 83dvh; overflow-y: auto; width: clamp(240px, 38vw, 380px); padding: 3dvh 3.4dvh; display: flex; flex-direction: column; gap: 1.4dvh;
 }
 .preview .country { font-size: clamp(10px, 2.8dvh, 12px); color: var(--ink-3); letter-spacing: .12em; }
 .preview h2 { font-family: var(--serif); font-size: clamp(20px, 7dvh, 32px); line-height: 1.2; }

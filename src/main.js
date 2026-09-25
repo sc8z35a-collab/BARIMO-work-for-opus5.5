@@ -127,7 +127,9 @@ globe.onSelect = (r) => {
   document.querySelectorAll('.card').forEach((c) => c.classList.toggle('active', c.dataset.id === r.id));
   document.querySelector(`.card[data-id="${r.id}"]`)?.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
   $('.preview')?.remove();
+  $('.strip', globeUI)?.classList.add('away');
   const p = h(`<div class="preview glass fade-in" style="--accent:${r.accent}">
+    <div class="pv-nav"><button data-nav="-1" aria-label="前へ">‹</button><span>${regions.indexOf(r) + 1} / ${regions.length}</span><button data-nav="1" aria-label="次へ">›</button><button data-nav="x" aria-label="閉じる">×</button></div>
     <div class="country">${r.flag} ${r.country}</div>
     <h2>${r.name}</h2>
     <div class="local">${r.nameLocal}</div>
@@ -140,6 +142,11 @@ globe.onSelect = (r) => {
     <button class="go">3Dで旅する <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
   </div>`);
   $('.go', p).addEventListener('click', () => openRegion(r));
+  p.querySelectorAll('[data-nav]').forEach((b) => b.addEventListener('click', () => {
+    const k = b.dataset.nav;
+    if (k === 'x') { p.remove(); globe.deselect(); $('.strip', globeUI)?.classList.remove('away'); return; }
+    globe.select(regions[(regions.indexOf(r) + +k + regions.length) % regions.length]);
+  }));
   globeUI.appendChild(p);
 };
 globe.onOpen = (r) => openRegion(r);

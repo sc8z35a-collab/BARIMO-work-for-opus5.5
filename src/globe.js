@@ -111,6 +111,11 @@ export class Globe {
     this.onSelect(r);
   }
 
+  deselect() {
+    this.selected = null; this.target.dist = 4.2;
+    this.pins.forEach((p) => p.el.classList.remove('sel'));
+  }
+
   _bindInput() {
     const el = this.renderer.domElement;
     let down = null, pinch = null;
@@ -168,6 +173,7 @@ export class Globe {
       p.el.style.transform = `translate(${x}px, ${y}px) translate(-50%, -100%)`;
       p.el.style.opacity = facing > 0.15 ? 1 : facing > 0 ? facing / 0.15 : 0;
       p.el.style.pointerEvents = facing > 0.1 ? 'auto' : 'none';
+      p.el.classList.toggle('nolabel', p.r !== this.selected && (this.rot.dist > 3.6 || facing < 0.55));
     }
   }
 
