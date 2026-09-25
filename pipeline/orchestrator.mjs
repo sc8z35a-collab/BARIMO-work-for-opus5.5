@@ -10,7 +10,7 @@ const AUTO_COMMIT = !process.argv.includes('--no-commit');
 const only = process.argv.find((a) => a.startsWith('--region='))?.split('=')[1];
 const run = (name) => new Promise((res) => {
   const t = Date.now();
-  const p = spawn(process.execPath, [path.join(ROOT, 'pipeline/agents', name + '.mjs'), ...(only ? [only] : [])], { cwd: ROOT, stdio: 'inherit', env: process.env });
+  const p = spawn(process.execPath, [path.join(ROOT, 'pipeline/agents', name + '.mjs'), ...(only ? [only] : [])], { cwd: ROOT, stdio: 'inherit', env: { ...process.env, MALLOC_ARENA_MAX: '2', UV_THREADPOOL_SIZE: '2' } });
   p.on('exit', (code) => {
     log('orchestrator', `agent ${name} exited ${code} in ${((Date.now() - t) / 1000).toFixed(1)}s`);
     if (AUTO_COMMIT) commit(`chore(pipeline): ${name} agent artifacts`);
@@ -25,8 +25,11 @@ function commit(msg) {
 
 const llm = await probe();
 log('orchestrator', `LLM (${MODEL}) status: ${llm.ok ? 'ONLINE' : 'UNAVAILABLE'} — ${llm.reason.slice(0, 100)}`);
-log('orchestrator', 'Stage 1: launching 5 agents in parallel');
-const codes = await Promise.all(['research', 'terrain', 'imagery', 'photos', 'climate'].map(run));
+// Light lane (network-bound) runs fully parallel; heavy lane (libvips image stitching) is serialized
+// so the pipeline fits in a 1 GB sandbox without OOM-freezing.
+log('orchestrator', 'Stage 1: launching 5 agents in parallel (light lane ×3 + heavy lane imagery→photos)');
+const heavy = (async () => [await run('imagery'), await run('photos')])();
+const codes = (await Promise.all([run('research'), run('terrain'), run('climate'), heavy])).flat();
 log('orchestrator', 'Stage 2: assembler / QA');
 const qa = await run('assembler');
 await lock;
