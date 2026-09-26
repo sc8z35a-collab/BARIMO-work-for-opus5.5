@@ -100,8 +100,8 @@ export class RegionScene {
     // base DEM (5×5 tiles at z0) + overview imagery (10×10 at z0+1), both shipped with the app
     let got = 0; const tick = () => onProgress(0.1 + 0.75 * (++got / 2));
     const [demBlob, ovBlob] = await Promise.all([
-      loadBlob('/' + region.assets.dem, signal).then((b) => { tick(); return b; }),
-      loadBlob('/' + region.assets.overview, signal).then((b) => { tick(); return b; }),
+      loadBlob(import.meta.env.BASE_URL + region.assets.dem, signal).then((b) => { tick(); return b; }),
+      loadBlob(import.meta.env.BASE_URL + region.assets.overview, signal).then((b) => { tick(); return b; }),
     ]);
     if (signal?.aborted) throw new DOMException('aborted', 'AbortError');
     const dem = await this.store.decodeDEM(demBlob, '16', t.minElev, t.maxElev);

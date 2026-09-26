@@ -83,7 +83,7 @@ function fatal(msg, err) {
 (async () => {
   try {
     setLoad(0.15);
-    const r = await fetch('/data/regions.json');
+    const r = await fetch(import.meta.env.BASE_URL + 'data/regions.json');
     if (!r.ok) throw new Error('regions.json HTTP ' + r.status);
     regions = await r.json();
     setLoad(0.5);
@@ -181,7 +181,7 @@ function renderStrip() {
   strip.innerHTML = '';
   for (const r of list) {
     const c = h(`<button class="card${current === r ? ' active' : ''}" data-id="${r.id}" role="listitem" style="--accent:${r.accent}">
-      <img loading="lazy" decoding="async" src="/regions/${r.id}/${r.photos[0]?.thumb || 'overview_s.jpg'}" alt="">
+      <img loading="lazy" decoding="async" src="${import.meta.env.BASE_URL}regions/${r.id}/${r.photos[0]?.thumb || 'overview_s.jpg'}" alt="">
       <span class="gem">${sortKey === 'ease' ? `行きやすさ ${r.ease}` : `秘境度 ${r.gem}`}</span>
       <span class="meta"><span class="nm">${r.flag} ${escapeHTML(r.name)}</span><span class="ct">${escapeHTML(r.country)}</span></span>
     </button>`);
@@ -305,7 +305,7 @@ function buildRegionUI(r) {
     rt: () => ratingsHTML(r),
     gl: () => `
       <h3>写真 <span class="cnt">${r.photos.length}枚</span></h3>
-      <div class="gal">${r.photos.map((p, i) => `<button data-i="${i}" aria-label="写真 ${i + 1}"><img loading="lazy" decoding="async" src="/regions/${r.id}/${p.thumb}" alt=""></button>`).join('')}</div>
+      <div class="gal">${r.photos.map((p, i) => `<button data-i="${i}" aria-label="写真 ${i + 1}"><img loading="lazy" decoding="async" src="${import.meta.env.BASE_URL}regions/${r.id}/${p.thumb}" alt=""></button>`).join('')}</div>
       <p class="credit-note">写真: Wikimedia Commons（各撮影者・CCライセンス）。タップで拡大・クレジット表示。</p>`,
     tr: () => `
       <h3>旅の情報</h3>
@@ -377,7 +377,7 @@ function backToGlobe() {
   globeUI?.classList.remove('hidden');
   renderer.toneMappingExposure = 1.0;
   document.documentElement.style.removeProperty('--accent');
-  history.replaceState(null, '', QA ? '?qa=1' : location.pathname);
+  history.replaceState(null, '', location.pathname + (QA ? '?qa=1' : ''));
   if (current) globe.select(current, false);
 }
 
@@ -417,10 +417,10 @@ function openViewer(r, i) {
   const n = r.photos.length;
   const show = (k) => {
     i = ((k % n) + n) % n; const p = r.photos[i];
-    $('.frame', v).innerHTML = `<img src="/regions/${r.id}/${p.file}" alt="${escapeHTML(p.title)}">`;
+    $('.frame', v).innerHTML = `<img src="${import.meta.env.BASE_URL}regions/${r.id}/${p.file}" alt="${escapeHTML(p.title)}">`;
     $('.count', v).textContent = `${i + 1} / ${n}`;
     $('.cap', v).innerHTML = `<b>${escapeHTML(r.name)}</b>${escapeHTML(p.title)}<br>📷 ${escapeHTML(p.author)} · ${escapeHTML(p.license)} · <a href="${escapeHTML(p.source)}" target="_blank" rel="noopener">Wikimedia Commons</a>`;
-    [i + 1, i - 1].forEach((j) => { const q = r.photos[((j % n) + n) % n]; if (q) new Image().src = `/regions/${r.id}/${q.file}`; });
+    [i + 1, i - 1].forEach((j) => { const q = r.photos[((j % n) + n) % n]; if (q) new Image().src = `${import.meta.env.BASE_URL}regions/${r.id}/${q.file}`; });
   };
   $('.prev', v).onclick = (e) => { e.stopPropagation(); show(i - 1); };
   $('.next', v).onclick = (e) => { e.stopPropagation(); show(i + 1); };

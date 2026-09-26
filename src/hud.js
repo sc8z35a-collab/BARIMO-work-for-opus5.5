@@ -16,7 +16,7 @@ export function createHUD({ region, r, icons, toast, closePanel, speeds }) {
       <button class="icon-btn" data-act="home" aria-label="全体表示">${icons.home}</button>
     </div>
     <button class="walk-btn map-only" data-act="walk">${icons.walk}<span>地上を歩く</span></button>
-    <div class="minimap glass" aria-label="ミニマップ（タップで移動）"><img src="/${r.assets.overviewSmall}" alt="" draggable="false"><i class="mm-view"></i><i class="mm-me"></i><i class="mm-dest"></i></div>
+    <div class="minimap glass" aria-label="ミニマップ（タップで移動）"><img src="${import.meta.env.BASE_URL}${r.assets.overviewSmall}" alt="" draggable="false"><i class="mm-view"></i><i class="mm-me"></i><i class="mm-dest"></i></div>
     <div class="card3 glass hidden" role="dialog"></div>
     <div class="fp-only fpctl">
       <div class="joy" aria-label="移動スティック"><i class="knob"></i></div>

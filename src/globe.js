@@ -38,7 +38,7 @@ export class Globe {
   }
 
   async _build() {
-    const tex = await new THREE.TextureLoader().loadAsync('/textures/globe.jpg');
+    const tex = await new THREE.TextureLoader().loadAsync(import.meta.env.BASE_URL + 'textures/globe.jpg');
     tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = Math.min(8, this.renderer.capabilities.getMaxAnisotropy());
     const mat = new THREE.MeshStandardMaterial({ map: tex, roughness: 0.92, metalness: 0 });
     mat.onBeforeCompile = (s) => { s.fragmentShader = s.fragmentShader.replace('#include <map_fragment>', `#include <map_fragment>\n${GRADE}`); };
