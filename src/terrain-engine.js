@@ -174,6 +174,7 @@ export class TerrainEngine {
       n.mesh.position.set(n.rect.x0, 0, n.rect.z0);
       n.mesh.frustumCulled = false; // own culling (accounts for curvature)
       n.mesh.receiveShadow = true; n.mesh.castShadow = false;
+      n.mesh.customDepthMaterial = this._depthMat();
       n.mesh.matrixAutoUpdate = false; n.mesh.updateMatrix();
       n.mesh.visible = false;
       this.group.add(n.mesh);
@@ -194,14 +195,14 @@ export class TerrainEngine {
       Object.assign(sh.uniforms, U, { uTexRect: m.userData.rect });
       sh.vertexShader = sh.vertexShader
         .replace('#include <common>', `#include <common>
-          uniform vec4 uTexRect; varying vec3 vWPos; varying float vH;`)
+          uniform vec4 uTexRect; uniform vec3 uEye; varying vec3 vWPos; varying float vH;`)
         .replace('#include <uv_vertex>', `#include <uv_vertex>
           vMapUv = uv * uTexRect.zw + uTexRect.xy;`)
         .replace('#include <begin_vertex>', `#include <begin_vertex>
           vH = transformed.y;
           vec4 wp0 = modelMatrix * vec4(transformed, 1.0);
           vWPos = wp0.xyz;
-          vec2 dxz = wp0.xz - cameraPosition.xz;
+          vec2 dxz = wp0.xz - uEye.xz;
           transformed.y -= dot(dxz, dxz) * ${INV_2R.toExponential(8)};`);
       sh.fragmentShader = sh.fragmentShader
         .replace('#include <common>', `#include <common>
@@ -229,6 +230,21 @@ export class TerrainEngine {
     };
     m.customProgramCacheKey = () => 'barimo-terrain-1';
     return m;
+  }
+
+  /** shadow-pass material with the same curvature displacement as the visible terrain */
+  _depthMat() {
+    if (this._dm) return this._dm;
+    const m = new THREE.MeshDepthMaterial({ depthPacking: THREE.RGBADepthPacking });
+    const U = this.U;
+    m.onBeforeCompile = (sh) => {
+      sh.uniforms.uEye = U.uEye;
+      sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nuniform vec3 uEye;')
+        .replace('#include <begin_vertex>', `#include <begin_vertex>
+          { vec4 wp0 = modelMatrix * vec4(transformed, 1.0); vec2 dxz = wp0.xz - uEye.xz; transformed.y -= dot(dxz, dxz) * ${INV_2R.toExponential(8)}; }`);
+    };
+    m.customProgramCacheKey = () => 'barimo-terrain-depth-1';
+    return (this._dm = m);
   }
 
   _assignTex(n) {
@@ -390,6 +406,6 @@ export class TerrainEngine {
 
   dispose() {
     for (const n of this.nodes.values()) this._disposeNode(n);
-    this.nodes.clear(); this.placeholder.dispose();
+    this.nodes.clear(); this.placeholder.dispose(); this._dm?.dispose();
   }
 }
