@@ -122,6 +122,29 @@ export class TerrainEngine {
     }
     return 0;
   }
+  /**
+   * height of the *rendered* surface at x,z (exact triangle interpolation of the visible LOD leaf).
+   * The mesh is linear between vertices, so on convex ground it can sit metres above the DEM sample —
+   * collision must respect whichever is higher or the camera ends up inside the hill.
+   */
+  surfaceAt(x, z) {
+    let best = null;
+    for (const n of this.leaves) {
+      const r = n.rect;
+      if (x >= r.x0 && x <= r.x1 && z >= r.z0 && z <= r.z1 && n.mesh && (!best || n.z > best.z)) best = n;
+    }
+    if (!best) return this.heightAt(x, z);
+    const pos = best.mesh.geometry.attributes.position.array;
+    const fx = ((x - best.rect.x0) / best.size) * GRID, fz = ((z - best.rect.z0) / best.size) * GRID;
+    const i = Math.min(GRID - 1, Math.max(0, Math.floor(fx))), j = Math.min(GRID - 1, Math.max(0, Math.floor(fz)));
+    const u = fx - i, v = fz - j;
+    const H = (ii, jj) => pos[((jj * V) + ii) * 3 + 1];
+    const a = H(i, j), b = H(i + 1, j), c = H(i, j + 1), d = H(i + 1, j + 1);
+    return u + v <= 1 ? a + (b - a) * u + (c - a) * v : d + (c - d) * (1 - u) + (b - d) * (1 - v);
+  }
+  /** max of DEM and rendered surface — use for anything that must stay above ground */
+  groundAt(x, z) { return Math.max(this.heightAt(x, z), this.surfaceAt(x, z)); }
+
   /** finest DEM level loaded at x,z (diagnostics / HUD) */
   demLevelAt(x, z) {
     const mx = this.F.xToM(x), my = this.F.zToM(z);

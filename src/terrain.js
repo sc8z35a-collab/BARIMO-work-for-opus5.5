@@ -389,6 +389,12 @@ export class RegionScene {
       }
     }
     const cam = this.camera.position;
+    // Hard guarantee (both modes): the eye stays above the rendered surface. The rendered mesh may use a
+    // finer/coarser DEM than heightAt() for a moment, so keep a margin that scales with altitude.
+    {
+      const g = this.engine.groundAt(cam.x, cam.z), minClear = this.mode === 'fp' ? 0.9 : 8;
+      if (cam.y < g + minClear) { cam.y = g + minClear; this.camera.updateMatrixWorld(); }
+    }
     this.U.uEye.value.copy(cam);
     // near/far adapt to altitude (depth precision)
     const alt = Math.max(1, cam.y - this.engine.heightAt(cam.x, cam.z));

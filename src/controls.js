@@ -200,7 +200,7 @@ export class MapController {
       const cx = this.target.x - Math.sin(this.yaw) * hd, cz = this.target.z + Math.cos(this.yaw) * hd;
       const cy = this.target.y + this.dist * Math.cos(this.tilt);
       const clear = Math.max(12, this.dist * 0.03);
-      const ground = Math.max(this.E.heightAt(cx, cz), this.E.heightAt(lerp(cx, this.target.x, 0.25), lerp(cz, this.target.z, 0.25)) - curvatureDrop(hd * 0.25));
+      const ground = Math.max(this.E.groundAt(cx, cz), this.E.heightAt(lerp(cx, this.target.x, 0.25), lerp(cz, this.target.z, 0.25)) - curvatureDrop(hd * 0.25));
       if (cy >= ground + clear || this.tilt < 0.02) { this.cam.position.set(cx, Math.max(cy, ground + clear), cz); break; }
       this.tilt *= 0.9;
       const s2 = Math.sin(this.tilt); this.target.y = this.groundY - curvatureDrop(this.dist * s2);
@@ -229,7 +229,7 @@ export class FirstPerson {
     this._blockT = 0;
   }
   place(x, z, yaw = this.yaw) {
-    this.pos.set(x, this.E.heightAt(x, z) + EYE, z); this.yaw = yaw; this.pitch = -0.04; this.vel.set(0, 0, 0); this.vy = 0;
+    this.pos.set(x, this.E.groundAt(x, z) + EYE, z); this.yaw = yaw; this.pitch = -0.04; this.vel.set(0, 0, 0); this.vy = 0;
   }
   look(dx, dy) { this.yaw += dx * 0.0042; this.pitch = clamp(this.pitch - dy * 0.0042, -1.45, 1.45); if (Math.abs(dx) + Math.abs(dy) > 2) this.cancelNav(true); }
   setMode(m) {
@@ -238,7 +238,7 @@ export class FirstPerson {
     if (m === 'fly') this.pos.y += 25;
   }
   speeds() { return this.mode === 'fly' ? FLY_SPEEDS : WALK_SPEEDS; }
-  groundAt(x, z) { return this.E.heightAt(x, z); }
+  groundAt(x, z) { return this.E.groundAt(x, z); }
   agl() { return this.pos.y - this.groundAt(this.pos.x, this.pos.z); }
   setNav(target) { this.nav = target ? { ...target, arrived: false } : null; }
   cancelNav(soft) { if (this.nav && !this.nav.arrived) { if (soft && this.nav.auto) { this.nav.auto = false; this.onEvent?.('nav-manual'); } } }
@@ -293,10 +293,13 @@ export class FirstPerson {
         this.slope = slope;
         if (slope > 0.6) { const f = clamp(1.5 - slope, 0.3, 1); nx = this.pos.x + (nx - this.pos.x) * f; nz = this.pos.z + (nz - this.pos.z) * f; g1 = this.groundAt(nx, nz); }
       }
+      // never walk into terrain that rises above eye level within the next step (steep DEM walls between
+      // coarse samples): slide back instead of letting the camera end up inside the hillside
+      if (g1 + 0.2 > this.pos.y + 1.2 && g1 - g0 > 1.2) { nx = this.pos.x; nz = this.pos.z; g1 = g0; }
       this.pos.x = nx; this.pos.z = nz;
       const floor = g1 + EYE;
       if (this.pos.y > floor + 0.05) { this.vy -= 9.81 * dt; this.pos.y += this.vy * dt; if (this.pos.y < floor) { this.pos.y = floor; this.vy = 0; } }
-      else { this.pos.y = lerp(this.pos.y, floor, damp(18, dt)); if (this.pos.y < floor - 0.4) this.pos.y = floor - 0.4; this.vy = 0; }
+      else { this.pos.y = Math.max(floor, lerp(this.pos.y, floor, damp(18, dt))); this.vy = 0; }
       const moving = Math.hypot(this.vel.x, this.vel.z);
       this.bob += dt * clamp(moving, 0, 5) * 2.1;
     } else {
