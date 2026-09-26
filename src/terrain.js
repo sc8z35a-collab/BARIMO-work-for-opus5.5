@@ -1,366 +1,447 @@
-// Region scene — photoreal 3D terrain: DEM mesh × 4K satellite, sun shadows, bright sky, haze, water, clouds.
+// Region scene: streamed quadtree terrain (5× wider than v1.0, zoomable to z19 satellite detail) with sky, sun &
+// shadows, sea, clouds, map labels — and two camera modes: map (orbit/pan/zoom) and first-person (walk / drone).
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { TileStore, loadBlob } from './tiles.js';
+import { TerrainEngine } from './terrain-engine.js';
+import { MapController, FirstPerson, PointerInput, EYE } from './controls.js';
+import { RegionFrame, clamp, lerp, damp, curvatureDrop, escapeHTML, fmtDist } from './geo.js';
+import { decodeBlob } from './dem-decode.js';
 import { mulberry } from './globe.js';
 
-const SIZE = 100; // world units across the tile window
-// ?qa=1 → lightweight mode for headless software-GL screenshots only (real devices get full quality)
 export const QA = new URLSearchParams(location.search).has('qa');
 
-// Time-of-day presets — all bright & airy (no dark/gloomy palettes)
+// Bright, airy time-of-day presets (no gloomy palettes)
 export const TIMES = {
-  morning: { label: '朝', sunEl: 14, sunAz: 110, sun: '#ffe9d6', sunI: 2.6, hemiSky: '#f3e9f2', hemiGnd: '#d9d2c4', hemiI: 1.25, top: '#9cc7e6', hor: '#f4e3dc', glow: '#ffd9c0', exp: 1.08 },
-  noon:    { label: '昼', sunEl: 52, sunAz: 150, sun: '#fff8ec', sunI: 3.0, hemiSky: '#e4f1fb', hemiGnd: '#d8d4c6', hemiI: 1.2, top: '#6fa9d8', hor: '#dcecf4', glow: '#fff4dc', exp: 1.0 },
-  golden:  { label: '夕', sunEl: 9, sunAz: 245, sun: '#ffcf9a', sunI: 2.8, hemiSky: '#f7e2cf', hemiGnd: '#dccbb4', hemiI: 1.3, top: '#8fb8dc', hor: '#f5e6d6', glow: '#ffc58a', exp: 1.08 },
+  morning: { label: '朝', sunEl: 13, sunAz: 105, sun: '#ffe6cf', sunI: 2.7, hemiSky: '#f2e8f0', hemiGnd: '#d8d0c2', hemiI: 1.2, top: '#8fc0e4', hor: '#f3e2da', glow: '#ffd4b4', haze: '#e6e4e6', hazeSun: '#fbd9c0', exp: 1.06 },
+  noon:    { label: '昼', sunEl: 55, sunAz: 160, sun: '#fff7ea', sunI: 3.0, hemiSky: '#e2f0fa', hemiGnd: '#d6d2c4', hemiI: 1.15, top: '#5e9fd4', hor: '#d6e8f2', glow: '#fff2d8', haze: '#cfe1ec', hazeSun: '#eef0ea', exp: 1.0 },
+  golden:  { label: '夕', sunEl: 8, sunAz: 250, sun: '#ffc88f', sunI: 2.9, hemiSky: '#f6e0cc', hemiGnd: '#d9c8b0', hemiI: 1.25, top: '#86b2da', hor: '#f4e2d0', glow: '#ffbf80', haze: '#ecdccc', hazeSun: '#ffcf9c', exp: 1.06 },
 };
 
-export class Terrain {
+export class RegionScene {
   constructor(renderer, labelsEl) {
-    this.renderer = renderer;
-    this.labelsEl = labelsEl;
+    this.renderer = renderer; this.labelsEl = labelsEl;
     this.scene = new THREE.Scene();
-    this.camera = new THREE.PerspectiveCamera(42, 1, 0.1, 2000);
-    this.controls = new OrbitControls(this.camera, renderer.domElement);
-    Object.assign(this.controls, {
-      enableDamping: true, dampingFactor: 0.06, rotateSpeed: 0.55, zoomSpeed: 0.9, panSpeed: 0.8,
-      minDistance: 8, maxDistance: 150, maxPolarAngle: Math.PI * 0.47, minPolarAngle: 0.12, screenSpacePanning: false,
-    });
-    this.controls.touches = { ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_PAN };
-    this.controls.enabled = false;
-    this.controls.addEventListener('start', () => { this.idle = 0; this.cine = null; this.autoOrbit = false; });
-    this.idle = 0;
-    this.autoOrbit = true;
-    this.labels = [];
+    this.camera = new THREE.PerspectiveCamera(50, 1, 1, 2e6);
+    this.store = new TileStore(renderer, { texBudget: QA ? 220 : 480, demBudget: 180 });
+    this.U = {
+      uHaze: { value: new THREE.Color() }, uHazeSun: { value: new THREE.Color() }, uSunDir: { value: new THREE.Vector3(0, 1, 0) },
+      uVis: { value: 60000 }, uFogMax: { value: 0.92 }, uLift: { value: 0.12 }, uSat: { value: 1.1 }, uUnder: { value: new THREE.Color('#5fb3c4') },
+      uWorldRect: { value: new THREE.Vector4() }, uEye: { value: new THREE.Vector3() },
+    };
+    this.mode = 'map'; this.time = 'noon'; this.active = false; this.labels = [];
+    this.onModeChange = null; this.onToast = null; this.onArrive = null; this.onSelectLabel = null;
     this._initStatic();
+    this.input = new PointerInput(renderer.domElement, {
+      start: () => { this.map?.vel.set(0, 0); this._interacted(); },
+      drag: (dx, dy, x, y) => (this.mode === 'map' ? this.map.drag(dx, dy, x, y) : this.fp.look(-dx, -dy)),
+      rotate: (dx, dy) => (this.mode === 'map' ? this.map.rotate(dx, dy) : this.fp.look(-dx, -dy)),
+      tilt: (dy) => this.mode === 'map' && this.map.tiltBy(dy),
+      pinch: (p) => { if (this.mode === 'map') this.map.pinch(p); else this.fp.look(-p.dx, -p.dy); },
+      wheel: (d, x, y) => { if (this.mode === 'map') this.map.wheel(d, x, y); else this._fov(d); },
+      end: () => this.map?.end(),
+      tap: (x, y) => this._tap(x, y),
+      doubleTap: (x, y) => { if (this.mode === 'map') { const p = this.map.groundAt(x, y); if (p) this.map.flyTo(p.x, p.z, { dist: Math.max(this.map.minDist, this.map.dist * 0.4), dur: 0.9 }); } },
+    });
+    this._keys = (e) => this._key(e);
+    addEventListener('keydown', this._keys); addEventListener('keyup', this._keys);
+    addEventListener('blur', () => this.fp?.keys.clear());
   }
 
   _initStatic() {
     const s = this.scene;
-    // Sky dome with analytic gradient + sun glow; horizon color == fog color for seamless haze
-    this.skyU = { top: { value: new THREE.Color() }, hor: { value: new THREE.Color() }, glow: { value: new THREE.Color() }, sunDir: { value: new THREE.Vector3() } };
-    const sky = new THREE.Mesh(new THREE.SphereGeometry(900, 64, 32), new THREE.ShaderMaterial({
-      side: THREE.BackSide, depthWrite: false, fog: false, uniforms: this.skyU,
-      vertexShader: `varying vec3 vD; void main(){ vD = normalize(position); vec4 p = modelViewMatrix*vec4(position,1.); gl_Position = projectionMatrix*p; gl_Position.z = gl_Position.w; }`,
-      fragmentShader: `uniform vec3 top, hor, glow, sunDir; varying vec3 vD;
-        void main(){ float h = clamp(vD.y, -0.2, 1.); float t = pow(max(h,0.), 0.55);
-          vec3 c = mix(hor, top, t);
-          float sd = max(dot(normalize(vD), normalize(sunDir)), 0.);
-          c += glow * (pow(sd, 8.) * 0.35 + pow(sd, 64.) * 0.5 + pow(sd, 1200.) * 2.0);
-          c = mix(c, hor * 1.02, smoothstep(0.02, -0.2, h));
+    this.skyU = { top: { value: new THREE.Color() }, hor: { value: new THREE.Color() }, glow: { value: new THREE.Color() }, sunDir: { value: new THREE.Vector3() }, haze: { value: new THREE.Color() } };
+    this.sky = new THREE.Mesh(new THREE.SphereGeometry(1, 48, 24), new THREE.ShaderMaterial({
+      side: THREE.BackSide, depthWrite: false, depthTest: false, fog: false, uniforms: this.skyU,
+      vertexShader: `varying vec3 vD; void main(){ vD = position; vec4 p = projectionMatrix * vec4(mat3(viewMatrix) * position, 1.0); gl_Position = p.xyww; }`,
+      fragmentShader: `uniform vec3 top, hor, glow, sunDir, haze; varying vec3 vD;
+        void main(){ vec3 d = normalize(vD); float h = d.y;
+          vec3 c = mix(hor, top, pow(clamp(h, 0., 1.), 0.5));
+          float sd = max(dot(d, normalize(sunDir)), 0.);
+          c += glow * (pow(sd, 8.) * 0.32 + pow(sd, 64.) * 0.45) + vec3(1.0, 0.97, 0.9) * pow(sd, 1600.) * 2.2;
+          c = mix(c, haze, smoothstep(0.03, -0.06, h));
           gl_FragColor = vec4(c, 1.); }`,
     }));
-    sky.renderOrder = -1;
-    s.add(sky);
-    s.fog = new THREE.FogExp2('#dcecf4', 0.0032);
-
-    this.hemi = new THREE.HemisphereLight('#fff', '#ddd', 1.2);
-    s.add(this.hemi);
+    this.sky.renderOrder = -10; this.sky.frustumCulled = false;
+    s.add(this.sky);
+    this.hemi = new THREE.HemisphereLight('#fff', '#ddd', 1.2); s.add(this.hemi);
     this.sun = new THREE.DirectionalLight('#fff', 3);
     this.sun.castShadow = true;
-    const sc = this.sun.shadow;
-    sc.mapSize.set(QA ? 1024 : 4096, QA ? 1024 : 4096);
-    Object.assign(sc.camera, { left: -62, right: 62, top: 62, bottom: -62, near: 1, far: 400 });
-    sc.bias = -0.0004; sc.normalBias = 0.35; sc.radius = 3;
+    const sc = this.sun.shadow; sc.mapSize.set(QA ? 1024 : 2048, QA ? 1024 : 2048); sc.bias = -0.0005; sc.normalBias = 0.6; sc.radius = 3;
     s.add(this.sun, this.sun.target);
-
-    // soft cumulus clouds (sprites)
-    this.cloudTex = new THREE.CanvasTexture(cloudSprite());
-    this.cloudTex.colorSpace = THREE.SRGBColorSpace;
-    this.clouds = new THREE.Group();
-    s.add(this.clouds);
+    this.cloudTex = new THREE.CanvasTexture(cloudSprite()); this.cloudTex.colorSpace = THREE.SRGBColorSpace;
+    this.clouds = new THREE.Group(); s.add(this.clouds);
   }
 
   setTime(key) {
-    const T = TIMES[key]; this.time = key;
-    const el = T.sunEl * Math.PI / 180, az = T.sunAz * Math.PI / 180;
-    const dir = new THREE.Vector3(Math.cos(el) * Math.sin(az), Math.sin(el), Math.cos(el) * Math.cos(az));
-    this.sun.position.copy(dir).multiplyScalar(160);
+    const T = TIMES[key]; if (!T) return; this.time = key;
+    const el = (T.sunEl * Math.PI) / 180, az = (T.sunAz * Math.PI) / 180;
+    this.sunDir = new THREE.Vector3(Math.cos(el) * Math.sin(az), Math.sin(el), -Math.cos(el) * Math.cos(az)).normalize(); // az from north
     this.sun.color.set(T.sun); this.sun.intensity = T.sunI;
     this.hemi.color.set(T.hemiSky); this.hemi.groundColor.set(T.hemiGnd); this.hemi.intensity = T.hemiI;
-    this.skyU.top.value.set(T.top); this.skyU.hor.value.set(T.hor); this.skyU.glow.value.set(T.glow); this.skyU.sunDir.value.copy(dir);
-    this.scene.fog.color.set(T.hor);
-    this.renderer.toneMappingExposure = T.exp;
-    if (this.waterU) { this.waterU.sunDir.value.copy(dir); this.waterU.skyCol.value.set(T.top); this.waterU.horCol.value.set(T.hor); }
-    this.clouds.children.forEach((c) => c.material.color.set(key === 'golden' ? '#fff1e2' : key === 'morning' ? '#fff5f4' : '#ffffff'));
+    this.skyU.top.value.set(T.top); this.skyU.hor.value.set(T.hor); this.skyU.glow.value.set(T.glow); this.skyU.sunDir.value.copy(this.sunDir); this.skyU.haze.value.set(T.haze);
+    this.U.uHaze.value.set(T.haze); this.U.uHazeSun.value.set(T.hazeSun); this.U.uSunDir.value.copy(this.sunDir);
+    if (this.waterU) { this.waterU.sunDir.value.copy(this.sunDir); this.waterU.skyCol.value.set(T.top); this.waterU.horCol.value.set(T.hor); this.waterU.haze.value.set(T.haze); }
+    this.exposure = T.exp;
+    if (this.active) this.renderer.toneMappingExposure = T.exp;
+    this.clouds.children.forEach((c) => c.material.color.set(key === 'golden' ? '#fff0de' : key === 'morning' ? '#fff4f2' : '#ffffff'));
   }
 
-  async load(region, onProgress = () => {}) {
-    this.dispose();
+  // ------------------------------------------------------------------ load
+  /** load a region. throws on fatal errors. `signal` aborts (user pressed back during loading). */
+  async load(region, onProgress = () => {}, signal) {
+    this.unload();
     this.region = region;
-    const base = '/';
-    onProgress(0.1);
-    const [hImg, satTex] = await Promise.all([
-      loadHeight(base + region.assets.height),
-      new THREE.TextureLoader().loadAsync(base + region.assets.sat).then((t) => { onProgress(0.7); return t; }),
+    const t = region.terrain;
+    this.F = new RegionFrame(t);
+    const W = this.F.worldRect; this.U.uWorldRect.value.set(W.x0, W.z0, W.x1, W.z1);
+    this.exag = region.exaggeration || 1;
+    this.hasSea = t.minElev < 5;
+    onProgress(0.05);
+    // base DEM (5×5 tiles at z0) + overview imagery (10×10 at z0+1), both shipped with the app
+    let got = 0; const tick = () => onProgress(0.1 + 0.75 * (++got / 2));
+    const [demBlob, ovBlob] = await Promise.all([
+      loadBlob('/' + region.assets.dem, signal).then((b) => { tick(); return b; }),
+      loadBlob('/' + region.assets.overview, signal).then((b) => { tick(); return b; }),
     ]);
-    onProgress(0.8);
-    const { data, w } = hImg;
-    const tr = region.terrain;
-    const range = Math.max(1, tr.maxElev - tr.minElev);
-    this.hScale = (range / tr.widthM) * SIZE * (region.exaggeration || 1);
-    this.minElev = tr.minElev; this.range = range;
-    this.heights = data; this.hw = w;
+    if (signal?.aborted) throw new DOMException('aborted', 'AbortError');
+    const dem = await this.store.decodeDEM(demBlob, '16', t.minElev, t.maxElev);
+    this._sliceDEM(dem, t);
+    await this._sliceOverview(ovBlob, t);
+    if (signal?.aborted) throw new DOMException('aborted', 'AbortError');
+    onProgress(0.9);
 
-    // Geometry: full-res grid (w×w vertices)
-    const step = QA ? 4 : 1;
-    const seg = Math.floor((w - 1) / step);
-    const geo = new THREE.PlaneGeometry(SIZE, SIZE, seg, seg);
-    geo.rotateX(-Math.PI / 2);
-    const pos = geo.attributes.position;
-    for (let i = 0; i < pos.count; i++) {
-      const gx = (i % (seg + 1)) * step, gz = Math.floor(i / (seg + 1)) * step;
-      pos.setY(i, data[gz * w + gx] * this.hScale);
-    }
-    geo.computeVertexNormals();
-    geo.computeBoundingSphere();
-
-    satTex.colorSpace = THREE.SRGBColorSpace;
-    satTex.anisotropy = this.renderer.capabilities.getMaxAnisotropy();
-    satTex.generateMipmaps = true;
-    satTex.minFilter = THREE.LinearMipmapLinearFilter;
-    const mat = new THREE.MeshStandardMaterial({ map: satTex, roughness: 0.94, metalness: 0 });
-    const fogCol = this.scene.fog.color;
-    mat.onBeforeCompile = (sh) => {
-      sh.uniforms.edgeCol = { value: fogCol };
-      sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nvarying vec2 vUv2; varying float vH;')
-        .replace('#include <uv_vertex>', '#include <uv_vertex>\nvUv2 = uv; vH = position.y;');
-      sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying vec2 vUv2; varying float vH; uniform vec3 edgeCol;')
-        // satellite imagery already contains baked shadows — lift them so terrain reads bright & clean
-        .replace('#include <map_fragment>', `#include <map_fragment>
-          vec3 sc = diffuseColor.rgb; float l = dot(sc, vec3(.299,.587,.114));
-          sc = mix(vec3(l), sc, 1.12); sc = pow(sc, vec3(0.86)) * 1.06;
-          diffuseColor.rgb = sc;`)
-        .replace('#include <fog_fragment>', `#include <fog_fragment>
-          vec2 e = abs(vUv2 - 0.5) * 2.0; float ed = pow(pow(e.x, 6.) + pow(e.y, 6.), 1./6.);
-          gl_FragColor.rgb = mix(gl_FragColor.rgb, edgeCol, smoothstep(0.78, 0.99, ed));`);
-    };
-    this.mesh = new THREE.Mesh(geo, mat);
-    this.mesh.castShadow = this.mesh.receiveShadow = true;
-    this.scene.add(this.mesh);
-
-    // sea / lagoon water
-    this.seaY = (0 - tr.minElev) * (this.hScale / range);
-    if (tr.minElev < 5) this._addWater(hImg);
-
+    this.engine = new TerrainEngine({ renderer: this.renderer, store: this.store, frame: this.F, exaggeration: this.exag, uniforms: this.U, quality: this.quality });
+    this.scene.add(this.engine.group);
+    this.map = new MapController(this.camera, this.engine, this.F);
+    this.map.onUser = () => this._interacted();
+    this.fp = new FirstPerson(this.camera, this.engine, this.F, { hasSea: this.hasSea });
+    this.fp.onEvent = (k) => this.onToast?.({ edge: 'ここが探索エリアの端です', sea: 'この先は海です。ドローンに切り替えると渡れます', 'nav-manual': '自動移動を解除しました' }[k]);
+    this.fp.onArrive = (n) => this.onArrive?.(n);
+    if (this.hasSea) this._addWater();
     this._addClouds(region);
-    this.setTime(this.time || 'noon');
+    this.setTime(this.time);
     this._buildLabels(region);
 
-    // camera framing: centered on the area's main POI
-    const f = region.pois[0] ? this.uvToWorld(region.pois[0].uv) : new THREE.Vector3();
-    this.focus = new THREE.Vector3(f.x * 0.5, this.heightAtWorld(f.x * 0.5, f.z * 0.5), f.z * 0.5);
-    this.controls.target.copy(this.focus);
-    this.camera.position.set(this.focus.x + 10, this.focus.y + 120, this.focus.z + 150);
-    this.cine = { t: 0, dur: 5.5, from: this.camera.position.clone(), to: new THREE.Vector3(this.focus.x - 38, this.focus.y + 30, this.focus.z + 52) };
-    this.autoOrbit = true; this.idle = 0;
+    // opening shot: wide establishing view that settles on the main POI
+    const [px, pz] = region.pois[0] ? this.F.uvToXZ(region.pois[0].uv) : [0, 0];
+    this.home = { x: px * 0.6, z: pz * 0.6, dist: this.F.size * 0.42, tilt: 1.02, yaw: 0.35 };
+    Object.assign(this.map.target, { x: 0, z: 0 }); this.map.dist = this.F.size * 1.05; this.map.tilt = 0.25; this.map.yaw = -0.3;
+    this.map.groundY = this.engine.heightAt(0, 0);
+    this.map.flyTo(this.home.x, this.home.z, { dist: this.home.dist, tilt: this.home.tilt, yaw: this.home.yaw, dur: 5 });
+    this.mode = 'map'; this.idle = 0; this.autoOrbit = false;
+    this.store.clearMissingOnLoad = true;
     onProgress(1);
   }
 
-  _addWater({ w }) {
-    // height texture for depth-based color
-    const h = new Float32Array(this.heights);
-    const ht = new THREE.DataTexture(h, w, w, THREE.RedFormat, THREE.FloatType);
-    ht.flipY = false; ht.magFilter = ht.minFilter = THREE.LinearFilter; ht.needsUpdate = true;
+  _sliceDEM(dem, t) {
+    const n = t.n, S = 256;
+    for (let j = 0; j < n; j++) for (let i = 0; i < n; i++) {
+      const h = new Float32Array(S * S);
+      for (let y = 0; y < S; y++) h.set(dem.h.subarray((j * S + y) * dem.w + i * S, (j * S + y) * dem.w + i * S + S), y * S);
+      this.store.putDEM(t.z, t.x0 + i, t.y0 + j, h, S, true);
+    }
+    // coarse world ring (z0-2) from the base DEM where it overlaps; ring tiles outside are streamed
+    this.baseDEM = dem;
+  }
+
+  async _sliceOverview(blob, t) {
+    const bmp = await createImageBitmap(blob, { premultiplyAlpha: 'none', colorSpaceConversion: 'default' });
+    const z = t.z + 1, n = t.n * 2, S = bmp.width / n;
+    const jobs = [];
+    for (let j = 0; j < n; j++) for (let i = 0; i < n; i++) {
+      jobs.push(createImageBitmap(bmp, i * S, j * S, S, S, { premultiplyAlpha: 'none' }).then((b) => this.store.putTex(z, t.x0 * 2 + i, t.y0 * 2 + j, this.store.makeTexture(b), true)));
+    }
+    // z0 tiles as 2×2 downsamples so the far block has textures immediately too
+    for (let j = 0; j < t.n; j++) for (let i = 0; i < t.n; i++) {
+      jobs.push(createImageBitmap(bmp, i * S * 2, j * S * 2, S * 2, S * 2, { premultiplyAlpha: 'none', resizeWidth: 256, resizeHeight: 256, resizeQuality: 'high' }).then((b) => this.store.putTex(t.z, t.x0 + i, t.y0 + j, this.store.makeTexture(b), true)));
+    }
+    await Promise.all(jobs);
+    bmp.close?.();
+  }
+
+  _addWater() {
     this.waterU = {
-      t: { value: 0 }, hTex: { value: ht }, seaN: { value: this.seaY / this.hScale },
-      sunDir: { value: new THREE.Vector3() }, skyCol: { value: new THREE.Color() }, horCol: { value: new THREE.Color() },
-      fogColor: { value: this.scene.fog.color }, fogDensity: { value: this.scene.fog.density },
+      t: { value: 0 }, sunDir: { value: new THREE.Vector3() }, skyCol: { value: new THREE.Color() }, horCol: { value: new THREE.Color() },
+      haze: { value: new THREE.Color() }, uVis: this.U.uVis, uFogMax: this.U.uFogMax, uWorldRect: this.U.uWorldRect, uEye: this.U.uEye,
     };
-    const geo = new THREE.PlaneGeometry(SIZE * 6, SIZE * 6, 1, 1); geo.rotateX(-Math.PI / 2);
+    const R = this.F.worldRect, w = R.x1 - R.x0;
+    const geo = new THREE.PlaneGeometry(w, w, 160, 160); geo.rotateX(-Math.PI / 2); geo.translate((R.x0 + R.x1) / 2, 0, (R.z0 + R.z1) / 2);
     const mat = new THREE.ShaderMaterial({
       transparent: true, depthWrite: false, uniforms: this.waterU,
-      vertexShader: `varying vec3 vW; varying vec2 vUv; varying float vFogDepth;
-        void main(){ vec4 w = modelMatrix*vec4(position,1.); vW = w.xyz; vUv = vec2(w.x/${SIZE.toFixed(1)}+.5, w.z/${SIZE.toFixed(1)}+.5);
-          vec4 mv = viewMatrix*w; vFogDepth = -mv.z; gl_Position = projectionMatrix*mv; }`,
-      fragmentShader: `uniform float t, seaN, fogDensity; uniform sampler2D hTex; uniform vec3 sunDir, skyCol, horCol, fogColor;
-        varying vec3 vW; varying vec2 vUv; varying float vFogDepth;
-        float hash(vec2 p){ return fract(sin(dot(p, vec2(127.1,311.7)))*43758.5453); }
-        float noise(vec2 p){ vec2 i=floor(p), f=fract(p); f=f*f*(3.-2.*f); return mix(mix(hash(i),hash(i+vec2(1,0)),f.x), mix(hash(i+vec2(0,1)),hash(i+1.),f.x), f.y); }
+      vertexShader: `uniform vec3 uEye; varying vec3 vW;
+        void main(){ vec4 w = modelMatrix * vec4(position, 1.); vW = w.xyz; vec2 d = w.xz - uEye.xz; w.y -= dot(d, d) * ${(1 / (2 * 6371008.8)).toExponential(8)};
+          gl_Position = projectionMatrix * viewMatrix * w; }`,
+      fragmentShader: `uniform float t, uVis, uFogMax; uniform vec3 sunDir, skyCol, horCol, haze; uniform vec4 uWorldRect; varying vec3 vW;
+        float hash(vec2 p){ return fract(sin(dot(p, vec2(127.1,311.7))) * 43758.5453); }
+        float noise(vec2 p){ vec2 i = floor(p), f = fract(p); f = f*f*(3.-2.*f); return mix(mix(hash(i), hash(i+vec2(1,0)), f.x), mix(hash(i+vec2(0,1)), hash(i+1.), f.x), f.y); }
         void main(){
-          bool inside = all(greaterThan(vUv, vec2(0.))) && all(lessThan(vUv, vec2(1.)));
-          float hN = inside ? texture2D(hTex, vUv).r : 0.0;
-          float depth = inside ? max(seaN - hN, 0.) : 1.0;
-          if (inside && hN > seaN + 0.002) discard;
-          vec2 p = vW.xz * 0.9;
-          float n1 = noise(p + t*0.35), n2 = noise(p*2.3 - t*0.5), n3 = noise(p*6.1 + vec2(t*0.8, -t*0.6));
-          vec3 N = normalize(vec3((n1-.5)*.35 + (n2-.5)*.2 + (n3-.5)*.1, 1., (n2-.5)*.35 + (n3-.5)*.2));
-          vec3 V = normalize(cameraPosition - vW);
-          float fr = 0.04 + 0.96*pow(1. - max(dot(N, V), 0.), 5.);
-          float d = clamp(depth * 18.0, 0., 1.);
-          vec3 shallow = vec3(0.47, 0.82, 0.80), mid = vec3(0.24, 0.62, 0.78), deep = vec3(0.17, 0.44, 0.70);
-          vec3 col = mix(shallow, mid, smoothstep(0., .35, d)); col = mix(col, deep, smoothstep(.35, 1., d));
+          vec3 dv = vW - cameraPosition; float d = length(dv);
+          float sc = 1.0 / clamp(d / 400.0, 1.0, 400.0);
+          vec2 p = vW.xz * 0.08;
+          float n1 = noise(p + t*0.3), n2 = noise(p*2.7 - t*0.45), n3 = noise(p*7.3 + vec2(t*0.7, -t*0.5));
+          float amp = mix(0.02, 0.35, sc);
+          vec3 N = normalize(vec3(((n1-.5)*.6 + (n2-.5)*.3 + (n3-.5)*.15) * amp, 1., ((n2-.5)*.6 + (n3-.5)*.3) * amp));
+          vec3 V = -dv / max(d, 1.0);
+          float fr = 0.02 + 0.98 * pow(1. - max(dot(N, V), 0.), 5.);
+          vec3 col = vec3(0.13, 0.42, 0.62);
           vec3 R = reflect(-V, N);
-          vec3 refl = mix(horCol, skyCol, clamp(R.y, 0., 1.));
-          col = mix(col, refl, fr * 0.8);
-          float sp = pow(max(dot(R, normalize(sunDir)), 0.), 220.) * 3.0 + pow(max(dot(R, normalize(sunDir)), 0.), 24.) * 0.18;
-          col += vec3(1., .97, .9) * sp;
-          float a = inside ? mix(0.25, 0.94, smoothstep(0.0, 0.5, d)) : 0.94;
-          float shore = inside ? smoothstep(0.012, 0.0, depth) : 0.;
-          col = mix(col, vec3(1.), shore * (0.5 + 0.5*n3) * 0.6);
-          float fogF = 1.0 - exp(-fogDensity*fogDensity*vFogDepth*vFogDepth);
-          col = mix(col, fogColor, fogF);
-          gl_FragColor = vec4(col, max(a, fogF)); }`,
+          col = mix(col, mix(horCol, skyCol, clamp(R.y * 2.0, 0., 1.)), fr * 0.85);
+          float s = max(dot(R, normalize(sunDir)), 0.);
+          col += vec3(1., .96, .88) * (pow(s, 300.) * 2.5 + pow(s, 30.) * 0.12);
+          float f = 1.0 - exp(-d / uVis);
+          vec2 wc = (uWorldRect.xy + uWorldRect.zw) * 0.5, wh = (uWorldRect.zw - uWorldRect.xy) * 0.5;
+          vec2 e = abs(vW.xz - wc) / wh; float edge = smoothstep(0.78, 0.97, max(e.x, e.y));
+          col = mix(col, haze, max(f * uFogMax, edge));
+          gl_FragColor = vec4(col, mix(0.72, 0.97, clamp(fr * 2. + f, 0., 1.))); }`,
     });
+    mat.polygonOffset = true; mat.polygonOffsetFactor = -1;
     this.water = new THREE.Mesh(geo, mat);
-    this.water.position.y = this.seaY;
-    this.water.renderOrder = 2;
+    this.water.position.y = 0.0; this.water.renderOrder = 2; this.water.frustumCulled = false;
     this.scene.add(this.water);
   }
 
   _addClouds(region) {
-    const rnd = mulberry(region.id.length * 97 + 13);
-    const top = this.range * this.hScale / this.range;
-    const baseY = (this.range * (this.hScale / this.range)) * 1 + 10;
-    for (let i = 0; i < 16; i++) {
-      const m = new THREE.Sprite(new THREE.SpriteMaterial({ map: this.cloudTex, transparent: true, opacity: 0.55 + rnd() * 0.3, depthWrite: false, fog: true }));
-      const s = 18 + rnd() * 26;
-      m.scale.set(s * 1.8, s, 1);
-      m.position.set((rnd() - 0.5) * 180, baseY + rnd() * 18, (rnd() - 0.5) * 180);
-      m.userData.v = 0.6 + rnd() * 0.8;
+    const rnd = mulberry(region.id.length * 131 + 7);
+    const top = region.terrain.maxElev * this.exag;
+    const n = QA ? 10 : 26, R = this.F.size * 0.7;
+    for (let i = 0; i < n; i++) {
+      const m = new THREE.Sprite(new THREE.SpriteMaterial({ map: this.cloudTex, transparent: true, opacity: 0.5 + rnd() * 0.3, depthWrite: false, fog: false }));
+      const s = this.F.size * (0.05 + rnd() * 0.06);
+      m.scale.set(s * 1.9, s * 0.8, 1);
+      m.position.set((rnd() - 0.5) * 2 * R, top + 900 + rnd() * 1800, (rnd() - 0.5) * 2 * R);
+      m.userData.v = (0.4 + rnd() * 0.8) * this.F.size * 0.0004;
       this.clouds.add(m);
     }
-    void top;
   }
 
+  // ------------------------------------------------------------------ labels
   _buildLabels(region) {
-    this.labels = region.pois.map((p, i) => {
-      const el = document.createElement('div');
-      el.className = 'poi-label';
+    const mk = (p, i, kind) => {
+      const el = document.createElement('button');
+      el.className = `tl tl-${kind}`; el.type = 'button';
       el.style.setProperty('--c', region.accent);
-      el.innerHTML = `<div class="card2"><b>${p.name}</b><small>${p.desc}</small></div><div class="stem"></div><div class="base"></div>`;
-      el.addEventListener('pointerup', (e) => { e.stopPropagation(); const open = !el.classList.contains('open'); this.labels.forEach((l) => l.el.classList.remove('open')); el.classList.toggle('open', open); if (open) this.flyTo(i); });
+      const ele = p.ele ? `<em>${p.ele.toLocaleString()} m</em>` : '';
+      el.innerHTML = kind === 'poi'
+        ? `<span class="tl-card"><b>${escapeHTML(p.name)}</b><small>${escapeHTML(p.desc)}</small></span><span class="tl-stem"></span><span class="tl-dot"></span>`
+        : `<span class="tl-card"><i class="k k-${p.kind}"></i><b>${escapeHTML(p.name)}</b>${ele}</span><span class="tl-dot"></span>`;
+      el.setAttribute('aria-label', p.name);
+      el.addEventListener('click', (e) => { e.stopPropagation(); this.onSelectLabel?.(this.labels[idx]); });
       this.labelsEl.appendChild(el);
-      const wpos = this.uvToWorld(p.uv);
-      return { el, pos: wpos };
-    });
+      const [x, z] = this.F.uvToXZ(p.uv);
+      const idx = this.labels.length;
+      const L = { el, x, z, p, kind, i, prio: kind === 'poi' ? 1000 - i : kind === 'town' ? 500 : kind === 'peak' ? 300 + (p.ele || 0) / 100 : kind === 'lake' ? 350 : 200, vis: false, w: 0, h: 0, occl: false, occT: 0 };
+      this.labels.push(L);
+    };
+    region.pois.forEach((p, i) => mk(p, i, 'poi'));
+    (region.places || []).forEach((p, i) => mk(p, i, p.kind));
+    requestAnimationFrame(() => this.labels.forEach((l) => { l.w = l.el.offsetWidth; l.h = l.el.offsetHeight; }));
+  }
+  setLabelsVisible(v) { this.labelsOn = v; }
+
+  _updateLabels() {
+    const cam = this.camera, W = this.w, H = this.h, v = new THREE.Vector3();
+    const placed = [];
+    const fpMode = this.mode === 'fp';
+    const camAlt = this.mode === 'map' ? this.map.dist : this.fp.agl();
+    const sorted = this.labels.slice().sort((a, b) => b.prio - a.prio);
+    let occChecks = 0;
+    for (const L of sorted) {
+      const y = this.engine.heightAt(L.x, L.z);
+      const d = Math.hypot(L.x - cam.position.x, L.z - cam.position.z);
+      v.set(L.x, y - curvatureDrop(d), L.z).project(cam);
+      let show = this.labelsOn !== false && v.z < 1 && v.z > -1 && Math.abs(v.x) < 1.05 && Math.abs(v.y) < 1.05;
+      // minor labels only when reasonably close
+      if (show && L.kind !== 'poi') {
+        const range = fpMode ? 30000 : Math.max(8000, camAlt * 2.6);
+        if (d > range * (L.kind === 'peak' || L.kind === 'town' ? 1.3 : 0.8)) show = false;
+      }
+      if (show && fpMode && d < 12) show = false;
+      const sx = (v.x * 0.5 + 0.5) * W, sy = (-v.y * 0.5 + 0.5) * H;
+      // terrain occlusion (amortised: a few checks per frame, hysteresis)
+      if (show) {
+        if (occChecks < 6 && performance.now() - L.occT > 250) {
+          occChecks++; L.occT = performance.now();
+          L.occl = !this.engine.visible(cam.position, { x: L.x, y: y + (L.kind === 'poi' ? 30 : 10), z: L.z }, 24);
+        }
+        if (L.occl) show = false;
+      }
+      if (show) { // declutter: skip if overlapping a higher-priority label
+        const w = L.w || 90, h = L.h || 30;
+        const r = { x0: sx - w / 2 - 4, x1: sx + w / 2 + 4, y0: sy - h - 4, y1: sy + 4 };
+        if (placed.some((q) => r.x0 < q.x1 && r.x1 > q.x0 && r.y0 < q.y1 && r.y1 > q.y0)) show = false;
+        else placed.push(r);
+      }
+      if (show !== L.vis) { L.vis = show; L.el.classList.toggle('on', show); }
+      if (show) L.el.style.transform = `translate3d(${sx.toFixed(1)}px, ${sy.toFixed(1)}px, 0) translate(-50%, -100%)`;
+    }
   }
 
-  flyTo(i) {
-    const p = this.labels[i].pos;
-    const dir = this.camera.position.clone().sub(this.controls.target).setY(0).normalize();
-    const to = p.clone().add(dir.multiplyScalar(26)).add(new THREE.Vector3(0, 14, 0));
-    this.cine = { t: 0, dur: 2.4, from: this.camera.position.clone(), to, tFrom: this.controls.target.clone(), tTo: p.clone() };
-    this.autoOrbit = false;
+  // ------------------------------------------------------------------ modes
+  enterFirstPerson(x, z, yaw) {
+    if (!this.engine) return;
+    this.map.cancelAnim();
+    if (x == null) { x = this.map.target.x; z = this.map.target.z; yaw = this.map.yaw; }
+    if (this.hasSea && this.engine.heightAt(x, z) < 0.3) {
+      const land = this._nearestLand(x, z); if (land) [x, z] = land;
+    }
+    const m = this.F.half - 60; x = clamp(x, -m, m); z = clamp(z, -m, m);
+    this.fp.mode = 'walk'; this.fp.speedIdx = 0; this.fp.setNav(null);
+    this.fp.place(x, z, yaw);
+    this.mode = 'fp';
+    this.camera.fov = 62; this.camera.near = 0.3; this.camera.updateProjectionMatrix();
+    this._trans = { t: 0, d: 1.6, from: this.camera.position.clone(), fromQ: this.camera.quaternion.clone() };
+    this.onModeChange?.('fp');
   }
-
-  uvToWorld([u, v]) {
-    const x = (u - 0.5) * SIZE, z = (v - 0.5) * SIZE;
-    return new THREE.Vector3(x, this.heightAtWorld(x, z), z);
+  exitFirstPerson() {
+    if (this.mode !== 'fp') return;
+    const p = this.fp.pos;
+    this.map.target.set(p.x, 0, p.z); this.map.groundY = this.engine.heightAt(p.x, p.z);
+    this.map.yaw = this.fp.yaw; this.map.dist = 450; this.map.tilt = 1.1;
+    this.map.flyTo(p.x, p.z, { dist: 2500, tilt: 1.0, yaw: this.fp.yaw, dur: 1.6 });
+    this.mode = 'map'; this._trans = null;
+    this.camera.fov = 50; this.camera.near = 1; this.camera.updateProjectionMatrix();
+    this.onModeChange?.('map');
   }
-
-  heightAtWorld(x, z) {
-    if (!this.heights) return 0;
-    const w = this.hw;
-    const fx = THREE.MathUtils.clamp((x / SIZE + 0.5) * (w - 1), 0, w - 1), fz = THREE.MathUtils.clamp((z / SIZE + 0.5) * (w - 1), 0, w - 1);
-    const x0 = Math.floor(fx), z0 = Math.floor(fz), x1 = Math.min(x0 + 1, w - 1), z1 = Math.min(z0 + 1, w - 1);
-    const tx = fx - x0, tz = fz - z0, H = this.heights;
-    const h = (H[z0 * w + x0] * (1 - tx) + H[z0 * w + x1] * tx) * (1 - tz) + (H[z1 * w + x0] * (1 - tx) + H[z1 * w + x1] * tx) * tz;
-    return h * this.hScale;
+  _nearestLand(x, z) {
+    for (let r = 50; r < this.F.size * 0.5; r *= 1.35) for (let a = 0; a < 16; a++) {
+      const px = x + Math.cos((a / 16) * Math.PI * 2) * r, pz = z + Math.sin((a / 16) * Math.PI * 2) * r;
+      if (this.F.inExtent(px, pz, 80) && this.engine.heightAt(px, pz) > 2) return [px, pz];
+    }
+    return null;
   }
-
-  elevationAt(x, z) { return Math.round(this.minElev + (this.heightAtWorld(x, z) / this.hScale) * this.range); }
-
+  /** fly the map to a label/POI, or navigate there in first-person */
+  goTo(L, { auto = false } = {}) {
+    if (this.mode === 'fp') { this.fp.setNav({ x: L.x, z: L.z, name: L.p.name, auto }); return; }
+    const dist = L.kind === 'poi' ? 3200 : L.kind === 'peak' ? 5000 : 2800;
+    this.map.flyTo(L.x, L.z, { dist, tilt: 1.12 });
+  }
+  resetView() { if (this.mode === 'map' && this.home) this.map.flyTo(this.home.x, this.home.z, { dist: this.home.dist, tilt: this.home.tilt, yaw: this.home.yaw }); }
+  northUp() { if (this.mode === 'map') this.map.flyTo(this.map.target.x, this.map.target.z, { yaw: 0, tilt: this.map.tilt, dur: 0.8 }); else this.fp.yaw = 0; }
+  zoom(f) { if (this.mode === 'map') { this.map.cancelAnim(); this.map.flyTo(this.map.target.x, this.map.target.z, { dist: this.map.dist * f, dur: 0.45 }); } else this._fov(f > 1 ? 300 : -300); }
   cinematic() {
-    const r = 70, a = Math.random() * Math.PI * 2;
-    this.cine = null; this.autoOrbit = true; this.idle = 10;
-    const t = this.focus.clone();
-    this.cine = { t: 0, dur: 3.2, from: this.camera.position.clone(), to: new THREE.Vector3(t.x + Math.cos(a) * r, t.y + 34, t.z + Math.sin(a) * r), tFrom: this.controls.target.clone(), tTo: t };
+    if (this.mode !== 'map') return;
+    this.autoOrbit = true; this.idle = 999;
+    this.map.flyTo(this.map.target.x, this.map.target.z, { dist: clamp(this.map.dist, 3000, 16000), tilt: 1.18, dur: 1.6 });
+  }
+  stopCinematic() { this.autoOrbit = false; }
+  _fov(d) { this.camera.fov = clamp(this.camera.fov + d * 0.02, 20, 75); this.camera.updateProjectionMatrix(); }
+  _interacted() { this.idle = 0; if (this.autoOrbit) { this.autoOrbit = false; this.onCineStop?.(); } }
+
+  _tap(x, y) {
+    if (this.mode === 'fp') return;
+    // tap on the map: nothing (labels are buttons). Close any open card.
+    this.onTapMap?.(x, y);
+  }
+  _key(e) {
+    if (!this.active || !this.fp) return;
+    if (e.target && /INPUT|TEXTAREA/.test(e.target.tagName)) return;
+    const down = e.type === 'keydown';
+    const code = e.code;
+    if (this.mode === 'fp') {
+      if (['KeyW', 'KeyA', 'KeyS', 'KeyD', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Space', 'KeyE', 'KeyQ', 'ShiftLeft', 'ShiftRight'].includes(code)) {
+        e.preventDefault(); down ? this.fp.keys.add(code) : this.fp.keys.delete(code);
+      }
+    } else if (down) {
+      const M = this.map, k = M.dist * 0.08;
+      const mv = (fx, fz) => { M.cancelAnim(); const c = Math.cos(M.yaw), s = Math.sin(M.yaw); M.target.x += (fx * c - fz * s) * k; M.target.z += (fx * s + fz * c) * k; M._clampTarget(); this._interacted(); };
+      if (code === 'ArrowUp' || code === 'KeyW') mv(0, -1); else if (code === 'ArrowDown' || code === 'KeyS') mv(0, 1);
+      else if (code === 'ArrowLeft' || code === 'KeyA') mv(-1, 0); else if (code === 'ArrowRight' || code === 'KeyD') mv(1, 0);
+      else if (code === 'Equal' || code === 'NumpadAdd') this.zoom(0.6); else if (code === 'Minus' || code === 'NumpadSubtract') this.zoom(1.6);
+      else if (code === 'KeyQ') { M.yaw -= 0.15; this._interacted(); } else if (code === 'KeyE') { M.yaw += 0.15; this._interacted(); }
+    }
   }
 
-  resize(w, h) { this.camera.aspect = w / h; this.camera.updateProjectionMatrix(); this.w = w; this.h = h; }
+  // ------------------------------------------------------------------ frame
+  resize(w, h) { this.w = w; this.h = h; this.camera.aspect = w / h; this.camera.updateProjectionMatrix(); this.camera.domRect = { left: 0, top: 0, width: w, height: h }; }
 
   update(dt, t) {
-    if (!this.mesh) return;
-    const c = this.cine;
-    if (c) {
-      c.t += dt; const k = easeInOut(Math.min(c.t / c.dur, 1));
-      this.camera.position.lerpVectors(c.from, c.to, k);
-      if (c.tFrom) this.controls.target.lerpVectors(c.tFrom, c.tTo, k);
-      if (c.t >= c.dur) this.cine = null;
-    } else {
+    if (!this.engine) return;
+    if (this.mode === 'map') {
       this.idle += dt;
-      if (this.autoOrbit || this.idle > 8) {
-        const tg = this.controls.target, off = this.camera.position.clone().sub(tg);
-        off.applyAxisAngle(new THREE.Vector3(0, 1, 0), dt * 0.045);
-        this.camera.position.copy(tg).add(off);
+      if (this.autoOrbit && !this.map.anim) this.map.yaw += dt * 0.05;
+      this.map.update(dt);
+    } else {
+      this.fp.update(dt);
+      if (this._trans) { // smooth hand-off from the map view into the eyes of the traveller
+        const T = this._trans; T.t += dt; const k = Math.min(1, T.t / T.d), e = k * k * (3 - 2 * k);
+        const to = this.camera.position.clone(), toQ = this.camera.quaternion.clone();
+        this.camera.position.lerpVectors(T.from, to, e); this.camera.quaternion.slerpQuaternions(T.fromQ, toQ, e);
+        this.camera.updateMatrixWorld();
+        if (k >= 1) this._trans = null;
       }
     }
-    this.controls.update();
-    // keep camera above ground
-    const gy = this.heightAtWorld(this.camera.position.x, this.camera.position.z) + 3;
-    if (this.camera.position.y < gy) this.camera.position.y = gy;
-    // keep within tile
-    const lim = SIZE * 0.62;
-    this.controls.target.x = THREE.MathUtils.clamp(this.controls.target.x, -SIZE * 0.42, SIZE * 0.42);
-    this.controls.target.z = THREE.MathUtils.clamp(this.controls.target.z, -SIZE * 0.42, SIZE * 0.42);
-    this.camera.position.x = THREE.MathUtils.clamp(this.camera.position.x, -lim * 2.2, lim * 2.2);
-    this.camera.position.z = THREE.MathUtils.clamp(this.camera.position.z, -lim * 2.2, lim * 2.2);
+    const cam = this.camera.position;
+    this.U.uEye.value.copy(cam);
+    // near/far adapt to altitude (depth precision)
+    const alt = Math.max(1, cam.y - this.engine.heightAt(cam.x, cam.z));
+    const near = clamp(alt * 0.1, this.mode === 'fp' ? 0.25 : 1, 400);
+    if (Math.abs(near - this.camera.near) / this.camera.near > 0.15) { this.camera.near = near; this.camera.far = 1.6e6; this.camera.updateProjectionMatrix(); }
+    // visibility / haze distance grows with altitude so high views stay crisp
+    this.U.uVis.value = lerp(this.U.uVis.value, clamp(22000 + alt * 7, 22000, 600000), damp(3, dt));
+    this.sky.position.copy(cam); this.sky.scale.setScalar(1e5);
 
-    // sun shadow follows target
-    this.sun.target.position.copy(this.controls.target);
-    this.sun.position.copy(this.controls.target).add(this.skyU.sunDir.value.clone().multiplyScalar(160));
+    // shadows around the focus point
+    const focus = this.mode === 'map' ? this.map.target : this.fp.pos;
+    const span = clamp(this.mode === 'map' ? this.map.dist * 1.3 : Math.max(600, this.fp.agl() * 4), 300, 60000);
+    const sc = this.sun.shadow.camera;
+    if (Math.abs(sc.right - span) / span > 0.1) { Object.assign(sc, { left: -span, right: span, top: span, bottom: -span, near: 1, far: span * 8 }); sc.updateProjectionMatrix(); }
+    this.sun.target.position.set(focus.x, focus.y, focus.z);
+    this.sun.position.copy(this.sunDir).multiplyScalar(span * 3).add(this.sun.target.position);
     this.sun.target.updateMatrixWorld();
+    this.sun.shadow.normalBias = span * 0.0012;
+    this.engine.shadowBox = { x0: focus.x - span, x1: focus.x + span, z0: focus.z - span, z1: focus.z + span };
 
+    this.engine.update(this.camera, focus);
+    this.store.pump();
     if (this.waterU) this.waterU.t.value = t;
-    for (const cl of this.clouds.children) { cl.position.x += dt * cl.userData.v; if (cl.position.x > 110) cl.position.x = -110; }
-
-    // labels
-    const v = new THREE.Vector3();
-    const dist = this.camera.position.distanceTo(this.controls.target);
-    for (const l of this.labels) {
-      v.copy(l.pos).project(this.camera);
-      const vis = v.z < 1 && Math.abs(v.x) < 1.1 && Math.abs(v.y) < 1.1;
-      const x = (v.x * 0.5 + 0.5) * this.w, y = (-v.y * 0.5 + 0.5) * this.h;
-      l.el.style.transform = `translate(${x}px, ${y}px) translate(-50%, -100%)`;
-      l.el.style.opacity = vis ? THREE.MathUtils.clamp(1.6 - dist / 110, 0.35, 1) : 0;
-    }
-    this.compassAngle = Math.atan2(this.camera.position.x - this.controls.target.x, this.camera.position.z - this.controls.target.z);
+    const lim = this.F.size * 0.75;
+    for (const c of this.clouds.children) { c.position.x += dt * c.userData.v; if (c.position.x > lim) c.position.x = -lim; }
+    this.clouds.visible = this.mode === 'fp' || this.map.dist < this.F.size * 0.6;
+    this._updateLabels();
   }
 
-  show(on) { this.controls.enabled = on; this.labels.forEach((l) => (l.el.style.display = on ? '' : 'none')); }
+  /** readouts for HUD */
+  info() {
+    const cam = this.camera.position, focus = this.mode === 'map' ? this.map.target : this.fp.pos;
+    const [lat, lon] = this.F.xzToLL(focus.x, focus.z);
+    return {
+      lat, lon, elev: Math.round(this.engine.heightAt(focus.x, focus.z) / this.exag),
+      heading: this.mode === 'map' ? this.map.heading : this.fp.heading,
+      alt: this.mode === 'map' ? this.map.dist : this.fp.agl(),
+      camAlt: cam.y / this.exag,
+      loading: this.store.inflight(),
+    };
+  }
+
   render() { this.renderer.render(this.scene, this.camera); }
 
-  dispose() {
+  show(on) {
+    this.active = on;
+    this.input.setEnabled(on);
+    this.labels.forEach((l) => (l.el.style.display = on ? '' : 'none'));
+    if (on) this.renderer.toneMappingExposure = this.exposure || 1;
+    this.store.paused = !on;
+  }
+
+  unload() {
     this.labels.forEach((l) => l.el.remove()); this.labels = [];
-    for (const o of [this.mesh, this.water]) if (o) { o.geometry.dispose(); o.material.map?.dispose(); o.material.dispose(); this.scene.remove(o); }
-    this.waterU?.hTex.value.dispose();
-    this.mesh = this.water = this.waterU = null;
+    if (this.engine) { this.scene.remove(this.engine.group); this.engine.dispose(); this.engine = null; }
+    if (this.water) { this.scene.remove(this.water); this.water.geometry.dispose(); this.water.material.dispose(); this.water = null; this.waterU = null; }
     this.clouds.children.slice().forEach((c) => { c.material.dispose(); this.clouds.remove(c); });
+    this.store.clear();
+    this.map = null; this.fp = null; this.region = null; this.mode = 'map';
   }
 }
 
-const easeInOut = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
-
-async function loadHeight(url) {
-  const blob = await (await fetch(url)).blob();
-  const bmp = await createImageBitmap(blob, { colorSpaceConversion: 'none', premultiplyAlpha: 'none' });
-  const w = bmp.width;
-  const cv = new OffscreenCanvas(w, w);
-  const g = cv.getContext('2d', { willReadFrequently: true, colorSpace: 'srgb' });
-  g.drawImage(bmp, 0, 0);
-  const px = g.getImageData(0, 0, w, w).data;
-  const data = new Float32Array(w * w);
-  for (let i = 0; i < w * w; i++) data[i] = (px[i * 4] * 256 + px[i * 4 + 1]) / 65535;
-  // light 3×3 smoothing to remove 8-bit terracing artifacts from source tiles
-  const out = new Float32Array(w * w);
-  for (let y = 0; y < w; y++) for (let x = 0; x < w; x++) {
-    let s = 0, n = 0;
-    for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) {
-      const xx = x + dx, yy = y + dy; if (xx < 0 || yy < 0 || xx >= w || yy >= w) continue;
-      const k = dx === 0 && dy === 0 ? 4 : dx === 0 || dy === 0 ? 2 : 1; s += data[yy * w + xx] * k; n += k;
-    }
-    out[y * w + x] = s / n;
-  }
-  return { data: out, w };
-}
+void fmtDist; void EYE; void decodeBlob;
 
 function cloudSprite() {
   const c = document.createElement('canvas'); c.width = 512; c.height = 256;
   const g = c.getContext('2d'); const rnd = mulberry(3);
-  for (let i = 0; i < 38; i++) {
-    const x = 90 + rnd() * 330, y = 110 + (rnd() - 0.5) * 70 - Math.sin((x - 90) / 330 * Math.PI) * 30, r = 30 + rnd() * 55;
+  for (let i = 0; i < 40; i++) {
+    const x = 90 + rnd() * 330, y = 120 + (rnd() - 0.5) * 60 - Math.sin(((x - 90) / 330) * Math.PI) * 30, r = 28 + rnd() * 55;
     const gr = g.createRadialGradient(x, y, 0, x, y, r);
-    gr.addColorStop(0, 'rgba(255,255,255,0.55)'); gr.addColorStop(0.6, 'rgba(255,255,255,0.22)'); gr.addColorStop(1, 'rgba(255,255,255,0)');
+    gr.addColorStop(0, 'rgba(255,255,255,0.5)'); gr.addColorStop(0.6, 'rgba(255,255,255,0.2)'); gr.addColorStop(1, 'rgba(255,255,255,0)');
     g.fillStyle = gr; g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.fill();
   }
   return c;
