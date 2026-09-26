@@ -12,9 +12,9 @@ export const QA = new URLSearchParams(location.search).has('qa');
 
 // Bright, airy time-of-day presets (no gloomy palettes)
 export const TIMES = {
-  morning: { label: '朝', sunEl: 13, sunAz: 105, sun: '#ffe6cf', sunI: 2.7, hemiSky: '#f2e8f0', hemiGnd: '#d8d0c2', hemiI: 1.2, top: '#8fc0e4', hor: '#f3e2da', glow: '#ffd4b4', haze: '#e6e4e6', hazeSun: '#fbd9c0', exp: 1.06 },
-  noon:    { label: '昼', sunEl: 55, sunAz: 160, sun: '#fff7ea', sunI: 3.0, hemiSky: '#e2f0fa', hemiGnd: '#d6d2c4', hemiI: 1.15, top: '#5e9fd4', hor: '#d6e8f2', glow: '#fff2d8', haze: '#cfe1ec', hazeSun: '#eef0ea', exp: 1.0 },
-  golden:  { label: '夕', sunEl: 8, sunAz: 250, sun: '#ffc88f', sunI: 2.9, hemiSky: '#f6e0cc', hemiGnd: '#d9c8b0', hemiI: 1.25, top: '#86b2da', hor: '#f4e2d0', glow: '#ffbf80', haze: '#ecdccc', hazeSun: '#ffcf9c', exp: 1.06 },
+  morning: { label: '朝', sunEl: 13, sunAz: 105, sun: '#ffe6cf', sunI: 1.7, hemiSky: '#f2e8f0', hemiGnd: '#d8d0c2', hemiI: 2.0, top: '#8fc0e4', hor: '#f3e2da', glow: '#ffd4b4', haze: '#e6e4e6', hazeSun: '#fbd9c0', exp: 1.06 },
+  noon:    { label: '昼', sunEl: 55, sunAz: 160, sun: '#fff7ea', sunI: 1.8, hemiSky: '#e2f0fa', hemiGnd: '#d6d2c4', hemiI: 1.95, top: '#5e9fd4', hor: '#d6e8f2', glow: '#fff2d8', haze: '#cfe1ec', hazeSun: '#eef0ea', exp: 1.0 },
+  golden:  { label: '夕', sunEl: 8, sunAz: 250, sun: '#ffc88f', sunI: 1.8, hemiSky: '#f6e0cc', hemiGnd: '#d9c8b0', hemiI: 2.0, top: '#86b2da', hor: '#f4e2d0', glow: '#ffbf80', haze: '#ecdccc', hazeSun: '#ffcf9c', exp: 1.06 },
 };
 
 export class RegionScene {
@@ -284,7 +284,7 @@ export class RegionScene {
   }
 
   // ------------------------------------------------------------------ modes
-  enterFirstPerson(x, z, yaw) {
+  enterFirstPerson(x, z, yaw, keepYaw = false) {
     if (!this.engine) return;
     this.map.cancelAnim();
     if (x == null) { x = this.map.target.x; z = this.map.target.z; yaw = this.map.yaw; }
@@ -304,6 +304,7 @@ export class RegionScene {
       [x, z] = best;
     }
     this.fp.mode = 'walk'; this.fp.speedIdx = 0; this.fp.setNav(null);
+    if (!keepYaw) yaw = this._openView(x, z, yaw);
     this.fp.place(x, z, yaw);
     this.mode = 'fp';
     this.camera.fov = 62; this.camera.near = 0.3; this.camera.updateProjectionMatrix();
@@ -319,6 +320,24 @@ export class RegionScene {
     this.mode = 'map'; this._trans = null;
     this.camera.fov = 50; this.camera.near = 1; this.camera.updateProjectionMatrix();
     this.onModeChange?.('map');
+  }
+  /** direction (bearing) with the most open view from x,z — lowest max elevation angle, biased to `pref` */
+  _openView(x, z, pref = 0) {
+    const E = this.engine, h0 = E.heightAt(x, z) + 1.65;
+    let best = pref, bestScore = Infinity;
+    for (let a = 0; a < 24; a++) {
+      const b = (a / 24) * Math.PI * 2, sx = Math.sin(b), sz = -Math.cos(b);
+      let maxAng = -1;
+      for (const d of [30, 80, 160, 320, 640, 1300, 2600, 5000]) {
+        const px = x + sx * d, pz = z + sz * d;
+        if (!this.F.inWorld(px, pz)) break;
+        maxAng = Math.max(maxAng, (E.heightAt(px, pz) - curvatureDrop(d) - h0) / d);
+      }
+      const bias = Math.abs(Math.atan2(Math.sin(b - pref), Math.cos(b - pref))) * 0.05;
+      const score = maxAng + bias;
+      if (score < bestScore) { bestScore = score; best = b; }
+    }
+    return best;
   }
   _nearestLand(x, z) {
     for (let r = 50; r < this.F.size * 0.5; r *= 1.35) for (let a = 0; a < 16; a++) {

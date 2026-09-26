@@ -91,7 +91,7 @@ export function createHUD({ region, r, icons, toast, closePanel, speeds }) {
   }
   function walkNear(L) {
     const [x, z] = standoff(L);
-    region.enterFirstPerson(x, z, bearingXZ(L.x - x, L.z - z));
+    region.enterFirstPerson(x, z, bearingXZ(L.x - x, L.z - z), true);
     region.fp.setNav({ x: L.x, z: L.z, name: L.p.name, auto: false });
     showNav();
     toast(`${L.p.name} の近くに降り立ちました`, 3000);

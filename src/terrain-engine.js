@@ -230,13 +230,26 @@ export class TerrainEngine {
       sh.fragmentShader = sh.fragmentShader
         .replace('#include <common>', `#include <common>
           uniform vec3 uHaze, uHazeSun, uSunDir, uUnder; uniform float uVis, uFogMax, uLift, uSat; uniform vec4 uWorldRect;
-          varying vec3 vWPos; varying float vH;`)
+          varying vec3 vWPos; varying float vH;
+          float thash(vec2 p){ p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }
+          float tnoise(vec2 p){ vec2 i = floor(p), f = fract(p); f = f*f*(3.0-2.0*f);
+            return mix(mix(thash(i), thash(i+vec2(1,0)), f.x), mix(thash(i+vec2(0,1)), thash(i+1.0), f.x), f.y); }`)
         .replace('#include <map_fragment>', `#include <map_fragment>
           {
             vec3 sc = diffuseColor.rgb; float l = dot(sc, vec3(.2126,.7152,.0722));
             sc = mix(vec3(l), sc, uSat);                         // gentle saturation
             sc = sc + (1.0 - sc) * uLift * (1.0 - smoothstep(0.0, 0.25, l)); // lift baked shadows in the imagery
             diffuseColor.rgb = sc;
+            // micro detail: value-noise grain that fades out with distance (only visible at walking height)
+            {
+              float dd = length(vWPos - cameraPosition);
+              float k = 1.0 - smoothstep(20.0, 450.0, dd);
+              if (k > 0.0) {
+                vec2 q = vWPos.xz;
+                float n = tnoise(q * 0.9) * 0.5 + tnoise(q * 3.7) * 0.3 + tnoise(q * 11.0) * 0.2;
+                diffuseColor.rgb *= 1.0 + (n - 0.5) * 0.28 * k;
+              }
+            }
             if (vH < 0.0) { float dep = clamp(-vH / 40.0, 0.0, 1.0); diffuseColor.rgb = mix(diffuseColor.rgb, uUnder, 0.25 + 0.45 * dep); }
           }`)
         .replace('#include <fog_fragment>', `
@@ -251,7 +264,7 @@ export class TerrainEngine {
             gl_FragColor.rgb = mix(gl_FragColor.rgb, hz, f);
           }`);
     };
-    m.customProgramCacheKey = () => 'barimo-terrain-1';
+    m.customProgramCacheKey = () => 'barimo-terrain-2';
     return m;
   }
 
