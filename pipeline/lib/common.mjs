@@ -75,3 +75,19 @@ export function writeJSON(p, obj) { ensure(path.dirname(p)); fs.writeFileSync(p,
 export function readJSON(p, d = null) { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return d; } }
 export const regionDir = (id) => ensure(path.join(PUB, 'regions', id));
 export const workDir = (id) => ensure(path.join(OUT, id));
+
+// ---- BARIMO 1.1: 5x wider explorable extent + low-detail "world" ring to the horizon ----------
+// Explorable area = 5x5 tiles at L0 = demZoom-2 (= 20 tiles at demZoom; v1.0 used 4 -> 5x wider).
+// World ring = 5x5 tiles at L0-2 around it (coarse terrain out to the horizon, not explorable).
+export const EXTENT_N = 5;
+export function extentWindow(r) {
+  const z = r.demZoom - 2;
+  const c = lonLatToTile(r.center[1], r.center[0], z);
+  const x0 = Math.round(c.x - EXTENT_N / 2), y0 = Math.round(c.y - EXTENT_N / 2);
+  const nw = tileToLonLat(x0, y0, z), se = tileToLonLat(x0 + EXTENT_N, y0 + EXTENT_N, z);
+  const midLat = (nw.lat + se.lat) / 2;
+  const widthM = ((se.lon - nw.lon) / 360) * 40075016.686 * Math.cos((midLat * Math.PI) / 180);
+  const cx = (x0 + EXTENT_N / 2) / 4, cy = (y0 + EXTENT_N / 2) / 4;
+  const world = { z: z - 2, x0: Math.floor(cx) - 2, y0: Math.floor(cy) - 2, n: 5 };
+  return { z, x0, y0, n: EXTENT_N, bbox: { west: nw.lon, north: nw.lat, east: se.lon, south: se.lat }, widthM, world };
+}
