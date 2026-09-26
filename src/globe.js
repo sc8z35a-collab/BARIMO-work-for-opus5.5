@@ -212,6 +212,8 @@ export class Globe {
       if (z >= 4) out.push({ z, x, y, pri: surf / (size * R) });
     };
     for (let y = 0; y < 8; y++) for (let x = 0; x < 8; x++) visit(3, x, y);
+    // most urgent first (the store caps concurrency; nearest patches must win)
+    out.sort((a, b) => a.pri - b.pri);
     for (const p of out) {
       this.store.want('img', p.z, p.x, p.y, p.pri);
       let tz = p.z, tx = p.x, ty = p.y, tex = null;

@@ -10,7 +10,7 @@ import { decodeBlob } from './dem-decode.js';
 
 const IMG_HOSTS = ['https://server.arcgisonline.com', 'https://services.arcgisonline.com'];
 const DEM_HOSTS = ['https://s3.amazonaws.com/elevation-tiles-prod', 'https://elevation-tiles-prod.s3.amazonaws.com'];
-export const IMG_MAX_Z = 19;
+export const IMG_MAX_Z = 18; // z19 is missing in most rural areas and Esri 404s carry no CORS header (console noise)
 export const DEM_MAX_Z = 15;
 const PER_HOST = 6;
 
