@@ -280,16 +280,6 @@
     "ele": null
   },
   {
-    "kind": "pass",
-    "name": "Thung Khe Pass",
-    "local": "Đèo Thung Khe",
-    "ll": [
-      20.67209,
-      105.12058
-    ],
-    "ele": 773
-  },
-  {
     "kind": "waterfall",
     "name": "Thác mây",
     "local": "",
@@ -336,6 +326,16 @@
     "ll": [
       20.72882,
       105.00218
+    ],
+    "ele": null
+  },
+  {
+    "kind": "pass",
+    "name": "Thung Khe Pass",
+    "local": "Đèo Thung Khe",
+    "ll": [
+      20.67251,
+      105.12115
     ],
     "ele": null
   },
