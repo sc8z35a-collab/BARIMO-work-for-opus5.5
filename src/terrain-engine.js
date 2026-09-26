@@ -343,6 +343,7 @@ export class TerrainEngine {
       const cy = Math.min(Math.max(cam.y, mnY - drop), mxY);
       const dist = Math.hypot(hd, cy - cam.y);
       this._box.min.set(r.x0, mnY - drop - n.size * 0.02 - 30, r.z0); this._box.max.set(r.x1, mxY + 30, r.z1);
+      // never cull the ground right around the viewer (ground-cover capture + shadows need it even behind the camera)
       if (!this._frustum.intersectsBox(this._box)) return;
       let split = n.z < this.maxZ(n) && dist < n.size * this.K;
       // stop refining where imagery is known to be missing and elevation is already at max detail

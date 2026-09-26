@@ -134,10 +134,11 @@ export class GroundCover {
         varying vec3 vCol, vW; varying float vT, vK, vLush;
         void main(){
           vec2 base, cellW; float d; float vis = place(aCell, base, cellW, d);
-          vec3 c = texture2D(uCol, gUV(base)).rgb;
+          vec4 c4 = texture2D(uCol, gUV(base)); vec3 c = c4.rgb;
           float mx = max(c.r, max(c.g, c.b)), mn = min(c.r, min(c.g, c.b)), lum = dot(c, vec3(.2126, .7152, .0722));
           float sat = (mx - mn) / max(mx, 1e-4);
-          float veg = smoothstep(.08, .22, sat) * (1. - smoothstep(.42, .7, lum)) * step(c.b, c.g * 1.08) * smoothstep(.004, .02, lum);
+          // meadow = saturated green/tan of mid brightness; dense forest (very dark) and snow/rock/water get none
+          float veg = smoothstep(.1, .25, sat) * (1. - smoothstep(.35, .6, lum)) * step(c.b, c.g * 1.05) * smoothstep(.035, .075, lum) * step(.5, c4.a);
           float lush = clamp((c.g - max(c.r, c.b) * .92) * 12., 0., 1.);
           float H = gH(base);
           float sl = length(vec2(gH(base + vec2(1.5, 0.)) - gH(base - vec2(1.5, 0.)), gH(base + vec2(0., 1.5)) - gH(base - vec2(0., 1.5)))) / 3.;
@@ -166,7 +167,7 @@ export class GroundCover {
         void main(){
           vec3 c = vCol * (.82 + .36 * vK);
           c = mix(c, c * vec3(1.06, 1.12, .82), vT * .5);         // sun-bleached tips
-          vec3 col = c * mix(.42, 1.28, vT);                       // self-shadowed base → bright tip
+          vec3 col = c * mix(.6, 1.22, vT);                        // self-shadowed base → bright tip
           vec3 V = normalize(vW - cameraPosition);
           col += uSunCol * vCol * pow(max(dot(V, uSunDir), 0.), 3.) * vT * 1.4; // translucency against the sun
           if (vK > .955 && vT > .8 && vLush > .25) {                // alpine flowers
@@ -192,10 +193,11 @@ export class GroundCover {
         attribute vec2 aCell; varying vec3 vCol, vW, vN;
         void main(){
           vec2 base, cellW; float d; float vis = place(aCell, base, cellW, d);
-          vec3 c = texture2D(uCol, gUV(base)).rgb;
+          vec4 c4 = texture2D(uCol, gUV(base)); vec3 c = c4.rgb;
           float mx = max(c.r, max(c.g, c.b)), mn = min(c.r, min(c.g, c.b)), lum = dot(c, vec3(.2126, .7152, .0722));
           float sat = (mx - mn) / max(mx, 1e-4);
           float H = gH(base);
+          if (c4.a < .5) H = -1.;
           float sl = length(vec2(gH(base + vec2(2., 0.)) - gH(base - vec2(2., 0.)), gH(base + vec2(0., 2.)) - gH(base - vec2(0., 2.)))) / 4.;
           float rocky = max((1. - smoothstep(.1, .24, sat)) * smoothstep(.03, .09, lum) * (1. - smoothstep(.5, .75, lum)), smoothstep(.55, .9, sl));
           vec2 hh = h22(cellW + 5.7);
@@ -248,7 +250,10 @@ export class GroundCover {
     o.position.set(cx, mxH + 200, cz); o.near = 10; o.far = mxH - mnH + 400; o.lookAt(cx, mnH - 10, cz); o.updateProjectionMatrix(); o.updateMatrixWorld();
     const r = this.renderer, prevT = r.getRenderTarget(), vis = hide.map((x) => x.visible);
     hide.forEach((x) => (x.visible = false)); this.group.visible = false;
+    const cc = r.getClearColor(new THREE.Color()), ca = r.getClearAlpha();
+    r.setClearColor(0x000000, 0); // alpha 0 = no terrain captured → nothing grows there
     r.setRenderTarget(this.rt); r.clear(); r.render(scene, o); r.setRenderTarget(prevT);
+    r.setClearColor(cc, ca);
     hide.forEach((x, k) => (x.visible = vis[k]));
     this.center.set(cx, cz); this.shared.uCenter.value.set(cx, cz); this.shared.uSpan.value = span;
     this.ready = true;
