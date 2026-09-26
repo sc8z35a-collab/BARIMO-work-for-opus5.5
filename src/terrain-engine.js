@@ -134,6 +134,10 @@ export class TerrainEngine {
       if (x >= r.x0 && x <= r.x1 && z >= r.z0 && z <= r.z1 && n.mesh && (!best || n.z > best.z)) best = n;
     }
     if (!best) return this.heightAt(x, z);
+    return this._surfaceIn(best, x, z);
+  }
+  /** exact rendered height inside leaf `best` (x,z must lie within its rect) */
+  _surfaceIn(best, x, z) {
     const pos = best.mesh.geometry.attributes.position.array;
     const fx = ((x - best.rect.x0) / best.size) * GRID, fz = ((z - best.rect.z0) / best.size) * GRID;
     const i = Math.min(GRID - 1, Math.max(0, Math.floor(fx))), j = Math.min(GRID - 1, Math.max(0, Math.floor(fz)));

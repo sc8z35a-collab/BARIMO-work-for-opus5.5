@@ -29,9 +29,9 @@ canvas.addEventListener('webglcontextlost', (e) => { e.preventDefault(); toast('
 
 // ---------- adaptive quality ----------
 const QUALITY = {
-  high: { label: '高画質', dpr: 2, K: 2.3, maxLeaves: 420, buildMs: 6, shadow: 2048 },
-  std: { label: '標準', dpr: 1.5, K: 1.9, maxLeaves: 320, buildMs: 5, shadow: 2048 },
-  eco: { label: '省電力', dpr: 1, K: 1.5, maxLeaves: 220, buildMs: 4, shadow: 1024 },
+  high: { label: '高画質', dpr: 2, K: 2.3, maxLeaves: 420, buildMs: 6, shadow: 2048, grass: 1 },
+  std: { label: '標準', dpr: 1.5, K: 1.9, maxLeaves: 320, buildMs: 5, shadow: 2048, grass: 0.55 },
+  eco: { label: '省電力', dpr: 1, K: 1.5, maxLeaves: 220, buildMs: 4, shadow: 1024, grass: 0 },
 };
 let qKey = localStorage.getItem('barimo.quality') || (Math.min(screen.width, screen.height) * (devicePixelRatio || 1) > 900 ? 'high' : 'std');
 if (!QUALITY[qKey]) qKey = 'std';

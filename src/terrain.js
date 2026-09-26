@@ -7,6 +7,7 @@ import { MapController, FirstPerson, PointerInput, EYE } from './controls.js';
 import { RegionFrame, clamp, lerp, damp, curvatureDrop, escapeHTML, fmtDist } from './geo.js';
 import { decodeBlob } from './dem-decode.js';
 import { mulberry } from './globe.js';
+import { GroundCover } from './groundcover.js';
 
 export const QA = new URLSearchParams(location.search).has('qa');
 
@@ -112,6 +113,8 @@ export class RegionScene {
 
     this.engine = new TerrainEngine({ renderer: this.renderer, store: this.store, frame: this.F, exaggeration: this.exag, uniforms: this.U, quality: this.quality });
     this.scene.add(this.engine.group);
+    this.ground = new GroundCover({ renderer: this.renderer, engine: this.engine, uniforms: this.U, density: QA ? 0.5 : (this.quality?.grass ?? 1) });
+    this.scene.add(this.ground.group);
     this.map = new MapController(this.camera, this.engine, this.F);
     this.map.onUser = () => this._interacted();
     this.fp = new FirstPerson(this.camera, this.engine, this.F, { hasSea: this.hasSea });
@@ -435,6 +438,7 @@ export class RegionScene {
     this.engine.shadowBox = { x0: focus.x - span, x1: focus.x + span, z0: focus.z - span, z1: focus.z + span };
 
     this.engine.update(this.camera, focus);
+    this.ground?.update({ on: this.mode === 'fp' && !this._trans && this.fp.agl() < 45, camera: this.camera, scene: this.scene, hide: [this.sky, this.clouds, this.water].filter(Boolean), t, sunColor: this.sun.color });
     this.store.pump();
     if (this.waterU) this.waterU.t.value = t;
     const lim = this.F.size * 0.75;
@@ -468,6 +472,7 @@ export class RegionScene {
 
   unload() {
     this.labels.forEach((l) => l.el.remove()); this.labels = [];
+    if (this.ground) { this.scene.remove(this.ground.group); this.ground.dispose(); this.ground = null; }
     if (this.engine) { this.scene.remove(this.engine.group); this.engine.dispose(); this.engine = null; }
     if (this.water) { this.scene.remove(this.water); this.water.geometry.dispose(); this.water.material.dispose(); this.water = null; this.waterU = null; }
     this.clouds.children.slice().forEach((c) => { c.material.dispose(); this.clouds.remove(c); });
