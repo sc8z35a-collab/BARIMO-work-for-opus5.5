@@ -1,0 +1,83 @@
+[
+  {
+    "file": "photos/p01.webp",
+    "thumb": "photos/p01_s.webp",
+    "title": "Kol-Suu",
+    "author": "Eventyrlys",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kol-Suu.jpg",
+    "score": 97
+  },
+  {
+    "file": "photos/p02.webp",
+    "thumb": "photos/p02_s.webp",
+    "title": "ISS028-E-30402 - View of Earth",
+    "author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:ISS028-E-30402_-_View_of_Earth.jpg",
+    "score": 93
+  },
+  {
+    "file": "photos/p03.webp",
+    "thumb": "photos/p03_s.webp",
+    "title": "Кель-Суу - panoramio (3)",
+    "author": "Калачев Сергей",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio_(3).jpg",
+    "score": 82
+  },
+  {
+    "file": "photos/p04.webp",
+    "thumb": "photos/p04_s.webp",
+    "title": "Кель-Суу - panoramio (2)",
+    "author": "Калачев Сергей",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio_(2).jpg",
+    "score": 80
+  },
+  {
+    "file": "photos/p05.webp",
+    "thumb": "photos/p05_s.webp",
+    "title": "Кель-Суу - panoramio (4)",
+    "author": "Калачев Сергей",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio_(4).jpg",
+    "score": 79
+  },
+  {
+    "file": "photos/p06.webp",
+    "thumb": "photos/p06_s.webp",
+    "title": "Кель-Суу - panoramio (1)",
+    "author": "Калачев Сергей",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio_(1).jpg",
+    "score": 73
+  },
+  {
+    "file": "photos/p07.webp",
+    "thumb": "photos/p07_s.webp",
+    "title": "Кель-Суу - panoramio",
+    "author": "Калачев Сергей",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio.jpg",
+    "score": 72
+  },
+  {
+    "file": "photos/p08.webp",
+    "thumb": "photos/p08_s.webp",
+    "title": "Кель-Суу - panoramio (5)",
+    "author": "Калачев Сергей",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio_(5).jpg",
+    "score": 72
+  },
+  {
+    "file": "photos/p09.webp",
+    "thumb": "photos/p09_s.webp",
+    "title": "ISS022-E-34074 - View of Earth",
+    "author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:ISS022-E-34074_-_View_of_Earth.jpg",
+    "score": 70
+  }
+]

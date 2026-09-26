@@ -1,0 +1,8933 @@
+[
+  {
+    "id": "tusheti",
+    "name": "トゥシェティ",
+    "nameLocal": "თუშეთი · Tusheti",
+    "country": "ジョージア",
+    "flag": "🇬🇪",
+    "center": [
+      42.405,
+      45.6
+    ],
+    "demZoom": 12,
+    "exaggeration": 1.15,
+    "accent": "#e0a458",
+    "tagline": "雲の上の塔の村へ、夏だけ開く峠を越えて",
+    "overview": "大コーカサス山脈の北斜面、標高2,000m前後に石積みの塔の集落が点在する山岳地帯。道路が通じるのは雪が解ける6月下旬〜10月初旬のわずかな期間だけ。見渡す限りの緑の尾根、羊の群れ、夕陽に染まる石の塔――時間が止まったような高原の村で、ゲストハウスに泊まりながら尾根歩きを楽しめます。",
+    "highlights": [
+      "朝霧の中に浮かぶオマロの石塔群",
+      "標高2,850mのアバノ峠越えの絶景ドライブ",
+      "花の咲く草原を歩く村から村へのトレッキング",
+      "満天の星と山羊の鈴の音だけの夜"
+    ],
+    "bestMonths": [
+      7,
+      8,
+      9
+    ],
+    "access": "トビリシから車で約3時間でクヴェモ・アルヴァニへ、そこから4WDでアバノ峠を越えて約3〜4時間。峠は6月下旬〜10月初旬のみ通行可。",
+    "stay": "オマロやダルトロの家族経営ゲストハウス（2食付きが一般的）",
+    "tips": "峠道は未舗装の断崖路。必ず経験豊富な地元ドライバーの4WD乗り合いを利用。現金（ラリ）を多めに。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 5,
+      "crime": 1,
+      "danger": 3,
+      "access": 5,
+      "physical": 3,
+      "infra": 2,
+      "cost": 2
+    },
+    "ratingNotes": {
+      "crime": "ジョージアの山岳部は治安良好。軽犯罪もほぼ報告なし",
+      "danger": "峠道の落石・崖、急な天候変化。徒歩トレッキングは中程度",
+      "access": "道が開くのは年に約3〜4か月。世界屈指の険しい山道",
+      "physical": "村間の移動は徒歩中心だと中級者向け"
+    },
+    "pois": [
+      {
+        "name": "オマロ",
+        "desc": "トゥシェティの中心村。丘の上にケセロ要塞の塔が立つ",
+        "ll": [
+          42.3709206,
+          45.6330787
+        ],
+        "uv": [
+          0.56015,
+          0.54047
+        ]
+      },
+      {
+        "name": "ダルトロ",
+        "desc": "石積み家屋が保存された絵本のような村",
+        "ll": [
+          42.4383555,
+          45.5823903
+        ],
+        "uv": [
+          0.53132,
+          0.48852
+        ]
+      },
+      {
+        "name": "シェナコ",
+        "desc": "木のバルコニーと小さな教会が残る尾根上の集落",
+        "ll": [
+          42.3720739,
+          45.6632274
+        ],
+        "uv": [
+          0.5773,
+          0.53958
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Tusheti",
+      "Omalo",
+      "Dartlo"
+    ],
+    "gem": 100,
+    "ease": 50,
+    "places": [
+      {
+        "kind": "peak",
+        "name": "Tebulosmta",
+        "local": "თებულოსმთა / Туьлой-Лам",
+        "ll": [
+          42.57397,
+          45.31469
+        ],
+        "ele": 4494,
+        "uv": [
+          0.37902,
+          0.38386
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Shan",
+        "local": "Шан / შანი",
+        "ll": [
+          42.67603,
+          44.75628
+        ],
+        "ele": 4452,
+        "uv": [
+          0.06135,
+          0.30496
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Diklosmta",
+        "local": "Диклос-Мта / დიკლოსმთა",
+        "ll": [
+          42.48829,
+          45.77514
+        ],
+        "ele": 4285,
+        "uv": [
+          0.64097,
+          0.45001
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Komito",
+        "local": "Комито - ქომიტო",
+        "ll": [
+          42.53322,
+          45.59824
+        ],
+        "ele": 4261,
+        "uv": [
+          0.54033,
+          0.41533
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Donosmta",
+        "local": "Доносмта / დანოსმთა",
+        "ll": [
+          42.50475,
+          45.68822
+        ],
+        "ele": 4174,
+        "uv": [
+          0.59152,
+          0.43731
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Gora Addala Shukgelmezr",
+        "local": "Аддала-Шухгельмеэр",
+        "ll": [
+          42.33914,
+          46.24911
+        ],
+        "ele": 4152,
+        "uv": [
+          0.9106,
+          0.56494
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Sakharismaghali",
+        "local": "სახარისმაღალი - Сахарисмта",
+        "ll": [
+          42.6413,
+          44.82291
+        ],
+        "ele": 3963,
+        "uv": [
+          0.09926,
+          0.33182
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Amugo",
+        "local": "ამუგო",
+        "ll": [
+          42.47357,
+          45.27493
+        ],
+        "ele": 3840,
+        "uv": [
+          0.3564,
+          0.46136
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Chaukhi",
+        "local": "ჭაუხი",
+        "ll": [
+          42.52988,
+          44.76868
+        ],
+        "ele": 3688,
+        "uv": [
+          0.0684,
+          0.41791
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Shavimta",
+        "local": "შავიმთა",
+        "ll": [
+          42.53117,
+          45.50903
+        ],
+        "ele": 3657,
+        "uv": [
+          0.48958,
+          0.41692
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Mount Shaviklde",
+        "local": "შავიკლდე - Шавиклде",
+        "ll": [
+          42.25365,
+          45.6189
+        ],
+        "ele": 3578,
+        "uv": [
+          0.55209,
+          0.63069
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Didgverdi",
+        "local": "დიდგვერდი",
+        "ll": [
+          42.2814,
+          45.42855
+        ],
+        "ele": 3335,
+        "uv": [
+          0.4438,
+          0.60935
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Mt. Didi Borbalo",
+        "local": "დიდი ბორბალო",
+        "ll": [
+          42.42183,
+          45.21819
+        ],
+        "ele": 3294,
+        "uv": [
+          0.32413,
+          0.50125
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Q'uro",
+        "local": "ყურო",
+        "ll": [
+          42.67459,
+          44.69245
+        ],
+        "ele": 4071,
+        "uv": [
+          0.02504,
+          0.30607
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Осука",
+        "local": "",
+        "ll": [
+          42.34229,
+          46.18584
+        ],
+        "ele": 4048,
+        "uv": [
+          0.87461,
+          0.56251
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Makhismaghali",
+        "local": "Махисмагали",
+        "ll": [
+          42.69274,
+          45.05117
+        ],
+        "ele": 4007,
+        "uv": [
+          0.22911,
+          0.29202
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Atsunta Pass",
+        "local": "აწუნთის უღელტეხილი",
+        "ll": [
+          42.52868,
+          45.27413
+        ],
+        "ele": 3510,
+        "uv": [
+          0.35595,
+          0.41884
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Кеме",
+        "local": "",
+        "ll": [
+          42.29508,
+          46.06528
+        ],
+        "ele": 3503,
+        "uv": [
+          0.80603,
+          0.59883
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Vstrechny Pass",
+        "local": "Встречный",
+        "ll": [
+          42.73688,
+          44.73446
+        ],
+        "ele": 3500,
+        "uv": [
+          0.04894,
+          0.25785
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Central Kibishi Pass",
+        "local": "",
+        "ll": [
+          42.61766,
+          44.75432
+        ],
+        "ele": 3463,
+        "uv": [
+          0.06024,
+          0.3501
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Бухалав",
+        "local": "",
+        "ll": [
+          42.50821,
+          45.83999
+        ],
+        "ele": 3460,
+        "uv": [
+          0.67786,
+          0.43464
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Botlikh",
+        "local": "Ботлих",
+        "ll": [
+          42.66446,
+          46.21845
+        ],
+        "ele": null,
+        "uv": [
+          0.89316,
+          0.31391
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Kvareli",
+        "local": "ყვარელი",
+        "ll": [
+          41.94822,
+          45.81396
+        ],
+        "ele": null,
+        "uv": [
+          0.66305,
+          0.86487
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Mtskheta",
+        "local": "მცხეთა",
+        "ll": [
+          41.84629,
+          44.71956
+        ],
+        "ele": null,
+        "uv": [
+          0.04046,
+          0.94277
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Dusheti",
+        "local": "დუშეთი",
+        "ll": [
+          42.08447,
+          44.69594
+        ],
+        "ele": null,
+        "uv": [
+          0.02702,
+          0.76054
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Duba-Yurt",
+        "local": "Дуба-Юрт",
+        "ll": [
+          43.04116,
+          45.73305
+        ],
+        "ele": null,
+        "uv": [
+          0.61702,
+          0.02159
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Martkopi",
+        "local": "მარტყოფი",
+        "ll": [
+          41.7863,
+          45.02233
+        ],
+        "ele": 770,
+        "uv": [
+          0.2127,
+          0.98857
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Karajala",
+        "local": "ყარაჯალა",
+        "ll": [
+          41.966,
+          45.44389
+        ],
+        "ele": null,
+        "uv": [
+          0.45252,
+          0.85127
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Karata",
+        "local": "Карата",
+        "ll": [
+          42.59567,
+          46.33953
+        ],
+        "ele": null,
+        "uv": [
+          0.96204,
+          0.3671
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Velistsikhe",
+        "local": "ველისციხე",
+        "ll": [
+          41.80911,
+          45.75698
+        ],
+        "ele": null,
+        "uv": [
+          0.63064,
+          0.97116
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Matani",
+        "local": "მატანი",
+        "ll": [
+          42.07487,
+          45.19061
+        ],
+        "ele": 570,
+        "uv": [
+          0.30844,
+          0.7679
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Tarskoye",
+        "local": "Тарское",
+        "ll": [
+          42.96597,
+          44.77362
+        ],
+        "ele": null,
+        "uv": [
+          0.07121,
+          0.08008
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Borsoy",
+        "local": "Борзой",
+        "ll": [
+          42.8415,
+          45.6274
+        ],
+        "ele": null,
+        "uv": [
+          0.55692,
+          0.17675
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Akhalsopeli",
+        "local": "ახალსოფელი",
+        "ll": [
+          41.90645,
+          45.97809
+        ],
+        "ele": null,
+        "uv": [
+          0.75642,
+          0.89681
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Kurdghelauri",
+        "local": "კურდღელაური",
+        "ll": [
+          41.92922,
+          45.49257
+        ],
+        "ele": null,
+        "uv": [
+          0.48022,
+          0.8794
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Shilda",
+        "local": "შილდა",
+        "ll": [
+          42.00021,
+          45.71746
+        ],
+        "ele": null,
+        "uv": [
+          0.60816,
+          0.82509
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Гагатли",
+        "local": "",
+        "ll": [
+          42.80038,
+          46.28917
+        ],
+        "ele": null,
+        "uv": [
+          0.93339,
+          0.20864
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Bashle-khel",
+        "local": "Башле-Хель",
+        "ll": [
+          41.94263,
+          46.34622
+        ],
+        "ele": 2713,
+        "uv": [
+          0.96585,
+          0.86915
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Patara-Tba Lake",
+        "local": "პატარა ტბა",
+        "ll": [
+          41.81037,
+          44.82761
+        ],
+        "ele": null,
+        "uv": [
+          0.10193,
+          0.9702
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Кезеной-Ам",
+        "local": "",
+        "ll": [
+          42.77634,
+          46.15076
+        ],
+        "ele": null,
+        "uv": [
+          0.85465,
+          0.22728
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Лачи",
+        "local": "",
+        "ll": [
+          42.56065,
+          46.18883
+        ],
+        "ele": null,
+        "uv": [
+          0.87631,
+          0.39415
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Галанчож",
+        "local": "",
+        "ll": [
+          42.8723,
+          45.30402
+        ],
+        "ele": null,
+        "uv": [
+          0.37295,
+          0.15284
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Abudelauri Blue Lake",
+        "local": "აბუდელაურის ლურჯი ტბა",
+        "ll": [
+          42.54452,
+          44.837
+        ],
+        "ele": null,
+        "uv": [
+          0.10727,
+          0.40661
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Lopota Lake",
+        "local": "ლოპოტას ტბა",
+        "ll": [
+          42.05588,
+          45.52525
+        ],
+        "ele": null,
+        "uv": [
+          0.49881,
+          0.78245
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Duruji Small Waterfall",
+        "local": "დურუჯის პატარა ჩანჩქერი",
+        "ll": [
+          42.00346,
+          45.8546
+        ],
+        "ele": null,
+        "uv": [
+          0.68617,
+          0.8226
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Нохчи Келой",
+        "local": "",
+        "ll": [
+          42.76022,
+          45.95631
+        ],
+        "ele": null,
+        "uv": [
+          0.74403,
+          0.23977
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Black Grouse",
+        "local": "როჭოს ჩანჩქერი",
+        "ll": [
+          41.87571,
+          46.30371
+        ],
+        "ele": null,
+        "uv": [
+          0.94167,
+          0.9203
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Natsvetari",
+        "local": "",
+        "ll": [
+          42.60453,
+          45.10334
+        ],
+        "ele": null,
+        "uv": [
+          0.25879,
+          0.36025
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Фуртоугский водопад",
+        "local": "",
+        "ll": [
+          42.84638,
+          44.66614
+        ],
+        "ele": null,
+        "uv": [
+          0.01007,
+          0.17296
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Chili Lake",
+        "local": "ჭილის ტბა",
+        "ll": [
+          41.81248,
+          44.67852
+        ],
+        "ele": 1122,
+        "uv": [
+          0.01711,
+          0.96859
+        ]
+      }
+    ],
+    "terrain": {
+      "minElev": 224,
+      "maxElev": 4448,
+      "widthM": 144454,
+      "bbox": {
+        "west": 44.6484375,
+        "north": 43.06888777416962,
+        "east": 46.40625,
+        "south": 41.77131167976406
+      },
+      "z": 10,
+      "x0": 639,
+      "y0": 376,
+      "n": 5,
+      "world": {
+        "z": 8,
+        "x0": 158,
+        "y0": 92,
+        "n": 5
+      },
+      "demSize": 1280
+    },
+    "climate": {
+      "elevation": 2331,
+      "months": [
+        {
+          "tmax": -4.6,
+          "tmin": -15.8,
+          "rain": 45,
+          "sun": 7.1
+        },
+        {
+          "tmax": -4.1,
+          "tmin": -13.8,
+          "rain": 44,
+          "sun": 7.5
+        },
+        {
+          "tmax": -2.4,
+          "tmin": -10.4,
+          "rain": 101,
+          "sun": 7.7
+        },
+        {
+          "tmax": 5.7,
+          "tmin": -3.3,
+          "rain": 83,
+          "sun": 10.5
+        },
+        {
+          "tmax": 7.8,
+          "tmin": -1.3,
+          "rain": 102,
+          "sun": 10.4
+        },
+        {
+          "tmax": 15,
+          "tmin": 4.9,
+          "rain": 93,
+          "sun": 11.7
+        },
+        {
+          "tmax": 17,
+          "tmin": 7.1,
+          "rain": 90,
+          "sun": 12.2
+        },
+        {
+          "tmax": 18.5,
+          "tmin": 7.4,
+          "rain": 48,
+          "sun": 12.7
+        },
+        {
+          "tmax": 12.9,
+          "tmin": 3.8,
+          "rain": 76,
+          "sun": 9.9
+        },
+        {
+          "tmax": 6.8,
+          "tmin": -2.5,
+          "rain": 51,
+          "sun": 8
+        },
+        {
+          "tmax": 3.2,
+          "tmin": -6.4,
+          "rain": 36,
+          "sun": 7.6
+        },
+        {
+          "tmax": -1.7,
+          "tmin": -14.2,
+          "rain": 37,
+          "sun": 6.7
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Вид на село Омало",
+        "author": "Дагиров Умар",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D1%81%D0%B5%D0%BB%D0%BE_%D0%9E%D0%BC%D0%B0%D0%BB%D0%BE.jpg",
+        "score": 113
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "2019 - Tusheti National Park - Morning in the Upper Omalo",
+        "author": "Moahim",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:2019_-_Tusheti_National_Park_-_Morning_in_the_Upper_Omalo.jpg",
+        "score": 113
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Dartlo thombs",
+        "author": "Surprizi",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dartlo_thombs.jpg",
+        "score": 112
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Dartlo, 2024 (38)",
+        "author": "Draceane",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dartlo,_2024_(38).jpg",
+        "score": 111
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Tusheti - Dartlo (9458252439)",
+        "author": "Andrzej Wójtowicz from Poznań, Poland",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tusheti_-_Dartlo_(9458252439).jpg",
+        "score": 110
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Dartlo, 2024 (11)",
+        "author": "Draceane",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dartlo,_2024_(11).jpg",
+        "score": 110
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "P1100619c Upper Omalo & Makratela Range 2016",
+        "author": "Karel61",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:P1100619c_Upper_Omalo_%26_Makratela_Range_2016.jpg",
+        "score": 109
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Dartlo, 2024 (42)",
+        "author": "Draceane",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dartlo,_2024_(42).jpg",
+        "score": 109
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "Holy Monastery of Saint George in Omalo - Garden",
+        "author": "GMJM1234",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Holy_Monastery_of_Saint_George_in_Omalo_-_Garden.jpg",
+        "score": 107
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "Dartlo, 2024 (07)",
+        "author": "Draceane",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dartlo,_2024_(07).jpg",
+        "score": 105
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Dartlo, 2024 (12)",
+        "author": "Draceane",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dartlo,_2024_(12).jpg",
+        "score": 105
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Ramna 022",
+        "author": "w:bg:Подпоручик",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ramna_022.jpg",
+        "score": 104
+      }
+    ],
+    "assets": {
+      "dem": "regions/tusheti/dem.png",
+      "overview": "regions/tusheti/overview.jpg",
+      "overviewSmall": "regions/tusheti/overview_s.jpg"
+    }
+  },
+  {
+    "id": "kolsuu",
+    "name": "ケルスー湖",
+    "nameLocal": "Көл-Суу · Kel-Suu",
+    "country": "キルギス",
+    "flag": "🇰🇬",
+    "center": [
+      40.635,
+      76.405
+    ],
+    "demZoom": 13,
+    "exaggeration": 1.1,
+    "accent": "#4fa3b8",
+    "tagline": "断崖に抱かれた、国境地帯のターコイズ",
+    "overview": "中国国境近く、標高約3,500mの天山山脈の奥深くに横たわる細長い氷河湖。垂直にそびえる岩壁の間を、青緑の湖面が十数キロにわたって蛇行します。一帯は国境管理区域のため訪れる人はごくわずか。遊牧民のユルトに泊まり、ボートで峡谷の奥へ進む体験はまさに秘境そのもの。",
+    "highlights": [
+      "岩壁の間を縫う鏡のような湖面",
+      "ゴムボートで行く峡谷の奥の奥",
+      "遊牧民のユルトでの夜と馬乳酒",
+      "道中に広がる果てしない草原と馬の群れ"
+    ],
+    "bestMonths": [
+      7,
+      8,
+      9
+    ],
+    "access": "ナリンから4WDで約5〜6時間、最後は徒歩または馬で約1時間。国境地帯許可証（取得に1〜2週間）が必須。",
+    "stay": "湖手前のユルトキャンプ（夏季のみ）",
+    "tips": "許可証は事前申請必須で検問あり。高山病と夜の冷え込みに備えて防寒着を。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 5,
+      "crime": 1,
+      "danger": 3,
+      "access": 5,
+      "physical": 3,
+      "infra": 1,
+      "cost": 3
+    },
+    "ratingNotes": {
+      "crime": "犯罪リスクはきわめて低い。検問所があり管理された区域",
+      "danger": "標高3,500mの高山病、急な天候悪化、ボート乗船時の寒さ",
+      "access": "国境許可証＋長距離悪路。個人手配は難易度が高い",
+      "physical": "湖まで徒歩・乗馬約1時間。標高で息が上がりやすい"
+    },
+    "pois": [
+      {
+        "name": "ケルスー湖",
+        "desc": "峡谷を埋める青緑の湖。奥へ進むほど壁が迫る",
+        "ll": [
+          40.7021689,
+          76.389985
+        ],
+        "uv": [
+          0.51483,
+          0.41769
+        ]
+      },
+      {
+        "name": "湖の入口",
+        "desc": "ユルトキャンプから歩いて到達する湖の南端",
+        "ll": [
+          40.605,
+          76.395
+        ],
+        "uv": [
+          0.52053,
+          0.56342
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Kel-Suu",
+      "Kol-Suu lake",
+      "Köl-Suu"
+    ],
+    "gem": 100,
+    "ease": 50,
+    "places": [
+      {
+        "kind": "pass",
+        "name": "Лики Памира",
+        "local": "",
+        "ll": [
+          40.79347,
+          76.63092
+        ],
+        "ele": 4655,
+        "uv": [
+          0.78896,
+          0.28057
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Инженерный",
+        "local": "",
+        "ll": [
+          40.66386,
+          76.35428
+        ],
+        "ele": 4630,
+        "uv": [
+          0.4742,
+          0.47517
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Термитник",
+        "local": "",
+        "ll": [
+          40.75882,
+          76.61625
+        ],
+        "ele": 4521,
+        "uv": [
+          0.77227,
+          0.33263
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Озеро Венеры",
+        "local": "",
+        "ll": [
+          40.76968,
+          76.55572
+        ],
+        "ele": 4496,
+        "uv": [
+          0.7034,
+          0.31632
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Водник",
+        "local": "",
+        "ll": [
+          40.69066,
+          76.34462
+        ],
+        "ele": 4389,
+        "uv": [
+          0.46321,
+          0.43496
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Kel-Tetiri",
+        "local": "Көл-Тетири",
+        "ll": [
+          40.65696,
+          76.40129
+        ],
+        "ele": null,
+        "uv": [
+          0.52769,
+          0.48552
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Karaul-Tebe",
+        "local": "Караул-Тёбе",
+        "ll": [
+          40.53171,
+          75.96422
+        ],
+        "ele": null,
+        "uv": [
+          0.0304,
+          0.67319
+        ]
+      }
+    ],
+    "terrain": {
+      "minElev": 2142,
+      "maxElev": 4941,
+      "widthM": 74235,
+      "bbox": {
+        "west": 75.9375,
+        "north": 40.979898069620134,
+        "east": 76.81640625,
+        "south": 40.313043208880906
+      },
+      "z": 11,
+      "x0": 1456,
+      "y0": 768,
+      "n": 5,
+      "world": {
+        "z": 9,
+        "x0": 362,
+        "y0": 190,
+        "n": 5
+      },
+      "demSize": 1280
+    },
+    "climate": {
+      "elevation": 3560,
+      "months": [
+        {
+          "tmax": -9.8,
+          "tmin": -19.9,
+          "rain": 7,
+          "sun": 8.7
+        },
+        {
+          "tmax": -8.6,
+          "tmin": -18.8,
+          "rain": 15,
+          "sun": 9.2
+        },
+        {
+          "tmax": -4.5,
+          "tmin": -14.3,
+          "rain": 28,
+          "sun": 10.1
+        },
+        {
+          "tmax": -0.9,
+          "tmin": -9.8,
+          "rain": 33,
+          "sun": 10.5
+        },
+        {
+          "tmax": 4.3,
+          "tmin": -4.5,
+          "rain": 85,
+          "sun": 11.8
+        },
+        {
+          "tmax": 8.7,
+          "tmin": -0.4,
+          "rain": 75,
+          "sun": 12
+        },
+        {
+          "tmax": 13,
+          "tmin": 3.5,
+          "rain": 90,
+          "sun": 12.6
+        },
+        {
+          "tmax": 11.2,
+          "tmin": 2,
+          "rain": 98,
+          "sun": 11.7
+        },
+        {
+          "tmax": 8.2,
+          "tmin": -1.7,
+          "rain": 45,
+          "sun": 11.2
+        },
+        {
+          "tmax": 0,
+          "tmin": -9.8,
+          "rain": 26,
+          "sun": 9.6
+        },
+        {
+          "tmax": -5.1,
+          "tmin": -16,
+          "rain": 12,
+          "sun": 8.9
+        },
+        {
+          "tmax": -8.6,
+          "tmin": -19.5,
+          "rain": 5,
+          "sun": 8.6
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Kol-Suu",
+        "author": "Eventyrlys",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Kol-Suu.jpg",
+        "score": 97
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "ISS028-E-30402 - View of Earth",
+        "author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:ISS028-E-30402_-_View_of_Earth.jpg",
+        "score": 93
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Кель-Суу - panoramio (3)",
+        "author": "Калачев Сергей",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio_(3).jpg",
+        "score": 82
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Кель-Суу - panoramio (2)",
+        "author": "Калачев Сергей",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio_(2).jpg",
+        "score": 80
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Кель-Суу - panoramio (4)",
+        "author": "Калачев Сергей",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio_(4).jpg",
+        "score": 79
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Кель-Суу - panoramio (1)",
+        "author": "Калачев Сергей",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio_(1).jpg",
+        "score": 73
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Кель-Суу - panoramio",
+        "author": "Калачев Сергей",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio.jpg",
+        "score": 72
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Кель-Суу - panoramio (5)",
+        "author": "Калачев Сергей",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B5%D0%BB%D1%8C-%D0%A1%D1%83%D1%83_-_panoramio_(5).jpg",
+        "score": 72
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "ISS022-E-34074 - View of Earth",
+        "author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:ISS022-E-34074_-_View_of_Earth.jpg",
+        "score": 70
+      }
+    ],
+    "assets": {
+      "dem": "regions/kolsuu/dem.png",
+      "overview": "regions/kolsuu/overview.jpg",
+      "overviewSmall": "regions/kolsuu/overview_s.jpg"
+    }
+  },
+  {
+    "id": "haftkul",
+    "name": "ハフト・クル（七つの湖）",
+    "nameLocal": "Ҳафткӯл · Haft Kul",
+    "country": "タジキスタン",
+    "flag": "🇹🇯",
+    "center": [
+      39.155,
+      67.85
+    ],
+    "demZoom": 13,
+    "exaggeration": 1.05,
+    "accent": "#3fae9b",
+    "tagline": "谷を下るごとに色を変える、七つの宝石",
+    "overview": "ファン山脈の谷に階段状に連なる7つの湖。翡翠、エメラルド、ターコイズ、群青――光と深さで湖ごとに色が変わり、段々畑とアプリコットの木が彩る山村が湖畔に寄り添います。サマルカンドから近いのに観光客は少なく、村人のもてなしが温かい場所です。",
+    "highlights": [
+      "一湖ごとに違う、七色の湖面",
+      "第6湖マルグゾールの鏡のような水面",
+      "第7湖ハザルチャシュマへの高原ハイク",
+      "湖畔の民家で過ごすのどかな時間"
+    ],
+    "bestMonths": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "access": "ペンジケントから車で約1.5〜2時間。第6湖までは一般車も可、第7湖は徒歩（往復約3時間）。",
+    "stay": "湖畔の村のホームステイ、マルグゾールのゲストハウス",
+    "tips": "未舗装路あり。村では現金（ソモニ）のみ。湖での遊泳は冷たいので短時間で。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 4,
+      "crime": 1,
+      "danger": 2,
+      "access": 3,
+      "physical": 2,
+      "infra": 2,
+      "cost": 1
+    },
+    "ratingNotes": {
+      "crime": "地方部の治安は良好で、住民は非常に親切",
+      "danger": "山道での落石、夏の強い日差し",
+      "access": "ウズベキスタンから陸路で入れ、比較的アクセスしやすい",
+      "physical": "車で湖を巡れる。ハイキングは任意"
+    },
+    "pois": [
+      {
+        "name": "第1湖 ミジゴン",
+        "desc": "旅の始まり、深緑の最初の湖",
+        "ll": [
+          39.1966,
+          67.825
+        ],
+        "uv": [
+          0.56978,
+          0.45236
+        ]
+      },
+      {
+        "name": "第6湖 マルグゾール",
+        "desc": "最大の湖。静かな湖面が山を映す",
+        "ll": [
+          39.1516673,
+          67.8477874
+        ],
+        "uv": [
+          0.5957,
+          0.5183
+        ]
+      },
+      {
+        "name": "第7湖 ハザルチャシュマ",
+        "desc": "千の泉を意味する最奥の湖",
+        "ll": [
+          39.124,
+          67.874
+        ],
+        "uv": [
+          0.62553,
+          0.55889
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Haft Kul",
+      "Marguzor lake",
+      "Seven Lakes Tajikistan"
+    ],
+    "gem": 90,
+    "ease": 75,
+    "places": [
+      {
+        "kind": "peak",
+        "name": "Hazrati-Sulton",
+        "local": "",
+        "ll": [
+          38.94778,
+          68.17247
+        ],
+        "ele": 4643,
+        "uv": [
+          0.96512,
+          0.81701
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Москва",
+        "local": "",
+        "ll": [
+          39.14716,
+          68.15021
+        ],
+        "ele": 5046,
+        "uv": [
+          0.93979,
+          0.52492
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Ghaznich",
+        "local": "Ғазнич",
+        "ll": [
+          39.2278,
+          68.08254
+        ],
+        "ele": 4170,
+        "uv": [
+          0.8628,
+          0.40654
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Дукдон",
+        "local": "",
+        "ll": [
+          39.07457,
+          68.14537
+        ],
+        "ele": 4896,
+        "uv": [
+          0.93429,
+          0.63136
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Зиндон",
+        "local": "",
+        "ll": [
+          39.17849,
+          68.17754
+        ],
+        "ele": 4819,
+        "uv": [
+          0.97089,
+          0.47894
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Демо",
+        "local": "",
+        "ll": [
+          39.17177,
+          68.13466
+        ],
+        "ele": 4684,
+        "uv": [
+          0.9221,
+          0.4888
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Мария",
+        "local": "",
+        "ll": [
+          39.21841,
+          68.16478
+        ],
+        "ele": 4680,
+        "uv": [
+          0.95637,
+          0.42033
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Alpomish",
+        "local": "",
+        "ll": [
+          38.89441,
+          68.1773
+        ],
+        "ele": 4668,
+        "uv": [
+          0.97062,
+          0.89506
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Айни",
+        "local": "",
+        "ll": [
+          39.09706,
+          68.18336
+        ],
+        "ele": 4614,
+        "uv": [
+          0.97751,
+          0.59839
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Сарыходан",
+        "local": "",
+        "ll": [
+          39.07229,
+          68.08775
+        ],
+        "ele": 4578,
+        "uv": [
+          0.86873,
+          0.6347
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Дикон",
+        "local": "",
+        "ll": [
+          38.97334,
+          68.18832
+        ],
+        "ele": 4576,
+        "uv": [
+          0.98316,
+          0.77961
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Aksu",
+        "local": "Аксу",
+        "ll": [
+          39.03399,
+          67.98767
+        ],
+        "ele": 4551,
+        "uv": [
+          0.75486,
+          0.69081
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Намерасед",
+        "local": "",
+        "ll": [
+          39.06705,
+          68.11403
+        ],
+        "ele": 4467,
+        "uv": [
+          0.89863,
+          0.64238
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Вуикло",
+        "local": "",
+        "ll": [
+          39.13107,
+          68.17306
+        ],
+        "ele": 4447,
+        "uv": [
+          0.96579,
+          0.54852
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Shakhi Obshoron",
+        "local": "Шахи Обшорон",
+        "ll": [
+          39.23962,
+          68.10817
+        ],
+        "ele": 4354,
+        "uv": [
+          0.89196,
+          0.38918
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Нескиданный",
+        "local": "",
+        "ll": [
+          39.03033,
+          67.92063
+        ],
+        "ele": 4260,
+        "uv": [
+          0.67858,
+          0.69618
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Караарча",
+        "local": "",
+        "ll": [
+          39.06424,
+          68.19104
+        ],
+        "ele": 4200,
+        "uv": [
+          0.98625,
+          0.6465
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "South Akhbasher Pass",
+        "local": "Ахбашер Южный",
+        "ll": [
+          39.06572,
+          67.99538
+        ],
+        "ele": 4200,
+        "uv": [
+          0.76363,
+          0.64433
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Upper Chapdara Pass",
+        "local": "",
+        "ll": [
+          39.07197,
+          67.92532
+        ],
+        "ele": 4115,
+        "uv": [
+          0.68392,
+          0.63517
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Kosatarosh",
+        "local": "Косатарош",
+        "ll": [
+          39.39175,
+          67.764
+        ],
+        "ele": null,
+        "uv": [
+          0.50037,
+          0.16545
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Sujina",
+        "local": "Сӯҷина",
+        "ll": [
+          39.48489,
+          67.70951
+        ],
+        "ele": null,
+        "uv": [
+          0.43838,
+          0.02824
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Voru",
+        "local": "Ворӯ",
+        "ll": [
+          39.23216,
+          67.98717
+        ],
+        "ele": null,
+        "uv": [
+          0.75429,
+          0.40014
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Shing",
+        "local": "Шинг",
+        "ll": [
+          39.28065,
+          67.8065
+        ],
+        "ele": null,
+        "uv": [
+          0.54873,
+          0.32889
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Farob",
+        "local": "Фароб",
+        "ll": [
+          39.24083,
+          67.47
+        ],
+        "ele": null,
+        "uv": [
+          0.16587,
+          0.3874
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Yovon",
+        "local": "Ёвон",
+        "ll": [
+          39.44672,
+          68.14982
+        ],
+        "ele": null,
+        "uv": [
+          0.93935,
+          0.08449
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Marghedar",
+        "local": "Марғедар",
+        "ll": [
+          39.46024,
+          67.96391
+        ],
+        "ele": null,
+        "uv": [
+          0.72783,
+          0.06457
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Shashqat",
+        "local": "Шашқат",
+        "ll": [
+          39.39169,
+          68.04923
+        ],
+        "ele": null,
+        "uv": [
+          0.8249,
+          0.16554
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Artuch",
+        "local": "Артуч",
+        "ll": [
+          39.33344,
+          68.10839
+        ],
+        "ele": null,
+        "uv": [
+          0.89221,
+          0.25126
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Ghusar",
+        "local": "Ғӯсар",
+        "ll": [
+          39.46462,
+          67.85148
+        ],
+        "ele": null,
+        "uv": [
+          0.59991,
+          0.05811
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Ghazza",
+        "local": "Ғазза",
+        "ll": [
+          39.25116,
+          68.04003
+        ],
+        "ele": null,
+        "uv": [
+          0.81443,
+          0.37222
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Panjrud",
+        "local": "Панҷрӯд",
+        "ll": [
+          39.34877,
+          68.0574
+        ],
+        "ele": null,
+        "uv": [
+          0.8342,
+          0.22871
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Moghiyon",
+        "local": "Моғиён",
+        "ll": [
+          39.24996,
+          67.66841
+        ],
+        "ele": null,
+        "uv": [
+          0.39161,
+          0.37399
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Padrud",
+        "local": "Падрӯд",
+        "ll": [
+          39.17055,
+          67.8353
+        ],
+        "ele": null,
+        "uv": [
+          0.5815,
+          0.49059
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Kuli Kalon",
+        "local": "Куликалон",
+        "ll": [
+          39.25275,
+          68.17513
+        ],
+        "ele": 2800,
+        "uv": [
+          0.96815,
+          0.36989
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Buzurg Alo Lake",
+        "local": "Кӯли Бузургаъло",
+        "ll": [
+          39.20704,
+          68.12981
+        ],
+        "ele": 3110,
+        "uv": [
+          0.91658,
+          0.43703
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Hazorchashma (7th Lake)",
+        "local": "Ҳазорчашма",
+        "ll": [
+          39.10508,
+          67.85807
+        ],
+        "ele": 2400,
+        "uv": [
+          0.6074,
+          0.58663
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Hushyor (3rd Lake)",
+        "local": "Ҳушёр",
+        "ll": [
+          39.20386,
+          67.8116
+        ],
+        "ele": null,
+        "uv": [
+          0.55453,
+          0.4417
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Sarikul",
+        "local": "Сарикӯл",
+        "ll": [
+          39.19909,
+          68.07355
+        ],
+        "ele": null,
+        "uv": [
+          0.85257,
+          0.4487
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Chuqurak",
+        "local": "Чуқурак",
+        "ll": [
+          39.26323,
+          68.134
+        ],
+        "ele": null,
+        "uv": [
+          0.92135,
+          0.35449
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Сувтушар",
+        "local": "",
+        "ll": [
+          38.95042,
+          67.34087
+        ],
+        "ele": null,
+        "uv": [
+          0.01895,
+          0.81315
+        ]
+      }
+    ],
+    "terrain": {
+      "minElev": 840,
+      "maxElev": 5468,
+      "widthM": 75860,
+      "bbox": {
+        "west": 67.32421875,
+        "north": 39.50404070558415,
+        "east": 68.203125,
+        "south": 38.8225909761771
+      },
+      "z": 11,
+      "x0": 1407,
+      "y0": 779,
+      "n": 5,
+      "world": {
+        "z": 9,
+        "x0": 350,
+        "y0": 193,
+        "n": 5
+      },
+      "demSize": 1280
+    },
+    "climate": {
+      "elevation": 2253,
+      "months": [
+        {
+          "tmax": -2.9,
+          "tmin": -10.1,
+          "rain": 66,
+          "sun": 7.9
+        },
+        {
+          "tmax": -1.3,
+          "tmin": -7.5,
+          "rain": 82,
+          "sun": 8
+        },
+        {
+          "tmax": 3.4,
+          "tmin": -3.9,
+          "rain": 144,
+          "sun": 8.7
+        },
+        {
+          "tmax": 8.3,
+          "tmin": -0.8,
+          "rain": 52,
+          "sun": 11.1
+        },
+        {
+          "tmax": 14,
+          "tmin": 3.8,
+          "rain": 92,
+          "sun": 12
+        },
+        {
+          "tmax": 19.3,
+          "tmin": 10.2,
+          "rain": 72,
+          "sun": 14.2
+        },
+        {
+          "tmax": 22.5,
+          "tmin": 13.6,
+          "rain": 49,
+          "sun": 14
+        },
+        {
+          "tmax": 20.8,
+          "tmin": 12,
+          "rain": 50,
+          "sun": 12.9
+        },
+        {
+          "tmax": 18.3,
+          "tmin": 9,
+          "rain": 28,
+          "sun": 11.9
+        },
+        {
+          "tmax": 10.5,
+          "tmin": 1.3,
+          "rain": 71,
+          "sun": 9.4
+        },
+        {
+          "tmax": 4.4,
+          "tmin": -5.8,
+          "rain": 77,
+          "sun": 8.2
+        },
+        {
+          "tmax": -0.5,
+          "tmin": -10.4,
+          "rain": 29,
+          "sun": 7.8
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Seven Lakes of San Pablo",
+        "author": "Ervin Malicdem",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Seven_Lakes_of_San_Pablo.jpg",
+        "score": 124
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "A Path Beyond Premonition (Unsplash)",
+        "author": "Peter Lloyd plloyd",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:A_Path_Beyond_Premonition_(Unsplash).jpg",
+        "score": 118
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "\"The Seven Lakes\"",
+        "author": "Liana-oksana",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%22The_Seven_Lakes%22.jpg",
+        "score": 110
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Seven lakes basin",
+        "author": "Jtmorgan",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Seven_lakes_basin.JPG",
+        "score": 109
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Seven Lakes Basin",
+        "author": "Jason Pratt (FishSpeaker) from Pittsburgh, PA",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Seven_Lakes_Basin.jpg",
+        "score": 108
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Seven Lakes Basin - panoramio",
+        "author": "FishSpeaker",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Seven_Lakes_Basin_-_panoramio.jpg",
+        "score": 108
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Lakes of Tajikistan 31",
+        "author": "Шухрат Саъдиев",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Lakes_of_Tajikistan_31.JPG",
+        "score": 108
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Valley of the seven lakes in Julian Alps",
+        "author": "Dreamy Pixel",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Valley_of_the_seven_lakes_in_Julian_Alps.jpg",
+        "score": 106
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "\"The Seven Lakes\" 1",
+        "author": "Liana-oksana",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%22The_Seven_Lakes%22_1.jpg",
+        "score": 103
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "\"The Seven Lakes\" 6",
+        "author": "Liana-oksana",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%22The_Seven_Lakes%22_6.jpg",
+        "score": 100
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Tajikistan Fan-Mauntains (2)",
+        "author": "Шухрат Саъдиев",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tajikistan_Fan-Mauntains_(2).JPG",
+        "score": 94
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Seven Lakes Drive along Lake Askoti (3)",
+        "author": "Juliancolton",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Seven_Lakes_Drive_along_Lake_Askoti_(3).jpg",
+        "score": 94
+      }
+    ],
+    "assets": {
+      "dem": "regions/haftkul/dem.png",
+      "overview": "regions/haftkul/overview.jpg",
+      "overviewSmall": "regions/haftkul/overview_s.jpg"
+    }
+  },
+  {
+    "id": "semonkong",
+    "name": "セモンコン",
+    "nameLocal": "Semonkong · Maletsunyane",
+    "country": "レソト",
+    "flag": "🇱🇸",
+    "center": [
+      -29.86,
+      28.05
+    ],
+    "demZoom": 13,
+    "exaggeration": 1.25,
+    "accent": "#c98b5a",
+    "tagline": "天空の王国、192mを一息に落ちる滝",
+    "overview": "国土全体が標高1,400m以上という「天空の王国」レソトの高地。セモンコン（煙の場所）の名の通り、マレツニャネの滝が192mの一枚落ちで玄武岩の峡谷に吸い込まれ、水煙が舞い上がります。毛布をまとったバソト族の騎手がポニーで草原を行き交う、ほかにはない風景が広がります。",
+    "highlights": [
+      "南半球屈指、192m一枚落ちの大瀑布",
+      "バソト・ポニーで行く高原トレッキング",
+      "滝壺へ降りる世界最長級の懸垂下降",
+      "毛布をまとった騎手が行き交う草原"
+    ],
+    "bestMonths": [
+      3,
+      4,
+      5,
+      9,
+      10,
+      11
+    ],
+    "access": "首都マセルから舗装路で約2.5〜3時間。",
+    "stay": "セモンコン・ロッジ（滝近くの老舗山荘）",
+    "tips": "冬（6〜8月）は氷点下で雪も。大雨後は川の増水に注意。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 4,
+      "crime": 2,
+      "danger": 2,
+      "access": 2,
+      "physical": 2,
+      "infra": 2,
+      "cost": 2
+    },
+    "ratingNotes": {
+      "crime": "山間部は落ち着いているが、首都マセル周辺では軽犯罪に注意",
+      "danger": "滝周辺の断崖、冬の寒さ、雨季の増水",
+      "access": "首都から舗装路で行ける。公共交通は本数が少ない",
+      "physical": "展望地までは徒歩やポニーで気軽に行ける"
+    },
+    "pois": [
+      {
+        "name": "マレツニャネの滝",
+        "desc": "192mの一枚落ち。峡谷に虹がかかる",
+        "ll": [
+          -29.86824,
+          28.0512713
+        ],
+        "uv": [
+          0.51611,
+          0.4362
+        ]
+      },
+      {
+        "name": "セモンコンの村",
+        "desc": "ポニーと騎手が集う高原の小さな町",
+        "ll": [
+          -29.8400122,
+          28.0511031
+        ],
+        "uv": [
+          0.51592,
+          0.39917
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Maletsunyane Falls",
+      "Semonkong"
+    ],
+    "gem": 90,
+    "ease": 75,
+    "places": [
+      {
+        "kind": "peak",
+        "name": "Thaba Putsoa",
+        "local": "",
+        "ll": [
+          -29.73147,
+          27.92605
+        ],
+        "ele": 3096,
+        "uv": [
+          0.37364,
+          0.25688
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "'Mamahlanya",
+        "local": "",
+        "ll": [
+          -29.7867,
+          27.8458
+        ],
+        "ele": 3039,
+        "uv": [
+          0.28233,
+          0.32926
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Teletsana",
+        "local": "",
+        "ll": [
+          -29.62273,
+          28.46069
+        ],
+        "ele": 3035,
+        "uv": [
+          0.98194,
+          0.11447
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Thaba-Moea",
+        "local": "",
+        "ll": [
+          -29.62955,
+          28.38002
+        ],
+        "ele": 3021,
+        "uv": [
+          0.89016,
+          0.1234
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Thaba-Chitja",
+        "local": "",
+        "ll": [
+          -29.84228,
+          28.40203
+        ],
+        "ele": 3003,
+        "uv": [
+          0.9152,
+          0.40215
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Mokotjomela",
+        "local": "",
+        "ll": [
+          -30.28464,
+          27.89321
+        ],
+        "ele": 2958,
+        "uv": [
+          0.33627,
+          0.98369
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Bofoma-Lits'oene",
+        "local": "",
+        "ll": [
+          -29.80713,
+          28.3758
+        ],
+        "ele": 2954,
+        "uv": [
+          0.88535,
+          0.35605
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Thaba-Putsoa",
+        "local": "",
+        "ll": [
+          -29.6408,
+          28.0675
+        ],
+        "ele": 2950,
+        "uv": [
+          0.53458,
+          0.13813
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Manong",
+        "local": "",
+        "ll": [
+          -29.6942,
+          28.0408
+        ],
+        "ele": 2924,
+        "uv": [
+          0.5042,
+          0.20805
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Ponto",
+        "local": "",
+        "ll": [
+          -29.6983,
+          27.93287
+        ],
+        "ele": 2912,
+        "uv": [
+          0.3814,
+          0.21342
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Thaba-Nts'o",
+        "local": "",
+        "ll": [
+          -29.93378,
+          28.13647
+        ],
+        "ele": 2911,
+        "uv": [
+          0.61305,
+          0.52222
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Thaba-ea-'Maephole",
+        "local": "",
+        "ll": [
+          -29.96061,
+          27.80086
+        ],
+        "ele": 2887,
+        "uv": [
+          0.2312,
+          0.55745
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Khamokha",
+        "local": "",
+        "ll": [
+          -30.14357,
+          28.40002
+        ],
+        "ele": 2858,
+        "uv": [
+          0.91291,
+          0.79795
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Ramabanta",
+        "local": "",
+        "ll": [
+          -29.66542,
+          27.7945
+        ],
+        "ele": null,
+        "uv": [
+          0.22396,
+          0.17036
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Phamong",
+        "local": "",
+        "ll": [
+          -30.24338,
+          27.8027
+        ],
+        "ele": null,
+        "uv": [
+          0.23329,
+          0.92934
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Ha Sekake",
+        "local": "",
+        "ll": [
+          -30.04657,
+          28.35974
+        ],
+        "ele": null,
+        "uv": [
+          0.86708,
+          0.67039
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Seforong",
+        "local": "",
+        "ll": [
+          -30.04905,
+          28.24969
+        ],
+        "ele": null,
+        "uv": [
+          0.74187,
+          0.67365
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Ha Lekhooa",
+        "local": "",
+        "ll": [
+          -29.90716,
+          27.63047
+        ],
+        "ele": null,
+        "uv": [
+          0.03733,
+          0.48728
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Ha Sekunyane",
+        "local": "",
+        "ll": [
+          -29.96866,
+          27.61647
+        ],
+        "ele": null,
+        "uv": [
+          0.02141,
+          0.56803
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Makhaleng",
+        "local": "",
+        "ll": [
+          -29.88607,
+          27.61429
+        ],
+        "ele": null,
+        "uv": [
+          0.01893,
+          0.4596
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Ha Robi",
+        "local": "",
+        "ll": [
+          -30.28498,
+          27.80722
+        ],
+        "ele": null,
+        "uv": [
+          0.23844,
+          0.98414
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Ha Fakathe",
+        "local": "",
+        "ll": [
+          -30.26145,
+          27.94195
+        ],
+        "ele": null,
+        "uv": [
+          0.39173,
+          0.95314
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Ha Mohlakoana",
+        "local": "",
+        "ll": [
+          -30.21389,
+          27.94609
+        ],
+        "ele": null,
+        "uv": [
+          0.39644,
+          0.8905
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Ha Khomo-a-Bokone",
+        "local": "",
+        "ll": [
+          -29.98696,
+          27.93648
+        ],
+        "ele": null,
+        "uv": [
+          0.38551,
+          0.59206
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Khakhathane",
+        "local": "",
+        "ll": [
+          -29.96634,
+          27.84007
+        ],
+        "ele": null,
+        "uv": [
+          0.27581,
+          0.56498
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Ha Motloi",
+        "local": "",
+        "ll": [
+          -30.25792,
+          27.70491
+        ],
+        "ele": null,
+        "uv": [
+          0.12203,
+          0.94849
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Phiring",
+        "local": "",
+        "ll": [
+          -30.21272,
+          27.74862
+        ],
+        "ele": null,
+        "uv": [
+          0.17176,
+          0.88896
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Ha Lethena",
+        "local": "",
+        "ll": [
+          -30.25299,
+          27.76189
+        ],
+        "ele": null,
+        "uv": [
+          0.18686,
+          0.942
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Ha Moena",
+        "local": "",
+        "ll": [
+          -30.21128,
+          27.67562
+        ],
+        "ele": null,
+        "uv": [
+          0.08871,
+          0.88707
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Ribaneng Falls",
+        "local": "",
+        "ll": [
+          -29.82997,
+          27.77791
+        ],
+        "ele": null,
+        "uv": [
+          0.20509,
+          0.386
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Botsoela Waterfall",
+        "local": "",
+        "ll": [
+          -29.79705,
+          27.61462
+        ],
+        "ele": null,
+        "uv": [
+          0.0193,
+          0.34283
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Qhoasing Falls",
+        "local": "",
+        "ll": [
+          -29.97524,
+          27.7675
+        ],
+        "ele": null,
+        "uv": [
+          0.19324,
+          0.57667
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Boritsana Falls",
+        "local": "",
+        "ll": [
+          -29.99648,
+          27.72032
+        ],
+        "ele": null,
+        "uv": [
+          0.13956,
+          0.60457
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Lebelonyane Pass",
+        "local": "",
+        "ll": [
+          -30.17498,
+          28.00418
+        ],
+        "ele": null,
+        "uv": [
+          0.46253,
+          0.83928
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Ramabanta Pass",
+        "local": "",
+        "ll": [
+          -29.65587,
+          27.76957
+        ],
+        "ele": null,
+        "uv": [
+          0.1956,
+          0.15786
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Lekhalo-le-Lesehlana Pass",
+        "local": "",
+        "ll": [
+          -30.24051,
+          28.14199
+        ],
+        "ele": null,
+        "uv": [
+          0.61933,
+          0.92556
+        ]
+      }
+    ],
+    "terrain": {
+      "minElev": 1161,
+      "maxElev": 3088,
+      "widthM": 84803,
+      "bbox": {
+        "west": 27.59765625,
+        "north": -29.535229562948455,
+        "east": 28.4765625,
+        "south": -30.29701788337205
+      },
+      "z": 11,
+      "x0": 1181,
+      "y0": 1200,
+      "n": 5,
+      "world": {
+        "z": 9,
+        "x0": 293,
+        "y0": 298,
+        "n": 5
+      },
+      "demSize": 1280
+    },
+    "climate": {
+      "elevation": 2207,
+      "months": [
+        {
+          "tmax": 21,
+          "tmin": 10.6,
+          "rain": 163,
+          "sun": 11.9
+        },
+        {
+          "tmax": 21.3,
+          "tmin": 10.4,
+          "rain": 110,
+          "sun": 11.4
+        },
+        {
+          "tmax": 20.1,
+          "tmin": 8.9,
+          "rain": 75,
+          "sun": 10.9
+        },
+        {
+          "tmax": 16.8,
+          "tmin": 5.6,
+          "rain": 52,
+          "sun": 10.2
+        },
+        {
+          "tmax": 14.6,
+          "tmin": 2.8,
+          "rain": 21,
+          "sun": 9.7
+        },
+        {
+          "tmax": 11,
+          "tmin": -0.4,
+          "rain": 17,
+          "sun": 9.2
+        },
+        {
+          "tmax": 10.9,
+          "tmin": -1.5,
+          "rain": 9,
+          "sun": 9.8
+        },
+        {
+          "tmax": 14.2,
+          "tmin": 0.6,
+          "rain": 13,
+          "sun": 10.5
+        },
+        {
+          "tmax": 18.1,
+          "tmin": 4.9,
+          "rain": 31,
+          "sun": 10.9
+        },
+        {
+          "tmax": 19.7,
+          "tmin": 6.8,
+          "rain": 77,
+          "sun": 11.2
+        },
+        {
+          "tmax": 20.9,
+          "tmin": 8.5,
+          "rain": 76,
+          "sun": 12.1
+        },
+        {
+          "tmax": 21.5,
+          "tmin": 10.2,
+          "rain": 151,
+          "sun": 12
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Dendrelaphis caudolineatus, striped bronzeback",
+        "author": "Rushenb",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dendrelaphis_caudolineatus,_striped_bronzeback.jpg",
+        "score": 137
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "Hazelnuts",
+        "author": "Fir0002 at English Wikipedia",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Hazelnuts.jpg",
+        "score": 132
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Türlersee panosphere 20200730",
+        "author": "Daniel Kraft",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:T%C3%BCrlersee_panosphere_20200730.jpg",
+        "score": 117
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "On the way to Semonkong - panoramio",
+        "author": "Graham Maclachlan",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:On_the_way_to_Semonkong_-_panoramio.jpg",
+        "score": 110
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Semonkong, here we come... - panoramio",
+        "author": "Graham Maclachlan",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Semonkong,_here_we_come..._-_panoramio.jpg",
+        "score": 109
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "A5 Aarebruecke",
+        "author": "Ikiwaner",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:A5_Aarebruecke.jpg",
+        "score": 105
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Sok Kwu Wan 02",
+        "author": "Underwaterbuffalo",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Sok_Kwu_Wan_02.jpg",
+        "score": 103
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Unnamed Road, Lesotho - panoramio - Graham Maclachlan (51)",
+        "author": "Graham Maclachlan",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Unnamed_Road,_Lesotho_-_panoramio_-_Graham_Maclachlan_(51).jpg",
+        "score": 100
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "Unnamed Road, Lesotho - panoramio - Graham Maclachlan (55)",
+        "author": "Graham Maclachlan",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Unnamed_Road,_Lesotho_-_panoramio_-_Graham_Maclachlan_(55).jpg",
+        "score": 99
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "Top of Baboons to Semonkong - panoramio",
+        "author": "Graham Maclachlan",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Top_of_Baboons_to_Semonkong_-_panoramio.jpg",
+        "score": 97
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "SOK Hq",
+        "author": "Ypsilon from Finland",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:SOK_Hq.jpg",
+        "score": 95
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "LWR2013 - panoramio (78)",
+        "author": "Graham Maclachlan",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:LWR2013_-_panoramio_(78).jpg",
+        "score": 95
+      }
+    ],
+    "assets": {
+      "dem": "regions/semonkong/dem.png",
+      "overview": "regions/semonkong/overview.jpg",
+      "overviewSmall": "regions/semonkong/overview_s.jpg"
+    }
+  },
+  {
+    "id": "dzukou",
+    "name": "ズコウ渓谷",
+    "nameLocal": "Dzükou Valley",
+    "country": "インド（ナガランド／マニプール）",
+    "flag": "🇮🇳",
+    "center": [
+      25.555,
+      94.065
+    ],
+    "demZoom": 13,
+    "exaggeration": 1.2,
+    "accent": "#7fae6a",
+    "tagline": "まるで緑のビロード。ここにしか咲かない百合の谷",
+    "overview": "インド北東端、ミャンマー国境近くの標高2,400m付近に広がる起伏の谷。低い竹笹に覆われた丘がどこまでも波打ち、まるで緑のビロードのよう。初夏にはこの谷だけに自生する「ズコウ・リリー」が咲き誇ります。辿り着くには森を登るトレッキングが必要で、その分だけ静けさが守られています。",
+    "highlights": [
+      "竹笹に覆われた丘が波打つ緑の大地",
+      "谷の固有種、ズコウ・リリーの開花",
+      "雲海の上から迎える朝日",
+      "谷の中を蛇行する小川と冬の霜景色"
+    ],
+    "bestMonths": [
+      6,
+      7,
+      10,
+      11,
+      12
+    ],
+    "access": "コヒマから車で登山口（ヴィスウェマ／ジャカマ）へ約30分、そこから徒歩3〜5時間。ナガランド州の入域許可（ILP）が必要。",
+    "stay": "谷の中の簡素なレストハウス、またはテント泊",
+    "tips": "寝袋・食料持参が基本。雨季は滑りやすくヒルも出る。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 5,
+      "crime": 1,
+      "danger": 2,
+      "access": 4,
+      "physical": 4,
+      "infra": 1,
+      "cost": 1
+    },
+    "ratingNotes": {
+      "crime": "谷とコヒマ周辺は穏やか。州境の情勢は事前確認を",
+      "danger": "雨季のぬかるみ・急坂、夜間の冷え込み",
+      "access": "入域許可が必要。州都コヒマまでも遠い",
+      "physical": "急登を含む片道3〜5時間のトレッキング"
+    },
+    "pois": [
+      {
+        "name": "ズコウ渓谷",
+        "desc": "緑の丘が波打つ谷の中心部",
+        "ll": [
+          25.5646944,
+          94.0940762
+        ],
+        "uv": [
+          0.45815,
+          0.49694
+        ]
+      },
+      {
+        "name": "レストハウス",
+        "desc": "谷を見下ろす尾根の上の山小屋",
+        "ll": [
+          25.561,
+          94.078
+        ],
+        "uv": [
+          0.43986,
+          0.5016
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Dzukou Valley",
+      "Dzüko Valley"
+    ],
+    "gem": 100,
+    "ease": 56,
+    "places": [
+      {
+        "kind": "town",
+        "name": "Chumukedima",
+        "local": "",
+        "ll": [
+          25.80903,
+          93.78812
+        ],
+        "ele": null,
+        "uv": [
+          0.11004,
+          0.18845
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Tenipu",
+        "local": "",
+        "ll": [
+          25.53196,
+          94.085
+        ],
+        "ele": 2994,
+        "uv": [
+          0.44782,
+          0.53822
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Kapamüdzü",
+        "local": "",
+        "ll": [
+          25.53307,
+          94.29654
+        ],
+        "ele": 2620,
+        "uv": [
+          0.68851,
+          0.53682
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Pfütsero",
+        "local": "",
+        "ll": [
+          25.57234,
+          94.29698
+        ],
+        "ele": 2133,
+        "uv": [
+          0.68901,
+          0.48729
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Japfii",
+        "local": "",
+        "ll": [
+          25.59759,
+          94.06659
+        ],
+        "ele": 3015,
+        "uv": [
+          0.42688,
+          0.45544
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Laikot",
+        "local": "",
+        "ll": [
+          25.35686,
+          93.89941
+        ],
+        "ele": 2832,
+        "uv": [
+          0.23666,
+          0.75884
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Hizellebba",
+        "local": "",
+        "ll": [
+          25.64275,
+          93.96153
+        ],
+        "ele": 2723,
+        "uv": [
+          0.30734,
+          0.39846
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Senapati",
+        "local": "",
+        "ll": [
+          25.27266,
+          94.02675
+        ],
+        "ele": null,
+        "uv": [
+          0.38155,
+          0.86482
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Paona",
+        "local": "",
+        "ll": [
+          25.59493,
+          93.86804
+        ],
+        "ele": 2486,
+        "uv": [
+          0.20097,
+          0.4588
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Vallenbung",
+        "local": "",
+        "ll": [
+          25.22826,
+          93.76134
+        ],
+        "ele": 2196,
+        "uv": [
+          0.07957,
+          0.92067
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Daimikilong",
+        "local": "",
+        "ll": [
+          25.37598,
+          93.98735
+        ],
+        "ele": 2043,
+        "uv": [
+          0.33672,
+          0.73477
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Phek",
+        "local": "",
+        "ll": [
+          25.70983,
+          94.46334
+        ],
+        "ele": null,
+        "uv": [
+          0.87829,
+          0.31377
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Rezeolo",
+        "local": "",
+        "ll": [
+          25.45075,
+          93.74537
+        ],
+        "ele": 1819,
+        "uv": [
+          0.0614,
+          0.64058
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Rangapahar",
+        "local": "Rangapahār",
+        "ll": [
+          25.85571,
+          93.70516
+        ],
+        "ele": null,
+        "uv": [
+          0.01565,
+          0.12944
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Khonoma",
+        "local": "",
+        "ll": [
+          25.65429,
+          94.02201
+        ],
+        "ele": null,
+        "uv": [
+          0.37615,
+          0.38389
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Tseminyu",
+        "local": "",
+        "ll": [
+          25.92301,
+          94.22235
+        ],
+        "ele": null,
+        "uv": [
+          0.6041,
+          0.04433
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Khezhakeno",
+        "local": "",
+        "ll": [
+          25.5139,
+          94.20786
+        ],
+        "ele": null,
+        "uv": [
+          0.58761,
+          0.56099
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Sechu Zubza",
+        "local": "",
+        "ll": [
+          25.71185,
+          94.04076
+        ],
+        "ele": null,
+        "uv": [
+          0.39749,
+          0.31122
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Satakha HQ",
+        "local": "",
+        "ll": [
+          25.92904,
+          94.44762
+        ],
+        "ele": null,
+        "uv": [
+          0.8604,
+          0.0367
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Lakhamai",
+        "local": "",
+        "ll": [
+          25.39048,
+          94.30189
+        ],
+        "ele": null,
+        "uv": [
+          0.69459,
+          0.71651
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Oinam",
+        "local": "",
+        "ll": [
+          25.35082,
+          94.1977
+        ],
+        "ele": null,
+        "uv": [
+          0.57605,
+          0.76645
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Porba",
+        "local": "",
+        "ll": [
+          25.61669,
+          94.33139
+        ],
+        "ele": null,
+        "uv": [
+          0.72816,
+          0.43134
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Kachai",
+        "local": "",
+        "ll": [
+          25.23668,
+          94.27513
+        ],
+        "ele": null,
+        "uv": [
+          0.66415,
+          0.91008
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Chaton-I",
+        "local": "",
+        "ll": [
+          25.29696,
+          93.71431
+        ],
+        "ele": null,
+        "uv": [
+          0.02606,
+          0.83424
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Kuilong",
+        "local": "Kuilong-I",
+        "ll": [
+          25.3554,
+          93.78057
+        ],
+        "ele": null,
+        "uv": [
+          0.10145,
+          0.76068
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Tumuyon Khullen",
+        "local": "",
+        "ll": [
+          25.1859,
+          93.97966
+        ],
+        "ele": null,
+        "uv": [
+          0.32797,
+          0.97394
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Gelnel",
+        "local": "",
+        "ll": [
+          25.21444,
+          93.81464
+        ],
+        "ele": null,
+        "uv": [
+          0.14021,
+          0.93805
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Loho Lake",
+        "local": "",
+        "ll": [
+          25.49673,
+          94.22908
+        ],
+        "ele": null,
+        "uv": [
+          0.61175,
+          0.58263
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Tuilha Kol waterfall",
+        "local": "",
+        "ll": [
+          25.19127,
+          93.77769
+        ],
+        "ele": null,
+        "uv": [
+          0.09817,
+          0.96719
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Mengupheju (Sirhi)",
+        "local": "",
+        "ll": [
+          25.72768,
+          93.9058
+        ],
+        "ele": null,
+        "uv": [
+          0.24393,
+          0.29123
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Chimakudi",
+        "local": "",
+        "ll": [
+          25.77892,
+          93.78466
+        ],
+        "ele": null,
+        "uv": [
+          0.1061,
+          0.2265
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Sintongbungi",
+        "local": "",
+        "ll": [
+          25.2689,
+          93.84356
+        ],
+        "ele": null,
+        "uv": [
+          0.17312,
+          0.86955
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Padam Pukhuri",
+        "local": "",
+        "ll": [
+          25.89563,
+          93.75316
+        ],
+        "ele": null,
+        "uv": [
+          0.07026,
+          0.07896
+        ]
+      }
+    ],
+    "terrain": {
+      "minElev": 136,
+      "maxElev": 3018,
+      "widthM": 88263,
+      "bbox": {
+        "west": 93.69140625,
+        "north": 25.958044673317847,
+        "east": 94.5703125,
+        "south": 25.165173368663936
+      },
+      "z": 11,
+      "x0": 1557,
+      "y0": 871,
+      "n": 5,
+      "world": {
+        "z": 9,
+        "x0": 387,
+        "y0": 216,
+        "n": 5
+      },
+      "demSize": 1280
+    },
+    "climate": {
+      "elevation": 2452,
+      "months": [
+        {
+          "tmax": 10,
+          "tmin": -1,
+          "rain": 22,
+          "sun": 9.8
+        },
+        {
+          "tmax": 10.9,
+          "tmin": 0.1,
+          "rain": 46,
+          "sun": 9.9
+        },
+        {
+          "tmax": 14.6,
+          "tmin": 4.1,
+          "rain": 73,
+          "sun": 10.7
+        },
+        {
+          "tmax": 16.5,
+          "tmin": 7.6,
+          "rain": 136,
+          "sun": 11.1
+        },
+        {
+          "tmax": 17,
+          "tmin": 9.3,
+          "rain": 271,
+          "sun": 10.1
+        },
+        {
+          "tmax": 18,
+          "tmin": 11.6,
+          "rain": 341,
+          "sun": 7.6
+        },
+        {
+          "tmax": 18.9,
+          "tmin": 12.4,
+          "rain": 306,
+          "sun": 8
+        },
+        {
+          "tmax": 18.3,
+          "tmin": 12.2,
+          "rain": 322,
+          "sun": 7.1
+        },
+        {
+          "tmax": 18.4,
+          "tmin": 11.4,
+          "rain": 201,
+          "sun": 9
+        },
+        {
+          "tmax": 16.3,
+          "tmin": 8.6,
+          "rain": 196,
+          "sun": 9.5
+        },
+        {
+          "tmax": 14,
+          "tmin": 4.2,
+          "rain": 38,
+          "sun": 10.4
+        },
+        {
+          "tmax": 11.3,
+          "tmin": 1.3,
+          "rain": 45,
+          "sun": 9.7
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Butterfly DSC 0283",
+        "author": "Atudu",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Butterfly_DSC_0283.jpg",
+        "score": 122
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "Butterfly DSC 0066",
+        "author": "Atudu",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Butterfly_DSC_0066.jpg",
+        "score": 118
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Open wing basking position of Caltoris tulsi (de Nicéville, 1884) - Purple Swift Butterfly DSC 0284",
+        "author": "Atudu",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Open_wing_basking_position_of_Caltoris_tulsi_(de_Nic%C3%A9ville,_1884)_-_Purple_Swift_Butterfly_DSC_0284.jpg",
+        "score": 116
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Sato 20231216 123501 stitch",
+        "author": "Shyamal",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Sato_20231216_123501_stitch.jpg",
+        "score": 104
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Dzuko Valley",
+        "author": "GuruBidya",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dzuko_Valley.jpg",
+        "score": 102
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Dzüko Valley 01",
+        "author": "Ganesh Mohan T",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dz%C3%BCko_Valley_01.jpg",
+        "score": 100
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Dzüko Valley 02",
+        "author": "Ganesh Mohan T",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dz%C3%BCko_Valley_02.jpg",
+        "score": 100
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Dzukou Lily 01",
+        "author": "Ganesh Mohan T",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dzukou_Lily_01.jpg",
+        "score": 99
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "Breathtaking beauty of Dzukou Valley in Manipur-Nagaland border (edit)",
+        "author": "Original: Samudra Bikash Hazarika Derivative work: UnpetitproleX",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_(edit).jpg",
+        "score": 99
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "Butterfly DSC 0394",
+        "author": "Atudu",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Butterfly_DSC_0394.jpg",
+        "score": 99
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Butterfly DSC 0216",
+        "author": "Atudu",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Butterfly_DSC_0216.jpg",
+        "score": 97
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Butterfly DSC 0217",
+        "author": "Atudu",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Butterfly_DSC_0217.jpg",
+        "score": 97
+      }
+    ],
+    "assets": {
+      "dem": "regions/dzukou/dem.png",
+      "overview": "regions/dzukou/overview.jpg",
+      "overviewSmall": "regions/dzukou/overview_s.jpg"
+    }
+  },
+  {
+    "id": "puluong",
+    "name": "プールオン",
+    "nameLocal": "Pù Luông",
+    "country": "ベトナム",
+    "flag": "🇻🇳",
+    "center": [
+      20.46,
+      105.145
+    ],
+    "demZoom": 13,
+    "exaggeration": 1.15,
+    "accent": "#9bb34d",
+    "tagline": "石灰岩の山と棚田が織りなす、翠の箱庭",
+    "overview": "ハノイから南西へ約4時間、石灰岩の峰々に囲まれた自然保護区。山の斜面を埋め尽くす棚田、竹でできた水車、高床式の家が並ぶターイ族の村――。初夏は瑞々しい緑、秋は黄金色に輝く棚田の中を、自転車や徒歩でのんびり巡れます。",
+    "highlights": [
+      "谷を埋め尽くす段々の棚田",
+      "くるくる回る竹の水車",
+      "ターイ族の高床式ホームステイ",
+      "霧に浮かぶ石灰岩の峰"
+    ],
+    "bestMonths": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "access": "ハノイから車で約4時間。保護区内はバイクタクシーやトレッキングで移動。",
+    "stay": "バン・ドン村などの高床式ホームステイ、エコロッジ",
+    "tips": "7〜8月は雨が多い。山道は滑りやすいので靴はしっかりしたものを。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 3,
+      "crime": 1,
+      "danger": 1,
+      "access": 2,
+      "physical": 2,
+      "infra": 3,
+      "cost": 1
+    },
+    "ratingNotes": {
+      "crime": "農村部で治安は非常に良好",
+      "danger": "雨季の土砂崩れ・滑りやすい道程度",
+      "access": "ハノイから陸路で1本。ツアーも手配可能",
+      "physical": "散策から本格トレッキングまで選べる"
+    },
+    "pois": [
+      {
+        "name": "バン・ドン村",
+        "desc": "水車と棚田に囲まれた高床式の村",
+        "ll": [
+          20.4450881,
+          105.1524614
+        ],
+        "uv": [
+          0.44013,
+          0.42805
+        ]
+      },
+      {
+        "name": "コー・ムオン",
+        "desc": "洞窟と棚田が隠れた山奥の集落",
+        "ll": [
+          20.4814018,
+          105.1319252
+        ],
+        "uv": [
+          0.41677,
+          0.38395
+        ]
+      },
+      {
+        "name": "プールオン村",
+        "desc": "谷を見晴らす棚田の展望地",
+        "ll": [
+          20.4206523,
+          105.1713758
+        ],
+        "uv": [
+          0.46165,
+          0.45772
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Pu Luong",
+      "Pù Luông"
+    ],
+    "gem": 80,
+    "ease": 88,
+    "places": [
+      {
+        "kind": "town",
+        "name": "Bo",
+        "local": "",
+        "ll": [
+          20.6724,
+          105.53468
+        ],
+        "ele": null,
+        "uv": [
+          0.87501,
+          0.15183
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Cao Phong",
+        "local": "",
+        "ll": [
+          20.70531,
+          105.32084
+        ],
+        "ele": null,
+        "uv": [
+          0.63171,
+          0.11181
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Mãn Đức",
+        "local": "",
+        "ll": [
+          20.6166,
+          105.27105
+        ],
+        "ele": null,
+        "uv": [
+          0.57506,
+          0.21968
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Lang Chánh",
+        "local": "",
+        "ll": [
+          20.15472,
+          105.23951
+        ],
+        "ele": null,
+        "uv": [
+          0.53918,
+          0.78031
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Núi Pu Pha Phong",
+        "local": "",
+        "ll": [
+          20.47765,
+          105.08779
+        ],
+        "ele": 1667,
+        "uv": [
+          0.36655,
+          0.38851
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Nhân Nghĩa",
+        "local": "",
+        "ll": [
+          20.52353,
+          105.44993
+        ],
+        "ele": null,
+        "uv": [
+          0.77859,
+          0.33278
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Xuất Hóa",
+        "local": "",
+        "ll": [
+          20.4818,
+          105.41798
+        ],
+        "ele": null,
+        "uv": [
+          0.74224,
+          0.38347
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Bao La",
+        "local": "",
+        "ll": [
+          20.67293,
+          104.97752
+        ],
+        "ele": null,
+        "uv": [
+          0.24109,
+          0.15119
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Lóng Luông",
+        "local": "",
+        "ll": [
+          20.78333,
+          104.83333
+        ],
+        "ele": null,
+        "uv": [
+          0.07703,
+          0.01688
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Núi Hang Kia",
+        "local": "",
+        "ll": [
+          20.73665,
+          104.88334
+        ],
+        "ele": 1483,
+        "uv": [
+          0.13393,
+          0.07368
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Núi Pu Hu Luông",
+        "local": "",
+        "ll": [
+          20.49686,
+          104.87064
+        ],
+        "ele": 1441,
+        "uv": [
+          0.11948,
+          0.36518
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Núi Hóc",
+        "local": "",
+        "ll": [
+          20.56166,
+          104.87441
+        ],
+        "ele": 1424,
+        "uv": [
+          0.12377,
+          0.28645
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Núi Pù Rinh",
+        "local": "",
+        "ll": [
+          20.11974,
+          105.12912
+        ],
+        "ele": 1291,
+        "uv": [
+          0.41358,
+          0.8227
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Núi Pù Hòn Hàn",
+        "local": "",
+        "ll": [
+          19.98472,
+          105.09797
+        ],
+        "ele": 1208,
+        "uv": [
+          0.37813,
+          0.98623
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Núi Đồi Thơi",
+        "local": "",
+        "ll": [
+          20.68306,
+          105.41046
+        ],
+        "ele": 1198,
+        "uv": [
+          0.73368,
+          0.13887
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Núi Ngàn Lè",
+        "local": "",
+        "ll": [
+          20.60723,
+          105.40333
+        ],
+        "ele": 1085,
+        "uv": [
+          0.72557,
+          0.23107
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Núi Cốt Ca",
+        "local": "",
+        "ll": [
+          20.61593,
+          105.47319
+        ],
+        "ele": 1071,
+        "uv": [
+          0.80505,
+          0.22049
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Núi Ma Gha",
+        "local": "",
+        "ll": [
+          20.48575,
+          105.24708
+        ],
+        "ele": 1065,
+        "uv": [
+          0.54779,
+          0.37867
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Sao Đông",
+        "local": "",
+        "ll": [
+          20.60511,
+          105.60245
+        ],
+        "ele": null,
+        "uv": [
+          0.95212,
+          0.23364
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Bãi Trăng",
+        "local": "",
+        "ll": [
+          20.56704,
+          105.30988
+        ],
+        "ele": null,
+        "uv": [
+          0.61924,
+          0.27991
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Nà Nghịa",
+        "local": "",
+        "ll": [
+          20.26681,
+          104.79635
+        ],
+        "ele": null,
+        "uv": [
+          0.03496,
+          0.64441
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Ba. Chòm Can",
+        "local": "",
+        "ll": [
+          20.04597,
+          105.06234
+        ],
+        "ele": null,
+        "uv": [
+          0.3376,
+          0.91206
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Chiềng Nhân",
+        "local": "",
+        "ll": [
+          20.03139,
+          105.12333
+        ],
+        "ele": null,
+        "uv": [
+          0.40699,
+          0.92972
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Thalao",
+        "local": "",
+        "ll": [
+          20.07629,
+          104.93149
+        ],
+        "ele": null,
+        "uv": [
+          0.18872,
+          0.87534
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Quảng Cư",
+        "local": "",
+        "ll": [
+          20.30048,
+          105.52531
+        ],
+        "ele": null,
+        "uv": [
+          0.86435,
+          0.60356
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Lạnh Anh",
+        "local": "",
+        "ll": [
+          20.4171,
+          105.53857
+        ],
+        "ele": null,
+        "uv": [
+          0.87944,
+          0.46204
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Đồng Bảng",
+        "local": "",
+        "ll": [
+          20.71051,
+          105.05727
+        ],
+        "ele": null,
+        "uv": [
+          0.33183,
+          0.10548
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Thung Khe Pass",
+        "local": "Đèo Thung Khe",
+        "ll": [
+          20.67209,
+          105.12058
+        ],
+        "ele": 773,
+        "uv": [
+          0.40386,
+          0.15221
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Thác mây",
+        "local": "",
+        "ll": [
+          20.36528,
+          105.44787
+        ],
+        "ele": null,
+        "uv": [
+          0.77624,
+          0.52494
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Thác Mu",
+        "local": "",
+        "ll": [
+          20.40463,
+          105.37264
+        ],
+        "ele": null,
+        "uv": [
+          0.69065,
+          0.47717
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Waterfall Ban Hieu",
+        "local": "Thác Hiêu",
+        "ll": [
+          20.46551,
+          105.22259
+        ],
+        "ele": null,
+        "uv": [
+          0.51992,
+          0.40325
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Trang waterfall",
+        "local": "Thác Suối Tráng",
+        "ll": [
+          20.7225,
+          105.27801
+        ],
+        "ele": null,
+        "uv": [
+          0.58298,
+          0.0909
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Thác Bằng Đông",
+        "local": "",
+        "ll": [
+          20.72882,
+          105.00218
+        ],
+        "ele": null,
+        "uv": [
+          0.26915,
+          0.08321
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Hồ Cựu Mã Giang",
+        "local": "",
+        "ll": [
+          20.0239,
+          105.57352
+        ],
+        "ele": 13,
+        "uv": [
+          0.9192,
+          0.93879
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Hồ Xuân Lũng",
+        "local": "",
+        "ll": [
+          20.21169,
+          105.57087
+        ],
+        "ele": 40,
+        "uv": [
+          0.91619,
+          0.71125
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Hồ Đống Cốc",
+        "local": "",
+        "ll": [
+          20.1866,
+          105.6041
+        ],
+        "ele": null,
+        "uv": [
+          0.954,
+          0.74166
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Hồ Khe Môn",
+        "local": "",
+        "ll": [
+          20.26575,
+          105.53381
+        ],
+        "ele": null,
+        "uv": [
+          0.87402,
+          0.64569
+        ]
+      }
+    ],
+    "terrain": {
+      "minElev": -300,
+      "maxElev": 1661,
+      "widthM": 91712,
+      "bbox": {
+        "west": 104.765625,
+        "north": 20.797201434306995,
+        "east": 105.64453125,
+        "south": 19.973348786110602
+      },
+      "z": 11,
+      "x0": 1620,
+      "y0": 903,
+      "n": 5,
+      "world": {
+        "z": 9,
+        "x0": 403,
+        "y0": 224,
+        "n": 5
+      },
+      "demSize": 1280
+    },
+    "climate": {
+      "elevation": 264,
+      "months": [
+        {
+          "tmax": 19.9,
+          "tmin": 13.3,
+          "rain": 47,
+          "sun": 5.2
+        },
+        {
+          "tmax": 21.7,
+          "tmin": 15.1,
+          "rain": 58,
+          "sun": 5.2
+        },
+        {
+          "tmax": 25.5,
+          "tmin": 18.7,
+          "rain": 59,
+          "sun": 5
+        },
+        {
+          "tmax": 29.2,
+          "tmin": 21.8,
+          "rain": 117,
+          "sun": 6.8
+        },
+        {
+          "tmax": 30.8,
+          "tmin": 23.5,
+          "rain": 278,
+          "sun": 8.4
+        },
+        {
+          "tmax": 32,
+          "tmin": 24.9,
+          "rain": 263,
+          "sun": 8.5
+        },
+        {
+          "tmax": 31.6,
+          "tmin": 24.7,
+          "rain": 279,
+          "sun": 9.2
+        },
+        {
+          "tmax": 30.9,
+          "tmin": 24.5,
+          "rain": 363,
+          "sun": 8.2
+        },
+        {
+          "tmax": 29.1,
+          "tmin": 23.3,
+          "rain": 372,
+          "sun": 7.4
+        },
+        {
+          "tmax": 26.7,
+          "tmin": 20.2,
+          "rain": 147,
+          "sun": 7.8
+        },
+        {
+          "tmax": 25.4,
+          "tmin": 18.3,
+          "rain": 42,
+          "sun": 7.4
+        },
+        {
+          "tmax": 20.4,
+          "tmin": 13.6,
+          "rain": 20,
+          "sun": 5.9
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Water density metric conversion",
+        "author": "Ldecola",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Water_density_metric_conversion.png",
+        "score": 144
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "Pù Luông - 02",
+        "author": "Benjamin Smith",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:P%C3%B9_Lu%C3%B4ng_-_02.jpg",
+        "score": 119
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "W.219 14% Pù Luông",
+        "author": "Marc Mongenet",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:W.219_14%25_P%C3%B9_Lu%C3%B4ng.jpg",
+        "score": 111
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Pù Luông - 01",
+        "author": "Benjamin Smith",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:P%C3%B9_Lu%C3%B4ng_-_01.jpg",
+        "score": 109
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "W.220 10% Pù Luông",
+        "author": "Marc Mongenet",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:W.220_10%25_P%C3%B9_Lu%C3%B4ng.jpg",
+        "score": 108
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Pù Luông - 06",
+        "author": "Benjamin Smith",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:P%C3%B9_Lu%C3%B4ng_-_06.jpg",
+        "score": 102
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Wedding near Pù Luông",
+        "author": "Benjamin Smith",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Wedding_near_P%C3%B9_Lu%C3%B4ng.jpg",
+        "score": 101
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Ruộng bậc thang Pù Luông 1 - NKS",
+        "author": "NKSTTSSHNVN",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ru%E1%BB%99ng_b%E1%BA%ADc_thang_P%C3%B9_Lu%C3%B4ng_1_-_NKS.jpg",
+        "score": 100
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "W.220 25% Pù Luông 01",
+        "author": "Marc Mongenet",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:W.220_25%25_P%C3%B9_Lu%C3%B4ng_01.jpg",
+        "score": 98
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "W.208 Pù Luông",
+        "author": "Marc Mongenet",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:W.208_P%C3%B9_Lu%C3%B4ng.jpg",
+        "score": 98
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Pu Luong 01",
+        "author": "Gió Đông (thảo luận)",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Pu_Luong_01.JPG",
+        "score": 96
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Pù Luông - 05",
+        "author": "Benjamin Smith",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:P%C3%B9_Lu%C3%B4ng_-_05.jpg",
+        "score": 96
+      }
+    ],
+    "assets": {
+      "dem": "regions/puluong/dem.png",
+      "overview": "regions/puluong/overview.jpg",
+      "overviewSmall": "regions/puluong/overview_s.jpg"
+    }
+  },
+  {
+    "id": "itbayat",
+    "name": "イトバヤット島",
+    "nameLocal": "Itbayat · Batanes",
+    "country": "フィリピン",
+    "flag": "🇵🇭",
+    "center": [
+      20.78,
+      121.845
+    ],
+    "demZoom": 12,
+    "exaggeration": 1.6,
+    "accent": "#4b9fd6",
+    "tagline": "フィリピン最北、緑の絨毯が断崖で海に落ちる島",
+    "overview": "台湾とルソン島の間、バタネス諸島で最大かつ最も辺境の島。港も砂浜もほとんどなく、隆起した珊瑚石灰岩の台地が断崖となって群青の海に落ち込みます。草原には牛がのんびり草を食み、石造りの家が並ぶ村が静かに佇む――地の果ての穏やかさを味わえます。",
+    "highlights": [
+      "海へ落ち込む断崖と群青の海",
+      "丘一面に広がる緑の牧草地",
+      "サンゴ石灰岩の石造りの家並み",
+      "風と波の音だけの岬の夕暮れ"
+    ],
+    "bestMonths": [
+      3,
+      4,
+      5
+    ],
+    "access": "マニラからバスコへ空路、そこから小型機（約12分）か伝統船ファルワ（2.5〜4時間）。",
+    "stay": "マヤン村の民宿（ホームステイ）",
+    "tips": "海況で船が欠航しやすく、日程に余裕を。台風シーズン（7〜10月）は避けて。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 5,
+      "crime": 1,
+      "danger": 2,
+      "access": 4,
+      "physical": 2,
+      "infra": 1,
+      "cost": 3
+    },
+    "ratingNotes": {
+      "crime": "バタネスはフィリピンでも最も治安が良い地域のひとつ",
+      "danger": "荒れやすい海峡の船旅、台風",
+      "access": "乗り継ぎ多数＋天候次第の船・小型機",
+      "physical": "島内の散策は軽め。断崖の縁は注意"
+    },
+    "pois": [
+      {
+        "name": "マヤン",
+        "desc": "島の中心集落。石の家と教会",
+        "ll": [
+          20.786719,
+          121.8413609
+        ],
+        "uv": [
+          0.5142,
+          0.50638
+        ]
+      },
+      {
+        "name": "パラヒト港",
+        "desc": "断崖に張りつく小さな船着き場",
+        "ll": [
+          20.744,
+          121.813
+        ],
+        "uv": [
+          0.49806,
+          0.53237
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Itbayat",
+      "Itbayat Batanes"
+    ],
+    "gem": 100,
+    "ease": 69,
+    "places": [
+      {
+        "kind": "town",
+        "name": "バスコ",
+        "local": "Basco",
+        "ll": [
+          20.44904,
+          121.96835
+        ],
+        "ele": null,
+        "uv": [
+          0.58644,
+          0.71163
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Sabtang",
+        "local": "",
+        "ll": [
+          20.33477,
+          121.87227
+        ],
+        "ele": null,
+        "uv": [
+          0.53178,
+          0.78098
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Uyugan",
+        "local": "",
+        "ll": [
+          20.34953,
+          121.93805
+        ],
+        "ele": null,
+        "uv": [
+          0.5692,
+          0.77203
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Hañib",
+        "local": "",
+        "ll": [
+          20.40641,
+          121.93528
+        ],
+        "ele": null,
+        "uv": [
+          0.56763,
+          0.73751
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Mount Aharung",
+        "local": "",
+        "ll": [
+          20.28333,
+          121.85
+        ],
+        "ele": null,
+        "uv": [
+          0.51911,
+          0.81218
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Unnamed volcano (Ibugos)",
+        "local": "",
+        "ll": [
+          20.33003,
+          121.75001
+        ],
+        "ele": -24,
+        "uv": [
+          0.46223,
+          0.78386
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Diogo",
+        "local": "",
+        "ll": [
+          20.70469,
+          121.92912
+        ],
+        "ele": 547,
+        "uv": [
+          0.56412,
+          0.55628
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Mabudis",
+        "local": "",
+        "ll": [
+          20.93333,
+          121.91667
+        ],
+        "ele": 234,
+        "uv": [
+          0.55704,
+          0.41712
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "North",
+        "local": "",
+        "ll": [
+          21.06608,
+          121.93281
+        ],
+        "ele": 230,
+        "uv": [
+          0.56622,
+          0.33623
+        ]
+      }
+    ],
+    "terrain": {
+      "minElev": -300,
+      "maxElev": 996,
+      "widthM": 182932,
+      "bbox": {
+        "west": 120.9375,
+        "north": 21.616579336740607,
+        "east": 122.6953125,
+        "south": 19.973348786110602
+      },
+      "z": 10,
+      "x0": 856,
+      "y0": 449,
+      "n": 5,
+      "world": {
+        "z": 8,
+        "x0": 212,
+        "y0": 110,
+        "n": 5
+      },
+      "demSize": 1280
+    },
+    "climate": {
+      "elevation": 97,
+      "months": [
+        {
+          "tmax": 23.5,
+          "tmin": 21.1,
+          "rain": 94,
+          "sun": 7.9
+        },
+        {
+          "tmax": 24.5,
+          "tmin": 21.8,
+          "rain": 56,
+          "sun": 8.9
+        },
+        {
+          "tmax": 25.9,
+          "tmin": 22.8,
+          "rain": 50,
+          "sun": 10.2
+        },
+        {
+          "tmax": 27.9,
+          "tmin": 24.6,
+          "rain": 39,
+          "sun": 11.3
+        },
+        {
+          "tmax": 29.5,
+          "tmin": 26.2,
+          "rain": 160,
+          "sun": 10.8
+        },
+        {
+          "tmax": 30.3,
+          "tmin": 27.3,
+          "rain": 141,
+          "sun": 11.1
+        },
+        {
+          "tmax": 30.5,
+          "tmin": 27.5,
+          "rain": 197,
+          "sun": 10.5
+        },
+        {
+          "tmax": 30,
+          "tmin": 27,
+          "rain": 194,
+          "sun": 10.3
+        },
+        {
+          "tmax": 29.6,
+          "tmin": 26.7,
+          "rain": 372,
+          "sun": 9.8
+        },
+        {
+          "tmax": 28.6,
+          "tmin": 26,
+          "rain": 353,
+          "sun": 8.3
+        },
+        {
+          "tmax": 27.3,
+          "tmin": 24.8,
+          "rain": 234,
+          "sun": 9
+        },
+        {
+          "tmax": 24.8,
+          "tmin": 22.5,
+          "rain": 106,
+          "sun": 7.1
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Port Tachimos, Itbayat",
+        "author": "CharMel Creations",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Port_Tachimos,_Itbayat.jpg",
+        "score": 162
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "Street in Port Tachimos",
+        "author": "CharMel Creations",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Street_in_Port_Tachimos.jpg",
+        "score": 146
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Rock Formation in Rapang Cliffs",
+        "author": "CharMel Creations",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rock_Formation_in_Rapang_Cliffs.jpg",
+        "score": 113
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Raele Lighthouse",
+        "author": "CharMel Creations",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Raele_Lighthouse.jpg",
+        "score": 113
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Sta Lucia - panoramio",
+        "author": "Tereso Hernández",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Sta_Lucia_-_panoramio.jpg",
+        "score": 106
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Balikatan 2026- 317th AW airlifts U S , Philippine military from Itbayat, Philippines (9643670)",
+        "author": "U.S. Air Force photo by Senior Airman Jade Caldwell",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Balikatan_2026-_317th_AW_airlifts_U_S_,_Philippine_military_from_Itbayat,_Philippines_(9643670).jpg",
+        "score": 104
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Philippine Island - Batan Islands - NARA - 68156370",
+        "author": "Unknown authorUnknown author or not provided",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Philippine_Island_-_Batan_Islands_-_NARA_-_68156370.jpg",
+        "score": 100
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Rapang Cliffs",
+        "author": "CharMel Creations",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rapang_Cliffs.jpg",
+        "score": 99
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "Batanes Island",
+        "author": "Ranieljosecastaneda",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Batanes_Island.jpg",
+        "score": 97
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "Facade of Itbayat Church",
+        "author": "National Historical Commission of the Philippines",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Facade_of_Itbayat_Church.jpg",
+        "score": 97
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Balikatan 25- Task Force Gimlets resupplies at Itbayat Airport (9001026)",
+        "author": "U.S. Army photo by Pfc. Peter Bannister",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Balikatan_25-_Task_Force_Gimlets_resupplies_at_Itbayat_Airport_(9001026).jpg",
+        "score": 96
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Philippine Island - Batan Islands - NARA - 68156356",
+        "author": "Unknown authorUnknown author or not provided",
+        "license": "Public domain",
+        "source": "https://commons.wikimedia.org/wiki/File:Philippine_Island_-_Batan_Islands_-_NARA_-_68156356.jpg",
+        "score": 95
+      }
+    ],
+    "assets": {
+      "dem": "regions/itbayat/dem.png",
+      "overview": "regions/itbayat/overview.jpg",
+      "overviewSmall": "regions/itbayat/overview_s.jpg"
+    }
+  },
+  {
+    "id": "ouvea",
+    "name": "ウベア島",
+    "nameLocal": "Ouvéa · Îles Loyauté",
+    "country": "ニューカレドニア（フランス領）",
+    "flag": "🇳🇨",
+    "center": [
+      -20.6,
+      166.5
+    ],
+    "demZoom": 11,
+    "exaggeration": 4,
+    "accent": "#3fb6c9",
+    "tagline": "25kmの白砂と、世界遺産のラグーン",
+    "overview": "ニューカレドニア本島の北東に浮かぶ細長い環礁の島。片側には25kmにわたって真っ白な砂浜が続き、世界遺産のラグーンは透明度の高い水色のグラデーションを描きます。ムリ橋の下を泳ぐウミガメやマンタ、断崖の奥の入り江――人の少ない楽園がそのまま残っています。",
+    "highlights": [
+      "果てしなく続く25kmの白砂ビーチ",
+      "ムリ橋から見下ろすウミガメとマンタ",
+      "レキニーの断崖に囲まれた入り江",
+      "水色のグラデーションが続くラグーン"
+    ],
+    "bestMonths": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "access": "ヌメアから国内線で約40分。島内はレンタカーか自転車。",
+    "stay": "ビーチ沿いの小さなホテル、部族の家でのホームステイ",
+    "tips": "部族の土地が多く、立ち入りには敬意と許可を。最新の渡航情報を確認。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 4,
+      "crime": 2,
+      "danger": 1,
+      "access": 3,
+      "physical": 1,
+      "infra": 2,
+      "cost": 4
+    },
+    "ratingNotes": {
+      "crime": "島は穏やかだが、ニューカレドニアは政治的緊張の影響に注意（渡航レベル2）",
+      "danger": "日差しと海流程度",
+      "access": "国内線で行ける。便数は限られる",
+      "physical": "ビーチと海が中心でほぼ体力不要"
+    },
+    "pois": [
+      {
+        "name": "ムリ橋",
+        "desc": "ラグーンの色が最も美しいと言われる橋と浜",
+        "ll": [
+          -20.7202852,
+          166.4279788
+        ],
+        "uv": [
+          0.53951,
+          0.6266
+        ]
+      },
+      {
+        "name": "ファヤウエ",
+        "desc": "島の中心と長大な白砂ビーチ",
+        "ll": [
+          -20.6506726,
+          166.5357712
+        ],
+        "uv": [
+          0.57017,
+          0.60544
+        ]
+      },
+      {
+        "name": "レキニーの断崖",
+        "desc": "干潮時に歩いて近づける石灰岩の断崖",
+        "ll": [
+          -20.7027937,
+          166.493075
+        ],
+        "uv": [
+          0.55803,
+          0.62128
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Ouvéa",
+      "Mouli Ouvéa",
+      "Ouvea lagoon"
+    ],
+    "gem": 90,
+    "ease": 81,
+    "places": [
+      {
+        "kind": "town",
+        "name": "Thio",
+        "local": "",
+        "ll": [
+          -21.61158,
+          166.21555
+        ],
+        "ele": null,
+        "uv": [
+          0.47909,
+          0.89847
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Kouaoua",
+        "local": "",
+        "ll": [
+          -21.39618,
+          165.82845
+        ],
+        "ele": null,
+        "uv": [
+          0.36898,
+          0.83262
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Houaïlou",
+        "local": "",
+        "ll": [
+          -21.2787,
+          165.62705
+        ],
+        "ele": null,
+        "uv": [
+          0.31169,
+          0.79674
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "ポワンディミエ",
+        "local": "Poindimié",
+        "ll": [
+          -20.93694,
+          165.33426
+        ],
+        "ele": null,
+        "uv": [
+          0.22841,
+          0.69254
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Wé",
+        "local": "",
+        "ll": [
+          -20.91627,
+          167.26433
+        ],
+        "ele": null,
+        "uv": [
+          0.77741,
+          0.68624
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Mont Panié",
+        "local": "",
+        "ll": [
+          -20.58866,
+          164.77028
+        ],
+        "ele": 1629,
+        "uv": [
+          0.06799,
+          0.58659
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Mont Humboldt",
+        "local": "",
+        "ll": [
+          -21.87995,
+          166.42262
+        ],
+        "ele": 1618,
+        "uv": [
+          0.53799,
+          0.98066
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Dent de Saint-Vincent",
+        "local": "",
+        "ll": [
+          -21.85925,
+          166.22154
+        ],
+        "ele": 1441,
+        "uv": [
+          0.48079,
+          0.97431
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Ningua",
+        "local": "",
+        "ll": [
+          -21.74258,
+          166.1411
+        ],
+        "ele": 1352,
+        "uv": [
+          0.45791,
+          0.93857
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Mont Do",
+        "local": "",
+        "ll": [
+          -21.754,
+          165.99999
+        ],
+        "ele": 1024,
+        "uv": [
+          0.41777,
+          0.94207
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Mont Aoupinié",
+        "local": "",
+        "ll": [
+          -21.17647,
+          165.26784
+        ],
+        "ele": 1006,
+        "uv": [
+          0.20952,
+          0.76555
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Moindou",
+        "local": "",
+        "ll": [
+          -21.69243,
+          165.67702
+        ],
+        "ele": null,
+        "uv": [
+          0.32591,
+          0.92321
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Tadine",
+        "local": "",
+        "ll": [
+          -21.54826,
+          167.88229
+        ],
+        "ele": null,
+        "uv": [
+          0.95318,
+          0.8791
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Pic Adjio",
+        "local": "",
+        "ll": [
+          -21.31101,
+          165.26156
+        ],
+        "ele": 703,
+        "uv": [
+          0.20773,
+          0.80661
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Pic Vincent",
+        "local": "",
+        "ll": [
+          -21.59833,
+          165.77549
+        ],
+        "ele": 703,
+        "uv": [
+          0.35392,
+          0.89442
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Keiyouma",
+        "local": "",
+        "ll": [
+          -21.4177,
+          165.36418
+        ],
+        "ele": 1424,
+        "uv": [
+          0.23692,
+          0.83919
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Nakada",
+        "local": "",
+        "ll": [
+          -21.62271,
+          166.05485
+        ],
+        "ele": 1136,
+        "uv": [
+          0.43338,
+          0.90188
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Nepoui",
+        "local": "",
+        "ll": [
+          -21.3274,
+          164.99684
+        ],
+        "ele": null,
+        "uv": [
+          0.13243,
+          0.81161
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Mont des Trois Ravines",
+        "local": "",
+        "ll": [
+          -21.65405,
+          165.56872
+        ],
+        "ele": 307,
+        "uv": [
+          0.2951,
+          0.91147
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Drueulu",
+        "local": "",
+        "ll": [
+          -20.92918,
+          167.08199
+        ],
+        "ele": null,
+        "uv": [
+          0.72554,
+          0.69017
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Xepenehe",
+        "local": "",
+        "ll": [
+          -20.78224,
+          167.15306
+        ],
+        "ele": null,
+        "uv": [
+          0.74576,
+          0.64545
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Mu",
+        "local": "",
+        "ll": [
+          -21.09284,
+          167.40263
+        ],
+        "ele": null,
+        "uv": [
+          0.81675,
+          0.74004
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Tingeting",
+        "local": "",
+        "ll": [
+          -20.74203,
+          167.26659
+        ],
+        "ele": null,
+        "uv": [
+          0.77805,
+          0.63322
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Ponérihouen",
+        "local": "",
+        "ll": [
+          -21.07199,
+          165.40249
+        ],
+        "ele": null,
+        "uv": [
+          0.24782,
+          0.73369
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Touho",
+        "local": "",
+        "ll": [
+          -20.78054,
+          165.23281
+        ],
+        "ele": null,
+        "uv": [
+          0.19955,
+          0.64493
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Noéli",
+        "local": "",
+        "ll": [
+          -21.00483,
+          164.94768
+        ],
+        "ele": null,
+        "uv": [
+          0.11845,
+          0.71322
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Port Bouquet",
+        "local": "",
+        "ll": [
+          -21.72224,
+          166.41573
+        ],
+        "ele": null,
+        "uv": [
+          0.53603,
+          0.93234
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Petit Borindi",
+        "local": "",
+        "ll": [
+          -21.79688,
+          166.49203
+        ],
+        "ele": null,
+        "uv": [
+          0.55773,
+          0.9552
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Ganem",
+        "local": "",
+        "ll": [
+          -20.69819,
+          164.93387
+        ],
+        "ele": null,
+        "uv": [
+          0.11452,
+          0.61988
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Kathépaïk",
+        "local": "",
+        "ll": [
+          -20.92351,
+          164.70247
+        ],
+        "ele": 622,
+        "uv": [
+          0.0487,
+          0.68845
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Mont Kaféaté",
+        "local": "",
+        "ll": [
+          -21.02783,
+          164.73741
+        ],
+        "ele": 264,
+        "uv": [
+          0.05864,
+          0.72023
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Pic Ouano",
+        "local": "",
+        "ll": [
+          -21.85628,
+          165.81354
+        ],
+        "ele": 109,
+        "uv": [
+          0.36474,
+          0.9734
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Cascade de Bâ",
+        "local": "",
+        "ll": [
+          -21.199,
+          165.55166
+        ],
+        "ele": null,
+        "uv": [
+          0.29025,
+          0.77242
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Cascade de Saint Thomas",
+        "local": "",
+        "ll": [
+          -20.9803,
+          165.23029
+        ],
+        "ele": null,
+        "uv": [
+          0.19884,
+          0.70575
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Tiwaka chute 8",
+        "local": "",
+        "ll": [
+          -20.92602,
+          165.08165
+        ],
+        "ele": null,
+        "uv": [
+          0.15656,
+          0.68921
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Cascade des militaires",
+        "local": "",
+        "ll": [
+          -20.61603,
+          164.64158
+        ],
+        "ele": null,
+        "uv": [
+          0.03138,
+          0.59491
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Trou bleu d'Hanawa",
+        "local": "",
+        "ll": [
+          -20.52124,
+          166.57247
+        ],
+        "ele": null,
+        "uv": [
+          0.58061,
+          0.56611
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Marais Fournier",
+        "local": "",
+        "ll": [
+          -21.58632,
+          165.34486
+        ],
+        "ele": null,
+        "uv": [
+          0.23143,
+          0.89074
+        ]
+      }
+    ],
+    "terrain": {
+      "minElev": -300,
+      "maxElev": 1590,
+      "widthM": 367063,
+      "bbox": {
+        "west": 164.53125,
+        "north": -18.646245142670605,
+        "east": 168.046875,
+        "south": -21.943045533438177
+      },
+      "z": 9,
+      "x0": 490,
+      "y0": 283,
+      "n": 5,
+      "world": {
+        "z": 7,
+        "x0": 121,
+        "y0": 69,
+        "n": 5
+      },
+      "demSize": 1280
+    },
+    "climate": {
+      "elevation": 0,
+      "months": [
+        {
+          "tmax": 27.8,
+          "tmin": 25.9,
+          "rain": 302,
+          "sun": 10
+        },
+        {
+          "tmax": 28.1,
+          "tmin": 26.2,
+          "rain": 328,
+          "sun": 10
+        },
+        {
+          "tmax": 27.6,
+          "tmin": 26,
+          "rain": 208,
+          "sun": 9.8
+        },
+        {
+          "tmax": 27,
+          "tmin": 25.3,
+          "rain": 227,
+          "sun": 9.4
+        },
+        {
+          "tmax": 25.4,
+          "tmin": 23.9,
+          "rain": 67,
+          "sun": 9.1
+        },
+        {
+          "tmax": 24.5,
+          "tmin": 23,
+          "rain": 54,
+          "sun": 9.1
+        },
+        {
+          "tmax": 23.9,
+          "tmin": 22.3,
+          "rain": 88,
+          "sun": 8.6
+        },
+        {
+          "tmax": 23.3,
+          "tmin": 21.7,
+          "rain": 89,
+          "sun": 9.6
+        },
+        {
+          "tmax": 23.8,
+          "tmin": 22.3,
+          "rain": 65,
+          "sun": 10.3
+        },
+        {
+          "tmax": 24.5,
+          "tmin": 22.8,
+          "rain": 156,
+          "sun": 10.2
+        },
+        {
+          "tmax": 25.8,
+          "tmin": 24,
+          "rain": 74,
+          "sun": 11.8
+        },
+        {
+          "tmax": 27.4,
+          "tmin": 25.3,
+          "rain": 226,
+          "sun": 10.8
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Raie Manta au fond de l'eau, Ouvéa",
+        "author": "Sorelia87",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Raie_Manta_au_fond_de_l%27eau,_Ouv%C3%A9a.jpg",
+        "score": 163
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "Raie Manta qui nage, Ouvéa",
+        "author": "Sorelia87",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Raie_Manta_qui_nage,_Ouv%C3%A9a.jpg",
+        "score": 163
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Raie Manta, Ouvéa",
+        "author": "Sorelia87",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Raie_Manta,_Ouv%C3%A9a.jpg",
+        "score": 163
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Raies - Pont de Mouly, Ouvéa, NC",
+        "author": "Gui0123",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Raies_-_Pont_de_Mouly,_Ouv%C3%A9a,_NC.jpg",
+        "score": 144
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Pléiades du Sud, Ouvéa, NC",
+        "author": "Gui0123",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Pl%C3%A9iades_du_Sud,_Ouv%C3%A9a,_NC.jpg",
+        "score": 135
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Îlot dans le lagon d'Ouvéa",
+        "author": "Pacificbluefilm",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%C3%8Elot_dans_le_lagon_d%27Ouv%C3%A9a.jpg",
+        "score": 135
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Requins - Pléiade du Sud, Ouvéa, NC",
+        "author": "Gui0123",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Requins_-_Pl%C3%A9iade_du_Sud,_Ouv%C3%A9a,_NC.jpg",
+        "score": 134
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Plage de Mouli, Ouvéa",
+        "author": "Sorelia87",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Plage_de_Mouli,_Ouv%C3%A9a.jpg",
+        "score": 131
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "Le pont de mouli",
+        "author": "Marietrip 27",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Le_pont_de_mouli.jpg",
+        "score": 125
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "Pont de Mouli 2023",
+        "author": "Aloncq",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Pont_de_Mouli_2023.jpg",
+        "score": 124
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Fullsizeoutput 4c0c",
+        "author": "Pacificbluefilm",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Fullsizeoutput_4c0c.jpg",
+        "score": 120
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Ouvea Pont de Mouli",
+        "author": "Piard Clément",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Ouvea_Pont_de_Mouli.jpg",
+        "score": 115
+      }
+    ],
+    "assets": {
+      "dem": "regions/ouvea/dem.png",
+      "overview": "regions/ouvea/overview.jpg",
+      "overviewSmall": "regions/ouvea/overview_s.jpg"
+    }
+  },
+  {
+    "id": "pomez",
+    "name": "カンポ・デ・ピエドラ・ポメス",
+    "nameLocal": "Campo de Piedra Pómez",
+    "country": "アルゼンチン",
+    "flag": "🇦🇷",
+    "center": [
+      -26.72,
+      -67.69
+    ],
+    "demZoom": 12,
+    "exaggeration": 1.3,
+    "accent": "#d59a6f",
+    "tagline": "標高3,000mの、白い軽石が波打つ別惑星",
+    "overview": "アンデス高原プーナの只中、風に削られた白い軽石の塔が25kmにわたって林立する奇景。朝夕の光で白からピンク、黄金色へと染まり、背後にはカラフルな火山と黒い溶岩流が広がります。電波も人影もない静寂の中、地球ではないどこかに立っているような感覚を味わえます。",
+    "highlights": [
+      "見渡す限り波打つ白い軽石の造形",
+      "夕陽で淡いピンクに染まる岩の海",
+      "巨大砂丘と色とりどりの火山群",
+      "人工の光が一切ない圧倒的な星空"
+    ],
+    "bestMonths": [
+      3,
+      4,
+      5,
+      9,
+      10,
+      11
+    ],
+    "access": "フィアンバラやエル・ペニョンから4WDツアーで。最寄り集落から未舗装路で30〜60km。",
+    "stay": "エル・ペニョンやアントファガスタ・デ・ラ・シエラの小さな宿",
+    "tips": "標高3,000m超で高山病に注意。燃料・水・食料は必ず満タンで。ガイド付き4WDを推奨。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 5,
+      "crime": 1,
+      "danger": 3,
+      "access": 4,
+      "physical": 2,
+      "infra": 1,
+      "cost": 3
+    },
+    "ratingNotes": {
+      "crime": "人がほとんどいない地域で犯罪リスクは極小",
+      "danger": "高山病、強烈な紫外線、無補給区間、急な天候変化",
+      "access": "舗装路の終点からさらに未舗装路。4WD必須",
+      "physical": "歩行は短距離中心だが標高で疲れやすい"
+    },
+    "pois": [
+      {
+        "name": "ポメスの岩原",
+        "desc": "白い軽石の塔が林立する中心部",
+        "ll": [
+          -26.7023342,
+          -67.67405
+        ],
+        "uv": [
+          0.50098,
+          0.57244
+        ]
+      },
+      {
+        "name": "セロ・ブランコ",
+        "desc": "軽石を生んだ巨大カルデラと白い砂丘",
+        "ll": [
+          -26.7594827,
+          -67.7398969
+        ],
+        "uv": [
+          0.46353,
+          0.60884
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Campo de Piedra Pómez",
+      "Piedra Pomez Catamarca"
+    ],
+    "gem": 100,
+    "ease": 63,
+    "places": [
+      {
+        "kind": "peak",
+        "name": "Volcán Incahuasi",
+        "local": "",
+        "ll": [
+          -27.03359,
+          -68.29599
+        ],
+        "ele": 6640,
+        "uv": [
+          0.14717,
+          0.78369
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Volcán El Muerto",
+        "local": "",
+        "ll": [
+          -27.05821,
+          -68.48414
+        ],
+        "ele": 6488,
+        "uv": [
+          0.04013,
+          0.79941
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Cerro del Nacimiento I",
+        "local": "",
+        "ll": [
+          -27.28101,
+          -68.52421
+        ],
+        "ele": 6464,
+        "uv": [
+          0.01734,
+          0.94188
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Volcán El Cóndor",
+        "local": "",
+        "ll": [
+          -26.63483,
+          -68.35692
+        ],
+        "ele": 6414,
+        "uv": [
+          0.11251,
+          0.52946
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Olmedo",
+        "local": "",
+        "ll": [
+          -27.20723,
+          -68.52592
+        ],
+        "ele": 6240,
+        "uv": [
+          0.01637,
+          0.89467
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Cerro Vallecito",
+        "local": "",
+        "ll": [
+          -26.2104,
+          -68.31707
+        ],
+        "ele": 6168,
+        "uv": [
+          0.13518,
+          0.25984
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Volcán Medusa",
+        "local": "",
+        "ll": [
+          -27.12791,
+          -68.48414
+        ],
+        "ele": 6120,
+        "uv": [
+          0.04013,
+          0.84395
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Volcán Fraile",
+        "local": "",
+        "ll": [
+          -27.04859,
+          -68.37946
+        ],
+        "ele": 6062,
+        "uv": [
+          0.09968,
+          0.79327
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Nevado San Francisco",
+        "local": "",
+        "ll": [
+          -26.91917,
+          -68.26321
+        ],
+        "ele": 6016,
+        "uv": [
+          0.16582,
+          0.71065
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Cerro Laguna Escondida",
+        "local": "",
+        "ll": [
+          -26.60351,
+          -68.47982
+        ],
+        "ele": 5917,
+        "uv": [
+          0.04259,
+          0.50953
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Cerro Mulas Muertas",
+        "local": "",
+        "ll": [
+          -26.94993,
+          -68.5092
+        ],
+        "ele": 5897,
+        "uv": [
+          0.02588,
+          0.73028
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Cerro Dos Conos",
+        "local": "",
+        "ll": [
+          -26.80308,
+          -68.27758
+        ],
+        "ele": 5880,
+        "uv": [
+          0.15764,
+          0.63662
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Cerro Laguna Verde",
+        "local": "",
+        "ll": [
+          -26.8025,
+          -68.50735
+        ],
+        "ele": 5830,
+        "uv": [
+          0.02693,
+          0.63625
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Volcán Peinado",
+        "local": "",
+        "ll": [
+          -26.62128,
+          -68.11543
+        ],
+        "ele": 5830,
+        "uv": [
+          0.24989,
+          0.52084
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Cumbre de la Línea",
+        "local": "",
+        "ll": [
+          -26.81387,
+          -68.34795
+        ],
+        "ele": 5824,
+        "uv": [
+          0.11761,
+          0.6435
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "San Francisco Pass",
+        "local": "Paso de San Francisco",
+        "ll": [
+          -26.87367,
+          -68.29911
+        ],
+        "ele": 4726,
+        "uv": [
+          0.1454,
+          0.68163
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Portezuelo de Pasto Ventura",
+        "local": "",
+        "ll": [
+          -26.67564,
+          -67.21839
+        ],
+        "ele": 3996,
+        "uv": [
+          0.7602,
+          0.55544
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Corral Quemado",
+        "local": "",
+        "ll": [
+          -27.14949,
+          -66.94565
+        ],
+        "ele": null,
+        "uv": [
+          0.91536,
+          0.85775
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Palo Blanco",
+        "local": "",
+        "ll": [
+          -27.33492,
+          -67.75504
+        ],
+        "ele": null,
+        "uv": [
+          0.45491,
+          0.9764
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Hualfín",
+        "local": "",
+        "ll": [
+          -27.22502,
+          -66.83475
+        ],
+        "ele": null,
+        "uv": [
+          0.97845,
+          0.90605
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Antofagasta de la Sierra",
+        "local": "",
+        "ll": [
+          -26.05923,
+          -67.40662
+        ],
+        "ele": null,
+        "uv": [
+          0.65312,
+          0.16405
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "San Fernando",
+        "local": "",
+        "ll": [
+          -27.33416,
+          -66.89806
+        ],
+        "ele": null,
+        "uv": [
+          0.94244,
+          0.97591
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Puerta de Corral Quemado",
+        "local": "",
+        "ll": [
+          -27.22795,
+          -66.93411
+        ],
+        "ele": null,
+        "uv": [
+          0.92193,
+          0.90793
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Villa Víl",
+        "local": "",
+        "ll": [
+          -27.09352,
+          -66.82205
+        ],
+        "ele": null,
+        "uv": [
+          0.98568,
+          0.82197
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "El Durazno",
+        "local": "",
+        "ll": [
+          -27.25139,
+          -67.03476
+        ],
+        "ele": null,
+        "uv": [
+          0.86467,
+          0.92293
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Tatón",
+        "local": "",
+        "ll": [
+          -27.34013,
+          -67.53135
+        ],
+        "ele": null,
+        "uv": [
+          0.58217,
+          0.97974
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "El Peñón",
+        "local": "",
+        "ll": [
+          -26.47542,
+          -67.26526
+        ],
+        "ele": null,
+        "uv": [
+          0.73354,
+          0.42808
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Punta de Agua",
+        "local": "",
+        "ll": [
+          -27.22519,
+          -67.75693
+        ],
+        "ele": null,
+        "uv": [
+          0.45384,
+          0.90616
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Antinaco",
+        "local": "",
+        "ll": [
+          -27.21437,
+          -67.60607
+        ],
+        "ele": null,
+        "uv": [
+          0.53966,
+          0.89924
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Laguna Pabellon",
+        "local": "",
+        "ll": [
+          -26.07997,
+          -67.0447
+        ],
+        "ele": null,
+        "uv": [
+          0.85902,
+          0.17718
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Laguna Aparoma",
+        "local": "",
+        "ll": [
+          -26.23522,
+          -66.82599
+        ],
+        "ele": null,
+        "uv": [
+          0.98344,
+          0.27558
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Laguna Blanca",
+        "local": "",
+        "ll": [
+          -26.63344,
+          -66.91782
+        ],
+        "ele": null,
+        "uv": [
+          0.9312,
+          0.52858
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Laguna Carachi Pampa",
+        "local": "",
+        "ll": [
+          -26.44417,
+          -67.51158
+        ],
+        "ele": null,
+        "uv": [
+          0.59341,
+          0.40822
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Laguna Verde",
+        "local": "",
+        "ll": [
+          -26.8811,
+          -68.47008
+        ],
+        "ele": 4350,
+        "uv": [
+          0.04813,
+          0.68636
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Laguna Baya",
+        "local": "",
+        "ll": [
+          -26.24115,
+          -66.9783
+        ],
+        "ele": null,
+        "uv": [
+          0.89679,
+          0.27934
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Laguna Grande",
+        "local": "",
+        "ll": [
+          -26.24093,
+          -67.0633
+        ],
+        "ele": null,
+        "uv": [
+          0.84843,
+          0.2792
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Laguna Escondida",
+        "local": "",
+        "ll": [
+          -26.64876,
+          -68.52328
+        ],
+        "ele": null,
+        "uv": [
+          0.01787,
+          0.53833
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Los Nacimientos",
+        "local": "",
+        "ll": [
+          -25.82479,
+          -67.37226
+        ],
+        "ele": null,
+        "uv": [
+          0.67267,
+          0.01573
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "El Eje",
+        "local": "",
+        "ll": [
+          -27.27685,
+          -66.87407
+        ],
+        "ele": null,
+        "uv": [
+          0.95608,
+          0.93922
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "El Chorro",
+        "local": "",
+        "ll": [
+          -26.57899,
+          -66.97228
+        ],
+        "ele": null,
+        "uv": [
+          0.90021,
+          0.49393
+        ]
+      }
+    ],
+    "terrain": {
+      "minElev": 1622,
+      "maxElev": 6862,
+      "widthM": 174989,
+      "bbox": {
+        "west": -68.5546875,
+        "north": -25.79989118208832,
+        "east": -66.796875,
+        "south": -27.37176730052304
+      },
+      "z": 10,
+      "x0": 317,
+      "y0": 588,
+      "n": 5,
+      "world": {
+        "z": 8,
+        "x0": 77,
+        "y0": 145,
+        "n": 5
+      },
+      "demSize": 1280
+    },
+    "climate": {
+      "elevation": 3895,
+      "months": [
+        {
+          "tmax": 16.5,
+          "tmin": 2.9,
+          "rain": 29,
+          "sun": 12.8
+        },
+        {
+          "tmax": 15.8,
+          "tmin": 2.2,
+          "rain": 27,
+          "sun": 12.4
+        },
+        {
+          "tmax": 16.5,
+          "tmin": 2.1,
+          "rain": 10,
+          "sun": 11.9
+        },
+        {
+          "tmax": 13.6,
+          "tmin": -0.6,
+          "rain": 1,
+          "sun": 11.1
+        },
+        {
+          "tmax": 8.8,
+          "tmin": -3.3,
+          "rain": 6,
+          "sun": 10.6
+        },
+        {
+          "tmax": 6.8,
+          "tmin": -5.7,
+          "rain": 7,
+          "sun": 10.2
+        },
+        {
+          "tmax": 6.5,
+          "tmin": -7.4,
+          "rain": 8,
+          "sun": 10.4
+        },
+        {
+          "tmax": 8.5,
+          "tmin": -5.3,
+          "rain": 1,
+          "sun": 10.9
+        },
+        {
+          "tmax": 11.8,
+          "tmin": -3,
+          "rain": 0,
+          "sun": 11.7
+        },
+        {
+          "tmax": 14.6,
+          "tmin": -1,
+          "rain": 1,
+          "sun": 12.5
+        },
+        {
+          "tmax": 17.3,
+          "tmin": 1.5,
+          "rain": 5,
+          "sun": 13.1
+        },
+        {
+          "tmax": 17.1,
+          "tmin": 2.7,
+          "rain": 25,
+          "sun": 13
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Volcán Nevado del Ruiz Vía Murillo",
+        "author": "Montoya Conde",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Volc%C3%A1n_Nevado_del_Ruiz_V%C3%ADa_Murillo.JPG",
+        "score": 147
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "CATAMARCA 318 (2)",
+        "author": "Camino a Campo de Piedra Pomez en Catamarca",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:CATAMARCA_318_(2).jpg",
+        "score": 136
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Campo de piedra pómez en Catamarca - Argentina",
+        "author": "Rodolfo Pace",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Campo_de_piedra_p%C3%B3mez_en_Catamarca_-_Argentina.jpg",
+        "score": 117
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Campo de piedra pomez en Antofagasta de la Sierra Catamarca",
+        "author": "CarlosA.Barrio",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Campo_de_piedra_pomez_en_Antofagasta_de_la_Sierra_Catamarca.jpg",
+        "score": 117
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Diorama Cerro Blanco, Recoleta, Santiago 20240505",
+        "author": "Carlos Figueroa Rojas",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Diorama_Cerro_Blanco,_Recoleta,_Santiago_20240505.jpg",
+        "score": 114
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Y una sombra pronto serás, Campo de Piedra Pómez, Catamarca, Argentina",
+        "author": "rodoluca77",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Y_una_sombra_pronto_ser%C3%A1s,_Campo_de_Piedra_P%C3%B3mez,_Catamarca,_Argentina.jpg",
+        "score": 112
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Campo de piedra pomez en catamarca",
+        "author": "Marioperetti",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Campo_de_piedra_pomez_en_catamarca.jpg",
+        "score": 111
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Volcán Nevado del Ruiz cara oriental",
+        "author": "EFGA1995",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Volc%C3%A1n_Nevado_del_Ruiz_cara_oriental.jpg",
+        "score": 111
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "Olas de piedra, Campo de Piedra Pómez, Catamarca, Argentina",
+        "author": "rodoluca88",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Olas_de_piedra,_Campo_de_Piedra_P%C3%B3mez,_Catamarca,_Argentina.jpg",
+        "score": 109
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "Mares de piedra pómez, Campo de Piedra Pómez, Catamarca, Argentina",
+        "author": "rodoluca77",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Mares_de_piedra_p%C3%B3mez,_Campo_de_Piedra_P%C3%B3mez,_Catamarca,_Argentina.jpg",
+        "score": 105
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Olitas hacia el S, Campo de Piedra Pómez, Catamarca, Argentina",
+        "author": "rodoluca77",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Olitas_hacia_el_S,_Campo_de_Piedra_P%C3%B3mez,_Catamarca,_Argentina.jpg",
+        "score": 101
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Cerro blanco esquina",
+        "author": "Tania Henríquez",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Cerro_blanco_esquina.JPG",
+        "score": 101
+      }
+    ],
+    "assets": {
+      "dem": "regions/pomez/dem.png",
+      "overview": "regions/pomez/overview.jpg",
+      "overviewSmall": "regions/pomez/overview_s.jpg"
+    }
+  },
+  {
+    "id": "flores",
+    "name": "フローレス島",
+    "nameLocal": "Ilha das Flores · Açores",
+    "country": "ポルトガル（アゾレス諸島）",
+    "flag": "🇵🇹",
+    "center": [
+      39.44,
+      -31.2
+    ],
+    "demZoom": 12,
+    "exaggeration": 1.4,
+    "accent": "#5aa47c",
+    "tagline": "ヨーロッパ最西端、無数の滝が流れ落ちる緑の島",
+    "overview": "大西洋のまん中、ヨーロッパの最西端に浮かぶ花の島。苔むした断崖から何十本もの滝が流れ落ち、火口湖が点々と空を映します。アジサイの垣根が続く牧草地、断崖の下の小さな村――世界の果てのような静けさの中で、緑と水の音に包まれます。",
+    "highlights": [
+      "断崖を伝う数十本の滝、リベイラ・ド・フェレイロ",
+      "空を映す火口湖ラゴア・フンダ",
+      "夏に島を彩るアジサイの垣根",
+      "海に突き出た奇岩と天然プール"
+    ],
+    "bestMonths": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "access": "リスボン→ポンタ・デルガダ（サンミゲル島）→フローレス島へ国内線。",
+    "stay": "ファジャ・グランデ周辺の小さな宿やコテージ",
+    "tips": "天候が変わりやすく霧で欠航も。雨具必携。レンタカーは早めの予約を。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 4,
+      "crime": 1,
+      "danger": 1,
+      "access": 3,
+      "physical": 2,
+      "infra": 3,
+      "cost": 3
+    },
+    "ratingNotes": {
+      "crime": "ヨーロッパでも最も安全な地域のひとつ",
+      "danger": "濡れた岩場の滑り、急な霧",
+      "access": "乗り継ぎが必要で天候による欠航あり",
+      "physical": "主要スポットは短い散策路で行ける"
+    },
+    "pois": [
+      {
+        "name": "リベイラ・ド・フェレイロ",
+        "desc": "緑の壁から無数の滝が落ちる池",
+        "ll": [
+          39.4369021,
+          -31.2386115
+        ],
+        "uv": [
+          0.4287,
+          0.54948
+        ]
+      },
+      {
+        "name": "ファジャ・グランデ",
+        "desc": "ヨーロッパ最西端の村",
+        "ll": [
+          39.4540492,
+          -31.262323
+        ],
+        "uv": [
+          0.41521,
+          0.53685
+        ]
+      },
+      {
+        "name": "ラゴア・フンダ",
+        "desc": "深い火口湖と周囲の緑の稜線",
+        "ll": [
+          39.4057162,
+          -31.2182847
+        ],
+        "uv": [
+          0.44026,
+          0.57244
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Flores Azores",
+      "Fajã Grande Flores",
+      "Lajes das Flores"
+    ],
+    "gem": 90,
+    "ease": 81,
+    "places": [
+      {
+        "kind": "town",
+        "name": "Vila do Corvo",
+        "local": "",
+        "ll": [
+          39.67324,
+          -31.11371
+        ],
+        "ele": null,
+        "uv": [
+          0.49976,
+          0.3751
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Santa Cruz das Flores",
+        "local": "",
+        "ll": [
+          39.45378,
+          -31.12852
+        ],
+        "ele": null,
+        "uv": [
+          0.49133,
+          0.53704
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Lajes das Flores",
+        "local": "",
+        "ll": [
+          39.37795,
+          -31.17709
+        ],
+        "ele": null,
+        "uv": [
+          0.4637,
+          0.59288
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Morro Alto",
+        "local": "",
+        "ll": [
+          39.4636,
+          -31.22062
+        ],
+        "ele": 914,
+        "uv": [
+          0.43894,
+          0.52981
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Mosteiro",
+        "local": "",
+        "ll": [
+          39.41329,
+          -31.25083
+        ],
+        "ele": null,
+        "uv": [
+          0.42175,
+          0.56687
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Aguinhas",
+        "local": "",
+        "ll": [
+          39.49442,
+          -31.17127
+        ],
+        "ele": 438,
+        "uv": [
+          0.46701,
+          0.50709
+        ]
+      }
+    ],
+    "terrain": {
+      "minElev": -300,
+      "maxElev": 888,
+      "widthM": 150989,
+      "bbox": {
+        "west": -31.9921875,
+        "north": 40.17887331434696,
+        "east": -30.234375,
+        "south": 38.8225909761771
+      },
+      "z": 10,
+      "x0": 421,
+      "y0": 387,
+      "n": 5,
+      "world": {
+        "z": 8,
+        "x0": 103,
+        "y0": 95,
+        "n": 5
+      },
+      "demSize": 1280
+    },
+    "climate": {
+      "elevation": 601,
+      "months": [
+        {
+          "tmax": 12.5,
+          "tmin": 9.9,
+          "rain": 189,
+          "sun": 6.4
+        },
+        {
+          "tmax": 12.3,
+          "tmin": 9.3,
+          "rain": 131,
+          "sun": 7.5
+        },
+        {
+          "tmax": 12.6,
+          "tmin": 9.4,
+          "rain": 173,
+          "sun": 8.2
+        },
+        {
+          "tmax": 13.2,
+          "tmin": 10.1,
+          "rain": 174,
+          "sun": 9.9
+        },
+        {
+          "tmax": 14.6,
+          "tmin": 11.6,
+          "rain": 150,
+          "sun": 10.8
+        },
+        {
+          "tmax": 17,
+          "tmin": 14,
+          "rain": 107,
+          "sun": 12.3
+        },
+        {
+          "tmax": 19.9,
+          "tmin": 16.6,
+          "rain": 126,
+          "sun": 12.9
+        },
+        {
+          "tmax": 21.6,
+          "tmin": 18.1,
+          "rain": 72,
+          "sun": 12.3
+        },
+        {
+          "tmax": 20.1,
+          "tmin": 16.9,
+          "rain": 94,
+          "sun": 10.5
+        },
+        {
+          "tmax": 17.5,
+          "tmin": 14.5,
+          "rain": 194,
+          "sun": 7.9
+        },
+        {
+          "tmax": 15.6,
+          "tmin": 12.5,
+          "rain": 229,
+          "sun": 6.7
+        },
+        {
+          "tmax": 13.4,
+          "tmin": 10.5,
+          "rain": 207,
+          "sun": 5.8
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "A caminho da Fajã Grande, falésias, ilha das Flores, Açores, Arquivo de Villa Maria, ilha Terceira, Açores",
+        "author": "José Luís Ávila Silveira/Pedro Noronha e Costa (Arquivo de Villa Maria)]]",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:A_caminho_da_Faj%C3%A3_Grande,_fal%C3%A9sias,_ilha_das_Flores,_A%C3%A7ores,_Arquivo_de_Villa_Maria,_ilha_Terceira,_A%C3%A7ores.JPG",
+        "score": 115
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "The Flores island collection CCXII (49223667493)",
+        "author": "Pedro from Maia (Porto), Portugal",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:The_Flores_island_collection_CCXII_(49223667493).jpg",
+        "score": 114
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Vista parcial da Fajã Grande 1 ilha das Flores, Açores, Arquivo de Villa Maria, ilha Terceira, Açores",
+        "author": "José Luís Ávila Silveira/Pedro Noronha e Costa (Arquivo de Villa Maria)]]",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Vista_parcial_da_Faj%C3%A3_Grande_1_ilha_das_Flores,_A%C3%A7ores,_Arquivo_de_Villa_Maria,_ilha_Terceira,_A%C3%A7ores.JPG",
+        "score": 113
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "The Flores island collection CCIX (49223669783)",
+        "author": "Pedro from Maia (Porto), Portugal",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:The_Flores_island_collection_CCIX_(49223669783).jpg",
+        "score": 111
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Azores flores ribeira grande",
+        "author": "Vdugrain",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Azores_flores_ribeira_grande.jpg",
+        "score": 110
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Porto e zona balnear da Fajã Grande 1, ilha das Flores, Açores, Arquivo de Villa Maria, ilha Terceira, Açores",
+        "author": "José Luís Ávila Silveira/Pedro Noronha e Costa (Arquivo de Villa Maria)]]",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Porto_e_zona_balnear_da_Faj%C3%A3_Grande_1,_ilha_das_Flores,_A%C3%A7ores,_Arquivo_de_Villa_Maria,_ilha_Terceira,_A%C3%A7ores.JPG",
+        "score": 109
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "The Flores island collection CCIII (49219873016)",
+        "author": "Pedro from Maia (Porto), Portugal",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:The_Flores_island_collection_CCIII_(49219873016).jpg",
+        "score": 109
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Império do Espirito Santo da Ponta da Fajã, Fajã Grande, ilha das Flores, Açores, Arquivo de Villa Maria, ilha Terceira, Açores",
+        "author": "José Luís Ávila Silveira/Pedro Noronha e Costa (Arquivo de Villa Maria)]]",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Imp%C3%A9rio_do_Espirito_Santo_da_Ponta_da_Faj%C3%A3,_Faj%C3%A3_Grande,_ilha_das_Flores,_A%C3%A7ores,_Arquivo_de_Villa_Maria,_ilha_Terceira,_A%C3%A7ores.JPG",
+        "score": 109
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "Vigia da Baleia, Fajã Grande, ilha das Flores, 4, Arquivo de Villa Maria, ilha Terceira, Açores",
+        "author": "José Luís Ávila Silveira/Pedro Noronha e Costa (Arquivo de Villa Maria)]]",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Vigia_da_Baleia,_Faj%C3%A3_Grande,_ilha_das_Flores,_4,_Arquivo_de_Villa_Maria,_ilha_Terceira,_A%C3%A7ores.JPG",
+        "score": 108
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "The Flores island collection CXCVII (49219390883)",
+        "author": "Pedro from Maia (Porto), Portugal",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:The_Flores_island_collection_CXCVII_(49219390883).jpg",
+        "score": 107
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Vista Parcial da Fajã Grande 2, ilha das Flores, Açores, Arquivo de Villa Maria, ilha Terceira, Açores",
+        "author": "José Luís Ávila Silveira/Pedro Noronha e Costa (Arquivo de Villa Maria)]]",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Vista_Parcial_da_Faj%C3%A3_Grande_2,_ilha_das_Flores,_A%C3%A7ores,_Arquivo_de_Villa_Maria,_ilha_Terceira,_A%C3%A7ores.JPG",
+        "score": 107
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Império do Espirito Santo da Fajã Grande, ilha das Flores, Arquivo de Villa Maria, ilha Terceira, Açores",
+        "author": "José Luís Ávila Silveira/Pedro Noronha e Costa (Arquivo de Villa Maria)]]",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Imp%C3%A9rio_do_Espirito_Santo_da_Faj%C3%A3_Grande,_ilha_das_Flores,_Arquivo_de_Villa_Maria,_ilha_Terceira,_A%C3%A7ores.JPG",
+        "score": 107
+      }
+    ],
+    "assets": {
+      "dem": "regions/flores/dem.png",
+      "overview": "regions/flores/overview.jpg",
+      "overviewSmall": "regions/flores/overview_s.jpg"
+    }
+  },
+  {
+    "id": "trnovacko",
+    "name": "トルノヴァチュコ湖",
+    "nameLocal": "Trnovačko jezero",
+    "country": "モンテネグロ／ボスニア・ヘルツェゴビナ国境",
+    "flag": "🇲🇪",
+    "center": [
+      43.262,
+      18.727
+    ],
+    "demZoom": 14,
+    "exaggeration": 1.1,
+    "accent": "#5b8fc9",
+    "tagline": "巨峰の足もとに眠る、ハートの形の湖",
+    "overview": "ボスニア・ヘルツェゴビナ最高峰マグリッチ（2,386m）の足もと、国境の山中に抱かれたハート形の氷河湖。石灰岩の岩壁に三方を囲まれ、湖面は季節と光で青から緑へと表情を変えます。車道はなく、歩いてしか辿り着けないからこその静けさ。湖畔でのキャンプは格別です。",
+    "highlights": [
+      "空から見るとハートの形をした湖",
+      "三方を囲む巨大な石灰岩の岩壁",
+      "湖畔の草原でのキャンプと星空",
+      "国境の稜線マグリッチからの大展望"
+    ],
+    "bestMonths": [
+      7,
+      8,
+      9
+    ],
+    "access": "ボスニア側のプリイェヴォル峠から徒歩約1.5〜2時間、またはモンテネグロ側から長いトレイル。",
+    "stay": "湖畔キャンプ（夏季の簡易設備）",
+    "tips": "登山口までの林道は荒れている。水と地図を持参。国境をまたぐ際はパスポート携帯。",
+    "ratings": {
+      "scenery": 5,
+      "remoteness": 5,
+      "crime": 1,
+      "danger": 2,
+      "access": 4,
+      "physical": 3,
+      "infra": 1,
+      "cost": 1
+    },
+    "ratingNotes": {
+      "crime": "山岳部で犯罪リスクは非常に低い",
+      "danger": "急な岩場、雷雨、稜線での強風",
+      "access": "車道なし。登山口までも荒れた林道",
+      "physical": "湖まで片道約2時間、マグリッチ登頂は健脚向け"
+    },
+    "pois": [
+      {
+        "name": "トルノヴァチュコ湖",
+        "desc": "ハート形の氷河湖",
+        "ll": [
+          43.2519376,
+          18.7250496
+        ],
+        "uv": [
+          0.40989,
+          0.62896
+        ]
+      },
+      {
+        "name": "マグリッチ山",
+        "desc": "ボスニア最高峰、湖を見下ろす頂",
+        "ll": [
+          43.2833,
+          18.7333
+        ],
+        "uv": [
+          0.42866,
+          0.53095
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Trnovačko jezero",
+      "Trnovacko lake"
+    ],
+    "gem": 100,
+    "ease": 63,
+    "places": [
+      {
+        "kind": "peak",
+        "name": "Veliki Maglić",
+        "local": "",
+        "ll": [
+          43.27608,
+          18.73551
+        ],
+        "ele": 2389,
+        "uv": [
+          0.43369,
+          0.55352
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Bubreg",
+        "local": "",
+        "ll": [
+          43.23335,
+          18.76124
+        ],
+        "ele": 2339,
+        "uv": [
+          0.49224,
+          0.68702
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Volujak",
+        "local": "",
+        "ll": [
+          43.23178,
+          18.71714
+        ],
+        "ele": 2336,
+        "uv": [
+          0.39189,
+          0.69193
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Trzivka",
+        "local": "",
+        "ll": [
+          43.24019,
+          18.73506
+        ],
+        "ele": 2333,
+        "uv": [
+          0.43267,
+          0.66566
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Bioč",
+        "local": "",
+        "ll": [
+          43.23316,
+          18.79389
+        ],
+        "ele": 2297,
+        "uv": [
+          0.56654,
+          0.68762
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Kom",
+        "local": "",
+        "ll": [
+          43.24881,
+          18.74933
+        ],
+        "ele": 2162,
+        "uv": [
+          0.46514,
+          0.63873
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Bregoč",
+        "local": "",
+        "ll": [
+          43.35462,
+          18.56783
+        ],
+        "ele": 2014,
+        "uv": [
+          0.05213,
+          0.30788
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Prečanska strana",
+        "local": "",
+        "ll": [
+          43.14062,
+          18.96122
+        ],
+        "ele": 2005,
+        "uv": [
+          0.94731,
+          0.97643
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Turska glava",
+        "local": "",
+        "ll": [
+          43.15655,
+          18.978
+        ],
+        "ele": 1855,
+        "uv": [
+          0.98549,
+          0.92674
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Košara",
+        "local": "",
+        "ll": [
+          43.20234,
+          18.67137
+        ],
+        "ele": 1838,
+        "uv": [
+          0.28774,
+          0.78385
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Tovarnica",
+        "local": "",
+        "ll": [
+          43.31523,
+          18.60766
+        ],
+        "ele": 1804,
+        "uv": [
+          0.14276,
+          0.43111
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Bukovi vrhovi",
+        "local": "",
+        "ll": [
+          43.32504,
+          18.73625
+        ],
+        "ele": 1787,
+        "uv": [
+          0.43538,
+          0.40043
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Vagan",
+        "local": "",
+        "ll": [
+          43.2186,
+          18.8942
+        ],
+        "ele": 1776,
+        "uv": [
+          0.7948,
+          0.73309
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Ličanski urljaj",
+        "local": "",
+        "ll": [
+          43.16921,
+          18.95124
+        ],
+        "ele": 1771,
+        "uv": [
+          0.9246,
+          0.88725
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Veliki Ljeljenak",
+        "local": "",
+        "ll": [
+          43.1985,
+          18.95409
+        ],
+        "ele": 1768,
+        "uv": [
+          0.93108,
+          0.79584
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "プルジネ",
+        "local": "Plužine",
+        "ll": [
+          43.15623,
+          18.84522
+        ],
+        "ele": null,
+        "uv": [
+          0.68335,
+          0.92774
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Krvavac",
+        "local": "",
+        "ll": [
+          43.21017,
+          18.70389
+        ],
+        "ele": 1674,
+        "uv": [
+          0.36174,
+          0.75941
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Kruševo",
+        "local": "",
+        "ll": [
+          43.37026,
+          18.69942
+        ],
+        "ele": null,
+        "uv": [
+          0.35157,
+          0.25893
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Kunduci",
+        "local": "",
+        "ll": [
+          43.42642,
+          18.77486
+        ],
+        "ele": null,
+        "uv": [
+          0.52324,
+          0.08305
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Ječmišta",
+        "local": "",
+        "ll": [
+          43.41209,
+          18.96777
+        ],
+        "ele": null,
+        "uv": [
+          0.96221,
+          0.12794
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Grdijevići",
+        "local": "",
+        "ll": [
+          43.38318,
+          18.9048
+        ],
+        "ele": null,
+        "uv": [
+          0.81892,
+          0.21848
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Toholji",
+        "local": "",
+        "ll": [
+          43.37916,
+          18.87108
+        ],
+        "ele": null,
+        "uv": [
+          0.74219,
+          0.23107
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Fališi",
+        "local": "",
+        "ll": [
+          43.41755,
+          18.90391
+        ],
+        "ele": null,
+        "uv": [
+          0.8169,
+          0.11084
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Vrbnica",
+        "local": "",
+        "ll": [
+          43.40078,
+          18.65397
+        ],
+        "ele": null,
+        "uv": [
+          0.24815,
+          0.16337
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Vučevo",
+        "local": "",
+        "ll": [
+          43.33236,
+          18.82014
+        ],
+        "ele": null,
+        "uv": [
+          0.62627,
+          0.37753
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Dramešina",
+        "local": "",
+        "ll": [
+          43.2111,
+          18.60292
+        ],
+        "ele": null,
+        "uv": [
+          0.13198,
+          0.7565
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Tjentište",
+        "local": "",
+        "ll": [
+          43.34658,
+          18.68982
+        ],
+        "ele": null,
+        "uv": [
+          0.32972,
+          0.33304
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Pišče",
+        "local": "",
+        "ll": [
+          43.15843,
+          18.90991
+        ],
+        "ele": null,
+        "uv": [
+          0.83055,
+          0.92088
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Čemerno",
+        "local": "",
+        "ll": [
+          43.24243,
+          18.60439
+        ],
+        "ele": null,
+        "uv": [
+          0.13532,
+          0.65866
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Avtovac",
+        "local": "",
+        "ll": [
+          43.15003,
+          18.56273
+        ],
+        "ele": null,
+        "uv": [
+          0.04052,
+          0.94708
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Lipnik",
+        "local": "",
+        "ll": [
+          43.14108,
+          18.61776
+        ],
+        "ele": null,
+        "uv": [
+          0.16575,
+          0.97499
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Klinje",
+        "local": "",
+        "ll": [
+          43.17287,
+          18.58793
+        ],
+        "ele": null,
+        "uv": [
+          0.09787,
+          0.87583
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Donje Bare",
+        "local": "",
+        "ll": [
+          43.31809,
+          18.63065
+        ],
+        "ele": null,
+        "uv": [
+          0.19508,
+          0.42217
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Bijelo Jezero",
+        "local": "",
+        "ll": [
+          43.37954,
+          18.58388
+        ],
+        "ele": null,
+        "uv": [
+          0.08865,
+          0.22988
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Skakavac",
+        "local": "",
+        "ll": [
+          43.31189,
+          18.70019
+        ],
+        "ele": null,
+        "uv": [
+          0.35332,
+          0.44156
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Prijeđel",
+        "local": "",
+        "ll": [
+          43.37928,
+          18.76453
+        ],
+        "ele": 863,
+        "uv": [
+          0.49973,
+          0.23069
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Vodopad Vrbnica",
+        "local": "",
+        "ll": [
+          43.16601,
+          18.75052
+        ],
+        "ele": null,
+        "uv": [
+          0.46785,
+          0.89723
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Wasserfall Vodopad",
+        "local": "",
+        "ll": [
+          43.30253,
+          18.68267
+        ],
+        "ele": null,
+        "uv": [
+          0.31345,
+          0.47083
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Veliko Mratinjsko jezero",
+        "local": "",
+        "ll": [
+          43.25734,
+          18.76733
+        ],
+        "ele": null,
+        "uv": [
+          0.5061,
+          0.61208
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Suva jezerina",
+        "local": "",
+        "ll": [
+          43.26694,
+          18.71868
+        ],
+        "ele": null,
+        "uv": [
+          0.3954,
+          0.58208
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Veliko Stabansko lake",
+        "local": "Veliko Stabansko jezero",
+        "ll": [
+          43.19936,
+          18.72196
+        ],
+        "ele": 1325,
+        "uv": [
+          0.40286,
+          0.79316
+        ]
+      }
+    ],
+    "terrain": {
+      "minElev": 404,
+      "maxElev": 2359,
+      "widthM": 35607,
+      "bbox": {
+        "west": 18.544921875,
+        "north": 43.45291889355465,
+        "east": 18.984375,
+        "south": 43.133061162406136
+      },
+      "z": 12,
+      "x0": 2259,
+      "y0": 1498,
+      "n": 5,
+      "world": {
+        "z": 10,
+        "x0": 563,
+        "y0": 373,
+        "n": 5
+      },
+      "demSize": 1280
+    },
+    "climate": {
+      "elevation": 1521,
+      "months": [
+        {
+          "tmax": -1,
+          "tmin": -7.4,
+          "rain": 202,
+          "sun": 4.3
+        },
+        {
+          "tmax": 1.9,
+          "tmin": -5.5,
+          "rain": 153,
+          "sun": 6.2
+        },
+        {
+          "tmax": 3.3,
+          "tmin": -5,
+          "rain": 94,
+          "sun": 7.7
+        },
+        {
+          "tmax": 7.4,
+          "tmin": -2.1,
+          "rain": 122,
+          "sun": 8.8
+        },
+        {
+          "tmax": 13.6,
+          "tmin": 4.2,
+          "rain": 111,
+          "sun": 10.5
+        },
+        {
+          "tmax": 18.8,
+          "tmin": 8.9,
+          "rain": 83,
+          "sun": 12.6
+        },
+        {
+          "tmax": 21.9,
+          "tmin": 11,
+          "rain": 50,
+          "sun": 13.3
+        },
+        {
+          "tmax": 21.1,
+          "tmin": 10.6,
+          "rain": 59,
+          "sun": 12.1
+        },
+        {
+          "tmax": 15.7,
+          "tmin": 6.3,
+          "rain": 86,
+          "sun": 9.4
+        },
+        {
+          "tmax": 12.3,
+          "tmin": 2.9,
+          "rain": 62,
+          "sun": 8.1
+        },
+        {
+          "tmax": 5.7,
+          "tmin": -1.8,
+          "rain": 233,
+          "sun": 4.5
+        },
+        {
+          "tmax": 1.7,
+          "tmin": -4.3,
+          "rain": 175,
+          "sun": 3.5
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Sutjeska, horské údolí",
+        "author": "I would appreciate being notified if you use my work outside Wikimedia. More of ",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Sutjeska,_horsk%C3%A9_%C3%BAdol%C3%AD.jpg",
+        "score": 103
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "Trnovačko jezero, Maglić",
+        "author": "Dingoa",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Trnova%C4%8Dko_jezero,_Magli%C4%87.jpg",
+        "score": 100
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Trnovačko jezero, masiv Magliće",
+        "author": "I would appreciate being notified if you use my work outside Wikimedia. More of ",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Trnova%C4%8Dko_jezero,_masiv_Magli%C4%87e.jpg",
+        "score": 100
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Np sutjeska trnovacko jezero 1",
+        "author": "Darko Gavric",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Np_sutjeska_trnovacko_jezero_1.JPG",
+        "score": 95
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Sutjeska, Tjentište, Bosnia and Herzegovina (Unsplash)",
+        "author": "Lili Popper lili_popper",
+        "license": "CC0",
+        "source": "https://commons.wikimedia.org/wiki/File:Sutjeska,_Tjenti%C5%A1te,_Bosnia_and_Herzegovina_(Unsplash).jpg",
+        "score": 94
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Trnovačko jezero, masiv Magliće večer",
+        "author": "I would appreciate being notified if you use my work outside Wikimedia. More of ",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Trnova%C4%8Dko_jezero,_masiv_Magli%C4%87e_ve%C4%8Der.jpg",
+        "score": 93
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Perućica primeval forest (7901927430)",
+        "author": "Erwan Martin from Plouzané, France",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Peru%C4%87ica_primeval_forest_(7901927430).jpg",
+        "score": 93
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Trnovacko lake",
+        "author": "Schleewoon",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Trnovacko_lake.jpg",
+        "score": 92
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "Walking in the Zelengora (3887446570)",
+        "author": "NH53",
+        "license": "CC BY 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Walking_in_the_Zelengora_(3887446570).jpg",
+        "score": 90
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "Porbóllett contributions 2014",
+        "author": "Jure Ferletič, Slovenia; Ilyass T. from Metz, France; Smihael, Slovenia; Alvesga",
+        "license": "CC BY-SA 2.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Porb%C3%B3llett_contributions_2014.jpg",
+        "score": 87
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Trnovačko jezero, turistická značení",
+        "author": "I would appreciate being notified if you use my work outside Wikimedia. More of ",
+        "license": "CC BY 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Trnova%C4%8Dko_jezero,_turistick%C3%A1_zna%C4%8Den%C3%AD.jpg",
+        "score": 86
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Маглић 2 NP001",
+        "author": "Svjetlopis, Vladimir Tadic",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D0%B3%D0%BB%D0%B8%D1%9B_2_NP001.jpg",
+        "score": 86
+      }
+    ],
+    "assets": {
+      "dem": "regions/trnovacko/dem.png",
+      "overview": "regions/trnovacko/overview.jpg",
+      "overviewSmall": "regions/trnovacko/overview_s.jpg"
+    }
+  },
+  {
+    "id": "rugova",
+    "name": "ルゴヴァ渓谷",
+    "nameLocal": "Grykat e Rugovës · Rugova",
+    "country": "コソボ",
+    "flag": "🇽🇰",
+    "center": [
+      42.68,
+      20.225
+    ],
+    "demZoom": 13,
+    "exaggeration": 1.1,
+    "accent": "#6aa58f",
+    "tagline": "呪われた山と呼ばれた、青い川の峡谷",
+    "overview": "「呪われた山脈」の異名を持つ険しいアルプス山地を、澄んだ青緑の川が削り出した峡谷。町からほんの数分で、そそり立つ岩壁と深い森の世界に入り込めます。奥に進めば高原の羊飼い小屋、氷河湖、花の咲く草原。ヨーロッパの中で最も知られていない山岳地帯のひとつです。",
+    "highlights": [
+      "岩壁の間を流れる青緑のペーチ・ビストリツァ川",
+      "峡谷の崖を歩くヴィア・フェラータ",
+      "高原の氷河湖と羊飼いの集落",
+      "秋に燃えるように色づくブナの森"
+    ],
+    "bestMonths": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "access": "ペーヤの町から車ですぐ（約10分で峡谷入口）。首都プリシュティナから約1.5時間。",
+    "stay": "ペーヤの町のホテル、渓谷奥のゲストハウス",
+    "tips": "通貨はユーロ。山歩きはガイド付きがおすすめ。山間部の国境付近には立ち入らないこと。",
+    "ratings": {
+      "scenery": 4,
+      "remoteness": 3,
+      "crime": 1,
+      "danger": 2,
+      "access": 2,
+      "physical": 2,
+      "infra": 3,
+      "cost": 1
+    },
+    "ratingNotes": {
+      "crime": "旅行者への治安は良好。人々はとても友好的",
+      "danger": "峡谷道路の落石、山の天候",
+      "access": "町から近く、ヨーロッパの秘境としては行きやすい",
+      "physical": "ドライブから本格登山まで幅広い"
+    },
+    "pois": [
+      {
+        "name": "ルゴヴァ峡谷",
+        "desc": "高さ数百mの岩壁が迫る峡谷の核心部",
+        "ll": [
+          42.6922,
+          20.1686
+        ],
+        "uv": [
+          0.34738,
+          0.38489
+        ]
+      },
+      {
+        "name": "ペーヤ",
+        "desc": "峡谷の玄関口となる町",
+        "ll": [
+          42.6593986,
+          20.2885757
+        ],
+        "uv": [
+          0.48389,
+          0.43565
+        ]
+      }
+    ],
+    "photoQueries": [
+      "Rugova Canyon",
+      "Rugova Valley",
+      "Rugova mountains"
+    ],
+    "gem": 70,
+    "ease": 81,
+    "places": [
+      {
+        "kind": "town",
+        "name": "ロジャイェ",
+        "local": "Rožaje",
+        "ll": [
+          42.84332,
+          20.16797
+        ],
+        "ele": null,
+        "uv": [
+          0.34667,
+          0.15067
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Rahovec",
+        "local": "",
+        "ll": [
+          42.39987,
+          20.65274
+        ],
+        "ele": null,
+        "uv": [
+          0.89823,
+          0.83635
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Gjeravica",
+        "local": "Gjeravicë",
+        "ll": [
+          42.53294,
+          20.14056
+        ],
+        "ele": 2656,
+        "uv": [
+          0.31548,
+          0.6311
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Maja Grykat e Hapëta",
+        "local": "",
+        "ll": [
+          42.40833,
+          19.90472
+        ],
+        "ele": 2625,
+        "uv": [
+          0.04715,
+          0.82331
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Maja Hekurave",
+        "local": "",
+        "ll": [
+          42.38412,
+          19.96876
+        ],
+        "ele": 2560,
+        "uv": [
+          0.12001,
+          0.86061
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Maja Kollatës",
+        "local": "",
+        "ll": [
+          42.48337,
+          19.90926
+        ],
+        "ele": 2552,
+        "uv": [
+          0.05231,
+          0.70761
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Marijash",
+        "local": "",
+        "ll": [
+          42.6126,
+          20.10013
+        ],
+        "ele": 2533,
+        "uv": [
+          0.26948,
+          0.50803
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Guri i Kuq",
+        "local": "",
+        "ll": [
+          42.66307,
+          20.13437
+        ],
+        "ele": 2522,
+        "uv": [
+          0.30844,
+          0.42997
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Maja e Ropës",
+        "local": "",
+        "ll": [
+          42.57456,
+          20.10794
+        ],
+        "ele": 2502,
+        "uv": [
+          0.27837,
+          0.56682
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Çfërla",
+        "local": "",
+        "ll": [
+          42.62036,
+          20.20811
+        ],
+        "ele": 2461,
+        "uv": [
+          0.39234,
+          0.49603
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Maja Bogiçaj",
+        "local": "",
+        "ll": [
+          42.55129,
+          20.08781
+        ],
+        "ele": 2406,
+        "uv": [
+          0.25546,
+          0.60277
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Maja e Qenit / Pasji vrh",
+        "local": "",
+        "ll": [
+          42.59817,
+          20.07786
+        ],
+        "ele": 2405,
+        "uv": [
+          0.24414,
+          0.53033
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Shkelzeni Peak",
+        "local": "Maja Shkëlzenit",
+        "ll": [
+          42.45744,
+          20.1282
+        ],
+        "ele": 2405,
+        "uv": [
+          0.30142,
+          0.74761
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Hajla / Hajlë",
+        "local": "",
+        "ll": [
+          42.75749,
+          20.13865
+        ],
+        "ele": 2403,
+        "uv": [
+          0.31331,
+          0.28376
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Rusolia",
+        "local": "",
+        "ll": [
+          42.74986,
+          20.24538
+        ],
+        "ele": 2382,
+        "uv": [
+          0.43474,
+          0.29559
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Maja e Strellcit",
+        "local": "",
+        "ll": [
+          42.59832,
+          20.22856
+        ],
+        "ele": 2377,
+        "uv": [
+          0.41561,
+          0.5301
+        ]
+      },
+      {
+        "kind": "peak",
+        "name": "Hridski krš",
+        "local": "",
+        "ll": [
+          42.56865,
+          20.0456
+        ],
+        "ele": 2358,
+        "uv": [
+          0.20744,
+          0.57595
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "ベラネ",
+        "local": "Berane",
+        "ll": [
+          42.84358,
+          19.87287
+        ],
+        "ele": null,
+        "uv": [
+          0.01091,
+          0.15027
+        ]
+      },
+      {
+        "kind": "town",
+        "name": "Klinë",
+        "local": "",
+        "ll": [
+          42.61799,
+          20.57611
+        ],
+        "ele": null,
+        "uv": [
+          0.81104,
+          0.49969
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Junik",
+        "local": "",
+        "ll": [
+          42.47612,
+          20.27737
+        ],
+        "ele": null,
+        "uv": [
+          0.47114,
+          0.71879
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Mamusa",
+        "local": "Mamuşa - Mamushë",
+        "ll": [
+          42.33151,
+          20.72596
+        ],
+        "ele": null,
+        "uv": [
+          0.98154,
+          0.94162
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Krushë e Madhe",
+        "local": "",
+        "ll": [
+          42.31891,
+          20.63567
+        ],
+        "ele": null,
+        "uv": [
+          0.87881,
+          0.96101
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Rogovë",
+        "local": "",
+        "ll": [
+          42.33096,
+          20.5779
+        ],
+        "ele": null,
+        "uv": [
+          0.81308,
+          0.94246
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Isniq",
+        "local": "",
+        "ll": [
+          42.55774,
+          20.30243
+        ],
+        "ele": null,
+        "uv": [
+          0.49965,
+          0.5928
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Ratkoc",
+        "local": "",
+        "ll": [
+          42.41112,
+          20.53852
+        ],
+        "ele": null,
+        "uv": [
+          0.76827,
+          0.81901
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Bellacërkë",
+        "local": "",
+        "ll": [
+          42.35777,
+          20.59341
+        ],
+        "ele": null,
+        "uv": [
+          0.83072,
+          0.90119
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Prilep",
+        "local": "",
+        "ll": [
+          42.50708,
+          20.31734
+        ],
+        "ele": null,
+        "uv": [
+          0.51662,
+          0.67102
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Carrabreg i Ulët",
+        "local": "",
+        "ll": [
+          42.53,
+          20.29775
+        ],
+        "ele": null,
+        "uv": [
+          0.49433,
+          0.63564
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Siqevë",
+        "local": "",
+        "ll": [
+          42.6276,
+          20.68418
+        ],
+        "ele": null,
+        "uv": [
+          0.934,
+          0.48483
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Kula pass",
+        "local": "",
+        "ll": [
+          42.7898,
+          20.22402
+        ],
+        "ele": 1795,
+        "uv": [
+          0.41044,
+          0.23368
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Irzniq",
+        "local": "",
+        "ll": [
+          42.52001,
+          20.34718
+        ],
+        "ele": null,
+        "uv": [
+          0.55057,
+          0.65106
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Baballoq",
+        "local": "",
+        "ll": [
+          42.48707,
+          20.34909
+        ],
+        "ele": null,
+        "uv": [
+          0.55274,
+          0.7019
+        ]
+      },
+      {
+        "kind": "village",
+        "name": "Pobërgjë",
+        "local": "",
+        "ll": [
+          42.52529,
+          20.26441
+        ],
+        "ele": null,
+        "uv": [
+          0.4564,
+          0.64291
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Visitorsko Jezero",
+        "local": "",
+        "ll": [
+          42.62514,
+          19.87973
+        ],
+        "ele": null,
+        "uv": [
+          0.01872,
+          0.48864
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Plavsko jezero",
+        "local": "",
+        "ll": [
+          42.59483,
+          19.92527
+        ],
+        "ele": null,
+        "uv": [
+          0.07053,
+          0.53549
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Lake Drelaj",
+        "local": "Liqeni i Drelajve",
+        "ll": [
+          42.6674,
+          20.0993
+        ],
+        "ele": null,
+        "uv": [
+          0.26854,
+          0.42327
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Radoniq Lake",
+        "local": "Liqeni i Radoniqit",
+        "ll": [
+          42.49046,
+          20.41588
+        ],
+        "ele": null,
+        "uv": [
+          0.62873,
+          0.69667
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Blato",
+        "local": "",
+        "ll": [
+          42.91153,
+          20.18386
+        ],
+        "ele": null,
+        "uv": [
+          0.36475,
+          0.04477
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "White Drin Waterfall",
+        "local": "Ujëvara e Drinit të Bardhë",
+        "ll": [
+          42.73783,
+          20.30644
+        ],
+        "ele": null,
+        "uv": [
+          0.50422,
+          0.31423
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Mirusha Waterfall",
+        "local": "Ujëvarat e Mirushës",
+        "ll": [
+          42.52404,
+          20.58434
+        ],
+        "ele": null,
+        "uv": [
+          0.8204,
+          0.64484
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Waterfall near Vranë",
+        "local": "",
+        "ll": [
+          42.31993,
+          19.88077
+        ],
+        "ele": null,
+        "uv": [
+          0.0199,
+          0.95944
+        ]
+      },
+      {
+        "kind": "waterfall",
+        "name": "Ujëvara Kaprollit",
+        "local": "",
+        "ll": [
+          42.69177,
+          20.18689
+        ],
+        "ele": null,
+        "uv": [
+          0.36819,
+          0.38555
+        ]
+      },
+      {
+        "kind": "pass",
+        "name": "Qafa e Shtedimit",
+        "local": "",
+        "ll": [
+          42.74611,
+          20.19112
+        ],
+        "ele": null,
+        "uv": [
+          0.37301,
+          0.3014
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Liqeni Qenëve",
+        "local": "",
+        "ll": [
+          42.52266,
+          20.08512
+        ],
+        "ele": null,
+        "uv": [
+          0.2524,
+          0.64697
+        ]
+      },
+      {
+        "kind": "lake",
+        "name": "Košutina lokva",
+        "local": "",
+        "ll": [
+          42.78124,
+          20.0491
+        ],
+        "ele": null,
+        "uv": [
+          0.21142,
+          0.24695
+        ]
+      }
+    ],
+    "terrain": {
+      "minElev": 173,
+      "maxElev": 2615,
+      "widthM": 72000,
+      "bbox": {
+        "west": 19.86328125,
+        "north": 42.940339233631825,
+        "east": 20.7421875,
+        "south": 42.293564192170074
+      },
+      "z": 11,
+      "x0": 1137,
+      "y0": 753,
+      "n": 5,
+      "world": {
+        "z": 9,
+        "x0": 282,
+        "y0": 186,
+        "n": 5
+      },
+      "demSize": 1280
+    },
+    "climate": {
+      "elevation": 1742,
+      "months": [
+        {
+          "tmax": -1.4,
+          "tmin": -7.5,
+          "rain": 237,
+          "sun": 5.1
+        },
+        {
+          "tmax": 0.9,
+          "tmin": -5.6,
+          "rain": 94,
+          "sun": 7.5
+        },
+        {
+          "tmax": 1.6,
+          "tmin": -5.7,
+          "rain": 98,
+          "sun": 8.4
+        },
+        {
+          "tmax": 5.5,
+          "tmin": -2.1,
+          "rain": 109,
+          "sun": 9.5
+        },
+        {
+          "tmax": 12,
+          "tmin": 4.2,
+          "rain": 125,
+          "sun": 11.6
+        },
+        {
+          "tmax": 17.3,
+          "tmin": 9.5,
+          "rain": 109,
+          "sun": 12.9
+        },
+        {
+          "tmax": 20.5,
+          "tmin": 12,
+          "rain": 90,
+          "sun": 13.8
+        },
+        {
+          "tmax": 19.5,
+          "tmin": 11.5,
+          "rain": 77,
+          "sun": 12.6
+        },
+        {
+          "tmax": 14.4,
+          "tmin": 7.1,
+          "rain": 109,
+          "sun": 9.9
+        },
+        {
+          "tmax": 11.2,
+          "tmin": 4.3,
+          "rain": 82,
+          "sun": 8.6
+        },
+        {
+          "tmax": 5.4,
+          "tmin": -1,
+          "rain": 207,
+          "sun": 5.6
+        },
+        {
+          "tmax": 1.3,
+          "tmin": -5.2,
+          "rain": 156,
+          "sun": 4.6
+        }
+      ]
+    },
+    "photos": [
+      {
+        "file": "photos/p01.webp",
+        "thumb": "photos/p01_s.webp",
+        "title": "Rugova Jetake",
+        "author": "Jetake",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rugova_Jetake.jpg",
+        "score": 127
+      },
+      {
+        "file": "photos/p02.webp",
+        "thumb": "photos/p02_s.webp",
+        "title": "Rugova in the Winter, Peja",
+        "author": "Agim Mala",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rugova_in_the_Winter,_Peja.JPG",
+        "score": 127
+      },
+      {
+        "file": "photos/p03.webp",
+        "thumb": "photos/p03_s.webp",
+        "title": "Rugova Mountains",
+        "author": "Nentori",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rugova_Mountains.jpg",
+        "score": 122
+      },
+      {
+        "file": "photos/p04.webp",
+        "thumb": "photos/p04_s.webp",
+        "title": "Rugova Canyon Bridge, Peja",
+        "author": "Agim Mala",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rugova_Canyon_Bridge,_Peja.jpg",
+        "score": 117
+      },
+      {
+        "file": "photos/p05.webp",
+        "thumb": "photos/p05_s.webp",
+        "title": "Rugova Mountains in Peja",
+        "author": "Agim Mala",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rugova_Mountains_in_Peja.JPG",
+        "score": 116
+      },
+      {
+        "file": "photos/p06.webp",
+        "thumb": "photos/p06_s.webp",
+        "title": "Dromodol hill in Rugova - Paradise Lost",
+        "author": "Ben Njeri",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Dromodol_hill_in_Rugova_-_Paradise_Lost.jpg",
+        "score": 112
+      },
+      {
+        "file": "photos/p07.webp",
+        "thumb": "photos/p07_s.webp",
+        "title": "Rugova Canyon Kosovo",
+        "author": "Tom Turbo",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rugova_Canyon_Kosovo.jpg",
+        "score": 111
+      },
+      {
+        "file": "photos/p08.webp",
+        "thumb": "photos/p08_s.webp",
+        "title": "Winter in Rugova Canyon (WPWTR17)",
+        "author": "Albinfo",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Winter_in_Rugova_Canyon_(WPWTR17).jpg",
+        "score": 110
+      },
+      {
+        "file": "photos/p09.webp",
+        "thumb": "photos/p09_s.webp",
+        "title": "RugovaJetake",
+        "author": "Jetake",
+        "license": "CC BY-SA 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:RugovaJetake.jpg",
+        "score": 107
+      },
+      {
+        "file": "photos/p10.webp",
+        "thumb": "photos/p10_s.webp",
+        "title": "Rugova Mountains in Boge during winter season in Kosovo",
+        "author": "SUHEJLO",
+        "license": "CC BY 4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rugova_Mountains_in_Boge_during_winter_season_in_Kosovo.jpg",
+        "score": 107
+      },
+      {
+        "file": "photos/p11.webp",
+        "thumb": "photos/p11_s.webp",
+        "title": "Rugova Valley in Spring",
+        "author": "Agim Mala",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Rugova_Valley_in_Spring.JPG",
+        "score": 106
+      },
+      {
+        "file": "photos/p12.webp",
+        "thumb": "photos/p12_s.webp",
+        "title": "Amazing Rugova mountain",
+        "author": "Burim",
+        "license": "CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Amazing_Rugova_mountain.JPG",
+        "score": 103
+      }
+    ],
+    "assets": {
+      "dem": "regions/rugova/dem.png",
+      "overview": "regions/rugova/overview.jpg",
+      "overviewSmall": "regions/rugova/overview_s.jpg"
+    }
+  }
+]

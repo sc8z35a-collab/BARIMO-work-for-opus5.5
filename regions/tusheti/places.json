@@ -1,0 +1,522 @@
+[
+  {
+    "kind": "peak",
+    "name": "Tebulosmta",
+    "local": "თებულოსმთა / Туьлой-Лам",
+    "ll": [
+      42.57397,
+      45.31469
+    ],
+    "ele": 4494
+  },
+  {
+    "kind": "peak",
+    "name": "Shan",
+    "local": "Шан / შანი",
+    "ll": [
+      42.67603,
+      44.75628
+    ],
+    "ele": 4452
+  },
+  {
+    "kind": "peak",
+    "name": "Diklosmta",
+    "local": "Диклос-Мта / დიკლოსმთა",
+    "ll": [
+      42.48829,
+      45.77514
+    ],
+    "ele": 4285
+  },
+  {
+    "kind": "peak",
+    "name": "Komito",
+    "local": "Комито - ქომიტო",
+    "ll": [
+      42.53322,
+      45.59824
+    ],
+    "ele": 4261
+  },
+  {
+    "kind": "peak",
+    "name": "Donosmta",
+    "local": "Доносмта / დანოსმთა",
+    "ll": [
+      42.50475,
+      45.68822
+    ],
+    "ele": 4174
+  },
+  {
+    "kind": "peak",
+    "name": "Gora Addala Shukgelmezr",
+    "local": "Аддала-Шухгельмеэр",
+    "ll": [
+      42.33914,
+      46.24911
+    ],
+    "ele": 4152
+  },
+  {
+    "kind": "peak",
+    "name": "Sakharismaghali",
+    "local": "სახარისმაღალი - Сахарисмта",
+    "ll": [
+      42.6413,
+      44.82291
+    ],
+    "ele": 3963
+  },
+  {
+    "kind": "peak",
+    "name": "Amugo",
+    "local": "ამუგო",
+    "ll": [
+      42.47357,
+      45.27493
+    ],
+    "ele": 3840
+  },
+  {
+    "kind": "peak",
+    "name": "Chaukhi",
+    "local": "ჭაუხი",
+    "ll": [
+      42.52988,
+      44.76868
+    ],
+    "ele": 3688
+  },
+  {
+    "kind": "peak",
+    "name": "Shavimta",
+    "local": "შავიმთა",
+    "ll": [
+      42.53117,
+      45.50903
+    ],
+    "ele": 3657
+  },
+  {
+    "kind": "peak",
+    "name": "Mount Shaviklde",
+    "local": "შავიკლდე - Шавиклде",
+    "ll": [
+      42.25365,
+      45.6189
+    ],
+    "ele": 3578
+  },
+  {
+    "kind": "peak",
+    "name": "Didgverdi",
+    "local": "დიდგვერდი",
+    "ll": [
+      42.2814,
+      45.42855
+    ],
+    "ele": 3335
+  },
+  {
+    "kind": "peak",
+    "name": "Mt. Didi Borbalo",
+    "local": "დიდი ბორბალო",
+    "ll": [
+      42.42183,
+      45.21819
+    ],
+    "ele": 3294
+  },
+  {
+    "kind": "peak",
+    "name": "Q'uro",
+    "local": "ყურო",
+    "ll": [
+      42.67459,
+      44.69245
+    ],
+    "ele": 4071
+  },
+  {
+    "kind": "peak",
+    "name": "Осука",
+    "local": "",
+    "ll": [
+      42.34229,
+      46.18584
+    ],
+    "ele": 4048
+  },
+  {
+    "kind": "peak",
+    "name": "Makhismaghali",
+    "local": "Махисмагали",
+    "ll": [
+      42.69274,
+      45.05117
+    ],
+    "ele": 4007
+  },
+  {
+    "kind": "pass",
+    "name": "Atsunta Pass",
+    "local": "აწუნთის უღელტეხილი",
+    "ll": [
+      42.52868,
+      45.27413
+    ],
+    "ele": 3510
+  },
+  {
+    "kind": "pass",
+    "name": "Кеме",
+    "local": "",
+    "ll": [
+      42.29508,
+      46.06528
+    ],
+    "ele": 3503
+  },
+  {
+    "kind": "pass",
+    "name": "Vstrechny Pass",
+    "local": "Встречный",
+    "ll": [
+      42.73688,
+      44.73446
+    ],
+    "ele": 3500
+  },
+  {
+    "kind": "pass",
+    "name": "Central Kibishi Pass",
+    "local": "",
+    "ll": [
+      42.61766,
+      44.75432
+    ],
+    "ele": 3463
+  },
+  {
+    "kind": "pass",
+    "name": "Бухалав",
+    "local": "",
+    "ll": [
+      42.50821,
+      45.83999
+    ],
+    "ele": 3460
+  },
+  {
+    "kind": "town",
+    "name": "Botlikh",
+    "local": "Ботлих",
+    "ll": [
+      42.66446,
+      46.21845
+    ],
+    "ele": null
+  },
+  {
+    "kind": "town",
+    "name": "Kvareli",
+    "local": "ყვარელი",
+    "ll": [
+      41.94822,
+      45.81396
+    ],
+    "ele": null
+  },
+  {
+    "kind": "town",
+    "name": "Mtskheta",
+    "local": "მცხეთა",
+    "ll": [
+      41.84629,
+      44.71956
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Sunzha",
+    "local": "Сунжа",
+    "ll": [
+      43.06566,
+      44.81478
+    ],
+    "ele": null
+  },
+  {
+    "kind": "town",
+    "name": "Dusheti",
+    "local": "დუშეთი",
+    "ll": [
+      42.08447,
+      44.69594
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Duba-Yurt",
+    "local": "Дуба-Юрт",
+    "ll": [
+      43.04116,
+      45.73305
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Martkopi",
+    "local": "მარტყოფი",
+    "ll": [
+      41.7863,
+      45.02233
+    ],
+    "ele": 770
+  },
+  {
+    "kind": "village",
+    "name": "Alkhazurovo",
+    "local": "Алхазурово",
+    "ll": [
+      43.06406,
+      45.64729
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Karajala",
+    "local": "ყარაჯალა",
+    "ll": [
+      41.966,
+      45.44389
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Karata",
+    "local": "Карата",
+    "ll": [
+      42.59567,
+      46.33953
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Velistsikhe",
+    "local": "ველისციხე",
+    "ll": [
+      41.80911,
+      45.75698
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Matani",
+    "local": "მატანი",
+    "ll": [
+      42.07487,
+      45.19061
+    ],
+    "ele": 570
+  },
+  {
+    "kind": "village",
+    "name": "Tarskoye",
+    "local": "Тарское",
+    "ll": [
+      42.96597,
+      44.77362
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Borsoy",
+    "local": "Борзой",
+    "ll": [
+      42.8415,
+      45.6274
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Akhalsopeli",
+    "local": "ახალსოფელი",
+    "ll": [
+      41.90645,
+      45.97809
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Kurdghelauri",
+    "local": "კურდღელაური",
+    "ll": [
+      41.92922,
+      45.49257
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Shilda",
+    "local": "შილდა",
+    "ll": [
+      42.00021,
+      45.71746
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Гагатли",
+    "local": "",
+    "ll": [
+      42.80038,
+      46.28917
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Bashle-khel",
+    "local": "Башле-Хель",
+    "ll": [
+      41.94263,
+      46.34622
+    ],
+    "ele": 2713
+  },
+  {
+    "kind": "lake",
+    "name": "Patara-Tba Lake",
+    "local": "პატარა ტბა",
+    "ll": [
+      41.81037,
+      44.82761
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Кезеной-Ам",
+    "local": "",
+    "ll": [
+      42.77634,
+      46.15076
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Лачи",
+    "local": "",
+    "ll": [
+      42.56065,
+      46.18883
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Галанчож",
+    "local": "",
+    "ll": [
+      42.8723,
+      45.30402
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Abudelauri Blue Lake",
+    "local": "აბუდელაურის ლურჯი ტბა",
+    "ll": [
+      42.54452,
+      44.837
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Lopota Lake",
+    "local": "ლოპოტას ტბა",
+    "ll": [
+      42.05588,
+      45.52525
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Duruji Small Waterfall",
+    "local": "დურუჯის პატარა ჩანჩქერი",
+    "ll": [
+      42.00346,
+      45.8546
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Нохчи Келой",
+    "local": "",
+    "ll": [
+      42.76022,
+      45.95631
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Black Grouse",
+    "local": "როჭოს ჩანჩქერი",
+    "ll": [
+      41.87571,
+      46.30371
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Natsvetari",
+    "local": "",
+    "ll": [
+      42.60453,
+      45.10334
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Фуртоугский водопад",
+    "local": "",
+    "ll": [
+      42.84638,
+      44.66614
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Chili Lake",
+    "local": "ჭილის ტბა",
+    "ll": [
+      41.81248,
+      44.67852
+    ],
+    "ele": 1122
+  }
+]

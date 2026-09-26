@@ -1,0 +1,62 @@
+[
+  {
+    "kind": "town",
+    "name": "Vila do Corvo",
+    "local": "",
+    "ll": [
+      39.67324,
+      -31.11371
+    ],
+    "ele": null
+  },
+  {
+    "kind": "town",
+    "name": "Santa Cruz das Flores",
+    "local": "",
+    "ll": [
+      39.45378,
+      -31.12852
+    ],
+    "ele": null
+  },
+  {
+    "kind": "town",
+    "name": "Lajes das Flores",
+    "local": "",
+    "ll": [
+      39.37795,
+      -31.17709
+    ],
+    "ele": null
+  },
+  {
+    "kind": "peak",
+    "name": "Morro Alto",
+    "local": "",
+    "ll": [
+      39.4636,
+      -31.22062
+    ],
+    "ele": 914
+  },
+  {
+    "kind": "village",
+    "name": "Mosteiro",
+    "local": "",
+    "ll": [
+      39.41329,
+      -31.25083
+    ],
+    "ele": null
+  },
+  {
+    "kind": "peak",
+    "name": "Aguinhas",
+    "local": "",
+    "ll": [
+      39.49442,
+      -31.17127
+    ],
+    "ele": 438
+  }
+]
