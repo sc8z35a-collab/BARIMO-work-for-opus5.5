@@ -1,4 +1,4 @@
-// BARIMO build orchestrator — launches 6 agents.
+// BARIMO build orchestrator — launches 7 agents.
 // Stage 1: research · terrain · imagery · photos · climate run IN PARALLEL (5 processes)
 // Stage 2: assembler/QA consumes their artifacts. Optional: auto-commit after each agent.
 import { spawn, execSync } from 'node:child_process';
@@ -29,7 +29,8 @@ log('orchestrator', `LLM (${MODEL}) status: ${llm.ok ? 'ONLINE' : 'UNAVAILABLE'}
 // so the pipeline fits in a 1 GB sandbox without OOM-freezing.
 log('orchestrator', 'Stage 1: launching 5 agents in parallel (light lane ×3 + heavy lane imagery→photos)');
 const heavy = (async () => [await run('imagery'), await run('photos')])();
-const codes = (await Promise.all([run('research'), run('terrain'), run('climate'), heavy])).flat();
+const light = (async () => [await run('research'), await run('places')])(); // both hit rate-limited OSM services → sequential
+const codes = (await Promise.all([light, run('terrain'), run('climate'), heavy])).flat();
 log('orchestrator', 'Stage 2: assembler / QA');
 const qa = await run('assembler');
 await lock;
