@@ -240,7 +240,13 @@ export class RegionScene {
 
   _updateLabels() {
     const cam = this.camera, W = this.w, H = this.h, v = new THREE.Vector3();
-    const placed = [];
+    // UI panels/controls block labels (glass is translucent — labels behind it read as clutter)
+    if (!this._uiRects || performance.now() - this._uiT > 300) {
+      this._uiT = performance.now();
+      this._uiRects = [...document.querySelectorAll('.region-ui .topbar > *, .region-ui .panel:not(.closed), .hud .minimap, .hud .mapctl, .hud .walk-btn, .hud .compass, .hud .card3:not(.hidden), .hud .joy, .hud .fp-right, .hud .lift, .hud .navbar:not(.hidden), .hud .readout')]
+        .map((e) => e.getBoundingClientRect()).filter((r) => r.width > 0 && r.height > 0).map((r) => ({ x0: r.left - 4, x1: r.right + 4, y0: r.top - 4, y1: r.bottom + 4 }));
+    }
+    const placed = this._uiRects.slice();
     const fpMode = this.mode === 'fp';
     const camAlt = this.mode === 'map' ? this.map.dist : this.fp.agl();
     const sorted = this.labels.slice().sort((a, b) => b.prio - a.prio);
@@ -268,7 +274,8 @@ export class RegionScene {
       if (show) { // declutter: skip if overlapping a higher-priority label
         const w = L.w || 90, h = L.h || 30;
         const r = { x0: sx - w / 2 - 4, x1: sx + w / 2 + 4, y0: sy - h - 4, y1: sy + 4 };
-        if (placed.some((q) => r.x0 < q.x1 && r.x1 > q.x0 && r.y0 < q.y1 && r.y1 > q.y0)) show = false;
+        if (r.x0 < 2 || r.x1 > W - 2 || r.y0 < 2 || r.y1 > H - 2) show = false; // never cut off at screen edges
+        else if (placed.some((q) => r.x0 < q.x1 && r.x1 > q.x0 && r.y0 < q.y1 && r.y1 > q.y0)) show = false;
         else placed.push(r);
       }
       if (show !== L.vis) { L.vis = show; L.el.classList.toggle('on', show); }

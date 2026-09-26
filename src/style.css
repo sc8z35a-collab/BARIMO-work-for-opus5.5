@@ -53,7 +53,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   background: var(--glass); backdrop-filter: blur(18px) saturate(1.4); -webkit-backdrop-filter: blur(18px) saturate(1.4);
   border: 1px solid rgba(255, 255, 255, 0.7); box-shadow: var(--shadow); border-radius: var(--radius);
 }
-.fade-in { animation: fadeIn 0.9s cubic-bezier(.2,.7,.2,1) both; }
+.fade-in { animation: fadeIn 0.9s cubic-bezier(.2,.7,.2,1) backwards; } /* backwards: must not pin transform after the animation (broke .strip.away) */
 @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
 .hidden { display: none !important; }
 
@@ -249,8 +249,8 @@ button:focus-visible, [role=button]:focus-visible { outline: 2px solid var(--acc
 .toast.on { opacity: 1; transform: translate(-50%, 0); }
 
 /* globe extras */
-.zoom-ctrl { position: fixed; left: calc(3vw + var(--safe-l)); top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 1.4dvh; transition: opacity .4s; }
-.globe-ui:has(.preview) .zoom-ctrl { opacity: .85; }
+.zoom-ctrl { position: fixed; left: calc(3vw + var(--safe-l)); top: calc(3dvh + 14dvh); display: flex; flex-direction: column; gap: 1.4dvh; transition: opacity .4s; }
+.preview { background: rgba(255,253,248,.86); }
 .alt-read { display: none; }
 .pin { background: none; border: 0; }
 .pin .lb { display: block; }
@@ -297,6 +297,7 @@ button:focus-visible, [role=button]:focus-visible { outline: 2px solid var(--acc
 .readout { position: fixed; left: 50%; transform: translateX(-50%); top: 3dvh; padding: .9dvh 2dvh; display: flex; gap: 10px; align-items: baseline; font-size: clamp(10px, 2.7dvh, 12px); color: var(--ink-2); white-space: nowrap; border-radius: 999px; pointer-events: none !important; }
 .readout b { font-family: var(--latin); font-size: 1.3em; color: var(--ink); font-weight: 600; }
 .region-ui:not(.fp) .readout { top: auto; bottom: 3dvh; }
+.region-ui:not(.fp):has(.panel:not(.closed)) .readout { left: calc(2.4vw + var(--safe-l) + clamp(280px, 40vw, 460px) + 12px); transform: none; }
 .ro-load { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); opacity: 0; align-self: center; transition: opacity .3s; }
 .ro-load.on { opacity: 1; animation: blink 1s ease-in-out infinite; }
 @keyframes blink { 50% { opacity: .25; } }
