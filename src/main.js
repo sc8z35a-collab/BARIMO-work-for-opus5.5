@@ -127,7 +127,8 @@ function showIntro() {
   $('.start', el).addEventListener('click', () => {
     goFullscreen();
     el.classList.add('out');
-    setTimeout(() => el.remove(), 1000);
+    el.addEventListener('transitionend', () => el.remove(), { once: true });
+    setTimeout(() => el.remove(), 1200); // fallback (transitionend can be skipped when throttled)
     showGlobeUI();
   }, { once: true });
 }
@@ -238,6 +239,7 @@ async function openRegion(r) {
     await new Promise((res) => setTimeout(res, 250));
     globe.show(false);
     globeUI?.classList.add('hidden');
+    $('#intro')?.remove();
     await region.load(r, (p) => setLoad(p), loadCtl.signal);
     renderer.compile(region.scene, region.camera);
     mode = 'region';

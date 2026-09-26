@@ -284,10 +284,14 @@ export class FirstPerson {
     let g1 = this.groundAt(nx, nz);
     if (this.mode === 'walk') {
       if (this.hasSea && g1 < 0.3 && g0 >= 0.3) { nx = this.pos.x; nz = this.pos.z; g1 = g0; this.vel.set(0, 0, 0); this._blocked('sea'); }
-      const step = Math.hypot(nx - this.pos.x, nz - this.pos.z);
-      if (step > 1e-4) { // steep uphill slows you down
-        const slope = (g1 - g0) / step;
-        if (slope > 0.45) { const f = clamp(1.25 - slope * 0.6, 0.18, 1); nx = this.pos.x + (nx - this.pos.x) * f; nz = this.pos.z + (nz - this.pos.z) * f; g1 = this.groundAt(nx, nz); }
+      // steep uphill slows you down — slope measured over a fixed 3 m baseline (per-frame steps of a few cm
+      // amplify DEM interpolation noise and used to freeze the walker on ordinary hillsides)
+      const mv = Math.hypot(nx - this.pos.x, nz - this.pos.z);
+      if (mv > 1e-4) {
+        const ux = (nx - this.pos.x) / mv, uz = (nz - this.pos.z) / mv;
+        const slope = (this.groundAt(this.pos.x + ux * 3, this.pos.z + uz * 3) - g0) / 3;
+        this.slope = slope;
+        if (slope > 0.6) { const f = clamp(1.5 - slope, 0.3, 1); nx = this.pos.x + (nx - this.pos.x) * f; nz = this.pos.z + (nz - this.pos.z) * f; g1 = this.groundAt(nx, nz); }
       }
       this.pos.x = nx; this.pos.z = nz;
       const floor = g1 + EYE;

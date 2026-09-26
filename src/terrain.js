@@ -292,6 +292,17 @@ export class RegionScene {
       const land = this._nearestLand(x, z); if (land) [x, z] = land;
     }
     const m = this.F.half - 60; x = clamp(x, -m, m); z = clamp(z, -m, m);
+    // drop the traveller on walkable ground: search nearby for the flattest spot (cliffs make a poor first view)
+    const slopeAt = (px, pz) => { const E = this.engine, d = 12; return Math.hypot(E.heightAt(px + d, pz) - E.heightAt(px - d, pz), E.heightAt(px, pz + d) - E.heightAt(px, pz - d)) / (2 * d); };
+    if (slopeAt(x, z) > 0.35) {
+      let best = [x, z, slopeAt(x, z)];
+      for (const r of [40, 90, 160, 260]) for (let a = 0; a < 12; a++) {
+        const px = x + Math.cos((a / 12) * 6.283) * r, pz = z + Math.sin((a / 12) * 6.283) * r;
+        if (!this.F.inExtent(px, pz, 80) || (this.hasSea && this.engine.heightAt(px, pz) < 1)) continue;
+        const s = slopeAt(px, pz); if (s < best[2]) best = [px, pz, s];
+      }
+      [x, z] = best;
+    }
     this.fp.mode = 'walk'; this.fp.speedIdx = 0; this.fp.setNav(null);
     this.fp.place(x, z, yaw);
     this.mode = 'fp';
