@@ -1,0 +1,422 @@
+[
+  {
+    "kind": "town",
+    "name": "Thio",
+    "local": "",
+    "ll": [
+      -21.61158,
+      166.21555
+    ],
+    "ele": null
+  },
+  {
+    "kind": "town",
+    "name": "Kouaoua",
+    "local": "",
+    "ll": [
+      -21.39618,
+      165.82845
+    ],
+    "ele": null
+  },
+  {
+    "kind": "town",
+    "name": "Houaïlou",
+    "local": "",
+    "ll": [
+      -21.2787,
+      165.62705
+    ],
+    "ele": null
+  },
+  {
+    "kind": "town",
+    "name": "ポワンディミエ",
+    "local": "Poindimié",
+    "ll": [
+      -20.93694,
+      165.33426
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Wé",
+    "local": "",
+    "ll": [
+      -20.91627,
+      167.26433
+    ],
+    "ele": null
+  },
+  {
+    "kind": "peak",
+    "name": "Mont Panié",
+    "local": "",
+    "ll": [
+      -20.58866,
+      164.77028
+    ],
+    "ele": 1629
+  },
+  {
+    "kind": "peak",
+    "name": "Mont Humboldt",
+    "local": "",
+    "ll": [
+      -21.87995,
+      166.42262
+    ],
+    "ele": 1618
+  },
+  {
+    "kind": "peak",
+    "name": "Dent de Saint-Vincent",
+    "local": "",
+    "ll": [
+      -21.85925,
+      166.22154
+    ],
+    "ele": 1441
+  },
+  {
+    "kind": "peak",
+    "name": "Ningua",
+    "local": "",
+    "ll": [
+      -21.74258,
+      166.1411
+    ],
+    "ele": 1352
+  },
+  {
+    "kind": "peak",
+    "name": "Mont Do",
+    "local": "",
+    "ll": [
+      -21.754,
+      165.99999
+    ],
+    "ele": 1024
+  },
+  {
+    "kind": "peak",
+    "name": "Mont Aoupinié",
+    "local": "",
+    "ll": [
+      -21.17647,
+      165.26784
+    ],
+    "ele": 1006
+  },
+  {
+    "kind": "village",
+    "name": "Moindou",
+    "local": "",
+    "ll": [
+      -21.69243,
+      165.67702
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Tadine",
+    "local": "",
+    "ll": [
+      -21.54826,
+      167.88229
+    ],
+    "ele": null
+  },
+  {
+    "kind": "peak",
+    "name": "Pic Adjio",
+    "local": "",
+    "ll": [
+      -21.31101,
+      165.26156
+    ],
+    "ele": 703
+  },
+  {
+    "kind": "peak",
+    "name": "Pic Vincent",
+    "local": "",
+    "ll": [
+      -21.59833,
+      165.77549
+    ],
+    "ele": 703
+  },
+  {
+    "kind": "peak",
+    "name": "Keiyouma",
+    "local": "",
+    "ll": [
+      -21.4177,
+      165.36418
+    ],
+    "ele": 1424
+  },
+  {
+    "kind": "peak",
+    "name": "Nakada",
+    "local": "",
+    "ll": [
+      -21.62271,
+      166.05485
+    ],
+    "ele": 1136
+  },
+  {
+    "kind": "village",
+    "name": "Nepoui",
+    "local": "",
+    "ll": [
+      -21.3274,
+      164.99684
+    ],
+    "ele": null
+  },
+  {
+    "kind": "peak",
+    "name": "Mont des Trois Ravines",
+    "local": "",
+    "ll": [
+      -21.65405,
+      165.56872
+    ],
+    "ele": 307
+  },
+  {
+    "kind": "peak",
+    "name": "Mégi",
+    "local": "",
+    "ll": [
+      -21.92523,
+      166.54773
+    ],
+    "ele": 1033
+  },
+  {
+    "kind": "village",
+    "name": "Drueulu",
+    "local": "",
+    "ll": [
+      -20.92918,
+      167.08199
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Xepenehe",
+    "local": "",
+    "ll": [
+      -20.78224,
+      167.15306
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Mu",
+    "local": "",
+    "ll": [
+      -21.09284,
+      167.40263
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Tingeting",
+    "local": "",
+    "ll": [
+      -20.74203,
+      167.26659
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ponérihouen",
+    "local": "",
+    "ll": [
+      -21.07199,
+      165.40249
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Touho",
+    "local": "",
+    "ll": [
+      -20.78054,
+      165.23281
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Noéli",
+    "local": "",
+    "ll": [
+      -21.00483,
+      164.94768
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Port Bouquet",
+    "local": "",
+    "ll": [
+      -21.72224,
+      166.41573
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Petit Borindi",
+    "local": "",
+    "ll": [
+      -21.79688,
+      166.49203
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ganem",
+    "local": "",
+    "ll": [
+      -20.69819,
+      164.93387
+    ],
+    "ele": null
+  },
+  {
+    "kind": "peak",
+    "name": "Kathépaïk",
+    "local": "",
+    "ll": [
+      -20.92351,
+      164.70247
+    ],
+    "ele": 622
+  },
+  {
+    "kind": "peak",
+    "name": "Mont Kaféaté",
+    "local": "",
+    "ll": [
+      -21.02783,
+      164.73741
+    ],
+    "ele": 264
+  },
+  {
+    "kind": "peak",
+    "name": "Nétékuma",
+    "local": "",
+    "ll": [
+      -21.93585,
+      166.02787
+    ],
+    "ele": 111
+  },
+  {
+    "kind": "peak",
+    "name": "Pic Ouano",
+    "local": "",
+    "ll": [
+      -21.85628,
+      165.81354
+    ],
+    "ele": 109
+  },
+  {
+    "kind": "waterfall",
+    "name": "Cascade de Bâ",
+    "local": "",
+    "ll": [
+      -21.199,
+      165.55166
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Cascade de Saint Thomas",
+    "local": "",
+    "ll": [
+      -20.9803,
+      165.23029
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Tiwaka chute 8",
+    "local": "",
+    "ll": [
+      -20.92602,
+      165.08165
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Cascade des militaires",
+    "local": "",
+    "ll": [
+      -20.61603,
+      164.64158
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Trou Bone de léproserie",
+    "local": "",
+    "ll": [
+      -21.56231,
+      168.01598
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Trou bleu d'Hanawa",
+    "local": "",
+    "ll": [
+      -20.52124,
+      166.57247
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Trou d'eau",
+    "local": "",
+    "ll": [
+      -20.68807,
+      166.52126
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Marais Fournier",
+    "local": "",
+    "ll": [
+      -21.58632,
+      165.34486
+    ],
+    "ele": null
+  }
+]

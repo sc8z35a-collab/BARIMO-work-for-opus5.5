@@ -1,0 +1,442 @@
+[
+  {
+    "kind": "peak",
+    "name": "Chimtarga",
+    "local": "Чимтарга",
+    "ll": [
+      39.19788,
+      68.19559
+    ],
+    "ele": 5489
+  },
+  {
+    "kind": "peak",
+    "name": "Hazrati-Sulton",
+    "local": "",
+    "ll": [
+      38.94778,
+      68.17247
+    ],
+    "ele": 4643
+  },
+  {
+    "kind": "peak",
+    "name": "Москва",
+    "local": "",
+    "ll": [
+      39.14716,
+      68.15021
+    ],
+    "ele": 5046
+  },
+  {
+    "kind": "peak",
+    "name": "Ghaznich",
+    "local": "Ғазнич",
+    "ll": [
+      39.2278,
+      68.08254
+    ],
+    "ele": 4170
+  },
+  {
+    "kind": "peak",
+    "name": "Дукдон",
+    "local": "",
+    "ll": [
+      39.07457,
+      68.14537
+    ],
+    "ele": 4896
+  },
+  {
+    "kind": "peak",
+    "name": "Зиндон",
+    "local": "",
+    "ll": [
+      39.17849,
+      68.17754
+    ],
+    "ele": 4819
+  },
+  {
+    "kind": "peak",
+    "name": "Демо",
+    "local": "",
+    "ll": [
+      39.17177,
+      68.13466
+    ],
+    "ele": 4684
+  },
+  {
+    "kind": "pass",
+    "name": "Мария",
+    "local": "",
+    "ll": [
+      39.21841,
+      68.16478
+    ],
+    "ele": 4680
+  },
+  {
+    "kind": "peak",
+    "name": "Alpomish",
+    "local": "",
+    "ll": [
+      38.89441,
+      68.1773
+    ],
+    "ele": 4668
+  },
+  {
+    "kind": "peak",
+    "name": "Айни",
+    "local": "",
+    "ll": [
+      39.09706,
+      68.18336
+    ],
+    "ele": 4614
+  },
+  {
+    "kind": "peak",
+    "name": "Сарыходан",
+    "local": "",
+    "ll": [
+      39.07229,
+      68.08775
+    ],
+    "ele": 4578
+  },
+  {
+    "kind": "peak",
+    "name": "Дикон",
+    "local": "",
+    "ll": [
+      38.97334,
+      68.18832
+    ],
+    "ele": 4576
+  },
+  {
+    "kind": "peak",
+    "name": "Aksu",
+    "local": "Аксу",
+    "ll": [
+      39.03399,
+      67.98767
+    ],
+    "ele": 4551
+  },
+  {
+    "kind": "peak",
+    "name": "Намерасед",
+    "local": "",
+    "ll": [
+      39.06705,
+      68.11403
+    ],
+    "ele": 4467
+  },
+  {
+    "kind": "peak",
+    "name": "Хазорхона",
+    "local": "",
+    "ll": [
+      38.85435,
+      68.19565
+    ],
+    "ele": 4450
+  },
+  {
+    "kind": "peak",
+    "name": "Вуикло",
+    "local": "",
+    "ll": [
+      39.13107,
+      68.17306
+    ],
+    "ele": 4447
+  },
+  {
+    "kind": "peak",
+    "name": "Shakhi Obshoron",
+    "local": "Шахи Обшорон",
+    "ll": [
+      39.23962,
+      68.10817
+    ],
+    "ele": 4354
+  },
+  {
+    "kind": "pass",
+    "name": "Нескиданный",
+    "local": "",
+    "ll": [
+      39.03033,
+      67.92063
+    ],
+    "ele": 4260
+  },
+  {
+    "kind": "pass",
+    "name": "Караарча",
+    "local": "",
+    "ll": [
+      39.06424,
+      68.19104
+    ],
+    "ele": 4200
+  },
+  {
+    "kind": "pass",
+    "name": "South Akhbasher Pass",
+    "local": "Ахбашер Южный",
+    "ll": [
+      39.06572,
+      67.99538
+    ],
+    "ele": 4200
+  },
+  {
+    "kind": "pass",
+    "name": "Upper Chapdara Pass",
+    "local": "",
+    "ll": [
+      39.07197,
+      67.92532
+    ],
+    "ele": 4115
+  },
+  {
+    "kind": "village",
+    "name": "Kosatarosh",
+    "local": "Косатарош",
+    "ll": [
+      39.39175,
+      67.764
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Sujina",
+    "local": "Сӯҷина",
+    "ll": [
+      39.48489,
+      67.70951
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Voru",
+    "local": "Ворӯ",
+    "ll": [
+      39.23216,
+      67.98717
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Shing",
+    "local": "Шинг",
+    "ll": [
+      39.28065,
+      67.8065
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Farob",
+    "local": "Фароб",
+    "ll": [
+      39.24083,
+      67.47
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Yovon",
+    "local": "Ёвон",
+    "ll": [
+      39.44672,
+      68.14982
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Marghedar",
+    "local": "Марғедар",
+    "ll": [
+      39.46024,
+      67.96391
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Shashqat",
+    "local": "Шашқат",
+    "ll": [
+      39.39169,
+      68.04923
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Artuch",
+    "local": "Артуч",
+    "ll": [
+      39.33344,
+      68.10839
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ghusar",
+    "local": "Ғӯсар",
+    "ll": [
+      39.46462,
+      67.85148
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ghazza",
+    "local": "Ғазза",
+    "ll": [
+      39.25116,
+      68.04003
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Panjrud",
+    "local": "Панҷрӯд",
+    "ll": [
+      39.34877,
+      68.0574
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Moghiyon",
+    "local": "Моғиён",
+    "ll": [
+      39.24996,
+      67.66841
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Padrud",
+    "local": "Падрӯд",
+    "ll": [
+      39.17055,
+      67.8353
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Kuli Kalon",
+    "local": "Куликалон",
+    "ll": [
+      39.25275,
+      68.17513
+    ],
+    "ele": 2800
+  },
+  {
+    "kind": "lake",
+    "name": "Buzurg Alo Lake",
+    "local": "Кӯли Бузургаъло",
+    "ll": [
+      39.20704,
+      68.12981
+    ],
+    "ele": 3110
+  },
+  {
+    "kind": "lake",
+    "name": "Marghuzor (6th Lake)",
+    "local": "Марғузор",
+    "ll": [
+      39.14358,
+      67.85445
+    ],
+    "ele": 2140
+  },
+  {
+    "kind": "lake",
+    "name": "Hazorchashma (7th Lake)",
+    "local": "Ҳазорчашма",
+    "ll": [
+      39.10508,
+      67.85807
+    ],
+    "ele": 2400
+  },
+  {
+    "kind": "lake",
+    "name": "Hushyor (3rd Lake)",
+    "local": "Ҳушёр",
+    "ll": [
+      39.20386,
+      67.8116
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Sarikul",
+    "local": "Сарикӯл",
+    "ll": [
+      39.19909,
+      68.07355
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Chuqurak",
+    "local": "Чуқурак",
+    "ll": [
+      39.26323,
+      68.134
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Chimtarga Lake (Dushokha)",
+    "local": "Кӯли Чимтарга (Душоха)",
+    "ll": [
+      39.24052,
+      68.20032
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Сувтушар",
+    "local": "",
+    "ll": [
+      38.95042,
+      67.34087
+    ],
+    "ele": null
+  }
+]

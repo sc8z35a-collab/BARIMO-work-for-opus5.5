@@ -1,0 +1,342 @@
+[
+  {
+    "kind": "town",
+    "name": "Chumukedima",
+    "local": "",
+    "ll": [
+      25.80903,
+      93.78812
+    ],
+    "ele": null
+  },
+  {
+    "kind": "peak",
+    "name": "Tenipu",
+    "local": "",
+    "ll": [
+      25.53196,
+      94.085
+    ],
+    "ele": 2994
+  },
+  {
+    "kind": "peak",
+    "name": "Kapamüdzü",
+    "local": "",
+    "ll": [
+      25.53307,
+      94.29654
+    ],
+    "ele": 2620
+  },
+  {
+    "kind": "town",
+    "name": "Pfütsero",
+    "local": "",
+    "ll": [
+      25.57234,
+      94.29698
+    ],
+    "ele": 2133
+  },
+  {
+    "kind": "peak",
+    "name": "Japfii",
+    "local": "",
+    "ll": [
+      25.59759,
+      94.06659
+    ],
+    "ele": 3015
+  },
+  {
+    "kind": "peak",
+    "name": "Laikot",
+    "local": "",
+    "ll": [
+      25.35686,
+      93.89941
+    ],
+    "ele": 2832
+  },
+  {
+    "kind": "peak",
+    "name": "Hizellebba",
+    "local": "",
+    "ll": [
+      25.64275,
+      93.96153
+    ],
+    "ele": 2723
+  },
+  {
+    "kind": "peak",
+    "name": "Tampaba",
+    "local": "",
+    "ll": [
+      25.16814,
+      93.91019
+    ],
+    "ele": 2669
+  },
+  {
+    "kind": "town",
+    "name": "Senapati",
+    "local": "",
+    "ll": [
+      25.27266,
+      94.02675
+    ],
+    "ele": null
+  },
+  {
+    "kind": "peak",
+    "name": "Paona",
+    "local": "",
+    "ll": [
+      25.59493,
+      93.86804
+    ],
+    "ele": 2486
+  },
+  {
+    "kind": "peak",
+    "name": "Vallenbung",
+    "local": "",
+    "ll": [
+      25.22826,
+      93.76134
+    ],
+    "ele": 2196
+  },
+  {
+    "kind": "peak",
+    "name": "Daimikilong",
+    "local": "",
+    "ll": [
+      25.37598,
+      93.98735
+    ],
+    "ele": 2043
+  },
+  {
+    "kind": "town",
+    "name": "Phek",
+    "local": "",
+    "ll": [
+      25.70983,
+      94.46334
+    ],
+    "ele": null
+  },
+  {
+    "kind": "peak",
+    "name": "Rezeolo",
+    "local": "",
+    "ll": [
+      25.45075,
+      93.74537
+    ],
+    "ele": 1819
+  },
+  {
+    "kind": "village",
+    "name": "Rangapahar",
+    "local": "Rangapahār",
+    "ll": [
+      25.85571,
+      93.70516
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Khonoma",
+    "local": "",
+    "ll": [
+      25.65429,
+      94.02201
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Tseminyu",
+    "local": "",
+    "ll": [
+      25.92301,
+      94.22235
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Khezhakeno",
+    "local": "",
+    "ll": [
+      25.5139,
+      94.20786
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Sechu Zubza",
+    "local": "",
+    "ll": [
+      25.71185,
+      94.04076
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Satakha HQ",
+    "local": "",
+    "ll": [
+      25.92904,
+      94.44762
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Lakhamai",
+    "local": "",
+    "ll": [
+      25.39048,
+      94.30189
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Oinam",
+    "local": "",
+    "ll": [
+      25.35082,
+      94.1977
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Porba",
+    "local": "",
+    "ll": [
+      25.61669,
+      94.33139
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Kachai",
+    "local": "",
+    "ll": [
+      25.23668,
+      94.27513
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Chaton-I",
+    "local": "",
+    "ll": [
+      25.29696,
+      93.71431
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Kuilong",
+    "local": "Kuilong-I",
+    "ll": [
+      25.3554,
+      93.78057
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Tumuyon Khullen",
+    "local": "",
+    "ll": [
+      25.1859,
+      93.97966
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Gelnel",
+    "local": "",
+    "ll": [
+      25.21444,
+      93.81464
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Loho Lake",
+    "local": "",
+    "ll": [
+      25.49673,
+      94.22908
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Tuilha Kol waterfall",
+    "local": "",
+    "ll": [
+      25.19127,
+      93.77769
+    ],
+    "ele": null
+  },
+  {
+    "kind": "peak",
+    "name": "Mengupheju (Sirhi)",
+    "local": "",
+    "ll": [
+      25.72768,
+      93.9058
+    ],
+    "ele": null
+  },
+  {
+    "kind": "peak",
+    "name": "Chimakudi",
+    "local": "",
+    "ll": [
+      25.77892,
+      93.78466
+    ],
+    "ele": null
+  },
+  {
+    "kind": "peak",
+    "name": "Sintongbungi",
+    "local": "",
+    "ll": [
+      25.2689,
+      93.84356
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Padam Pukhuri",
+    "local": "",
+    "ll": [
+      25.89563,
+      93.75316
+    ],
+    "ele": null
+  }
+]

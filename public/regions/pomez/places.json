@@ -1,0 +1,412 @@
+[
+  {
+    "kind": "peak",
+    "name": "Ojos del Salado",
+    "local": "Nevado Ojos del Salado",
+    "ll": [
+      -27.10954,
+      -68.54148
+    ],
+    "ele": 6891
+  },
+  {
+    "kind": "peak",
+    "name": "Volcán Incahuasi",
+    "local": "",
+    "ll": [
+      -27.03359,
+      -68.29599
+    ],
+    "ele": 6640
+  },
+  {
+    "kind": "peak",
+    "name": "Volcán El Muerto",
+    "local": "",
+    "ll": [
+      -27.05821,
+      -68.48414
+    ],
+    "ele": 6488
+  },
+  {
+    "kind": "peak",
+    "name": "Cerro del Nacimiento I",
+    "local": "",
+    "ll": [
+      -27.28101,
+      -68.52421
+    ],
+    "ele": 6464
+  },
+  {
+    "kind": "peak",
+    "name": "Volcán El Cóndor",
+    "local": "",
+    "ll": [
+      -26.63483,
+      -68.35692
+    ],
+    "ele": 6414
+  },
+  {
+    "kind": "peak",
+    "name": "Olmedo",
+    "local": "",
+    "ll": [
+      -27.20723,
+      -68.52592
+    ],
+    "ele": 6240
+  },
+  {
+    "kind": "peak",
+    "name": "Cerro Vallecito",
+    "local": "",
+    "ll": [
+      -26.2104,
+      -68.31707
+    ],
+    "ele": 6168
+  },
+  {
+    "kind": "peak",
+    "name": "Volcán Medusa",
+    "local": "",
+    "ll": [
+      -27.12791,
+      -68.48414
+    ],
+    "ele": 6120
+  },
+  {
+    "kind": "peak",
+    "name": "Volcán Fraile",
+    "local": "",
+    "ll": [
+      -27.04859,
+      -68.37946
+    ],
+    "ele": 6062
+  },
+  {
+    "kind": "peak",
+    "name": "Nevado San Francisco",
+    "local": "",
+    "ll": [
+      -26.91917,
+      -68.26321
+    ],
+    "ele": 6016
+  },
+  {
+    "kind": "peak",
+    "name": "Cerro Laguna Escondida",
+    "local": "",
+    "ll": [
+      -26.60351,
+      -68.47982
+    ],
+    "ele": 5917
+  },
+  {
+    "kind": "peak",
+    "name": "Cerro Mulas Muertas",
+    "local": "",
+    "ll": [
+      -26.94993,
+      -68.5092
+    ],
+    "ele": 5897
+  },
+  {
+    "kind": "peak",
+    "name": "Cerro Dos Conos",
+    "local": "",
+    "ll": [
+      -26.80308,
+      -68.27758
+    ],
+    "ele": 5880
+  },
+  {
+    "kind": "peak",
+    "name": "Cerro Laguna Verde",
+    "local": "",
+    "ll": [
+      -26.8025,
+      -68.50735
+    ],
+    "ele": 5830
+  },
+  {
+    "kind": "peak",
+    "name": "Volcán Peinado",
+    "local": "",
+    "ll": [
+      -26.62128,
+      -68.11543
+    ],
+    "ele": 5830
+  },
+  {
+    "kind": "peak",
+    "name": "Cumbre de la Línea",
+    "local": "",
+    "ll": [
+      -26.81387,
+      -68.34795
+    ],
+    "ele": 5824
+  },
+  {
+    "kind": "pass",
+    "name": "San Francisco Pass",
+    "local": "Paso de San Francisco",
+    "ll": [
+      -26.87367,
+      -68.29911
+    ],
+    "ele": 4726
+  },
+  {
+    "kind": "pass",
+    "name": "Portezuelo de Pasto Ventura",
+    "local": "",
+    "ll": [
+      -26.67564,
+      -67.21839
+    ],
+    "ele": 3996
+  },
+  {
+    "kind": "village",
+    "name": "Corral Quemado",
+    "local": "",
+    "ll": [
+      -27.14949,
+      -66.94565
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Palo Blanco",
+    "local": "",
+    "ll": [
+      -27.33492,
+      -67.75504
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Hualfín",
+    "local": "",
+    "ll": [
+      -27.22502,
+      -66.83475
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Antofagasta de la Sierra",
+    "local": "",
+    "ll": [
+      -26.05923,
+      -67.40662
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "San Fernando",
+    "local": "",
+    "ll": [
+      -27.33416,
+      -66.89806
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Puerta de Corral Quemado",
+    "local": "",
+    "ll": [
+      -27.22795,
+      -66.93411
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Villa Víl",
+    "local": "",
+    "ll": [
+      -27.09352,
+      -66.82205
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "El Durazno",
+    "local": "",
+    "ll": [
+      -27.25139,
+      -67.03476
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Tatón",
+    "local": "",
+    "ll": [
+      -27.34013,
+      -67.53135
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "El Peñón",
+    "local": "",
+    "ll": [
+      -26.47542,
+      -67.26526
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Punta de Agua",
+    "local": "",
+    "ll": [
+      -27.22519,
+      -67.75693
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Antinaco",
+    "local": "",
+    "ll": [
+      -27.21437,
+      -67.60607
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Laguna Pabellon",
+    "local": "",
+    "ll": [
+      -26.07997,
+      -67.0447
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Laguna Aparoma",
+    "local": "",
+    "ll": [
+      -26.23522,
+      -66.82599
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Laguna Blanca",
+    "local": "",
+    "ll": [
+      -26.63344,
+      -66.91782
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Laguna Carachi Pampa",
+    "local": "",
+    "ll": [
+      -26.44417,
+      -67.51158
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Laguna Verde",
+    "local": "",
+    "ll": [
+      -26.8811,
+      -68.47008
+    ],
+    "ele": 4350
+  },
+  {
+    "kind": "lake",
+    "name": "Laguna Baya",
+    "local": "",
+    "ll": [
+      -26.24115,
+      -66.9783
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Laguna Grande",
+    "local": "",
+    "ll": [
+      -26.24093,
+      -67.0633
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Laguna Escondida",
+    "local": "",
+    "ll": [
+      -26.64876,
+      -68.52328
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Los Nacimientos",
+    "local": "",
+    "ll": [
+      -25.82479,
+      -67.37226
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "El Eje",
+    "local": "",
+    "ll": [
+      -27.27685,
+      -66.87407
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "El Chorro",
+    "local": "",
+    "ll": [
+      -26.57899,
+      -66.97228
+    ],
+    "ele": null
+  }
+]
