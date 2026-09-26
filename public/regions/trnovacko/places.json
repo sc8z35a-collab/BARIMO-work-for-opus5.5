@@ -1,0 +1,442 @@
+[
+  {
+    "kind": "peak",
+    "name": "Veliki Maglić",
+    "local": "",
+    "ll": [
+      43.27608,
+      18.73551
+    ],
+    "ele": 2389
+  },
+  {
+    "kind": "peak",
+    "name": "Bubreg",
+    "local": "",
+    "ll": [
+      43.23335,
+      18.76124
+    ],
+    "ele": 2339
+  },
+  {
+    "kind": "peak",
+    "name": "Volujak",
+    "local": "",
+    "ll": [
+      43.23178,
+      18.71714
+    ],
+    "ele": 2336
+  },
+  {
+    "kind": "peak",
+    "name": "Trzivka",
+    "local": "",
+    "ll": [
+      43.24019,
+      18.73506
+    ],
+    "ele": 2333
+  },
+  {
+    "kind": "peak",
+    "name": "Bioč",
+    "local": "",
+    "ll": [
+      43.23316,
+      18.79389
+    ],
+    "ele": 2297
+  },
+  {
+    "kind": "peak",
+    "name": "Kom",
+    "local": "",
+    "ll": [
+      43.24881,
+      18.74933
+    ],
+    "ele": 2162
+  },
+  {
+    "kind": "peak",
+    "name": "Raklje",
+    "local": "",
+    "ll": [
+      43.13932,
+      18.98323
+    ],
+    "ele": 2159
+  },
+  {
+    "kind": "peak",
+    "name": "Bregoč",
+    "local": "",
+    "ll": [
+      43.35462,
+      18.56783
+    ],
+    "ele": 2014
+  },
+  {
+    "kind": "peak",
+    "name": "Prečanska strana",
+    "local": "",
+    "ll": [
+      43.14062,
+      18.96122
+    ],
+    "ele": 2005
+  },
+  {
+    "kind": "peak",
+    "name": "Turska glava",
+    "local": "",
+    "ll": [
+      43.15655,
+      18.978
+    ],
+    "ele": 1855
+  },
+  {
+    "kind": "peak",
+    "name": "Košara",
+    "local": "",
+    "ll": [
+      43.20234,
+      18.67137
+    ],
+    "ele": 1838
+  },
+  {
+    "kind": "peak",
+    "name": "Tovarnica",
+    "local": "",
+    "ll": [
+      43.31523,
+      18.60766
+    ],
+    "ele": 1804
+  },
+  {
+    "kind": "peak",
+    "name": "Bukovi vrhovi",
+    "local": "",
+    "ll": [
+      43.32504,
+      18.73625
+    ],
+    "ele": 1787
+  },
+  {
+    "kind": "peak",
+    "name": "Vagan",
+    "local": "",
+    "ll": [
+      43.2186,
+      18.8942
+    ],
+    "ele": 1776
+  },
+  {
+    "kind": "peak",
+    "name": "Ličanski urljaj",
+    "local": "",
+    "ll": [
+      43.16921,
+      18.95124
+    ],
+    "ele": 1771
+  },
+  {
+    "kind": "peak",
+    "name": "Veliki Ljeljenak",
+    "local": "",
+    "ll": [
+      43.1985,
+      18.95409
+    ],
+    "ele": 1768
+  },
+  {
+    "kind": "town",
+    "name": "プルジネ",
+    "local": "Plužine",
+    "ll": [
+      43.15623,
+      18.84522
+    ],
+    "ele": null
+  },
+  {
+    "kind": "pass",
+    "name": "Krvavac",
+    "local": "",
+    "ll": [
+      43.21017,
+      18.70389
+    ],
+    "ele": 1674
+  },
+  {
+    "kind": "village",
+    "name": "Kruševo",
+    "local": "",
+    "ll": [
+      43.37026,
+      18.69942
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Kunduci",
+    "local": "",
+    "ll": [
+      43.42642,
+      18.77486
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ječmišta",
+    "local": "",
+    "ll": [
+      43.41209,
+      18.96777
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Grdijevići",
+    "local": "",
+    "ll": [
+      43.38318,
+      18.9048
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Toholji",
+    "local": "",
+    "ll": [
+      43.37916,
+      18.87108
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Fališi",
+    "local": "",
+    "ll": [
+      43.41755,
+      18.90391
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Vrbnica",
+    "local": "",
+    "ll": [
+      43.40078,
+      18.65397
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Vučevo",
+    "local": "",
+    "ll": [
+      43.33236,
+      18.82014
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Dramešina",
+    "local": "",
+    "ll": [
+      43.2111,
+      18.60292
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Tjentište",
+    "local": "",
+    "ll": [
+      43.34658,
+      18.68982
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Pišče",
+    "local": "",
+    "ll": [
+      43.15843,
+      18.90991
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Čemerno",
+    "local": "",
+    "ll": [
+      43.24243,
+      18.60439
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Avtovac",
+    "local": "",
+    "ll": [
+      43.15003,
+      18.56273
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Lipnik",
+    "local": "",
+    "ll": [
+      43.14108,
+      18.61776
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Trnovačko jezero",
+    "local": "",
+    "ll": [
+      43.252,
+      18.72534
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Klinje",
+    "local": "",
+    "ll": [
+      43.17287,
+      18.58793
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Donje Bare",
+    "local": "",
+    "ll": [
+      43.31809,
+      18.63065
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Bijelo Jezero",
+    "local": "",
+    "ll": [
+      43.37957,
+      18.58384
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Orlovačko Jezero",
+    "local": "",
+    "ll": [
+      43.37703,
+      18.54922
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Skakavac",
+    "local": "",
+    "ll": [
+      43.31189,
+      18.70019
+    ],
+    "ele": null
+  },
+  {
+    "kind": "pass",
+    "name": "Prijeđel",
+    "local": "",
+    "ll": [
+      43.37928,
+      18.76453
+    ],
+    "ele": 863
+  },
+  {
+    "kind": "waterfall",
+    "name": "Vodopad Vrbnica",
+    "local": "",
+    "ll": [
+      43.16601,
+      18.75052
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Wasserfall Vodopad",
+    "local": "",
+    "ll": [
+      43.30253,
+      18.68267
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Veliko Mratinjsko jezero",
+    "local": "",
+    "ll": [
+      43.25734,
+      18.76733
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Suva jezerina",
+    "local": "",
+    "ll": [
+      43.26694,
+      18.71868
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Veliko Stabansko lake",
+    "local": "Veliko Stabansko jezero",
+    "ll": [
+      43.19936,
+      18.72196
+    ],
+    "ele": 1325
+  }
+]

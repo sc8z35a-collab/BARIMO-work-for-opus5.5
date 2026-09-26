@@ -1,0 +1,394 @@
+{
+  "generatedAt": "2026-09-26T11:05:33.795Z",
+  "report": {
+    "tusheti": {
+      "pois": [
+        {
+          "name": "オマロ",
+          "geocoded": [
+            42.3709206,
+            45.6330787
+          ],
+          "driftKm": 0.89,
+          "status": "verified"
+        },
+        {
+          "name": "ダルトロ",
+          "geocoded": [
+            42.4383555,
+            45.5823903
+          ],
+          "driftKm": 1.04,
+          "status": "verified"
+        },
+        {
+          "name": "シェナコ",
+          "geocoded": [
+            42.3720739,
+            45.6632274
+          ],
+          "driftKm": 2.25,
+          "status": "verified"
+        }
+      ],
+      "wiki": {
+        "title": "Tusheti",
+        "extract": "Tusheti (Georgian: თუშეთი, romanized: tusheti; Bats: თუშითა, romanized: tushita) is a historic region in northeast Georgia. A mountainous area, it is home to the Tusheti National Park. By the conventional definition of the Europe-Asia boundary as following the watershed of the Greater Caucasus, Tusheti is geographically a European part of Georgia.",
+        "coords": {
+          "lat": 42.5,
+          "lon": 45.5,
+          "primary": "",
+          "globe": "earth"
+        }
+      }
+    },
+    "kolsuu": {
+      "pois": [
+        {
+          "name": "ケルスー湖",
+          "geocoded": [
+            40.7021689,
+            76.389985
+          ],
+          "driftKm": 7.16,
+          "status": "verified"
+        },
+        {
+          "name": "湖の入口",
+          "status": "manual"
+        }
+      ],
+      "wiki": {
+        "title": "Köl-Suu",
+        "extract": "Köl-Suu (Kyrgyz: Көл-Суу, also Көлсуу) is an alpine lake in At-Bashy District of Naryn Region of southeastern Kyrgyzstan. It is located at 3514 m elevation in the Kakshaal Too mountain range, central Tian Shan. It is fed and drained by the river Kurumduk, a left tributary of the Kökkyya, which is a right tributary of the Kakshaal. It is 5 km long, and its area is 4.5 km2 (1.7 sq mi).\nThe river draining the lake starts from underground location and the water gushes out between the soil and rocks below the lake. The lake may also sometimes get totally empty as happened in 2019 making it similar ",
+        "coords": {
+          "lat": 40.63888889,
+          "lon": 76.40555556,
+          "primary": "",
+          "globe": "earth"
+        }
+      }
+    },
+    "haftkul": {
+      "pois": [
+        {
+          "name": "第1湖 ミジゴン",
+          "status": "not-found"
+        },
+        {
+          "name": "第6湖 マルグゾール",
+          "geocoded": [
+            39.1516673,
+            67.8477874
+          ],
+          "driftKm": 1.18,
+          "status": "verified"
+        },
+        {
+          "name": "第7湖 ハザルチャシュマ",
+          "geocoded": [
+            39.18868,
+            71.5244015
+          ],
+          "driftKm": 314.81,
+          "status": "kept-curated"
+        }
+      ],
+      "wiki": {
+        "title": "Haft Kul",
+        "extract": "",
+        "coords": null
+      }
+    },
+    "semonkong": {
+      "pois": [
+        {
+          "name": "マレツニャネの滝",
+          "geocoded": [
+            -29.86824,
+            28.0512713
+          ],
+          "driftKm": 0.06,
+          "status": "verified"
+        },
+        {
+          "name": "セモンコンの村",
+          "geocoded": [
+            -29.8400122,
+            28.0511031
+          ],
+          "driftKm": 0,
+          "status": "verified"
+        }
+      ],
+      "wiki": {
+        "title": "Maletsunyane Falls",
+        "extract": "Maletsunyane Falls is a 192-metre-high (630 ft) waterfall in the Southern African country Lesotho. It is located near the town of Semonkong (Site of smoke), which is also named after the falls. The waterfall is on the Maletsunyane River and it falls from a ledge of Triassic-Jurassic basalt.\nThe plunging water creates a reverberating echo when it contact the basin of the falls, and local legend has it that the sound comes from the wailing of people who have drowned in the falls.\nIn December 2017, the Australian YouTube channel How Ridiculous broke the record for the world's highest basketball s",
+        "coords": {
+          "lat": -29.86861111,
+          "lon": 28.05166667,
+          "primary": "",
+          "globe": "earth"
+        }
+      }
+    },
+    "dzukou": {
+      "pois": [
+        {
+          "name": "ズコウ渓谷",
+          "geocoded": [
+            25.5646944,
+            94.0940762
+          ],
+          "driftKm": 2.99,
+          "status": "verified"
+        },
+        {
+          "name": "レストハウス",
+          "status": "manual"
+        }
+      ],
+      "wiki": {
+        "title": "Dzukou Valley",
+        "extract": "The Dzukou Valley (also spelt Dzüko, Dzükou or Dzukuo) is a high-altitude valley in Northeast India, straddling the inter-state border of the states of Nagaland and Manipur. Lying behind Mount Japfü at an elevation between 2,438 and 2,452 m (7,999 and 8,045 ft) above sea level in the Kohima and Senapati districts, it is known for its rolling meadows, seasonal wildflowers and rich biodiversity, and is among the most popular trekking destinations in northeastern India.\nThe valley is one of the principal habitats of Blyth's tragopan (Tragopan blythii), the state bird of Nagaland, and is the type ",
+        "coords": {
+          "lat": 25.553329,
+          "lon": 94.067065,
+          "primary": "",
+          "globe": "earth"
+        }
+      }
+    },
+    "puluong": {
+      "pois": [
+        {
+          "name": "バン・ドン村",
+          "geocoded": [
+            20.4450881,
+            105.1524614
+          ],
+          "driftKm": 0,
+          "status": "verified"
+        },
+        {
+          "name": "コー・ムオン",
+          "geocoded": [
+            20.4814018,
+            105.1319252
+          ],
+          "driftKm": 0,
+          "status": "verified"
+        },
+        {
+          "name": "プールオン村",
+          "geocoded": [
+            20.4206523,
+            105.1713758
+          ],
+          "driftKm": 0.01,
+          "status": "verified"
+        }
+      ],
+      "wiki": {
+        "title": "Pu Luong",
+        "extract": "Pù Luông is a commune of Thanh Hóa province, Vietnam.\nThe commune was established on 16 June 2025 on the basis of merging the former communes of Thành Sơn, Lũng Niêm, and Thành Lâm of the former Bá Thước district. Pù Luông officially came into operation on 1 July 2025.",
+        "coords": null
+      }
+    },
+    "itbayat": {
+      "pois": [
+        {
+          "name": "マヤン",
+          "geocoded": [
+            20.786719,
+            121.8413609
+          ],
+          "driftKm": 0.97,
+          "status": "verified"
+        },
+        {
+          "name": "パラヒト港",
+          "status": "manual"
+        }
+      ],
+      "wiki": {
+        "title": "Itbayat",
+        "extract": "Itbayat, officially the Municipality of Itbayat, is a  municipality in the province of Batanes, Philippines. According to the 2024 census, it has a population of 2,937 people.\nThe municipality is the country's northernmost municipality, located 156 kilometers (97 mi) from the southernmost tip of Taiwan.\nBy land area, the main island of Itbayat is the largest in Batanes. The municipality includes the rest of the province's northern islands, all small and mostly uninhabited. These islands are, from south to north: Di'nem Island (Diogo), Siayan, A'li, Ditarem (Mavudis), Misanga (North Island), an",
+        "coords": {
+          "lat": 20.7878,
+          "lon": 121.8415,
+          "primary": "",
+          "globe": "earth"
+        }
+      }
+    },
+    "ouvea": {
+      "pois": [
+        {
+          "name": "ムリ橋",
+          "geocoded": [
+            -20.7202852,
+            166.4279788
+          ],
+          "driftKm": 0,
+          "status": "verified"
+        },
+        {
+          "name": "ファヤウエ",
+          "geocoded": [
+            -20.6506726,
+            166.5357712
+          ],
+          "driftKm": 2.72,
+          "status": "verified"
+        },
+        {
+          "name": "レキニーの断崖",
+          "geocoded": [
+            -20.7027937,
+            166.493075
+          ],
+          "driftKm": 5.77,
+          "status": "verified"
+        }
+      ],
+      "wiki": {
+        "title": "Ouvéa",
+        "extract": "Ouvéa or Uvea (West Uvean: [uˈve.a], Iaai: Iaai, Eaje) is a commune in the Loyalty Islands Province of New Caledonia, an overseas territory of France in the Pacific Ocean. The settlement of Fayaoué [faˈjawe], on Ouvéa Island, is the administrative centre of the commune.",
+        "coords": {
+          "lat": -20.6522,
+          "lon": 166.5619,
+          "primary": "",
+          "globe": "earth"
+        }
+      }
+    },
+    "pomez": {
+      "pois": [
+        {
+          "name": "ポメスの岩原",
+          "geocoded": [
+            -26.7023342,
+            -67.67405
+          ],
+          "driftKm": 0.01,
+          "status": "verified"
+        },
+        {
+          "name": "セロ・ブランコ",
+          "geocoded": [
+            -26.7594827,
+            -67.7398969
+          ],
+          "driftKm": 0.17,
+          "status": "verified"
+        }
+      ],
+      "wiki": {
+        "title": "Cerro Blanco (volcano)",
+        "extract": "Cerro Blanco (Spanish: [ˈsero ˈβlaŋko], \"White Hill\") is a caldera in the Andes of the Catamarca Province in Argentina. Part of the Central Volcanic Zone of the Andes, it is a volcano collapse structure located at an altitude of 4,670 metres (15,320 ft) in a depression. The caldera is associated with a less well-defined caldera to the south and several lava domes.\nThe caldera has been active for the last eight million years, and eruptions have created several ignimbrites. An eruption occurred 73,000 years ago and formed the Campo de la Piedra Pómez ignimbrite layer. About 2,300 ± 160 BCE, the ",
+        "coords": {
+          "lat": -26.76027778,
+          "lon": -67.74138889,
+          "primary": "",
+          "globe": "earth"
+        }
+      }
+    },
+    "flores": {
+      "pois": [
+        {
+          "name": "リベイラ・ド・フェレイロ",
+          "geocoded": [
+            39.4369021,
+            -31.2386115
+          ],
+          "driftKm": 1.29,
+          "status": "verified"
+        },
+        {
+          "name": "ファジャ・グランデ",
+          "geocoded": [
+            39.4540492,
+            -31.262323
+          ],
+          "driftKm": 0.01,
+          "status": "verified"
+        },
+        {
+          "name": "ラゴア・フンダ",
+          "geocoded": [
+            39.4057162,
+            -31.2182847
+          ],
+          "driftKm": 0.74,
+          "status": "verified"
+        }
+      ],
+      "wiki": {
+        "title": "Flores Azores",
+        "extract": "",
+        "coords": null
+      }
+    },
+    "trnovacko": {
+      "pois": [
+        {
+          "name": "トルノヴァチュコ湖",
+          "geocoded": [
+            43.2519376,
+            18.7250496
+          ],
+          "driftKm": 0.14,
+          "status": "verified"
+        },
+        {
+          "name": "マグリッチ山",
+          "geocoded": [
+            43.2809755,
+            18.7331516
+          ],
+          "driftKm": 0.26,
+          "status": "verified"
+        }
+      ],
+      "wiki": {
+        "title": "Trnovačko jezero",
+        "extract": "",
+        "coords": null
+      }
+    },
+    "rugova": {
+      "pois": [
+        {
+          "name": "ルゴヴァ峡谷",
+          "geocoded": [
+            42.6635227,
+            20.2086568
+          ],
+          "driftKm": 4.57,
+          "status": "verified"
+        },
+        {
+          "name": "ペーヤ",
+          "geocoded": [
+            42.6593986,
+            20.2885757
+          ],
+          "driftKm": 0.01,
+          "status": "verified"
+        }
+      ],
+      "wiki": {
+        "title": "Rugova Canyon",
+        "extract": "Rugova Canyon (Albanian: Kanioni i Rugovës; Serbian: Руговска клисура / Rugovska klisura) or Rugova Gorge (Albanian: Gryka e Rugovës) is a river canyon near Peja in western Kosovo. The canyon is located in the Albanian Alps, close to the border with Montenegro.\nRugova Canyon offers great opportunities for hikers, rock-climbers and cave explorers. A \"Via Ferrata\", called the \"Iron Trail\", has been built. It is the first and the only one in the Balkans and enables hikers to climb rocks. The Patriarchate of Peja, the historical and spiritual seat of the Serbian Orthodox Church, is located at the ",
+        "coords": {
+          "lat": 42.692222,
+          "lon": 20.168611,
+          "primary": "",
+          "globe": "earth"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "file": "photos/p01.webp",
+    "thumb": "photos/p01_s.webp",
+    "title": "Dendrelaphis caudolineatus, striped bronzeback",
+    "author": "Rushenb",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dendrelaphis_caudolineatus,_striped_bronzeback.jpg",
+    "score": 137
+  },
+  {
+    "file": "photos/p02.webp",
+    "thumb": "photos/p02_s.webp",
+    "title": "Hazelnuts",
+    "author": "Fir0002 at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hazelnuts.jpg",
+    "score": 132
+  },
+  {
+    "file": "photos/p03.webp",
+    "thumb": "photos/p03_s.webp",
+    "title": "Türlersee panosphere 20200730",
+    "author": "Daniel Kraft",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:T%C3%BCrlersee_panosphere_20200730.jpg",
+    "score": 117
+  },
+  {
+    "file": "photos/p04.webp",
+    "thumb": "photos/p04_s.webp",
+    "title": "On the way to Semonkong - panoramio",
+    "author": "Graham Maclachlan",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:On_the_way_to_Semonkong_-_panoramio.jpg",
+    "score": 110
+  },
+  {
+    "file": "photos/p05.webp",
+    "thumb": "photos/p05_s.webp",
+    "title": "Semonkong, here we come... - panoramio",
+    "author": "Graham Maclachlan",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Semonkong,_here_we_come..._-_panoramio.jpg",
+    "score": 109
+  },
+  {
+    "file": "photos/p06.webp",
+    "thumb": "photos/p06_s.webp",
+    "title": "A5 Aarebruecke",
+    "author": "Ikiwaner",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:A5_Aarebruecke.jpg",
+    "score": 105
+  },
+  {
+    "file": "photos/p07.webp",
+    "thumb": "photos/p07_s.webp",
+    "title": "Sok Kwu Wan 02",
+    "author": "Underwaterbuffalo",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sok_Kwu_Wan_02.jpg",
+    "score": 103
+  },
+  {
+    "file": "photos/p08.webp",
+    "thumb": "photos/p08_s.webp",
+    "title": "Unnamed Road, Lesotho - panoramio - Graham Maclachlan (51)",
+    "author": "Graham Maclachlan",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Unnamed_Road,_Lesotho_-_panoramio_-_Graham_Maclachlan_(51).jpg",
+    "score": 100
+  },
+  {
+    "file": "photos/p09.webp",
+    "thumb": "photos/p09_s.webp",
+    "title": "Unnamed Road, Lesotho - panoramio - Graham Maclachlan (55)",
+    "author": "Graham Maclachlan",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Unnamed_Road,_Lesotho_-_panoramio_-_Graham_Maclachlan_(55).jpg",
+    "score": 99
+  },
+  {
+    "file": "photos/p10.webp",
+    "thumb": "photos/p10_s.webp",
+    "title": "Top of Baboons to Semonkong - panoramio",
+    "author": "Graham Maclachlan",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Top_of_Baboons_to_Semonkong_-_panoramio.jpg",
+    "score": 97
+  },
+  {
+    "file": "photos/p11.webp",
+    "thumb": "photos/p11_s.webp",
+    "title": "SOK Hq",
+    "author": "Ypsilon from Finland",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:SOK_Hq.jpg",
+    "score": 95
+  },
+  {
+    "file": "photos/p12.webp",
+    "thumb": "photos/p12_s.webp",
+    "title": "LWR2013 - panoramio (78)",
+    "author": "Graham Maclachlan",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:LWR2013_-_panoramio_(78).jpg",
+    "score": 95
+  }
+]

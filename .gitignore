@@ -2,3 +2,5 @@ node_modules/
 .env
 *.log
 pipeline/out/tmp/
+dist/
+pipeline-run.log

@@ -1,0 +1,492 @@
+[
+  {
+    "kind": "town",
+    "name": "ロジャイェ",
+    "local": "Rožaje",
+    "ll": [
+      42.84332,
+      20.16797
+    ],
+    "ele": null
+  },
+  {
+    "kind": "town",
+    "name": "Rahovec",
+    "local": "",
+    "ll": [
+      42.39987,
+      20.65274
+    ],
+    "ele": null
+  },
+  {
+    "kind": "peak",
+    "name": "Gjeravica",
+    "local": "Gjeravicë",
+    "ll": [
+      42.53294,
+      20.14056
+    ],
+    "ele": 2656
+  },
+  {
+    "kind": "peak",
+    "name": "Maja Grykat e Hapëta",
+    "local": "",
+    "ll": [
+      42.40833,
+      19.90472
+    ],
+    "ele": 2625
+  },
+  {
+    "kind": "peak",
+    "name": "Maja Hekurave",
+    "local": "",
+    "ll": [
+      42.38412,
+      19.96876
+    ],
+    "ele": 2560
+  },
+  {
+    "kind": "peak",
+    "name": "Maja Kollatës",
+    "local": "",
+    "ll": [
+      42.48337,
+      19.90926
+    ],
+    "ele": 2552
+  },
+  {
+    "kind": "peak",
+    "name": "Marijash",
+    "local": "",
+    "ll": [
+      42.6126,
+      20.10013
+    ],
+    "ele": 2533
+  },
+  {
+    "kind": "peak",
+    "name": "Guri i Kuq",
+    "local": "",
+    "ll": [
+      42.66307,
+      20.13437
+    ],
+    "ele": 2522
+  },
+  {
+    "kind": "peak",
+    "name": "Maja e Ropës",
+    "local": "",
+    "ll": [
+      42.57456,
+      20.10794
+    ],
+    "ele": 2502
+  },
+  {
+    "kind": "peak",
+    "name": "Çfërla",
+    "local": "",
+    "ll": [
+      42.62036,
+      20.20811
+    ],
+    "ele": 2461
+  },
+  {
+    "kind": "peak",
+    "name": "Maja Bogiçaj",
+    "local": "",
+    "ll": [
+      42.55129,
+      20.08781
+    ],
+    "ele": 2406
+  },
+  {
+    "kind": "peak",
+    "name": "Maja e Thatë",
+    "local": "",
+    "ll": [
+      42.46807,
+      19.86909
+    ],
+    "ele": 2406
+  },
+  {
+    "kind": "peak",
+    "name": "Maja e Qenit / Pasji vrh",
+    "local": "",
+    "ll": [
+      42.59817,
+      20.07786
+    ],
+    "ele": 2405
+  },
+  {
+    "kind": "peak",
+    "name": "Shkelzeni Peak",
+    "local": "Maja Shkëlzenit",
+    "ll": [
+      42.45744,
+      20.1282
+    ],
+    "ele": 2405
+  },
+  {
+    "kind": "peak",
+    "name": "Hajla / Hajlë",
+    "local": "",
+    "ll": [
+      42.75749,
+      20.13865
+    ],
+    "ele": 2403
+  },
+  {
+    "kind": "peak",
+    "name": "Rusolia",
+    "local": "",
+    "ll": [
+      42.74986,
+      20.24538
+    ],
+    "ele": 2382
+  },
+  {
+    "kind": "peak",
+    "name": "Maja e Strellcit",
+    "local": "",
+    "ll": [
+      42.59832,
+      20.22856
+    ],
+    "ele": 2377
+  },
+  {
+    "kind": "peak",
+    "name": "Hridski krš",
+    "local": "",
+    "ll": [
+      42.56865,
+      20.0456
+    ],
+    "ele": 2358
+  },
+  {
+    "kind": "town",
+    "name": "ベラネ",
+    "local": "Berane",
+    "ll": [
+      42.84358,
+      19.87287
+    ],
+    "ele": null
+  },
+  {
+    "kind": "town",
+    "name": "Klinë",
+    "local": "",
+    "ll": [
+      42.61799,
+      20.57611
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Junik",
+    "local": "",
+    "ll": [
+      42.47612,
+      20.27737
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Samadrexhë",
+    "local": "",
+    "ll": [
+      42.36419,
+      20.74028
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Mamusa",
+    "local": "Mamuşa - Mamushë",
+    "ll": [
+      42.33151,
+      20.72596
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Krushë e Madhe",
+    "local": "",
+    "ll": [
+      42.31891,
+      20.63567
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Rogovë",
+    "local": "",
+    "ll": [
+      42.33096,
+      20.5779
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Isniq",
+    "local": "",
+    "ll": [
+      42.55774,
+      20.30243
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ratkoc",
+    "local": "",
+    "ll": [
+      42.41112,
+      20.53852
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Bellacërkë",
+    "local": "",
+    "ll": [
+      42.35777,
+      20.59341
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Prilep",
+    "local": "",
+    "ll": [
+      42.50708,
+      20.31734
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Carrabreg i Ulët",
+    "local": "",
+    "ll": [
+      42.53,
+      20.29775
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Siqevë",
+    "local": "",
+    "ll": [
+      42.6276,
+      20.68418
+    ],
+    "ele": null
+  },
+  {
+    "kind": "pass",
+    "name": "Kula pass",
+    "local": "",
+    "ll": [
+      42.78981,
+      20.22402
+    ],
+    "ele": 1795
+  },
+  {
+    "kind": "village",
+    "name": "Irzniq",
+    "local": "",
+    "ll": [
+      42.52001,
+      20.34718
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Baballoq",
+    "local": "",
+    "ll": [
+      42.48707,
+      20.34909
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Pobërgjë",
+    "local": "",
+    "ll": [
+      42.52529,
+      20.26441
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Gazivoda Lake",
+    "local": "Језеро Газиводе / Jezero Gazivode",
+    "ll": [
+      42.94883,
+      20.54878
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Visitorsko Jezero",
+    "local": "",
+    "ll": [
+      42.62514,
+      19.87973
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Plavsko jezero",
+    "local": "",
+    "ll": [
+      42.59483,
+      19.92527
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Lake Drelaj",
+    "local": "Liqeni i Drelajve",
+    "ll": [
+      42.6674,
+      20.0993
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Radoniq Lake",
+    "local": "Liqeni i Radoniqit",
+    "ll": [
+      42.49046,
+      20.41588
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Blato",
+    "local": "",
+    "ll": [
+      42.91153,
+      20.18386
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "White Drin Waterfall",
+    "local": "Ujëvara e Drinit të Bardhë",
+    "ll": [
+      42.73783,
+      20.30644
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Mirusha Waterfall",
+    "local": "Ujëvarat e Mirushës",
+    "ll": [
+      42.52404,
+      20.58434
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Waterfall near Vranë",
+    "local": "",
+    "ll": [
+      42.31993,
+      19.88077
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Lumi e Plans",
+    "local": "",
+    "ll": [
+      42.36523,
+      19.86721
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Ujëvara Kaprollit",
+    "local": "",
+    "ll": [
+      42.69177,
+      20.18689
+    ],
+    "ele": null
+  },
+  {
+    "kind": "pass",
+    "name": "Qafa e Shtedimit",
+    "local": "",
+    "ll": [
+      42.74611,
+      20.19112
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Liqeni Qenëve",
+    "local": "",
+    "ll": [
+      42.52266,
+      20.08512
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Košutina lokva",
+    "local": "",
+    "ll": [
+      42.78124,
+      20.0491
+    ],
+    "ele": null
+  }
+]

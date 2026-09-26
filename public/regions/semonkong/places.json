@@ -1,0 +1,442 @@
+[
+  {
+    "kind": "peak",
+    "name": "Thaba Putsoa",
+    "local": "",
+    "ll": [
+      -29.73147,
+      27.92605
+    ],
+    "ele": 3096
+  },
+  {
+    "kind": "peak",
+    "name": "THE TWINS",
+    "local": "",
+    "ll": [
+      -30.15595,
+      28.47275
+    ],
+    "ele": 2690
+  },
+  {
+    "kind": "peak",
+    "name": "'Mamahlanya",
+    "local": "",
+    "ll": [
+      -29.7867,
+      27.8458
+    ],
+    "ele": 3039
+  },
+  {
+    "kind": "peak",
+    "name": "Teletsana",
+    "local": "",
+    "ll": [
+      -29.62273,
+      28.46069
+    ],
+    "ele": 3035
+  },
+  {
+    "kind": "peak",
+    "name": "Thaba-Moea",
+    "local": "",
+    "ll": [
+      -29.62955,
+      28.38002
+    ],
+    "ele": 3021
+  },
+  {
+    "kind": "peak",
+    "name": "Thaba-Chitja",
+    "local": "",
+    "ll": [
+      -29.84228,
+      28.40203
+    ],
+    "ele": 3003
+  },
+  {
+    "kind": "peak",
+    "name": "Mokotjomela",
+    "local": "",
+    "ll": [
+      -30.28464,
+      27.89321
+    ],
+    "ele": 2958
+  },
+  {
+    "kind": "peak",
+    "name": "Bofoma-Lits'oene",
+    "local": "",
+    "ll": [
+      -29.80713,
+      28.3758
+    ],
+    "ele": 2954
+  },
+  {
+    "kind": "peak",
+    "name": "Thaba-Putsoa",
+    "local": "",
+    "ll": [
+      -29.6408,
+      28.0675
+    ],
+    "ele": 2950
+  },
+  {
+    "kind": "peak",
+    "name": "Manong",
+    "local": "",
+    "ll": [
+      -29.6942,
+      28.0408
+    ],
+    "ele": 2924
+  },
+  {
+    "kind": "peak",
+    "name": "Ponto",
+    "local": "",
+    "ll": [
+      -29.6983,
+      27.93287
+    ],
+    "ele": 2912
+  },
+  {
+    "kind": "peak",
+    "name": "Thaba-Nts'o",
+    "local": "",
+    "ll": [
+      -29.93378,
+      28.13647
+    ],
+    "ele": 2911
+  },
+  {
+    "kind": "peak",
+    "name": "Thaba-ea-'Maephole",
+    "local": "",
+    "ll": [
+      -29.96061,
+      27.80086
+    ],
+    "ele": 2887
+  },
+  {
+    "kind": "peak",
+    "name": "Khamokha",
+    "local": "",
+    "ll": [
+      -30.14357,
+      28.40002
+    ],
+    "ele": 2858
+  },
+  {
+    "kind": "peak",
+    "name": "Thaba-Kholo",
+    "local": "",
+    "ll": [
+      -29.5358,
+      28.03
+    ],
+    "ele": 2855
+  },
+  {
+    "kind": "peak",
+    "name": "Thaba-Khubelu",
+    "local": "",
+    "ll": [
+      -29.5375,
+      28.3258
+    ],
+    "ele": 2805
+  },
+  {
+    "kind": "pass",
+    "name": "Cheche's Pass",
+    "local": "",
+    "ll": [
+      -29.54154,
+      28.228
+    ],
+    "ele": 2545
+  },
+  {
+    "kind": "town",
+    "name": "Ramabanta",
+    "local": "",
+    "ll": [
+      -29.66542,
+      27.7945
+    ],
+    "ele": null
+  },
+  {
+    "kind": "town",
+    "name": "Semonkong",
+    "local": "",
+    "ll": [
+      -29.84001,
+      28.0511
+    ],
+    "ele": null
+  },
+  {
+    "kind": "town",
+    "name": "Phamong",
+    "local": "",
+    "ll": [
+      -30.24338,
+      27.8027
+    ],
+    "ele": null
+  },
+  {
+    "kind": "town",
+    "name": "Ha Sekake",
+    "local": "",
+    "ll": [
+      -30.04657,
+      28.35974
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Seforong",
+    "local": "",
+    "ll": [
+      -30.04905,
+      28.24969
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ha Lekhooa",
+    "local": "",
+    "ll": [
+      -29.90716,
+      27.63047
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ha Sekunyane",
+    "local": "",
+    "ll": [
+      -29.96866,
+      27.61647
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Makhaleng",
+    "local": "",
+    "ll": [
+      -29.88607,
+      27.61429
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ha Robi",
+    "local": "",
+    "ll": [
+      -30.28498,
+      27.80722
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ha Lebona",
+    "local": "",
+    "ll": [
+      -30.29062,
+      27.75898
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ha Fakathe",
+    "local": "",
+    "ll": [
+      -30.26145,
+      27.94195
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ha Mohlakoana",
+    "local": "",
+    "ll": [
+      -30.21389,
+      27.94609
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ha Khomo-a-Bokone",
+    "local": "",
+    "ll": [
+      -29.98696,
+      27.93648
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Khakhathane",
+    "local": "",
+    "ll": [
+      -29.96634,
+      27.84007
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ha Motloi",
+    "local": "",
+    "ll": [
+      -30.25792,
+      27.70491
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Phiring",
+    "local": "",
+    "ll": [
+      -30.21272,
+      27.74862
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ha Lethena",
+    "local": "",
+    "ll": [
+      -30.25299,
+      27.76189
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ha Moena",
+    "local": "",
+    "ll": [
+      -30.21128,
+      27.67562
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Ribaneng Falls",
+    "local": "",
+    "ll": [
+      -29.82997,
+      27.77791
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Botsoela Waterfall",
+    "local": "",
+    "ll": [
+      -29.79705,
+      27.61462
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Maletsunyane Falls",
+    "local": "",
+    "ll": [
+      -29.86824,
+      28.05127
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Qhoasing Falls",
+    "local": "",
+    "ll": [
+      -29.97524,
+      27.7675
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Boritsana Falls",
+    "local": "",
+    "ll": [
+      -29.99648,
+      27.72032
+    ],
+    "ele": null
+  },
+  {
+    "kind": "pass",
+    "name": "Lebelonyane Pass",
+    "local": "",
+    "ll": [
+      -30.17498,
+      28.00418
+    ],
+    "ele": null
+  },
+  {
+    "kind": "pass",
+    "name": "Marakabei Pass",
+    "local": "",
+    "ll": [
+      -29.53792,
+      28.1124
+    ],
+    "ele": null
+  },
+  {
+    "kind": "pass",
+    "name": "Ramabanta Pass",
+    "local": "",
+    "ll": [
+      -29.65587,
+      27.76957
+    ],
+    "ele": null
+  },
+  {
+    "kind": "pass",
+    "name": "Lekhalo-le-Lesehlana Pass",
+    "local": "",
+    "ll": [
+      -30.24051,
+      28.14199
+    ],
+    "ele": null
+  }
+]

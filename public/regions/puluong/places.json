@@ -1,0 +1,392 @@
+[
+  {
+    "kind": "town",
+    "name": "Bo",
+    "local": "",
+    "ll": [
+      20.6724,
+      105.53468
+    ],
+    "ele": null
+  },
+  {
+    "kind": "town",
+    "name": "Cao Phong",
+    "local": "",
+    "ll": [
+      20.70531,
+      105.32084
+    ],
+    "ele": null
+  },
+  {
+    "kind": "town",
+    "name": "Mãn Đức",
+    "local": "",
+    "ll": [
+      20.6166,
+      105.27105
+    ],
+    "ele": null
+  },
+  {
+    "kind": "town",
+    "name": "Lang Chánh",
+    "local": "",
+    "ll": [
+      20.15472,
+      105.23951
+    ],
+    "ele": null
+  },
+  {
+    "kind": "peak",
+    "name": "Núi Pu Pha Phong",
+    "local": "",
+    "ll": [
+      20.47765,
+      105.08779
+    ],
+    "ele": 1667
+  },
+  {
+    "kind": "village",
+    "name": "Nhân Nghĩa",
+    "local": "",
+    "ll": [
+      20.52353,
+      105.44993
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Xuất Hóa",
+    "local": "",
+    "ll": [
+      20.4818,
+      105.41798
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Bao La",
+    "local": "",
+    "ll": [
+      20.67293,
+      104.97752
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Lóng Luông",
+    "local": "",
+    "ll": [
+      20.78333,
+      104.83333
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Vân Hồ",
+    "local": "",
+    "ll": [
+      20.79584,
+      104.77497
+    ],
+    "ele": null
+  },
+  {
+    "kind": "peak",
+    "name": "Núi Hang Kia",
+    "local": "",
+    "ll": [
+      20.73665,
+      104.88334
+    ],
+    "ele": 1483
+  },
+  {
+    "kind": "peak",
+    "name": "Núi Pu Hu Luông",
+    "local": "",
+    "ll": [
+      20.49686,
+      104.87064
+    ],
+    "ele": 1441
+  },
+  {
+    "kind": "peak",
+    "name": "Núi Hóc",
+    "local": "",
+    "ll": [
+      20.56166,
+      104.87441
+    ],
+    "ele": 1424
+  },
+  {
+    "kind": "peak",
+    "name": "Núi Pù Rinh",
+    "local": "",
+    "ll": [
+      20.11974,
+      105.12912
+    ],
+    "ele": 1291
+  },
+  {
+    "kind": "peak",
+    "name": "Núi Pù Hòn Hàn",
+    "local": "",
+    "ll": [
+      19.98472,
+      105.09797
+    ],
+    "ele": 1208
+  },
+  {
+    "kind": "peak",
+    "name": "Núi Đồi Thơi",
+    "local": "",
+    "ll": [
+      20.68306,
+      105.41046
+    ],
+    "ele": 1198
+  },
+  {
+    "kind": "peak",
+    "name": "Núi Ngàn Lè",
+    "local": "",
+    "ll": [
+      20.60723,
+      105.40333
+    ],
+    "ele": 1085
+  },
+  {
+    "kind": "peak",
+    "name": "Núi Cốt Ca",
+    "local": "",
+    "ll": [
+      20.61593,
+      105.47319
+    ],
+    "ele": 1071
+  },
+  {
+    "kind": "peak",
+    "name": "Núi Ma Gha",
+    "local": "",
+    "ll": [
+      20.48575,
+      105.24708
+    ],
+    "ele": 1065
+  },
+  {
+    "kind": "village",
+    "name": "Sao Đông",
+    "local": "",
+    "ll": [
+      20.60511,
+      105.60245
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Bãi Trăng",
+    "local": "",
+    "ll": [
+      20.56704,
+      105.30988
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Nà Nghịa",
+    "local": "",
+    "ll": [
+      20.26681,
+      104.79635
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Ba. Chòm Can",
+    "local": "",
+    "ll": [
+      20.04597,
+      105.06234
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Chiềng Nhân",
+    "local": "",
+    "ll": [
+      20.03139,
+      105.12333
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Thalao",
+    "local": "",
+    "ll": [
+      20.07629,
+      104.93149
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Quảng Cư",
+    "local": "",
+    "ll": [
+      20.30048,
+      105.52531
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Lạnh Anh",
+    "local": "",
+    "ll": [
+      20.4171,
+      105.53857
+    ],
+    "ele": null
+  },
+  {
+    "kind": "village",
+    "name": "Đồng Bảng",
+    "local": "",
+    "ll": [
+      20.71051,
+      105.05727
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Thác mây",
+    "local": "",
+    "ll": [
+      20.36528,
+      105.44787
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Thác Mu",
+    "local": "",
+    "ll": [
+      20.40463,
+      105.37264
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Waterfall Ban Hieu",
+    "local": "Thác Hiêu",
+    "ll": [
+      20.46551,
+      105.22259
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Trang waterfall",
+    "local": "Thác Suối Tráng",
+    "ll": [
+      20.7225,
+      105.27801
+    ],
+    "ele": null
+  },
+  {
+    "kind": "waterfall",
+    "name": "Thác Bằng Đông",
+    "local": "",
+    "ll": [
+      20.72882,
+      105.00218
+    ],
+    "ele": null
+  },
+  {
+    "kind": "pass",
+    "name": "Thung Khe Pass",
+    "local": "Đèo Thung Khe",
+    "ll": [
+      20.67251,
+      105.12115
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Hồ Cựu Mã Giang",
+    "local": "",
+    "ll": [
+      20.0239,
+      105.57352
+    ],
+    "ele": 13
+  },
+  {
+    "kind": "lake",
+    "name": "Hồ Xuân Lũng",
+    "local": "",
+    "ll": [
+      20.21169,
+      105.57087
+    ],
+    "ele": 40
+  },
+  {
+    "kind": "lake",
+    "name": "Hồ Đống Cốc",
+    "local": "",
+    "ll": [
+      20.1866,
+      105.6041
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Hồ Khe Môn",
+    "local": "",
+    "ll": [
+      20.26575,
+      105.53381
+    ],
+    "ele": null
+  },
+  {
+    "kind": "lake",
+    "name": "Ao cá Bác Hồ",
+    "local": "",
+    "ll": [
+      20.16219,
+      105.63931
+    ],
+    "ele": null
+  }
+]
