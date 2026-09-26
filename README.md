@@ -40,7 +40,17 @@ node pipeline/orchestrator.mjs --region=tusheti --no-commit
 | 5 | climate | Open-Meteo ERA5 アーカイブ（2021〜24）から月別気候 |
 | 6 | assembler | QA チェック、スコア算出、`public/data/regions.json` 出力（10地域未満ならビルド失敗） |
 
-ステージ1ではエージェント1〜5が並列に動き、画像処理の重い2つ（imagery→photos）はメモリ節約のため同じレーンで順番に処理します。その後ステージ2で assembler が実行されます。
+### v2 オーケストレーター（依存DAG・6レーン）
+```
+lane1 research → places | lane2 terrain | lane3 imagery → photos | lane4 climate
+lane5 review（LLMスウォーム：6エージェント並列） | lane6 assembler/QA
+node pipeline/orchestrator.mjs [--region=id] [--only=a,b] [--skip=a] [--no-commit] [--no-push] [--offline]
+```
+- 各エージェントは依存が揃った瞬間に起動し、終了ごとに自動コミット（環境リセットでも成果が消えない）
+- `pipeline/out/run-report.json` に実行結果、`swarm-report.json` にAIレビュー結果
+- review スウォームの6役割：fact-checker / safety-analyst / copy-editor / geo-verifier / season-advisor / qa-critic。LLM応答は厳密に検証（評価は元の値±1以内のみ採用など）し、LLMが使えない場合は決定論的なレビュアーに自動で切り替わる
+
+（旧説明）ステージ1ではエージェント1〜5が並列に動き、画像処理の重い2つ（imagery→photos）はメモリ節約のため同じレーンで順番に処理します。その後ステージ2で assembler が実行されます。
 
 ### LLM について
 `pipeline/lib/llm.mjs` は `~/.genspark_llm.yaml` / `OPENAI_*` 環境変数を使います。起動時に疎通を確認し（probe）、使える場合は research エージェントが6並列でLLM監査を行います。使えない場合（例：無料プランでプロキシが止められている場合）は、LLMなしの決定論的モードに自動で切り替わります。
