@@ -242,7 +242,9 @@ export class TerrainEngine {
           {
             vec3 sc = diffuseColor.rgb; float l = dot(sc, vec3(.2126,.7152,.0722));
             sc = mix(vec3(l), sc, uSat);                         // gentle saturation
-            sc = sc + (1.0 - sc) * uLift * (1.0 - smoothstep(0.0, 0.25, l)); // lift baked shadows in the imagery
+            // lift baked shadows in the imagery with a hue-preserving gain (adding white turned dark forests grey)
+            sc *= 1.0 + uLift * 3.2 * (1.0 - smoothstep(0.0, 0.16, l));
+            sc = mix(vec3(dot(sc, vec3(.2126,.7152,.0722))), sc, 1.0 + uLift * 0.6 * (1.0 - smoothstep(0.0, 0.2, l))); // dark greens stay rich
             diffuseColor.rgb = sc;
             // micro detail: value-noise grain that fades out with distance (only visible at walking height)
             {

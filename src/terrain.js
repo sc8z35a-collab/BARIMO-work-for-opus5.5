@@ -113,7 +113,7 @@ export class RegionScene {
 
     this.engine = new TerrainEngine({ renderer: this.renderer, store: this.store, frame: this.F, exaggeration: this.exag, uniforms: this.U, quality: this.quality });
     this.scene.add(this.engine.group);
-    this.ground = new GroundCover({ renderer: this.renderer, engine: this.engine, uniforms: this.U, density: QA ? 0.5 : (this.quality?.grass ?? 1) });
+    this.ground = new GroundCover({ renderer: this.renderer, engine: this.engine, uniforms: this.U, density: +(new URLSearchParams(location.search).get('grass') ?? (QA ? 0.5 : (this.quality?.grass ?? 1))) });
     this.scene.add(this.ground.group);
     this.map = new MapController(this.camera, this.engine, this.F);
     this.map.onUser = () => this._interacted();
