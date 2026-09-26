@@ -55,5 +55,8 @@
     "model": "gpt-5-mini",
     "ok": false,
     "reason": "Free-plan credits can't be used with the Genspark API / LLM proxy. Please visit https://www.genspark.ai/pricing?fromurl=credit_exhausted&entry=llm_proxy to subscribe or purchase credits to use this en"
-  }
+  },
+  "finishedAt": "2026-09-26T11:21:24.062Z",
+  "seconds": 989.4,
+  "ok": false
 }
