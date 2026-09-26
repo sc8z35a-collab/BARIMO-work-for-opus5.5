@@ -25,7 +25,7 @@ export class RegionScene {
     this.store = new TileStore(renderer, { texBudget: QA ? 220 : 480, demBudget: 180 });
     this.U = {
       uHaze: { value: new THREE.Color() }, uHazeSun: { value: new THREE.Color() }, uSunDir: { value: new THREE.Vector3(0, 1, 0) },
-      uVis: { value: 60000 }, uFogMax: { value: 0.92 }, uLift: { value: 0.12 }, uSat: { value: 1.1 }, uUnder: { value: new THREE.Color('#5fb3c4') },
+      uVis: { value: 60000 }, uFogMax: { value: 0.92 }, uLift: { value: 0.2 }, uSat: { value: 1.1 }, uUnder: { value: new THREE.Color('#5fb3c4') },
       uWorldRect: { value: new THREE.Vector4() }, uEye: { value: new THREE.Vector3() },
     };
     this.mode = 'map'; this.time = 'noon'; this.active = false; this.labels = [];
