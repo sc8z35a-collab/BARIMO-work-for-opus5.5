@@ -89,6 +89,10 @@
     ],
     "gem": 100,
     "ease": 50,
+    "review": {
+      "score": 90,
+      "mode": "deterministic"
+    },
     "places": [
       {
         "kind": "peak",
@@ -1084,6 +1088,10 @@
     ],
     "gem": 100,
     "ease": 50,
+    "review": {
+      "score": 80,
+      "mode": "deterministic"
+    },
     "places": [
       {
         "kind": "pass",
@@ -1465,6 +1473,10 @@
     ],
     "gem": 90,
     "ease": 75,
+    "review": {
+      "score": 90,
+      "mode": "deterministic"
+    },
     "places": [
       {
         "kind": "peak",
@@ -2322,6 +2334,10 @@
     ],
     "gem": 90,
     "ease": 75,
+    "review": {
+      "score": 90,
+      "mode": "deterministic"
+    },
     "places": [
       {
         "kind": "peak",
@@ -3122,6 +3138,10 @@
     ],
     "gem": 100,
     "ease": 56,
+    "review": {
+      "score": 90,
+      "mode": "deterministic"
+    },
     "places": [
       {
         "kind": "town",
@@ -3891,6 +3911,10 @@
     ],
     "gem": 80,
     "ease": 88,
+    "review": {
+      "score": 90,
+      "mode": "deterministic"
+    },
     "places": [
       {
         "kind": "town",
@@ -4703,6 +4727,10 @@
     ],
     "gem": 100,
     "ease": 69,
+    "review": {
+      "score": 90,
+      "mode": "deterministic"
+    },
     "places": [
       {
         "kind": "town",
@@ -5137,6 +5165,10 @@
     ],
     "gem": 90,
     "ease": 81,
+    "review": {
+      "score": 90,
+      "mode": "deterministic"
+    },
     "places": [
       {
         "kind": "town",
@@ -5966,6 +5998,10 @@
     ],
     "gem": 100,
     "ease": 63,
+    "review": {
+      "score": 90,
+      "mode": "deterministic"
+    },
     "places": [
       {
         "kind": "peak",
@@ -6834,6 +6870,10 @@
     ],
     "gem": 90,
     "ease": 81,
+    "review": {
+      "score": 80,
+      "mode": "deterministic"
+    },
     "places": [
       {
         "kind": "town",
@@ -7212,6 +7252,10 @@
     ],
     "gem": 100,
     "ease": 63,
+    "review": {
+      "score": 90,
+      "mode": "deterministic"
+    },
     "places": [
       {
         "kind": "peak",
@@ -8083,6 +8127,10 @@
     ],
     "gem": 70,
     "ease": 81,
+    "review": {
+      "score": 90,
+      "mode": "deterministic"
+    },
     "places": [
       {
         "kind": "town",

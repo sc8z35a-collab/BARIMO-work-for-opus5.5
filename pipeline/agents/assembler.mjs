@@ -5,6 +5,7 @@ import { regions, log, PUB, OUT, readJSON, writeJSON } from '../lib/common.mjs';
 const A = 'assembler';
 
 const research = readJSON(path.join(OUT, 'research-report.json'), { report: {} });
+const swarm = readJSON(path.join(OUT, 'swarm-report.json'), { result: {} });
 const out = [], qa = [];
 for (const r of regions()) {
   const dir = path.join(PUB, 'regions', r.id);
@@ -20,8 +21,9 @@ for (const r of regions()) {
   if (!climate) issues.push('climate missing');
   if (places.length < 5) issues.push(`only ${places.length} OSM places`);
   if (terrain && terrain.n !== 5) issues.push('terrain.json is v1.0 (not 5x extent) — rerun terrain agent');
-  qa.push({ id: r.id, ok: issues.length === 0, issues });
-  if (!terrain || !hasSat) { log(A, `${r.id}: SKIPPED (${issues.join(', ')})`); continue; }
+  const entry = { id: r.id, ok: true, issues };
+  qa.push(entry);
+  if (!terrain || !hasSat) { entry.ok = false; log(A, `${r.id}: SKIPPED (${issues.join(', ')})`); continue; }
 
   // snap POIs to verified geocodes when research agent confirmed them
   const rp = research.report?.[r.id]?.pois || [];
@@ -40,20 +42,28 @@ for (const r of regions()) {
   const placesUV = !terrain ? [] : places.map((p) => ({ ...p, uv: toUV(p.ll) })).filter((p) => inside(p.uv)
     && !pois.some((q) => q.name === p.name || Math.hypot(q.uv[0] - p.uv[0], q.uv[1] - p.uv[1]) < 0.015));
 
-  const R = r.ratings;
+  // LLM swarm: apply only validated suggestions that came from a live model (deterministic mode never edits data)
+  const sw = swarm.result?.[r.id] || {};
+  const R = { ...r.ratings };
+  if (sw['safety-analyst']?.source === 'llm') Object.assign(R, sw['safety-analyst'].suggestedRatings);
+  const copy = sw['copy-editor']?.source === 'llm' && sw['copy-editor'].changed ? sw['copy-editor'] : null;
+  for (const role of ['fact-checker', 'season-advisor', 'qa-critic']) for (const x of sw[role]?.issues || []) issues.push(`[${role}] ${x}`);
   // "Hidden-gem index": scenery × remoteness, and an overall ease-of-trip score
   const gem = Math.round(((R.scenery + R.remoteness) / 10) * 100);
   const ease = Math.round(((5 - R.crime) + (5 - R.danger) + (5 - R.access) + (5 - R.physical)) / 16 * 100);
   out.push({
-    ...r, pois, gem, ease,
+    ...r, ratings: R, pois, gem, ease,
+    ...(copy ? { tagline: copy.tagline, overview: copy.overview } : {}),
+    review: { score: sw['qa-critic']?.score ?? null, mode: swarm.mode || 'none' },
     places: placesUV,
     terrain: { minElev: terrain.minElev, maxElev: terrain.maxElev, widthM: Math.round(terrain.widthM), bbox: terrain.bbox, z: terrain.z, x0: terrain.x0, y0: terrain.y0, n: terrain.n, world: terrain.world, demSize: terrain.size },
     climate, photos,
     assets: { dem: `regions/${r.id}/dem.png`, overview: `regions/${r.id}/overview.jpg`, overviewSmall: `regions/${r.id}/overview_s.jpg` },
   });
+  entry.ok = !issues.some((x) => !x.startsWith('['));
   log(A, `${r.id}: ✔ ${photos.length} photos, ${pois.length} POIs, ${placesUV.length} places, gem ${gem}, ease ${ease}${issues.length ? '  ⚠ ' + issues.join(', ') : ''}`);
 }
 writeJSON(path.join(PUB, 'data/regions.json'), out);
-writeJSON(path.join(OUT, 'qa-report.json'), { generatedAt: new Date().toISOString(), regions: out.length, qa });
+writeJSON(path.join(OUT, 'qa-report.json'), { generatedAt: new Date().toISOString(), regions: out.length, swarm: { mode: swarm.mode, model: swarm.model, stats: swarm.stats }, qa });
 log(A, `emitted ${out.length} regions → public/data/regions.json`);
 if (out.length < 10) { log(A, 'QA FAIL: fewer than 10 regions'); process.exitCode = 1; }

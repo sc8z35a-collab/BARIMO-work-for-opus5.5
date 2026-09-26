@@ -1,0 +1,719 @@
+{
+  "generatedAt": "2026-09-26T11:04:41.303Z",
+  "ms": 292,
+  "mode": "deterministic",
+  "model": "gpt-5-mini",
+  "probe": {
+    "ok": false,
+    "reason": "Free-plan credits can't be used with the Genspark API / LLM proxy. Please visit https://www.genspark.ai/pricing?fromurl=credit_exhausted&entry=llm_proxy to subscribe or purchase credits to use this en"
+  },
+  "stats": {
+    "fact-checker": {
+      "llm": 0,
+      "fallback": 12,
+      "failed": 0,
+      "ms": 0
+    },
+    "safety-analyst": {
+      "llm": 0,
+      "fallback": 12,
+      "failed": 0,
+      "ms": 0
+    },
+    "copy-editor": {
+      "llm": 0,
+      "fallback": 12,
+      "failed": 0,
+      "ms": 0
+    },
+    "geo-verifier": {
+      "llm": 0,
+      "fallback": 12,
+      "failed": 0,
+      "ms": 0
+    },
+    "season-advisor": {
+      "llm": 0,
+      "fallback": 12,
+      "failed": 0,
+      "ms": 0
+    },
+    "qa-critic": {
+      "llm": 0,
+      "fallback": 12,
+      "failed": 0,
+      "ms": 1
+    }
+  },
+  "result": {
+    "tusheti": {
+      "fact-checker": {
+        "ok": true,
+        "issues": [],
+        "source": "fallback"
+      },
+      "safety-analyst": {
+        "suggestedRatings": {
+          "crime": 1,
+          "danger": 3,
+          "access": 5,
+          "physical": 3
+        },
+        "issues": [],
+        "source": "fallback"
+      },
+      "copy-editor": {
+        "tagline": "雲の上の塔の村へ、夏だけ開く峠を越えて",
+        "overview": "大コーカサス山脈の北斜面、標高2,000m前後に石積みの塔の集落が点在する山岳地帯。道路が通じるのは雪が解ける6月下旬〜10月初旬のわずかな期間だけ。見渡す限りの緑の尾根、羊の群れ、夕陽に染まる石の塔――時間が止まったような高原の村で、ゲストハウスに泊まりながら尾根歩きを楽しめます。",
+        "changed": false,
+        "source": "fallback"
+      },
+      "geo-verifier": {
+        "decisions": [
+          {
+            "name": "オマロ",
+            "use": "geocoded",
+            "why": "drift 0.89 km < 8 km threshold"
+          },
+          {
+            "name": "ダルトロ",
+            "use": "geocoded",
+            "why": "drift 1.04 km < 8 km threshold"
+          },
+          {
+            "name": "シェナコ",
+            "use": "geocoded",
+            "why": "drift 2.25 km < 8 km threshold"
+          }
+        ],
+        "source": "fallback"
+      },
+      "season-advisor": {
+        "bestMonths": [
+          7,
+          8,
+          9
+        ],
+        "issues": [],
+        "source": "fallback"
+      },
+      "qa-critic": {
+        "score": 90,
+        "issues": [
+          "見どころが4件未満"
+        ],
+        "source": "fallback"
+      }
+    },
+    "kolsuu": {
+      "fact-checker": {
+        "ok": true,
+        "issues": [],
+        "source": "fallback"
+      },
+      "safety-analyst": {
+        "suggestedRatings": {
+          "crime": 1,
+          "danger": 3,
+          "access": 5,
+          "physical": 3
+        },
+        "issues": [],
+        "source": "fallback"
+      },
+      "copy-editor": {
+        "tagline": "断崖に抱かれた、国境地帯のターコイズ",
+        "overview": "中国国境近く、標高約3,500mの天山山脈の奥深くに横たわる細長い氷河湖。垂直にそびえる岩壁の間を、青緑の湖面が十数キロにわたって蛇行します。一帯は国境管理区域のため訪れる人はごくわずか。遊牧民のユルトに泊まり、ボートで峡谷の奥へ進む体験はまさに秘境そのもの。",
+        "changed": false,
+        "source": "fallback"
+      },
+      "geo-verifier": {
+        "decisions": [
+          {
+            "name": "ケルスー湖",
+            "use": "geocoded",
+            "why": "drift 7.16 km < 8 km threshold"
+          }
+        ],
+        "source": "fallback"
+      },
+      "season-advisor": {
+        "bestMonths": [
+          7,
+          8,
+          9
+        ],
+        "issues": [],
+        "source": "fallback"
+      },
+      "qa-critic": {
+        "score": 80,
+        "issues": [
+          "地名ラベルが7件しかありません",
+          "見どころが4件未満"
+        ],
+        "source": "fallback"
+      }
+    },
+    "haftkul": {
+      "fact-checker": {
+        "ok": false,
+        "issues": [
+          "参照用のWikipedia抜粋が取得できませんでした"
+        ],
+        "source": "fallback"
+      },
+      "safety-analyst": {
+        "suggestedRatings": {
+          "crime": 1,
+          "danger": 2,
+          "access": 3,
+          "physical": 2
+        },
+        "issues": [],
+        "source": "fallback"
+      },
+      "copy-editor": {
+        "tagline": "谷を下るごとに色を変える、七つの宝石",
+        "overview": "ファン山脈の谷に階段状に連なる7つの湖。翡翠、エメラルド、ターコイズ、群青――光と深さで湖ごとに色が変わり、段々畑とアプリコットの木が彩る山村が湖畔に寄り添います。サマルカンドから近いのに観光客は少なく、村人のもてなしが温かい場所です。",
+        "changed": false,
+        "source": "fallback"
+      },
+      "geo-verifier": {
+        "decisions": [
+          {
+            "name": "第6湖 マルグゾール",
+            "use": "geocoded",
+            "why": "drift 1.18 km < 8 km threshold"
+          },
+          {
+            "name": "第7湖 ハザルチャシュマ",
+            "use": "curated",
+            "why": "drift 314.81 km ≥ 8 km: geocoder likely matched a namesake"
+          }
+        ],
+        "source": "fallback"
+      },
+      "season-advisor": {
+        "bestMonths": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "issues": [],
+        "source": "fallback"
+      },
+      "qa-critic": {
+        "score": 90,
+        "issues": [
+          "見どころが4件未満"
+        ],
+        "source": "fallback"
+      }
+    },
+    "semonkong": {
+      "fact-checker": {
+        "ok": true,
+        "issues": [],
+        "source": "fallback"
+      },
+      "safety-analyst": {
+        "suggestedRatings": {
+          "crime": 2,
+          "danger": 2,
+          "access": 2,
+          "physical": 2
+        },
+        "issues": [
+          "秘境度が高いのにアクセスが容易すぎる評価です"
+        ],
+        "source": "fallback"
+      },
+      "copy-editor": {
+        "tagline": "天空の王国、192mを一息に落ちる滝",
+        "overview": "国土全体が標高1,400m以上という「天空の王国」レソトの高地。セモンコン（煙の場所）の名の通り、マレツニャネの滝が192mの一枚落ちで玄武岩の峡谷に吸い込まれ、水煙が舞い上がります。毛布をまとったバソト族の騎手がポニーで草原を行き交う、ほかにはない風景が広がります。",
+        "changed": false,
+        "source": "fallback"
+      },
+      "geo-verifier": {
+        "decisions": [
+          {
+            "name": "マレツニャネの滝",
+            "use": "geocoded",
+            "why": "drift 0.06 km < 8 km threshold"
+          },
+          {
+            "name": "セモンコンの村",
+            "use": "geocoded",
+            "why": "drift 0 km < 8 km threshold"
+          }
+        ],
+        "source": "fallback"
+      },
+      "season-advisor": {
+        "bestMonths": [
+          3,
+          4,
+          5,
+          9,
+          10,
+          11
+        ],
+        "issues": [],
+        "source": "fallback"
+      },
+      "qa-critic": {
+        "score": 90,
+        "issues": [
+          "見どころが4件未満"
+        ],
+        "source": "fallback"
+      }
+    },
+    "dzukou": {
+      "fact-checker": {
+        "ok": true,
+        "issues": [],
+        "source": "fallback"
+      },
+      "safety-analyst": {
+        "suggestedRatings": {
+          "crime": 1,
+          "danger": 2,
+          "access": 4,
+          "physical": 4
+        },
+        "issues": [],
+        "source": "fallback"
+      },
+      "copy-editor": {
+        "tagline": "まるで緑のビロード。ここにしか咲かない百合の谷",
+        "overview": "インド北東端、ミャンマー国境近くの標高2,400m付近に広がる起伏の谷。低い竹笹に覆われた丘がどこまでも波打ち、まるで緑のビロードのよう。初夏にはこの谷だけに自生する「ズコウ・リリー」が咲き誇ります。辿り着くには森を登るトレッキングが必要で、その分だけ静けさが守られています。",
+        "changed": false,
+        "source": "fallback"
+      },
+      "geo-verifier": {
+        "decisions": [
+          {
+            "name": "ズコウ渓谷",
+            "use": "geocoded",
+            "why": "drift 2.99 km < 8 km threshold"
+          }
+        ],
+        "source": "fallback"
+      },
+      "season-advisor": {
+        "bestMonths": [
+          6,
+          7,
+          10,
+          11,
+          12
+        ],
+        "issues": [],
+        "source": "fallback"
+      },
+      "qa-critic": {
+        "score": 90,
+        "issues": [
+          "見どころが4件未満"
+        ],
+        "source": "fallback"
+      }
+    },
+    "puluong": {
+      "fact-checker": {
+        "ok": true,
+        "issues": [],
+        "source": "fallback"
+      },
+      "safety-analyst": {
+        "suggestedRatings": {
+          "crime": 1,
+          "danger": 1,
+          "access": 2,
+          "physical": 2
+        },
+        "issues": [],
+        "source": "fallback"
+      },
+      "copy-editor": {
+        "tagline": "石灰岩の山と棚田が織りなす、翠の箱庭",
+        "overview": "ハノイから南西へ約4時間、石灰岩の峰々に囲まれた自然保護区。山の斜面を埋め尽くす棚田、竹でできた水車、高床式の家が並ぶターイ族の村――。初夏は瑞々しい緑、秋は黄金色に輝く棚田の中を、自転車や徒歩でのんびり巡れます。",
+        "changed": false,
+        "source": "fallback"
+      },
+      "geo-verifier": {
+        "decisions": [
+          {
+            "name": "バン・ドン村",
+            "use": "geocoded",
+            "why": "drift 0 km < 8 km threshold"
+          },
+          {
+            "name": "コー・ムオン",
+            "use": "geocoded",
+            "why": "drift 0 km < 8 km threshold"
+          },
+          {
+            "name": "プールオン村",
+            "use": "geocoded",
+            "why": "drift 0.01 km < 8 km threshold"
+          }
+        ],
+        "source": "fallback"
+      },
+      "season-advisor": {
+        "bestMonths": [
+          5,
+          6,
+          9,
+          10
+        ],
+        "issues": [],
+        "source": "fallback"
+      },
+      "qa-critic": {
+        "score": 90,
+        "issues": [
+          "見どころが4件未満"
+        ],
+        "source": "fallback"
+      }
+    },
+    "itbayat": {
+      "fact-checker": {
+        "ok": true,
+        "issues": [],
+        "source": "fallback"
+      },
+      "safety-analyst": {
+        "suggestedRatings": {
+          "crime": 1,
+          "danger": 2,
+          "access": 4,
+          "physical": 2
+        },
+        "issues": [],
+        "source": "fallback"
+      },
+      "copy-editor": {
+        "tagline": "フィリピン最北、緑の絨毯が断崖で海に落ちる島",
+        "overview": "台湾とルソン島の間、バタネス諸島で最大かつ最も辺境の島。港も砂浜もほとんどなく、隆起した珊瑚石灰岩の台地が断崖となって群青の海に落ち込みます。草原には牛がのんびり草を食み、石造りの家が並ぶ村が静かに佇む――地の果ての穏やかさを味わえます。",
+        "changed": false,
+        "source": "fallback"
+      },
+      "geo-verifier": {
+        "decisions": [
+          {
+            "name": "マヤン",
+            "use": "geocoded",
+            "why": "drift 0.97 km < 8 km threshold"
+          }
+        ],
+        "source": "fallback"
+      },
+      "season-advisor": {
+        "bestMonths": [
+          3,
+          4,
+          5
+        ],
+        "issues": [],
+        "source": "fallback"
+      },
+      "qa-critic": {
+        "score": 90,
+        "issues": [
+          "見どころが4件未満"
+        ],
+        "source": "fallback"
+      }
+    },
+    "ouvea": {
+      "fact-checker": {
+        "ok": true,
+        "issues": [],
+        "source": "fallback"
+      },
+      "safety-analyst": {
+        "suggestedRatings": {
+          "crime": 2,
+          "danger": 1,
+          "access": 3,
+          "physical": 1
+        },
+        "issues": [],
+        "source": "fallback"
+      },
+      "copy-editor": {
+        "tagline": "25kmの白砂と、世界遺産のラグーン",
+        "overview": "ニューカレドニア本島の北東に浮かぶ細長い環礁の島。片側には25kmにわたって真っ白な砂浜が続き、世界遺産のラグーンは透明度の高い水色のグラデーションを描きます。ムリ橋の下を泳ぐウミガメやマンタ、断崖の奥の入り江――人の少ない楽園がそのまま残っています。",
+        "changed": false,
+        "source": "fallback"
+      },
+      "geo-verifier": {
+        "decisions": [
+          {
+            "name": "ムリ橋",
+            "use": "geocoded",
+            "why": "drift 0 km < 8 km threshold"
+          },
+          {
+            "name": "ファヤウエ",
+            "use": "geocoded",
+            "why": "drift 2.72 km < 8 km threshold"
+          },
+          {
+            "name": "レキニーの断崖",
+            "use": "geocoded",
+            "why": "drift 5.77 km < 8 km threshold"
+          }
+        ],
+        "source": "fallback"
+      },
+      "season-advisor": {
+        "bestMonths": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "issues": [],
+        "source": "fallback"
+      },
+      "qa-critic": {
+        "score": 90,
+        "issues": [
+          "見どころが4件未満"
+        ],
+        "source": "fallback"
+      }
+    },
+    "pomez": {
+      "fact-checker": {
+        "ok": true,
+        "issues": [],
+        "source": "fallback"
+      },
+      "safety-analyst": {
+        "suggestedRatings": {
+          "crime": 1,
+          "danger": 3,
+          "access": 4,
+          "physical": 2
+        },
+        "issues": [],
+        "source": "fallback"
+      },
+      "copy-editor": {
+        "tagline": "標高3,000mの、白い軽石が波打つ別惑星",
+        "overview": "アンデス高原プーナの只中、風に削られた白い軽石の塔が25kmにわたって林立する奇景。朝夕の光で白からピンク、黄金色へと染まり、背後にはカラフルな火山と黒い溶岩流が広がります。電波も人影もない静寂の中、地球ではないどこかに立っているような感覚を味わえます。",
+        "changed": false,
+        "source": "fallback"
+      },
+      "geo-verifier": {
+        "decisions": [
+          {
+            "name": "ポメスの岩原",
+            "use": "geocoded",
+            "why": "drift 0.01 km < 8 km threshold"
+          },
+          {
+            "name": "セロ・ブランコ",
+            "use": "geocoded",
+            "why": "drift 0.17 km < 8 km threshold"
+          }
+        ],
+        "source": "fallback"
+      },
+      "season-advisor": {
+        "bestMonths": [
+          3,
+          4,
+          5,
+          9,
+          10,
+          11
+        ],
+        "issues": [],
+        "source": "fallback"
+      },
+      "qa-critic": {
+        "score": 90,
+        "issues": [
+          "見どころが4件未満"
+        ],
+        "source": "fallback"
+      }
+    },
+    "flores": {
+      "fact-checker": {
+        "ok": false,
+        "issues": [
+          "参照用のWikipedia抜粋が取得できませんでした"
+        ],
+        "source": "fallback"
+      },
+      "safety-analyst": {
+        "suggestedRatings": {
+          "crime": 1,
+          "danger": 1,
+          "access": 3,
+          "physical": 2
+        },
+        "issues": [],
+        "source": "fallback"
+      },
+      "copy-editor": {
+        "tagline": "ヨーロッパ最西端、無数の滝が流れ落ちる緑の島",
+        "overview": "大西洋のまん中、ヨーロッパの最西端に浮かぶ花の島。苔むした断崖から何十本もの滝が流れ落ち、火口湖が点々と空を映します。アジサイの垣根が続く牧草地、断崖の下の小さな村――世界の果てのような静けさの中で、緑と水の音に包まれます。",
+        "changed": false,
+        "source": "fallback"
+      },
+      "geo-verifier": {
+        "decisions": [
+          {
+            "name": "リベイラ・ド・フェレイロ",
+            "use": "geocoded",
+            "why": "drift 1.29 km < 8 km threshold"
+          },
+          {
+            "name": "ファジャ・グランデ",
+            "use": "geocoded",
+            "why": "drift 0.01 km < 8 km threshold"
+          },
+          {
+            "name": "ラゴア・フンダ",
+            "use": "geocoded",
+            "why": "drift 0.74 km < 8 km threshold"
+          }
+        ],
+        "source": "fallback"
+      },
+      "season-advisor": {
+        "bestMonths": [
+          6,
+          7,
+          8,
+          9
+        ],
+        "issues": [],
+        "source": "fallback"
+      },
+      "qa-critic": {
+        "score": 80,
+        "issues": [
+          "地名ラベルが6件しかありません",
+          "見どころが4件未満"
+        ],
+        "source": "fallback"
+      }
+    },
+    "trnovacko": {
+      "fact-checker": {
+        "ok": false,
+        "issues": [
+          "参照用のWikipedia抜粋が取得できませんでした"
+        ],
+        "source": "fallback"
+      },
+      "safety-analyst": {
+        "suggestedRatings": {
+          "crime": 1,
+          "danger": 2,
+          "access": 4,
+          "physical": 3
+        },
+        "issues": [],
+        "source": "fallback"
+      },
+      "copy-editor": {
+        "tagline": "巨峰の足もとに眠る、ハートの形の湖",
+        "overview": "ボスニア・ヘルツェゴビナ最高峰マグリッチ（2,386m）の足もと、国境の山中に抱かれたハート形の氷河湖。石灰岩の岩壁に三方を囲まれ、湖面は季節と光で青から緑へと表情を変えます。車道はなく、歩いてしか辿り着けないからこその静けさ。湖畔でのキャンプは格別です。",
+        "changed": false,
+        "source": "fallback"
+      },
+      "geo-verifier": {
+        "decisions": [
+          {
+            "name": "トルノヴァチュコ湖",
+            "use": "geocoded",
+            "why": "drift 0.14 km < 8 km threshold"
+          }
+        ],
+        "source": "fallback"
+      },
+      "season-advisor": {
+        "bestMonths": [
+          7,
+          8,
+          9
+        ],
+        "issues": [],
+        "source": "fallback"
+      },
+      "qa-critic": {
+        "score": 90,
+        "issues": [
+          "見どころが4件未満"
+        ],
+        "source": "fallback"
+      }
+    },
+    "rugova": {
+      "fact-checker": {
+        "ok": true,
+        "issues": [],
+        "source": "fallback"
+      },
+      "safety-analyst": {
+        "suggestedRatings": {
+          "crime": 1,
+          "danger": 2,
+          "access": 2,
+          "physical": 2
+        },
+        "issues": [],
+        "source": "fallback"
+      },
+      "copy-editor": {
+        "tagline": "呪われた山と呼ばれた、青い川の峡谷",
+        "overview": "「呪われた山脈」の異名を持つ険しいアルプス山地を、澄んだ青緑の川が削り出した峡谷。町からほんの数分で、そそり立つ岩壁と深い森の世界に入り込めます。奥に進めば高原の羊飼い小屋、氷河湖、花の咲く草原。ヨーロッパの中で最も知られていない山岳地帯のひとつです。",
+        "changed": false,
+        "source": "fallback"
+      },
+      "geo-verifier": {
+        "decisions": [
+          {
+            "name": "ペーヤ",
+            "use": "geocoded",
+            "why": "drift 0.01 km < 8 km threshold"
+          }
+        ],
+        "source": "fallback"
+      },
+      "season-advisor": {
+        "bestMonths": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "issues": [],
+        "source": "fallback"
+      },
+      "qa-critic": {
+        "score": 90,
+        "issues": [
+          "見どころが4件未満"
+        ],
+        "source": "fallback"
+      }
+    }
+  }
+}

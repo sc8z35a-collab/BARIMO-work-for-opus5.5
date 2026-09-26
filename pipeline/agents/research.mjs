@@ -1,10 +1,9 @@
 // AGENT 1 — RESEARCH: verifies & enriches the curated dataset.
 //  • geocodes every POI via OSM Nominatim and snaps coordinates when the curated value drifts
 //  • pulls Wikipedia (en) extracts & coordinates as fact-check context
-//  • if the LLM proxy is available, asks the model to audit ratings/overview for each region in parallel
+//  (LLM auditing moved to the dedicated 6-agent review swarm — agents/review.mjs)
 import path from 'node:path';
-import { regions, fetchJSON, log, OUT, writeJSON, sleep, pool } from '../lib/common.mjs';
-import { probe, askJSON } from '../lib/llm.mjs';
+import { regions, fetchJSON, log, OUT, writeJSON, sleep, readJSON } from '../lib/common.mjs';
 const A = 'research';
 
 const haversine = (a, b) => {
@@ -13,13 +12,11 @@ const haversine = (a, b) => {
   return 2 * R * Math.asin(Math.sqrt(Math.sin(dLa / 2) ** 2 + Math.cos(t(a[0])) * Math.cos(t(b[0])) * Math.sin(dLo / 2) ** 2));
 };
 
-const list = regions();
-const llm = await probe();
-log(A, `LLM proxy: ${llm.ok ? 'ONLINE' : 'OFFLINE → deterministic mode'} (${llm.reason.slice(0, 90)})`);
-
-const report = {};
+const only = process.argv[2];
+const list = regions().filter((r) => !only || r.id === only);
+const report = only ? readJSON(path.join(OUT, 'research-report.json'), { report: {} }).report : {};
 for (const r of list) {
-  const rep = { pois: [], wiki: null, llm: null };
+  const rep = { pois: [], wiki: null };
   for (const p of r.pois) {
     if (!p.q) { rep.pois.push({ name: p.name, status: 'manual' }); continue; }
     try {
@@ -40,16 +37,5 @@ for (const r of list) {
   log(A, `${r.id}: ${rep.pois.filter((x) => x.status === 'verified').length}/${r.pois.length} POIs verified, wiki=${rep.wiki?.title || '-'}`);
 }
 
-if (llm.ok) {
-  await pool(list, 6, async (r) => {
-    try {
-      report[r.id].llm = await askJSON(
-        'You are a meticulous travel-safety analyst. Return JSON {"issues":[string],"suggestedRatings":{crime,danger,access,physical}} on a 1-5 scale (5 = worst/hardest).',
-        JSON.stringify({ region: r.nameLocal, country: r.country, ratings: r.ratings, notes: r.ratingNotes, context: report[r.id].wiki?.extract })
-      );
-      log(A, `${r.id}: LLM audit OK (${report[r.id].llm.issues?.length || 0} issues)`);
-    } catch (e) { log(A, `${r.id}: LLM audit failed ${e.message.slice(0, 80)}`); }
-  });
-}
-writeJSON(path.join(OUT, 'research-report.json'), { llm, generatedAt: new Date().toISOString(), report });
+writeJSON(path.join(OUT, 'research-report.json'), { generatedAt: new Date().toISOString(), report });
 log(A, 'done');

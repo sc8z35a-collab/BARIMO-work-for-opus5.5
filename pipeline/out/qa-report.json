@@ -1,66 +1,137 @@
 {
-  "generatedAt": "2026-09-26T04:21:37.669Z",
+  "generatedAt": "2026-09-26T11:04:41.550Z",
   "regions": 12,
+  "swarm": {
+    "mode": "deterministic",
+    "model": "gpt-5-mini",
+    "stats": {
+      "fact-checker": {
+        "llm": 0,
+        "fallback": 12,
+        "failed": 0,
+        "ms": 0
+      },
+      "safety-analyst": {
+        "llm": 0,
+        "fallback": 12,
+        "failed": 0,
+        "ms": 0
+      },
+      "copy-editor": {
+        "llm": 0,
+        "fallback": 12,
+        "failed": 0,
+        "ms": 0
+      },
+      "geo-verifier": {
+        "llm": 0,
+        "fallback": 12,
+        "failed": 0,
+        "ms": 0
+      },
+      "season-advisor": {
+        "llm": 0,
+        "fallback": 12,
+        "failed": 0,
+        "ms": 0
+      },
+      "qa-critic": {
+        "llm": 0,
+        "fallback": 12,
+        "failed": 0,
+        "ms": 1
+      }
+    }
+  },
   "qa": [
     {
       "id": "tusheti",
       "ok": true,
-      "issues": []
+      "issues": [
+        "[qa-critic] 見どころが4件未満"
+      ]
     },
     {
       "id": "kolsuu",
       "ok": true,
-      "issues": []
+      "issues": [
+        "[qa-critic] 地名ラベルが7件しかありません",
+        "[qa-critic] 見どころが4件未満"
+      ]
     },
     {
       "id": "haftkul",
       "ok": true,
-      "issues": []
+      "issues": [
+        "[fact-checker] 参照用のWikipedia抜粋が取得できませんでした",
+        "[qa-critic] 見どころが4件未満"
+      ]
     },
     {
       "id": "semonkong",
       "ok": true,
-      "issues": []
+      "issues": [
+        "[qa-critic] 見どころが4件未満"
+      ]
     },
     {
       "id": "dzukou",
       "ok": true,
-      "issues": []
+      "issues": [
+        "[qa-critic] 見どころが4件未満"
+      ]
     },
     {
       "id": "puluong",
       "ok": true,
-      "issues": []
+      "issues": [
+        "[qa-critic] 見どころが4件未満"
+      ]
     },
     {
       "id": "itbayat",
       "ok": true,
-      "issues": []
+      "issues": [
+        "[qa-critic] 見どころが4件未満"
+      ]
     },
     {
       "id": "ouvea",
       "ok": true,
-      "issues": []
+      "issues": [
+        "[qa-critic] 見どころが4件未満"
+      ]
     },
     {
       "id": "pomez",
       "ok": true,
-      "issues": []
+      "issues": [
+        "[qa-critic] 見どころが4件未満"
+      ]
     },
     {
       "id": "flores",
       "ok": true,
-      "issues": []
+      "issues": [
+        "[fact-checker] 参照用のWikipedia抜粋が取得できませんでした",
+        "[qa-critic] 地名ラベルが6件しかありません",
+        "[qa-critic] 見どころが4件未満"
+      ]
     },
     {
       "id": "trnovacko",
       "ok": true,
-      "issues": []
+      "issues": [
+        "[fact-checker] 参照用のWikipedia抜粋が取得できませんでした",
+        "[qa-critic] 見どころが4件未満"
+      ]
     },
     {
       "id": "rugova",
       "ok": true,
-      "issues": []
+      "issues": [
+        "[qa-critic] 見どころが4件未満"
+      ]
     }
   ]
 }
