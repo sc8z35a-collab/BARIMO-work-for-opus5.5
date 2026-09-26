@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-26T11:04:41.303Z",
-  "ms": 292,
+  "generatedAt": "2026-09-26T11:21:23.175Z",
+  "ms": 594,
   "mode": "deterministic",
   "model": "gpt-5-mini",
   "probe": {
@@ -12,7 +12,7 @@
       "llm": 0,
       "fallback": 12,
       "failed": 0,
-      "ms": 0
+      "ms": 1
     },
     "safety-analyst": {
       "llm": 0,
@@ -24,25 +24,25 @@
       "llm": 0,
       "fallback": 12,
       "failed": 0,
-      "ms": 0
+      "ms": 4
     },
     "geo-verifier": {
       "llm": 0,
       "fallback": 12,
       "failed": 0,
-      "ms": 0
+      "ms": 6
     },
     "season-advisor": {
       "llm": 0,
       "fallback": 12,
       "failed": 0,
-      "ms": 0
+      "ms": 1
     },
     "qa-critic": {
       "llm": 0,
       "fallback": 12,
       "failed": 0,
-      "ms": 1
+      "ms": 2
     }
   },
   "result": {
@@ -643,6 +643,11 @@
             "name": "トルノヴァチュコ湖",
             "use": "geocoded",
             "why": "drift 0.14 km < 8 km threshold"
+          },
+          {
+            "name": "マグリッチ山",
+            "use": "geocoded",
+            "why": "drift 0.26 km < 8 km threshold"
           }
         ],
         "source": "fallback"
@@ -688,6 +693,11 @@
       },
       "geo-verifier": {
         "decisions": [
+          {
+            "name": "ルゴヴァ峡谷",
+            "use": "geocoded",
+            "why": "drift 4.57 km < 8 km threshold"
+          },
           {
             "name": "ペーヤ",
             "use": "geocoded",

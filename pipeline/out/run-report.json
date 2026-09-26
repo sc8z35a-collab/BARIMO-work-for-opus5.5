@@ -37,6 +37,12 @@
       "startedAt": "2026-09-26T11:05:33.876Z",
       "code": 1,
       "seconds": 947.8
+    },
+    "review": {
+      "status": "ok",
+      "startedAt": "2026-09-26T11:21:21.750Z",
+      "code": 0,
+      "seconds": 1.6
     }
   },
   "llm": {
