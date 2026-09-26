@@ -1,9 +1,5 @@
 {
-  "llm": {
-    "ok": false,
-    "reason": "Free-plan credits can't be used with the Genspark API / LLM proxy. Please visit https://www.genspark.ai/pricing?fromurl=credit_exhausted&entry=llm_proxy to subscribe or purchase credits to use this en"
-  },
-  "generatedAt": "2026-09-25T09:27:52.139Z",
+  "generatedAt": "2026-09-26T11:05:33.795Z",
   "report": {
     "tusheti": {
       "pois": [
@@ -44,8 +40,7 @@
           "primary": "",
           "globe": "earth"
         }
-      },
-      "llm": null
+      }
     },
     "kolsuu": {
       "pois": [
@@ -72,8 +67,7 @@
           "primary": "",
           "globe": "earth"
         }
-      },
-      "llm": null
+      }
     },
     "haftkul": {
       "pois": [
@@ -104,8 +98,7 @@
         "title": "Haft Kul",
         "extract": "",
         "coords": null
-      },
-      "llm": null
+      }
     },
     "semonkong": {
       "pois": [
@@ -137,8 +130,7 @@
           "primary": "",
           "globe": "earth"
         }
-      },
-      "llm": null
+      }
     },
     "dzukou": {
       "pois": [
@@ -165,8 +157,7 @@
           "primary": "",
           "globe": "earth"
         }
-      },
-      "llm": null
+      }
     },
     "puluong": {
       "pois": [
@@ -202,8 +193,7 @@
         "title": "Pu Luong",
         "extract": "Pù Luông is a commune of Thanh Hóa province, Vietnam.\nThe commune was established on 16 June 2025 on the basis of merging the former communes of Thành Sơn, Lũng Niêm, and Thành Lâm of the former Bá Thước district. Pù Luông officially came into operation on 1 July 2025.",
         "coords": null
-      },
-      "llm": null
+      }
     },
     "itbayat": {
       "pois": [
@@ -230,8 +220,7 @@
           "primary": "",
           "globe": "earth"
         }
-      },
-      "llm": null
+      }
     },
     "ouvea": {
       "pois": [
@@ -272,8 +261,7 @@
           "primary": "",
           "globe": "earth"
         }
-      },
-      "llm": null
+      }
     },
     "pomez": {
       "pois": [
@@ -305,8 +293,7 @@
           "primary": "",
           "globe": "earth"
         }
-      },
-      "llm": null
+      }
     },
     "flores": {
       "pois": [
@@ -342,8 +329,7 @@
         "title": "Flores Azores",
         "extract": "",
         "coords": null
-      },
-      "llm": null
+      }
     },
     "trnovacko": {
       "pois": [
@@ -358,21 +344,30 @@
         },
         {
           "name": "マグリッチ山",
-          "status": "not-found"
+          "geocoded": [
+            43.2809755,
+            18.7331516
+          ],
+          "driftKm": 0.26,
+          "status": "verified"
         }
       ],
       "wiki": {
         "title": "Trnovačko jezero",
         "extract": "",
         "coords": null
-      },
-      "llm": null
+      }
     },
     "rugova": {
       "pois": [
         {
           "name": "ルゴヴァ峡谷",
-          "status": "not-found"
+          "geocoded": [
+            42.6635227,
+            20.2086568
+          ],
+          "driftKm": 4.57,
+          "status": "verified"
         },
         {
           "name": "ペーヤ",
@@ -393,8 +388,7 @@
           "primary": "",
           "globe": "earth"
         }
-      },
-      "llm": null
+      }
     }
   }
 }
