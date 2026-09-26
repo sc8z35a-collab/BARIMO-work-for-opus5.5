@@ -448,6 +448,7 @@ addEventListener('keydown', (e) => {
 let last = performance.now(), t = 0, fAcc = 0, fN = 0;
 function loop(now = performance.now()) {
   requestAnimationFrame(loop);
+  if (window.__barimoPause) { last = now; return; } // QA harness drives frames manually via __barimo.step()
   if (QA && now - last < 400) return; // headless software GL
   if (document.hidden) { last = now; return; }
   const raw = (now - last) / 1000;
@@ -468,5 +469,12 @@ function loop(now = performance.now()) {
 loop();
 
 // debug hook for automated QA
-window.__barimo = { globe, region, get mode() { return mode; }, regions: () => regions, openRegion: (id) => openRegion(regions.find((x) => x.id === id)) };
+window.__barimo = {
+  globe, region, get mode() { return mode; }, regions: () => regions, openRegion: (id) => openRegion(regions.find((x) => x.id === id)),
+  /** QA: advance the simulation n frames of dt seconds without rendering, then render once */
+  step(n = 1, dt = 1 / 30, render = true) {
+    for (let i = 0; i < n; i++) { t += dt; if (mode === 'globe') globe.update(dt, t); else if (region.engine) { region.update(dt, t); hud?.update(dt); } }
+    if (render) { if (mode === 'globe') globe.render(); else region.render(); }
+  },
+};
 void fmtDist; void fmtLL; void dirName; void bearingXZ;
