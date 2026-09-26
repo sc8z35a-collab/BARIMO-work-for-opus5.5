@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-26T11:21:23.175Z",
-  "ms": 594,
+  "generatedAt": "2026-09-26T11:36:13.475Z",
+  "ms": 260,
   "mode": "deterministic",
   "model": "gpt-5-mini",
   "probe": {
@@ -10,39 +10,39 @@
   "stats": {
     "fact-checker": {
       "llm": 0,
-      "fallback": 12,
+      "fallback": 1,
       "failed": 0,
-      "ms": 1
+      "ms": 0
     },
     "safety-analyst": {
       "llm": 0,
-      "fallback": 12,
+      "fallback": 1,
       "failed": 0,
       "ms": 0
     },
     "copy-editor": {
       "llm": 0,
-      "fallback": 12,
-      "failed": 0,
-      "ms": 4
-    },
-    "geo-verifier": {
-      "llm": 0,
-      "fallback": 12,
-      "failed": 0,
-      "ms": 6
-    },
-    "season-advisor": {
-      "llm": 0,
-      "fallback": 12,
+      "fallback": 1,
       "failed": 0,
       "ms": 1
     },
+    "geo-verifier": {
+      "llm": 0,
+      "fallback": 1,
+      "failed": 0,
+      "ms": 0
+    },
+    "season-advisor": {
+      "llm": 0,
+      "fallback": 1,
+      "failed": 0,
+      "ms": 0
+    },
     "qa-critic": {
       "llm": 0,
-      "fallback": 12,
+      "fallback": 1,
       "failed": 0,
-      "ms": 2
+      "ms": 0
     }
   },
   "result": {
