@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T11:04:41.550Z",
+  "generatedAt": "2026-09-26T11:21:23.840Z",
   "regions": 12,
   "swarm": {
     "mode": "deterministic",
@@ -9,7 +9,7 @@
         "llm": 0,
         "fallback": 12,
         "failed": 0,
-        "ms": 0
+        "ms": 1
       },
       "safety-analyst": {
         "llm": 0,
@@ -21,25 +21,25 @@
         "llm": 0,
         "fallback": 12,
         "failed": 0,
-        "ms": 0
+        "ms": 4
       },
       "geo-verifier": {
         "llm": 0,
         "fallback": 12,
         "failed": 0,
-        "ms": 0
+        "ms": 6
       },
       "season-advisor": {
         "llm": 0,
         "fallback": 12,
         "failed": 0,
-        "ms": 0
+        "ms": 1
       },
       "qa-critic": {
         "llm": 0,
         "fallback": 12,
         "failed": 0,
-        "ms": 1
+        "ms": 2
       }
     }
   },

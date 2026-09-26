@@ -43,6 +43,12 @@
       "startedAt": "2026-09-26T11:21:21.750Z",
       "code": 0,
       "seconds": 1.6
+    },
+    "assembler": {
+      "status": "ok",
+      "startedAt": "2026-09-26T11:21:23.441Z",
+      "code": 0,
+      "seconds": 0.4
     }
   },
   "llm": {
